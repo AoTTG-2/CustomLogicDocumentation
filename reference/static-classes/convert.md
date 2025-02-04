@@ -1,0 +1,5 @@
+# Convert
+
+Converting objects to different types.
+
+<table><thead><tr><th>Function</th><th width="116.33333333333331">Returns</th><th>Description</th></tr></thead><tbody><tr><td>ToFloat(value: object)</td><td>float</td><td>Convert the value to floating type</td></tr><tr><td>ToInt(value: object)</td><td>int</td><td>Convert the value to integer type</td></tr><tr><td>ToBool(value: object)</td><td>bool</td><td>Convert the value to boolean type</td></tr><tr><td>ToString(value: object)</td><td>string</td><td>Convert the value to string type</td></tr><tr><td>IsFloat(value: object)</td><td>bool</td><td>Returns true if the object is a float.</td></tr><tr><td>IsInt(value: object)</td><td>bool</td><td>Returns true if the object is an int.</td></tr><tr><td>IsBool(value: object)</td><td>bool</td><td>Returns true if the object is a bool.</td></tr><tr><td>IsString(value: object)</td><td>bool</td><td>Returns true if the object is a string.</td></tr><tr><td>IsObject(value: object)</td><td>bool</td><td>Returns true if the object is an Object. You can use value.Type for further type checking.</td></tr></tbody></table>
