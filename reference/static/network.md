@@ -4,16 +4,16 @@ Inherits from object
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |IsMasterClient|bool|False|Is the player the master client|
-|Players|[List](../objects/List.md)|False|The list of players in the room|
-|MasterClient|[Player](../objects/Player.md)|False|The master client|
-|MyPlayer|[Player](../objects/Player.md)|False|The local player|
+|Players|[List](../objects/list.md)|False|The list of players in the room|
+|MasterClient|[Player](../objects/player.md)|False|The master client|
+|MyPlayer|[Player](../objects/player.md)|False|The local player|
 |NetworkTime|double|False|The network time|
 |Ping|int|False|The local player's ping|
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|SendMessage(player : [Player](../objects/Player.md), message : [String](../static/String.md))|none|Send a message to a player|
-|SendMessageAll(message : [String](../static/String.md))|none|Send a message to all players|
-|SendMessageOthers(message : [String](../static/String.md))|none|Send a message to all players except the sender|
+|SendMessage(player : [Player](../objects/player.md), message : [String](../static/string.md))|none|Send a message to a player|
+|SendMessageAll(message : [String](../static/string.md))|none|Send a message to all players|
+|SendMessageOthers(message : [String](../static/string.md))|none|Send a message to all players except the sender|
 |GetTimestampDifference(timestamp1 : double, timestamp2 : double)|double|Get the difference between two photon timestamps|
-|KickPlayer(target : Object, reason : [String](../static/String.md) = .)|none|Kick the given player by id or player reference.|
+|KickPlayer(target : Object, reason : [String](../static/string.md) = .)|none|Kick the given player by id or player reference.|

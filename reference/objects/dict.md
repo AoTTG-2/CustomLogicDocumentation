@@ -8,8 +8,8 @@ example = Dict()
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Count|int|False|Number of elements in the dictionary|
-|Keys|[List](../objects/List.md)|False|Keys in the dictionary|
-|Values|[List](../objects/List.md)|False|Values in the dictionary|
+|Keys|[List](../objects/list.md)|False|Keys in the dictionary|
+|Values|[List](../objects/list.md)|False|Values in the dictionary|
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
