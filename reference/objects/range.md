@@ -20,8 +20,8 @@ example = Range((Object[]))
 |Contains(value : Object)|bool|Check if the list contains the specified element|
 |Sort()|none|Sort the list|
 |SortCustom(method : UserMethod)|none|Sort the list using a custom method, expects a method with the signature int method(a,b)|
-|Filter(method : UserMethod)|[List](../objects/List.md)|Filter the list using a custom method, expects a method with the signature bool method(element)|
-|Map(method : UserMethod)|[List](../objects/List.md)|Map the list using a custom method, expects a method with the signature object method(element)|
+|Filter(method : UserMethod)|[List](../objects/list.md)|Filter the list using a custom method, expects a method with the signature bool method(element)|
+|Map(method : UserMethod)|[List](../objects/list.md)|Map the list using a custom method, expects a method with the signature object method(element)|
 |Reduce(method : UserMethod, initialValue : Object)|Object|Reduce the list using a custom method, expects a method with the signature object method(acc, element)|
 |Randomize()|none|Randomize the list|
-|ToSet()|[Set](../objects/Set.md)|Convert the list to a set|
+|ToSet()|[Set](../objects/set.md)|Convert the list to a set|
