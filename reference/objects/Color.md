@@ -14,9 +14,5 @@ Inherits from object
 ## Static Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
-|Lerp(a : [Color](../objects/Color.md),
-b : [Color](../objects/Color.md),
-t : float)|[Color](../objects/Color.md)|Linearly interpolates between colors a and b by t|
-|Gradient(a : [Color](../objects/Color.md),
-b : [Color](../objects/Color.md),
-t : float)|[Color](../objects/Color.md)|Creates a gradient color from two colors|
+|Lerp(a : [Color](../objects/Color.md),<br/>b : [Color](../objects/Color.md),<br/>t : float)|[Color](../objects/Color.md)|Linearly interpolates between colors a and b by t|
+|Gradient(a : [Color](../objects/Color.md),<br/>b : [Color](../objects/Color.md),<br/>t : float)|[Color](../objects/Color.md)|Creates a gradient color from two colors|

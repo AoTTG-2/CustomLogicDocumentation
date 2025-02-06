@@ -14,9 +14,7 @@ example = Dict()
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Clear()|none|Clears the dictionary|
-|Get(key : Object,
-defaultValue : Object = )|Object|Gets a value from the dictionary|
-|Set(key : Object,
-value : Object)|none|Sets a value in the dictionary|
+|Get(key : Object,<br/>defaultValue : Object = )|Object|Gets a value from the dictionary|
+|Set(key : Object,<br/>value : Object)|none|Sets a value in the dictionary|
 |Remove(key : Object)|none|Removes a value from the dictionary|
 |Contains(key : Object)|bool|Checks if the dictionary contains a key|

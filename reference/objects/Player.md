@@ -23,6 +23,5 @@ Inherits from object
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetCustomProperty(property : [String](../static/String.md))|Object|Get a custom property at given key. Must be a primitive type. This is synced to all clients.|
-|SetCustomProperty(property : [String](../static/String.md),
-value : Object)|none|Sets a custom property at given key. Must be a primitive type. This is synced to all clients.|
+|SetCustomProperty(property : [String](../static/String.md),<br/>value : Object)|none|Sets a custom property at given key. Must be a primitive type. This is synced to all clients.|
 |ClearKDR()|none|Clears kills, deaths, highestdamage, and totaldamage properties.|

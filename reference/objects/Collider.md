@@ -20,7 +20,4 @@ Inherits from object
 |---|---|---|
 |ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
 |ClosestPointOnBounds(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|Raycast(start : [Vector3](../objects/Vector3.md),
-end : [Vector3](../objects/Vector3.md),
-maxDistance : float,
-collideWith : [String](../static/String.md))|[LineCastHitResult](../objects/LineCastHitResult.md)||
+|Raycast(start : [Vector3](../objects/Vector3.md),<br/>end : [Vector3](../objects/Vector3.md),<br/>maxDistance : float,<br/>collideWith : [String](../static/String.md))|[LineCastHitResult](../objects/LineCastHitResult.md)||

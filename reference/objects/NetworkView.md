@@ -8,8 +8,7 @@ Inherits from object
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Transfer(player : [Player](../objects/Player.md))|none|Owner only. Transfer ownership of this NetworkView to another player.|
-|SendMessage(target : [Player](../objects/Player.md),
-msg : [String](../static/String.md))|none|Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.|
+|SendMessage(target : [Player](../objects/Player.md),<br/>msg : [String](../static/String.md))|none|Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.|
 |SendMessageAll(msg : [String](../static/String.md))|none|Send a message to all players including myself.|
 |SendMessageOthers(msg : [String](../static/String.md))|none|Send a message to players excluding myself.|
 |SendStream(obj : Object)|none|Send an object to the network sync stream.             This represents sending data from the object owner to all non-owner observers,             and should only be called in the SendNetworkStream callback in the attached component.             It only works with some object types: primitives and Vector3.|
