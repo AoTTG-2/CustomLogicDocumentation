@@ -57,29 +57,29 @@ Inherits from [Character](../objects/Character.md)
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
 ## Methods
-|Function|Returns|Description|
-|---|---|---|
-|Refill()|bool|Refills the gas of the human|
-|RefillImmediate()|none|Refills the gas of the human immediately|
-|ClearHooks()|none|Clears all hooks|
-|ClearLeftHook()|none|Clears the left hook|
-|ClearRightHook()|none|Clears the right hook|
-|MountMapObject(<br/><i>mapObject</i> : [MapObject](../objects/MapObject.md),<br/><i>positionOffset</i> : [Vector3](../objects/Vector3.md),<br/><i>rotationOffset</i> : [Vector3](../objects/Vector3.md)<br/>)|none|Mounts the human on a map object|
-|MountTransform(<br/><i>transform</i> : [Transform](../objects/Transform.md),<br/><i>positionOffset</i> : [Vector3](../objects/Vector3.md),<br/><i>rotationOffset</i> : [Vector3](../objects/Vector3.md)<br/>)|none|Mounts the human on a transform|
-|Unmount()|none|Unmounts the human|
-|SetSpecial(<i>special</i> : [String](../static/String.md))|none|Sets the special of the human|
-|ActivateSpecial()|none|Activates the special of the human|
-|SetWeapon(<i>weapon</i> : [String](../static/String.md))|none|Sets the weapon of the human|
-|DisablePerks()|none|Disables all perks of the human|
-|GetKilled(<i>killer</i> : [String](../static/String.md))|none|Kills the character. Callable by non-owners.|
-|GetDamaged(<br/><i>killer</i> : [String](../static/String.md),<br/><i>damage</i> : int<br/>)|none|Damages the character and kills it if its health reaches 0. Callable by non-owners.|
-|Emote(<i>emote</i> : [String](../static/String.md))|none|Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.|
-|PlayAnimation(<br/><i>animation</i> : [String](../static/String.md),<br/><i>fade</i> : float = 0.1<br/>)|none|Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.|
-|GetAnimationLength(<i>animation</i> : [String](../static/String.md))|float|Gets the length of animation.|
-|PlaySound(<i>sound</i> : [String](../static/String.md))|none|Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.|
-|StopSound(<i>sound</i> : [String](../static/String.md))|none|Stops the sound.|
-|LookAt(<i>position</i> : [Vector3](../objects/Vector3.md))|none|Rotates the character such that it is looking towards a world position.|
-|AddForce(<br/><i>force</i> : [Vector3](../objects/Vector3.md),<br/><i>mode</i> : [String](../static/String.md) = Acceleration<br/>)|none|Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.|
-|Reveal(<i>delay</i> : float)|none|Reveaal the titan for a set number of seconds.|
-|AddOutline(<br/><i>color</i> : [Color](../objects/Color.md) = ,<br/><i>mode</i> : [String](../static/String.md) = OutlineAll<br/>)|none|Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor|
-|RemoveOutline()|none|Removes the outline effect from the character.|
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|Refill||bool|Refills the gas of the human|
+|RefillImmediate||none|Refills the gas of the human immediately|
+|ClearHooks||none|Clears all hooks|
+|ClearLeftHook||none|Clears the left hook|
+|ClearRightHook||none|Clears the right hook|
+|MountMapObject|mapObject : [MapObject](../objects/MapObject.md)<br/>positionOffset : [Vector3](../objects/Vector3.md)<br/>rotationOffset : [Vector3](../objects/Vector3.md)|none|Mounts the human on a map object|
+|MountTransform|transform : [Transform](../objects/Transform.md)<br/>positionOffset : [Vector3](../objects/Vector3.md)<br/>rotationOffset : [Vector3](../objects/Vector3.md)|none|Mounts the human on a transform|
+|Unmount||none|Unmounts the human|
+|SetSpecial|special : [String](../static/String.md)|none|Sets the special of the human|
+|ActivateSpecial||none|Activates the special of the human|
+|SetWeapon|weapon : [String](../static/String.md)|none|Sets the weapon of the human|
+|DisablePerks||none|Disables all perks of the human|
+|GetKilled|killer : [String](../static/String.md)|none|Kills the character. Callable by non-owners.|
+|GetDamaged|killer : [String](../static/String.md)<br/>damage : int|none|Damages the character and kills it if its health reaches 0. Callable by non-owners.|
+|Emote|emote : [String](../static/String.md)|none|Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.|
+|PlayAnimation|animation : [String](../static/String.md)<br/>fade : float = 0.1|none|Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.|
+|GetAnimationLength|animation : [String](../static/String.md)|float|Gets the length of animation.|
+|PlaySound|sound : [String](../static/String.md)|none|Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.|
+|StopSound|sound : [String](../static/String.md)|none|Stops the sound.|
+|LookAt|position : [Vector3](../objects/Vector3.md)|none|Rotates the character such that it is looking towards a world position.|
+|AddForce|force : [Vector3](../objects/Vector3.md)<br/>mode : [String](../static/String.md) = Acceleration|none|Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.|
+|Reveal|delay : float|none|Reveaal the titan for a set number of seconds.|
+|AddOutline|color : [Color](../objects/Color.md) = <br/>mode : [String](../static/String.md) = OutlineAll|none|Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor|
+|RemoveOutline||none|Removes the outline effect from the character.|

@@ -7,7 +7,7 @@ Inherits from object
 |Impulse|[Vector3](../objects/Vector3.md)|False||
 |RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
-|Function|Returns|Description|
-|---|---|---|
-|GetContact(<i>index</i> : int)|none||
-|GetContacts()|none||
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|GetContact|index : int|none||
+|GetContacts||none||

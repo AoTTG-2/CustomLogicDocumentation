@@ -5,11 +5,11 @@ Inherits from object
 |---|---|---|---|
 |Owner|[Player](../objects/Player.md)|False|The network view's owner.|
 ## Methods
-|Function|Returns|Description|
-|---|---|---|
-|Transfer(<i>player</i> : [Player](../objects/Player.md))|none|Owner only. Transfer ownership of this NetworkView to another player.|
-|SendMessage(<br/><i>target</i> : [Player](../objects/Player.md),<br/><i>msg</i> : [String](../static/String.md)<br/>)|none|Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.|
-|SendMessageAll(<i>msg</i> : [String](../static/String.md))|none|Send a message to all players including myself.|
-|SendMessageOthers(<i>msg</i> : [String](../static/String.md))|none|Send a message to players excluding myself.|
-|SendStream(<i>obj</i> : Object)|none|Send an object to the network sync stream.             This represents sending data from the object owner to all non-owner observers,             and should only be called in the SendNetworkStream callback in the attached component.             It only works with some object types: primitives and Vector3.|
-|ReceiveStream()|Object|Receive an object through the network sync stream.             This represents receiving data from the object owner as a non-owner observer,             and should only be called in the OnNetworkStream callback.|
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|Transfer|player : [Player](../objects/Player.md)|none|Owner only. Transfer ownership of this NetworkView to another player.|
+|SendMessage|target : [Player](../objects/Player.md)<br/>msg : [String](../static/String.md)|none|Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.|
+|SendMessageAll|msg : [String](../static/String.md)|none|Send a message to all players including myself.|
+|SendMessageOthers|msg : [String](../static/String.md)|none|Send a message to players excluding myself.|
+|SendStream|obj : Object|none|Send an object to the network sync stream.             This represents sending data from the object owner to all non-owner observers,             and should only be called in the SendNetworkStream callback in the attached component.             It only works with some object types: primitives and Vector3.|
+|ReceiveStream||Object|Receive an object through the network sync stream.             This represents receiving data from the object owner as a non-owner observer,             and should only be called in the OnNetworkStream callback.|
