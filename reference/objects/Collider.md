@@ -18,6 +18,6 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|ClosestPointOnBounds(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|Raycast(<br/>start : [Vector3](../objects/Vector3.md),<br/>end : [Vector3](../objects/Vector3.md),<br/>maxDistance : float,<br/>collideWith : [String](../static/String.md)<br/>)|[LineCastHitResult](../objects/LineCastHitResult.md)||
+|ClosestPoint(<i>position</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
+|ClosestPointOnBounds(<i>position</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
+|Raycast(<br/><i>start</i> : [Vector3](../objects/Vector3.md),<br/><i>end</i> : [Vector3](../objects/Vector3.md),<br/><i>maxDistance</i> : float,<br/><i>collideWith</i> : [String](../static/String.md)<br/>)|[LineCastHitResult](../objects/LineCastHitResult.md)||

@@ -19,18 +19,18 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|
+|GetTransform(<i>name</i> : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|
 |GetTransforms()|[List](../objects/List.md)|Gets all child transforms.|
-|PlayAnimation(<br/>anim : [String](../static/String.md),<br/>fade : float = 0.1<br/>)|none|Plays the specified animation.|
-|GetAnimationLength(anim : [String](../static/String.md))|float|Gets the length of the specified animation.|
+|PlayAnimation(<br/><i>anim</i> : [String](../static/String.md),<br/><i>fade</i> : float = 0.1<br/>)|none|Plays the specified animation.|
+|GetAnimationLength(<i>anim</i> : [String](../static/String.md))|float|Gets the length of the specified animation.|
 |PlaySound()|none|Plays the sound.|
 |StopSound()|none|Stops the sound.|
-|ToggleParticle(enabled : bool)|none|Toggles the particle system.|
-|InverseTransformDirection(direction : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.|
-|InverseTransformPoint(point : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from world space to local space.|
-|TransformDirection(direction : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms direction from local space to world space.|
-|TransformPoint(point : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from local space to world space.|
-|Rotate(rotation : [Vector3](../objects/Vector3.md))|none|Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).|
-|RotateAround(<br/>point : [Vector3](../objects/Vector3.md),<br/>axis : [Vector3](../objects/Vector3.md),<br/>angle : float<br/>)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
-|LookAt(target : [Vector3](../objects/Vector3.md))|none|Rotates the transform so the forward vector points at worldPosition.|
-|SetRenderersEnabled(enabled : bool)|none|Sets the enabled state of all child renderers.|
+|ToggleParticle(<i>enabled</i> : bool)|none|Toggles the particle system.|
+|InverseTransformDirection(<i>direction</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.|
+|InverseTransformPoint(<i>point</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from world space to local space.|
+|TransformDirection(<i>direction</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms direction from local space to world space.|
+|TransformPoint(<i>point</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from local space to world space.|
+|Rotate(<i>rotation</i> : [Vector3](../objects/Vector3.md))|none|Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).|
+|RotateAround(<br/><i>point</i> : [Vector3](../objects/Vector3.md),<br/><i>axis</i> : [Vector3](../objects/Vector3.md),<br/><i>angle</i> : float<br/>)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
+|LookAt(<i>target</i> : [Vector3](../objects/Vector3.md))|none|Rotates the transform so the forward vector points at worldPosition.|
+|SetRenderersEnabled(<i>enabled</i> : bool)|none|Sets the enabled state of all child renderers.|

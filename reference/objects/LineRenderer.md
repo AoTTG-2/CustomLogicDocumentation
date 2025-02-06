@@ -24,8 +24,8 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|GetPosition(index : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
-|SetPosition(<br/>index : int,<br/>position : [Vector3](../objects/Vector3.md)<br/>)|none|Set the position of a point in the line renderer|
+|GetPosition(<i>index</i> : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
+|SetPosition(<br/><i>index</i> : int,<br/><i>position</i> : [Vector3](../objects/Vector3.md)<br/>)|none|Set the position of a point in the line renderer|
 ## Static Methods
 |Function|Returns|Description|
 |---|---|---|

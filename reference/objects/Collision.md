@@ -9,5 +9,5 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|GetContact(index : int)|none||
+|GetContact(<i>index</i> : int)|none||
 |GetContacts()|none||
