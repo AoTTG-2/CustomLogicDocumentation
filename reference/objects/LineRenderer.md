@@ -5,7 +5,7 @@ Inherits from object
 |---|---|---|---|
 |StartWidth|float|False|The width of the line at the start|
 |EndWidth|float|False|The width of the line at the end|
-|LineColor|[Color](../static/Color.md)|False|The color of the line|
+|LineColor|[Color](../objects/Color.md)|False|The color of the line|
 |PositionCount|int|False|The number of points in the line|
 |Enabled|bool|False|Is the line renderer enabled|
 |Loop|bool|False|Is the line renderer a loop|
@@ -24,6 +24,6 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|CreateLineRenderer()|[LineRenderer](../static/LineRenderer.md)|[Obselete] Create a new LineRenderer|
-|GetPosition(index : int)|[Vector3](../static/Vector3.md)|Get the position of a point in the line renderer|
-|SetPosition(index : int, position : [Vector3](../static/Vector3.md))|none|Set the position of a point in the line renderer|
+|CreateLineRenderer()|[LineRenderer](../objects/LineRenderer.md)|[Obselete] Create a new LineRenderer|
+|GetPosition(index : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
+|SetPosition(index : int, position : [Vector3](../objects/Vector3.md))|none|Set the position of a point in the line renderer|

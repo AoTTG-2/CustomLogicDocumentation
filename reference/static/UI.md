@@ -37,5 +37,5 @@ Inherits from object
 |ShowChangeCharacterMenu()|none|Shows the change character menu if main character is Human.|
 |SetScoreboardHeader(header : [String](../static/String.md))|none|Sets the display of the scoreboard header (default "Kills / Deaths...")|
 |SetScoreboardProperty(property : [String](../static/String.md))|none|Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.|
-|GetThemeColor(panel : [String](../static/String.md), category : [String](../static/String.md), item : [String](../static/String.md))|[Color](../static/Color.md)|Gets the color of the specified item. See theme json for reference.|
+|GetThemeColor(panel : [String](../static/String.md), category : [String](../static/String.md), item : [String](../static/String.md))|[Color](../objects/Color.md)|Gets the color of the specified item. See theme json for reference.|
 |IsPopupActive(popupName : [String](../static/String.md))|bool|Returns if the given popup is active|

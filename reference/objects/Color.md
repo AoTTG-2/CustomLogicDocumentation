@@ -11,5 +11,5 @@ Inherits from object
 |Function|Returns|Description|
 |---|---|---|
 |ToHexString()|[String](../static/String.md)|Converts the color to a hex string|
-|Lerp(a : [Color](../static/Color.md), b : [Color](../static/Color.md), t : float)|[Color](../static/Color.md)|Linearly interpolates between colors a and b by t|
-|Gradient(a : [Color](../static/Color.md), b : [Color](../static/Color.md), t : float)|[Color](../static/Color.md)|Creates a gradient color from two colors|
+|Lerp(a : [Color](../objects/Color.md), b : [Color](../objects/Color.md), t : float)|[Color](../objects/Color.md)|Linearly interpolates between colors a and b by t|
+|Gradient(a : [Color](../objects/Color.md), b : [Color](../objects/Color.md), t : float)|[Color](../objects/Color.md)|Creates a gradient color from two colors|

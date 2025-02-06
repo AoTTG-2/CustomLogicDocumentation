@@ -34,23 +34,23 @@ Inherits from object
 |End(delay : float)|none|End the game|
 |FindCharacterByViewID(viewID : int)|[Character](../objects/Character.md)|Find a character by view ID|
 |SpawnTitan(type : [String](../static/String.md))|[Titan](../objects/Titan.md)|Spawn a titan|
-|SpawnTitanAt(type : [String](../static/String.md), position : [Vector3](../static/Vector3.md), rotationY : float = 0)|[Titan](../objects/Titan.md)|Spawn a titan at a position|
+|SpawnTitanAt(type : [String](../static/String.md), position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|[Titan](../objects/Titan.md)|Spawn a titan at a position|
 |SpawnTitans(type : [String](../static/String.md), count : int)|[List](../objects/List.md)|Spawn titans|
 |SpawnTitansAsync(type : [String](../static/String.md), count : int)|none|Spawn titans asynchronously|
-|SpawnTitansAt(type : [String](../static/String.md), count : int, position : [Vector3](../static/Vector3.md), rotationY : float = 0)|[List](../objects/List.md)|Spawn titans at a position|
-|SpawnTitansAtAsync(type : [String](../static/String.md), count : int, position : [Vector3](../static/Vector3.md), rotationY : float = 0)|none|Spawn titans at a position asynchronously|
+|SpawnTitansAt(type : [String](../static/String.md), count : int, position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|[List](../objects/List.md)|Spawn titans at a position|
+|SpawnTitansAtAsync(type : [String](../static/String.md), count : int, position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|none|Spawn titans at a position asynchronously|
 |SpawnShifter(type : [String](../static/String.md))|[Shifter](../objects/Shifter.md)|Spawn a shifter|
-|SpawnShifterAt(type : [String](../static/String.md), position : [Vector3](../static/Vector3.md), rotationY : float = 0)|[Shifter](../objects/Shifter.md)|Spawn a shifter at a position|
+|SpawnShifterAt(type : [String](../static/String.md), position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|[Shifter](../objects/Shifter.md)|Spawn a shifter at a position|
 |SpawnProjectile(parameters : Object[])|none|Spawn a projectile|
 |SpawnProjectileWithOwner(parameters : Object[])|none|Spawn a projectile with an owner|
 |SpawnEffect(parameters : Object[])|none|Spawn an effect|
 |SpawnPlayer(player : [Player](../objects/Player.md), force : bool)|none|Spawn a player|
 |SpawnPlayerAll(force : bool)|none|Spawn a player for all players|
-|SpawnPlayerAt(player : [Player](../objects/Player.md), force : bool, position : [Vector3](../static/Vector3.md), rotationY : float = 0)|none|Spawn a player at a position|
-|SpawnPlayerAtAll(force : bool, position : [Vector3](../static/Vector3.md), rotationY : float = 0)|none|Spawn a player at a position for all players|
+|SpawnPlayerAt(player : [Player](../objects/Player.md), force : bool, position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|none|Spawn a player at a position|
+|SpawnPlayerAtAll(force : bool, position : [Vector3](../objects/Vector3.md), rotationY : float = 0)|none|Spawn a player at a position for all players|
 |SetPlaylist(playlist : [String](../static/String.md))|none|Set the music playlist|
 |SetSong(song : [String](../static/String.md))|none|Set the music song|
-|DrawRay(start : [Vector3](../static/Vector3.md), dir : [Vector3](../static/Vector3.md), color : [Color](../static/Color.md), duration : float)|none|Draw a ray|
+|DrawRay(start : [Vector3](../objects/Vector3.md), dir : [Vector3](../objects/Vector3.md), color : [Color](../objects/Color.md), duration : float)|none|Draw a ray|
 |ShowKillScore(damage : int)|none|Show the kill score|
 |ShowKillFeed(killer : [String](../static/String.md), victim : [String](../static/String.md), score : int, weapon : [String](../static/String.md))|none|Show the kill feed|
 |ShowKillFeedAll(killer : [String](../static/String.md), victim : [String](../static/String.md), score : int, weapon : [String](../static/String.md))|none|Show the kill feed for all players|
