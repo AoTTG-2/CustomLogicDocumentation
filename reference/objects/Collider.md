@@ -1,7 +1,7 @@
 # Collider
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |AttachedArticulationBody|[Transform](../objects/Transform.md)|False||
 |ContactOffset|float|False||
@@ -16,8 +16,8 @@ Inherits from object
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
 |ClosestPointOnBounds(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|Raycast(start : [Vector3](../objects/Vector3.md),<br/>end : [Vector3](../objects/Vector3.md),<br/>maxDistance : float,<br/>collideWith : [String](../static/String.md))|[LineCastHitResult](../objects/LineCastHitResult.md)||
+|Raycast(<br/>start : [Vector3](../objects/Vector3.md),<br/>end : [Vector3](../objects/Vector3.md),<br/>maxDistance : float,<br/>collideWith : [String](../static/String.md)<br/>)|[LineCastHitResult](../objects/LineCastHitResult.md)||

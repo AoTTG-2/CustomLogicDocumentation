@@ -5,16 +5,16 @@ Inherits from object
 example = Dict()
 ```
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |Count|int|False|Number of elements in the dictionary|
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |Clear()|none|Clears the dictionary|
-|Get(key : Object,<br/>defaultValue : Object = )|Object|Gets a value from the dictionary|
-|Set(key : Object,<br/>value : Object)|none|Sets a value in the dictionary|
+|Get(<br/>key : Object,<br/>defaultValue : Object = <br/>)|Object|Gets a value from the dictionary|
+|Set(<br/>key : Object,<br/>value : Object<br/>)|none|Sets a value in the dictionary|
 |Remove(key : Object)|none|Removes a value from the dictionary|
 |Contains(key : Object)|bool|Checks if the dictionary contains a key|

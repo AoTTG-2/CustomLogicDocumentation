@@ -4,7 +4,7 @@ Inherits from object
 ```csharp
 ```
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |Position|[Vector3](../objects/Vector3.md)|False|Gets or sets the position of the transform.|
 |LocalPosition|[Vector3](../objects/Vector3.md)|False|Gets or sets the local position of the transform.|
@@ -17,11 +17,11 @@ Inherits from object
 |Up|[Vector3](../objects/Vector3.md)|False|Gets the up vector of the transform.|
 |Right|[Vector3](../objects/Vector3.md)|False|Gets the right vector of the transform.|
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|
 |GetTransforms()|[List](../objects/List.md)|Gets all child transforms.|
-|PlayAnimation(anim : [String](../static/String.md),<br/>fade : float = 0.1)|none|Plays the specified animation.|
+|PlayAnimation(<br/>anim : [String](../static/String.md),<br/>fade : float = 0.1<br/>)|none|Plays the specified animation.|
 |GetAnimationLength(anim : [String](../static/String.md))|float|Gets the length of the specified animation.|
 |PlaySound()|none|Plays the sound.|
 |StopSound()|none|Stops the sound.|
@@ -31,6 +31,6 @@ Inherits from object
 |TransformDirection(direction : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms direction from local space to world space.|
 |TransformPoint(point : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from local space to world space.|
 |Rotate(rotation : [Vector3](../objects/Vector3.md))|none|Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).|
-|RotateAround(point : [Vector3](../objects/Vector3.md),<br/>axis : [Vector3](../objects/Vector3.md),<br/>angle : float)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
+|RotateAround(<br/>point : [Vector3](../objects/Vector3.md),<br/>axis : [Vector3](../objects/Vector3.md),<br/>angle : float<br/>)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
 |LookAt(target : [Vector3](../objects/Vector3.md))|none|Rotates the transform so the forward vector points at worldPosition.|
 |SetRenderersEnabled(enabled : bool)|none|Sets the enabled state of all child renderers.|
