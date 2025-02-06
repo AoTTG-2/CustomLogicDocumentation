@@ -18,7 +18,7 @@ Inherits from object
 |TotalDamage|int|False|Player's total damage.|
 |Ping|int|False|The player's connection ping.|
 |SpectateID|int|False|The player's spectating ID. If not spectating anyone, returns -1.|
-|SpawnPoint|[Vector3](../static/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
+|SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
 ## Methods
 |Function|Returns|Description|
 |---|---|---|

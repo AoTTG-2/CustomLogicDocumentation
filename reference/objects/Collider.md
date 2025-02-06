@@ -9,7 +9,7 @@ Inherits from object
 |ExludeLayers|int|False||
 |includeLayers|int|False||
 |IsTrigger|bool|False||
-|Center|[Vector3](../static/Vector3.md)|False||
+|Center|[Vector3](../objects/Vector3.md)|False||
 |ProvidesContacts|bool|False||
 |MaterialName|[String](../static/String.md)|False||
 |SharedMaterialName|[String](../static/String.md)|False||
@@ -18,6 +18,6 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|ClosestPoint(position : [Vector3](../static/Vector3.md))|[Vector3](../static/Vector3.md)||
-|ClosestPointOnBounds(position : [Vector3](../static/Vector3.md))|[Vector3](../static/Vector3.md)||
-|Raycast(start : [Vector3](../static/Vector3.md), end : [Vector3](../static/Vector3.md), maxDistance : float, collideWith : [String](../static/String.md))|[LineCastHitResult](../objects/LineCastHitResult.md)||
+|ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
+|ClosestPointOnBounds(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
+|Raycast(start : [Vector3](../objects/Vector3.md), end : [Vector3](../objects/Vector3.md), maxDistance : float, collideWith : [String](../static/String.md))|[LineCastHitResult](../objects/LineCastHitResult.md)||

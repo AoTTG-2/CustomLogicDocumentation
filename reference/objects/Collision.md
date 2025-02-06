@@ -4,8 +4,8 @@ Inherits from object
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Collider|[Collider](../objects/Collider.md)|False||
-|Impulse|[Vector3](../static/Vector3.md)|False||
-|RelativeVelocity|[Vector3](../static/Vector3.md)|False||
+|Impulse|[Vector3](../objects/Vector3.md)|False||
+|RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
