@@ -27,29 +27,18 @@ Inherits from object
 |ID|int|False|The ID of the object|
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |AddComponent(name : [String](../static/String.md))|CustomLogicComponentInstance|Add a component to the object|
 |RemoveComponent(name : [String](../static/String.md))|none|Remove a component from the object|
 |GetComponent(name : [String](../static/String.md))|CustomLogicComponentInstance|Get a component from the object|
-|SetComponentEnabled(name : [String](../static/String.md),
-enabled : bool)|none|Set whether a component is enabled|
+|SetComponentEnabled(name : [String](../static/String.md),<br/>enabled : bool)|none|Set whether a component is enabled|
 |SetComponentsEnabled(enabled : bool)|none|Set whether all components are enabled|
-|AddSphereCollider(collideMode : [String](../static/String.md),
-collideWith : [String](../static/String.md),
-center : [Vector3](../objects/Vector3.md),
-radius : float)|none|Add a sphere collider to the object|
-|AddBoxCollider(collideMode : [String](../static/String.md),
-collideWith : [String](../static/String.md),
-center : [Vector3](../objects/Vector3.md) = ,
-size : [Vector3](../objects/Vector3.md) = )|none|Add a box collider to the object|
-|AddSphereTarget(team : [String](../static/String.md),
-center : [Vector3](../objects/Vector3.md),
-radius : float)|[MapTargetable](../objects/MapTargetable.md)|Add a sphere target to the object|
-|AddBoxTarget(team : [String](../static/String.md),
-center : [Vector3](../objects/Vector3.md),
-size : [Vector3](../objects/Vector3.md))|[MapTargetable](../objects/MapTargetable.md)|Add a box target to the object|
+|AddSphereCollider(collideMode : [String](../static/String.md),<br/>collideWith : [String](../static/String.md),<br/>center : [Vector3](../objects/Vector3.md),<br/>radius : float)|none|Add a sphere collider to the object|
+|AddBoxCollider(collideMode : [String](../static/String.md),<br/>collideWith : [String](../static/String.md),<br/>center : [Vector3](../objects/Vector3.md) = ,<br/>size : [Vector3](../objects/Vector3.md) = )|none|Add a box collider to the object|
+|AddSphereTarget(team : [String](../static/String.md),<br/>center : [Vector3](../objects/Vector3.md),<br/>radius : float)|[MapTargetable](../objects/MapTargetable.md)|Add a sphere target to the object|
+|AddBoxTarget(team : [String](../static/String.md),<br/>center : [Vector3](../objects/Vector3.md),<br/>size : [Vector3](../objects/Vector3.md))|[MapTargetable](../objects/MapTargetable.md)|Add a box target to the object|
 |GetChild(name : [String](../static/String.md))|[MapObject](../objects/MapObject.md)|Get a child object by name|
 |GetChildren()|[List](../objects/List.md)|Get all child objects|
 |GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Get a child transform by name|
@@ -62,15 +51,6 @@ size : [Vector3](../objects/Vector3.md))|[MapTargetable](../objects/MapTargetabl
 |GetBoundsMax()|[Vector3](../objects/Vector3.md)|Get the bounds max|
 |GetBoundsExtents()|[Vector3](../objects/Vector3.md)|Get the bounds extents|
 |GetCorners()|[List](../objects/List.md)|Get the corners of the bounds|
-|AddBuiltinComponent(parameter0 : Object = ,
-parameter1 : Object = ,
-parameter2 : Object = ,
-parameter3 : Object = ,
-parameter4 : Object = )|none|[OBSELETE] Add builtin component|
-|ReadBuiltinComponent(name : [String](../static/String.md),
-param : [String](../static/String.md))|Object|[OBSELETE] Read a builtin component|
-|UpdateBuiltinComponent(parameter0 : Object = ,
-parameter1 : Object = ,
-parameter2 : Object = ,
-parameter3 : Object = ,
-parameter4 : Object = )|none|[OBSELETE] Update a builtin component|
+|AddBuiltinComponent(parameter0 : Object = ,<br/>parameter1 : Object = ,<br/>parameter2 : Object = ,<br/>parameter3 : Object = ,<br/>parameter4 : Object = )|none|[OBSELETE] Add builtin component|
+|ReadBuiltinComponent(name : [String](../static/String.md),<br/>param : [String](../static/String.md))|Object|[OBSELETE] Read a builtin component|
+|UpdateBuiltinComponent(parameter0 : Object = ,<br/>parameter1 : Object = ,<br/>parameter2 : Object = ,<br/>parameter3 : Object = ,<br/>parameter4 : Object = )|none|[OBSELETE] Update a builtin component|

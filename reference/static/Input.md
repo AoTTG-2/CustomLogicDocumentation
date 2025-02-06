@@ -12,7 +12,5 @@ Inherits from object
 |GetMouseSpeed()|[Vector3](../objects/Vector3.md)|Returns the speed of the mouse|
 |GetMousePosition()|[Vector3](../objects/Vector3.md)|Returns the position of the mouse|
 |GetScreenDimensions()|[Vector3](../objects/Vector3.md)|Returns the dimensions of the screen|
-|SetKeyDefaultEnabled(key : [String](../static/String.md),
-enabled : bool)|none|Sets whether the key is enabled by default|
-|SetKeyHold(key : [String](../static/String.md),
-enabled : bool)|none|Sets whether the key is being held down|
+|SetKeyDefaultEnabled(key : [String](../static/String.md),<br/>enabled : bool)|none|Sets whether the key is enabled by default|
+|SetKeyHold(key : [String](../static/String.md),<br/>enabled : bool)|none|Sets whether the key is being held down|

@@ -16,13 +16,12 @@ Inherits from object
 |Forward|[Vector3](../objects/Vector3.md)|False|Gets the forward vector of the transform.|
 |Up|[Vector3](../objects/Vector3.md)|False|Gets the up vector of the transform.|
 |Right|[Vector3](../objects/Vector3.md)|False|Gets the right vector of the transform.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|
 |GetTransforms()|[List](../objects/List.md)|Gets all child transforms.|
-|PlayAnimation(anim : [String](../static/String.md),
-fade : float = 0.1)|none|Plays the specified animation.|
+|PlayAnimation(anim : [String](../static/String.md),<br/>fade : float = 0.1)|none|Plays the specified animation.|
 |GetAnimationLength(anim : [String](../static/String.md))|float|Gets the length of the specified animation.|
 |PlaySound()|none|Plays the sound.|
 |StopSound()|none|Stops the sound.|
@@ -32,8 +31,6 @@ fade : float = 0.1)|none|Plays the specified animation.|
 |TransformDirection(direction : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms direction from local space to world space.|
 |TransformPoint(point : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Transforms position from local space to world space.|
 |Rotate(rotation : [Vector3](../objects/Vector3.md))|none|Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).|
-|RotateAround(point : [Vector3](../objects/Vector3.md),
-axis : [Vector3](../objects/Vector3.md),
-angle : float)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
+|RotateAround(point : [Vector3](../objects/Vector3.md),<br/>axis : [Vector3](../objects/Vector3.md),<br/>angle : float)|none|Rotates the transform about axis passing through point in world coordinates by angle degrees.|
 |LookAt(target : [Vector3](../objects/Vector3.md))|none|Rotates the transform so the forward vector points at worldPosition.|
 |SetRenderersEnabled(enabled : bool)|none|Sets the enabled state of all child renderers.|
