@@ -1,9 +1,5 @@
 # UI
 Inherits from object
-## Fields
-|Field|Type|Readonly|Description|
-|---|---|---|---|
-|Popups|[List](../objects/List.md)|False|Returns a list of all popups|
 ## Static Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
@@ -16,7 +12,8 @@ Inherits from object
 |BottomCenter|[String](../static/String.md)|False|"BottomCenter" constant|
 |BottomLeft|[String](../static/String.md)|False|"BottomLeft" constant|
 |BottomRight|[String](../static/String.md)|False|"BottomRight" constant|
-## Methods
+|Popups|[List](../objects/List.md)|False|Returns a list of all popups|
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |SetLabel(label : [String](../static/String.md), message : [String](../static/String.md))|none|Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".|

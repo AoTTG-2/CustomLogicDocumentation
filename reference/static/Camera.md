@@ -13,7 +13,7 @@ Inherits from object
 |Right|[Vector3](../objects/Vector3.md)|False|Right vector of the camera.|
 |Up|[Vector3](../objects/Vector3.md)|False|Up vector of the camera.|
 |FollowDistance|float|False|Distance from the camera to the character.|
-## Methods
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |SetManual(manual : bool)|none|Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.|

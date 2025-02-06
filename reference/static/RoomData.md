@@ -1,6 +1,6 @@
 # RoomData
 Inherits from object
-## Methods
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |SetProperty(property : [String](../static/String.md), value : Object)|none|Sets the property with given name to the object value. Valid value types are float, string, bool, and int.|

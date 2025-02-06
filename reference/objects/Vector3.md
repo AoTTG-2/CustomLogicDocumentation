@@ -25,6 +25,21 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
+|Set(x : float, y : float, z : float)|none|Set x, y and z components of an existing Vector3.|
+|Scale(scale : Object)|[Vector3](../objects/Vector3.md)|Returns the Vector3 multiplied by scale.|
+|Multiply(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Returns the multiplication of two Vector3s.|
+|Divide(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Returns the division of two Vector3s.|
+|GetRotationDirection(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.|
+|\_\_Copy\_\_()|Object|Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()|
+|\_\_Add\_\_(self : Object, other : Object)|Object|Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)|
+|\_\_Sub\_\_(self : Object, other : Object)|Object|Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)|
+|\_\_Mul\_\_(self : Object, other : Object)|Object|Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)|
+|\_\_Div\_\_(self : Object, other : Object)|Object|Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)|
+|\_\_Eq\_\_(self : Object, other : Object)|bool|Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)|
+|\_\_Hash\_\_()|int|Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()|
+## Static Methods
+|Function|Returns|Description|
+|---|---|---|
 |Angle(from : [Vector3](../objects/Vector3.md), to : [Vector3](../objects/Vector3.md))|float|Calculates the angle between vectors from and.|
 |ClampMagnitude(vector : [Vector3](../objects/Vector3.md), maxLength : float)|[Vector3](../objects/Vector3.md)|Returns a copy of vector with its magnitude clamped to maxLength.|
 |Cross(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Cross Product of two vectors.|
@@ -45,15 +60,3 @@ Inherits from object
 |Slerp(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md), t : float)|[Vector3](../objects/Vector3.md)|Spherically interpolates between two vectors.|
 |SlerpUnclamped(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md), t : float)|[Vector3](../objects/Vector3.md)|Spherically interpolates between two vectors.|
 |SmoothDamp(current : [Vector3](../objects/Vector3.md), target : [Vector3](../objects/Vector3.md), currentVelocity : [Vector3](../objects/Vector3.md), smoothTime : float, maxSpeed : float)|[Vector3](../objects/Vector3.md)||
-|Set(x : float, y : float, z : float)|none|Set x, y and z components of an existing Vector3.|
-|Scale(scale : Object)|[Vector3](../objects/Vector3.md)|Returns the Vector3 multiplied by scale.|
-|Multiply(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Returns the multiplication of two Vector3s.|
-|Divide(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Returns the division of two Vector3s.|
-|GetRotationDirection(a : [Vector3](../objects/Vector3.md), b : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)|Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.|
-|\_\_Copy\_\_()|Object|Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()|
-|\_\_Add\_\_(self : Object, other : Object)|Object|Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)|
-|\_\_Sub\_\_(self : Object, other : Object)|Object|Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)|
-|\_\_Mul\_\_(self : Object, other : Object)|Object|Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)|
-|\_\_Div\_\_(self : Object, other : Object)|Object|Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)|
-|\_\_Eq\_\_(self : Object, other : Object)|bool|Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)|
-|\_\_Hash\_\_()|int|Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()|
