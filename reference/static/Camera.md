@@ -1,7 +1,7 @@
 # Camera
 Inherits from object
 ## Static Fields
-|Field|Type|Readonly|Description|
+|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
 |---|---|---|---|
 |IsManual|bool|False|Is camera in manual mode.|
 |Position|[Vector3](../objects/Vector3.md)|False|Position of the camera.|
@@ -14,7 +14,7 @@ Inherits from object
 |Up|[Vector3](../objects/Vector3.md)|False|Up vector of the camera.|
 |FollowDistance|float|False|Distance from the camera to the character.|
 ## Static Methods
-|Function|Returns|Description|
+|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |SetManual(manual : bool)|none|Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.|
 |SetPosition(position : [Vector3](../objects/Vector3.md))|none|Sets camera position.|

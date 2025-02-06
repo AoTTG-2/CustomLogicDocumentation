@@ -1,7 +1,7 @@
 # LineCastHitResult
 Inherits from object
 ## Fields
-|Field|Type|Readonly|Description|
+|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
 |---|---|---|---|
 |IsCharacter|bool|True|true if the linecast hit a character|
 |IsMapObject|bool|True|true if the linecast hit a map object|
