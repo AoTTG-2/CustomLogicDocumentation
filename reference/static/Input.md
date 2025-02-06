@@ -1,7 +1,7 @@
 # Input
 Inherits from object
 ## Static Methods
-|Function|Returns|Description|
+|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetKeyName(key : [String](../static/String.md))|[String](../static/String.md)|Gets the key name the player assigned to the key setting|
 |GetKeyHold(key : [String](../static/String.md))|bool|Returns true if the key is being held down|
@@ -12,5 +12,7 @@ Inherits from object
 |GetMouseSpeed()|[Vector3](../objects/Vector3.md)|Returns the speed of the mouse|
 |GetMousePosition()|[Vector3](../objects/Vector3.md)|Returns the position of the mouse|
 |GetScreenDimensions()|[Vector3](../objects/Vector3.md)|Returns the dimensions of the screen|
-|SetKeyDefaultEnabled(key : [String](../static/String.md), enabled : bool)|none|Sets whether the key is enabled by default|
-|SetKeyHold(key : [String](../static/String.md), enabled : bool)|none|Sets whether the key is being held down|
+|SetKeyDefaultEnabled(key : [String](../static/String.md),
+enabled : bool)|none|Sets whether the key is enabled by default|
+|SetKeyHold(key : [String](../static/String.md),
+enabled : bool)|none|Sets whether the key is being held down|

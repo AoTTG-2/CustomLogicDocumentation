@@ -1,7 +1,7 @@
 # Shifter
 Inherits from [Character](../objects/Character.md)
 ## Fields
-|Field|Type|Readonly|Description|
+|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
 |---|---|---|---|
 |Name|[String](../static/String.md)|False|Shifter's name.|
 |Guild|[String](../static/String.md)|False|Shifter's guild.|
@@ -48,23 +48,30 @@ Inherits from [Character](../objects/Character.md)
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
 ## Methods
-|Function|Returns|Description|
+|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
-|MoveTo(position : [Vector3](../objects/Vector3.md), range : float, ignoreEnemies : bool)|none|Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.|
-|Target(enemyObj : Object, focus : float)|none|Causes the (AI) shifter to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time.|
+|MoveTo(position : [Vector3](../objects/Vector3.md),
+range : float,
+ignoreEnemies : bool)|none|Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.|
+|Target(enemyObj : Object,
+focus : float)|none|Causes the (AI) shifter to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time.|
 |Idle(time : float)|none|Causes the (AI) shifter to idle for time seconds before beginning to wander. During idle the titan will not react or move at all.|
 |Wander()|none|Causes the (AI) shifter to cancel any move commands and begin wandering randomly.|
 |Blind()|none|Causes the shifter to enter the blind state.|
 |Cripple(time : float)|none|Causes the shifter to enter the cripple state.|
 |GetKilled(killer : [String](../static/String.md))|none|Kills the character. Callable by non-owners.|
-|GetDamaged(killer : [String](../static/String.md), damage : int)|none|Damages the character and kills it if its health reaches 0. Callable by non-owners.|
+|GetDamaged(killer : [String](../static/String.md),
+damage : int)|none|Damages the character and kills it if its health reaches 0. Callable by non-owners.|
 |Emote(emote : [String](../static/String.md))|none|Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.|
-|PlayAnimation(animation : [String](../static/String.md), fade : float = 0.1)|none|Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.|
+|PlayAnimation(animation : [String](../static/String.md),
+fade : float = 0.1)|none|Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.|
 |GetAnimationLength(animation : [String](../static/String.md))|float|Gets the length of animation.|
 |PlaySound(sound : [String](../static/String.md))|none|Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.|
 |StopSound(sound : [String](../static/String.md))|none|Stops the sound.|
 |LookAt(position : [Vector3](../objects/Vector3.md))|none|Rotates the character such that it is looking towards a world position.|
-|AddForce(force : [Vector3](../objects/Vector3.md), mode : [String](../static/String.md) = Acceleration)|none|Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.|
+|AddForce(force : [Vector3](../objects/Vector3.md),
+mode : [String](../static/String.md) = Acceleration)|none|Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.|
 |Reveal(delay : float)|none|Reveaal the titan for a set number of seconds.|
-|AddOutline(color : [Color](../objects/Color.md) = , mode : [String](../static/String.md) = OutlineAll)|none|Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor|
+|AddOutline(color : [Color](../objects/Color.md) = ,
+mode : [String](../static/String.md) = OutlineAll)|none|Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor|
 |RemoveOutline()|none|Removes the outline effect from the character.|

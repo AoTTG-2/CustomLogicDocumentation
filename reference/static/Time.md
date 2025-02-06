@@ -1,7 +1,7 @@
 # Time
 Inherits from object
 ## Static Fields
-|Field|Type|Readonly|Description|
+|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
 |---|---|---|---|
 |TickTime|float|False|Time between each tick (0.02 seconds)|
 |FrameTime|float|False|Time between each frame.|
