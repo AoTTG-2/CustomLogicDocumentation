@@ -4,7 +4,7 @@ Inherits from object
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Newline|[String](../static/String.md)|False|Returns the newline character.|
-## Methods
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |FormatFloat(val : float, decimals : int)|[String](../static/String.md)|Formats a float to a string with the specified number of decimal places.|

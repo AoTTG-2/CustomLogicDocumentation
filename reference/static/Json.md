@@ -1,6 +1,6 @@
 # Json
 Inherits from object
-## Methods
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |LoadFromString(json : [String](../static/String.md))|Object|Loads a json string into a custom logic object|

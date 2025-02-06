@@ -1,6 +1,6 @@
 # Input
 Inherits from object
-## Methods
+## Static Methods
 |Function|Returns|Description|
 |---|---|---|
 |GetKeyName(key : [String](../static/String.md))|[String](../static/String.md)|Gets the key name the player assigned to the key setting|
