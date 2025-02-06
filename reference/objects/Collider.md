@@ -16,8 +16,8 @@ Inherits from object
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
 ## Methods
-|Function|Returns|Description|
-|---|---|---|
-|ClosestPoint(<i>position</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|ClosestPointOnBounds(<i>position</i> : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||
-|Raycast(<br/><i>start</i> : [Vector3](../objects/Vector3.md),<br/><i>end</i> : [Vector3](../objects/Vector3.md),<br/><i>maxDistance</i> : float,<br/><i>collideWith</i> : [String](../static/String.md)<br/>)|[LineCastHitResult](../objects/LineCastHitResult.md)||
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|ClosestPoint|position : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)||
+|ClosestPointOnBounds|position : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)||
+|Raycast|start : [Vector3](../objects/Vector3.md)<br/>end : [Vector3](../objects/Vector3.md)<br/>maxDistance : float<br/>collideWith : [String](../static/String.md)|[LineCastHitResult](../objects/LineCastHitResult.md)||

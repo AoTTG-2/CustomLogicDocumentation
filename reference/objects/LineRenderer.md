@@ -22,11 +22,11 @@ Inherits from object
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
 ## Methods
-|Function|Returns|Description|
-|---|---|---|
-|GetPosition(<i>index</i> : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
-|SetPosition(<br/><i>index</i> : int,<br/><i>position</i> : [Vector3](../objects/Vector3.md)<br/>)|none|Set the position of a point in the line renderer|
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|GetPosition|index : int|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
+|SetPosition|index : int<br/>position : [Vector3](../objects/Vector3.md)|none|Set the position of a point in the line renderer|
 ## Static Methods
-|Function|Returns|Description|
-|---|---|---|
-|CreateLineRenderer()|[LineRenderer](../objects/LineRenderer.md)|[Obselete] Create a new LineRenderer|
+|Function|Parameters|Returns|Description|
+|---|---|---|---|
+|CreateLineRenderer||[LineRenderer](../objects/LineRenderer.md)|[Obselete] Create a new LineRenderer|
