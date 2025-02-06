@@ -1,7 +1,7 @@
 # Game
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |IsEnding|bool|False|Is the game ending?|
 |EndTimeLeft|float|False|Time left until the game ends|
@@ -22,7 +22,7 @@ Inherits from object
 |ShowScoreboardStatus|bool|False|Is the status shown in the scoreboard?|
 |ForcedCharacterType|[String](../static/String.md)|False|Forced character type|
 |ForcedLoadout|[String](../static/String.md)|False|Forced loadout|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Debug(message : Object)|none|Print a debug statement to the console|

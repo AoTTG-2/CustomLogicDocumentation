@@ -1,7 +1,7 @@
 # Player
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Character|[Character](../objects/Character.md)|False|Player's current character, if alive.|
 |Connected|bool|False|Player is still connected to the room.|
@@ -19,7 +19,7 @@ Inherits from object
 |Ping|int|False|The player's connection ping.|
 |SpectateID|int|False|The player's spectating ID. If not spectating anyone, returns -1.|
 |SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetCustomProperty(property : [String](../static/String.md))|Object|Get a custom property at given key. Must be a primitive type. This is synced to all clients.|

@@ -1,6 +1,6 @@
 # Random
 Inherits from object
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |RandomInt(min : int,<br/>max : int)|int|Generates a random integer between the specified range.|
