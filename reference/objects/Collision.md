@@ -1,13 +1,13 @@
 # Collision
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |Collider|[Collider](../objects/Collider.md)|False||
 |Impulse|[Vector3](../objects/Vector3.md)|False||
 |RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |GetContact(index : int)|none||
 |GetContacts()|none||

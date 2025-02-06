@@ -6,11 +6,11 @@ example = Set()
 example = Set((CustomLogicListBuiltin))
 ```
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |Count|int|True|The number of elements in the set|
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |Clear()|none|Clear all set elements|
 |Contains(value : Object)|bool|Check if the set contains the specified element|

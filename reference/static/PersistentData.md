@@ -1,12 +1,12 @@
 # PersistentData
 Inherits from object
 ## Static Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
-|SetProperty(property : [String](../static/String.md),<br/>value : Object)|none|Sets the property with given name to the object value. Valid value types are float, string, bool, and int.|
-|GetProperty(property : [String](../static/String.md),<br/>defaultValue : Object)|Object|Gets the property with given name. If property does not exist, returns defaultValue.|
-|LoadFromFile(fileName : [String](../static/String.md),<br/>encrypted : bool)|none|Loads persistent data from given file name. If encrypted is true, will treat the file as having been saved as encrypted.|
-|SaveToFile(fileName : [String](../static/String.md),<br/>encrypted : bool)|none|Saves current persistent data to given file name. If encrypted is true, will also encrypt the file instead of using plaintext.|
+|SetProperty(<br/>property : [String](../static/String.md),<br/>value : Object<br/>)|none|Sets the property with given name to the object value. Valid value types are float, string, bool, and int.|
+|GetProperty(<br/>property : [String](../static/String.md),<br/>defaultValue : Object<br/>)|Object|Gets the property with given name. If property does not exist, returns defaultValue.|
+|LoadFromFile(<br/>fileName : [String](../static/String.md),<br/>encrypted : bool<br/>)|none|Loads persistent data from given file name. If encrypted is true, will treat the file as having been saved as encrypted.|
+|SaveToFile(<br/>fileName : [String](../static/String.md),<br/>encrypted : bool<br/>)|none|Saves current persistent data to given file name. If encrypted is true, will also encrypt the file instead of using plaintext.|
 |Clear()|none|Clears current persistent data.|
 |IsValidFileName(fileName : [String](../static/String.md))|bool|Determines whether or not the given fileName will be allowed for use when saving/loading a file.|
 |FileExists(fileName : [String](../static/String.md))|bool|Determines whether the file given already exists. Throws an error if given an invalid file name.|

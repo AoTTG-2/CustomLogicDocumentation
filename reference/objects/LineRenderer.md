@@ -1,7 +1,7 @@
 # LineRenderer
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
+|Field|Type|Readonly|Description|
 |---|---|---|---|
 |StartWidth|float|False|The width of the line at the start|
 |EndWidth|float|False|The width of the line at the end|
@@ -22,11 +22,11 @@ Inherits from object
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
 ## Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |GetPosition(index : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
-|SetPosition(index : int,<br/>position : [Vector3](../objects/Vector3.md))|none|Set the position of a point in the line renderer|
+|SetPosition(<br/>index : int,<br/>position : [Vector3](../objects/Vector3.md)<br/>)|none|Set the position of a point in the line renderer|
 ## Static Methods
-|<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
+|Function|Returns|Description|
 |---|---|---|
 |CreateLineRenderer()|[LineRenderer](../objects/LineRenderer.md)|[Obselete] Create a new LineRenderer|
