@@ -22,6 +22,6 @@ Inherits from object
 ## Methods
 |Function|Returns|Description|
 |---|---|---|
-|GetCustomProperty(property : [String](../static/String.md))|Object|Get a custom property at given key. Must be a primitive type. This is synced to all clients.|
-|SetCustomProperty(<br/>property : [String](../static/String.md),<br/>value : Object<br/>)|none|Sets a custom property at given key. Must be a primitive type. This is synced to all clients.|
+|GetCustomProperty(<i>property</i> : [String](../static/String.md))|Object|Get a custom property at given key. Must be a primitive type. This is synced to all clients.|
+|SetCustomProperty(<br/><i>property</i> : [String](../static/String.md),<br/><i>value</i> : Object<br/>)|none|Sets a custom property at given key. Must be a primitive type. This is synced to all clients.|
 |ClearKDR()|none|Clears kills, deaths, highestdamage, and totaldamage properties.|

@@ -16,12 +16,12 @@ Inherits from object
 ## Static Methods
 |Function|Returns|Description|
 |---|---|---|
-|SetManual(manual : bool)|none|Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.|
-|SetPosition(position : [Vector3](../objects/Vector3.md))|none|Sets camera position.|
-|SetRotation(rotation : [Vector3](../objects/Vector3.md))|none|Sets camera rotation.|
-|SetVelocity(velocity : [Vector3](../objects/Vector3.md))|none|Sets camera velocity.|
-|LookAt(position : [Vector3](../objects/Vector3.md))|none|Sets the camera forward direction such that it is looking at a world position.|
-|SetFOV(fov : float)|none|Sets the camera field of view. Use 0 to use the default field of view.|
-|SetCameraMode(mode : [String](../static/String.md))|none|Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.|
+|SetManual(<i>manual</i> : bool)|none|Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.|
+|SetPosition(<i>position</i> : [Vector3](../objects/Vector3.md))|none|Sets camera position.|
+|SetRotation(<i>rotation</i> : [Vector3](../objects/Vector3.md))|none|Sets camera rotation.|
+|SetVelocity(<i>velocity</i> : [Vector3](../objects/Vector3.md))|none|Sets camera velocity.|
+|LookAt(<i>position</i> : [Vector3](../objects/Vector3.md))|none|Sets the camera forward direction such that it is looking at a world position.|
+|SetFOV(<i>fov</i> : float)|none|Sets the camera field of view. Use 0 to use the default field of view.|
+|SetCameraMode(<i>mode</i> : [String](../static/String.md))|none|Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.|
 |ResetDistance()|none|Resets the follow distance to player's settings.|
 |ResetCameraMode()|none|Resets the camera mode to player's settings.|

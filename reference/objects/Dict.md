@@ -14,7 +14,7 @@ example = Dict()
 |Function|Returns|Description|
 |---|---|---|
 |Clear()|none|Clears the dictionary|
-|Get(<br/>key : Object,<br/>defaultValue : Object = <br/>)|Object|Gets a value from the dictionary|
-|Set(<br/>key : Object,<br/>value : Object<br/>)|none|Sets a value in the dictionary|
-|Remove(key : Object)|none|Removes a value from the dictionary|
-|Contains(key : Object)|bool|Checks if the dictionary contains a key|
+|Get(<br/><i>key</i> : Object,<br/><i>defaultValue</i> : Object = <br/>)|Object|Gets a value from the dictionary|
+|Set(<br/><i>key</i> : Object,<br/><i>value</i> : Object<br/>)|none|Sets a value in the dictionary|
+|Remove(<i>key</i> : Object)|none|Removes a value from the dictionary|
+|Contains(<i>key</i> : Object)|bool|Checks if the dictionary contains a key|
