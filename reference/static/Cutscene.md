@@ -1,6 +1,6 @@
 # Cutscene
 Inherits from object
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Start(name : [String](../static/String.md),<br/>full : bool)|none|Start a cutscene|

@@ -1,7 +1,7 @@
 # MapObject
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Static|bool|False|Object does not move|
 |Position|[Vector3](../objects/Vector3.md)|False|The position of the object|
@@ -27,7 +27,7 @@ Inherits from object
 |ID|int|False|The ID of the object|
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |AddComponent(name : [String](../static/String.md))|CustomLogicComponentInstance|Add a component to the object|

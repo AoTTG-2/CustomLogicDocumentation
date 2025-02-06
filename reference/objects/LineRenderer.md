@@ -1,7 +1,7 @@
 # LineRenderer
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |StartWidth|float|False|The width of the line at the start|
 |EndWidth|float|False|The width of the line at the end|
@@ -21,7 +21,7 @@ Inherits from object
 |WidthCurve|[List](../objects/List.md)|False|The width curve of the line renderer|
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetPosition(index : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|

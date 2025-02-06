@@ -1,7 +1,7 @@
 # Math
 Inherits from object
 ## Static Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |PI|float|False|The value of PI|
 |Infinity|float|False|The value of Infinity|
@@ -9,7 +9,7 @@ Inherits from object
 |Rad2DegConstant|float|False|The value of Rad2Deg constant|
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Clamp(value : Object,<br/>min : Object,<br/>max : Object)|Object|Clamp a value between a minimum and maximum value|

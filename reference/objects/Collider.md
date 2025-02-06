@@ -1,7 +1,7 @@
 # Collider
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |AttachedArticulationBody|[Transform](../objects/Transform.md)|False||
 |ContactOffset|float|False||
@@ -15,7 +15,7 @@ Inherits from object
 |SharedMaterialName|[String](../static/String.md)|False||
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||

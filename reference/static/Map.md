@@ -1,6 +1,6 @@
 # Map
 Inherits from object
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |FindAllMapObjects()|[List](../objects/List.md)|Find all map objects|

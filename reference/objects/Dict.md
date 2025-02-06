@@ -5,12 +5,12 @@ Inherits from object
 example = Dict()
 ```
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Count|int|False|Number of elements in the dictionary|
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Clear()|none|Clears the dictionary|

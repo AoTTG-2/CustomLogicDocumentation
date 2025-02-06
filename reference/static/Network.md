@@ -1,7 +1,7 @@
 # Network
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |IsMasterClient|bool|False|Is the player the master client|
 |Players|[List](../objects/List.md)|False|The list of players in the room|
@@ -9,7 +9,7 @@ Inherits from object
 |MyPlayer|[Player](../objects/Player.md)|False|The local player|
 |NetworkTime|double|False|The network time|
 |Ping|int|False|The local player's ping|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |SendMessage(player : [Player](../objects/Player.md),<br/>message : [String](../static/String.md))|none|Send a message to a player|

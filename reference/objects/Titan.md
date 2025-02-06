@@ -1,7 +1,7 @@
 # Titan
 Inherits from [Character](../objects/Character.md)
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Name|[String](../static/String.md)|False|Titans's name.|
 |Guild|[String](../static/String.md)|False|Titans's guild.|
@@ -52,7 +52,7 @@ Inherits from [Character](../objects/Character.md)
 |CustomDamage|int|False|Amount of custom damage to deal per attack.|
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |MoveTo(position : [Vector3](../objects/Vector3.md),<br/>range : float,<br/>ignoreEnemies : bool)|none|Causes the (AI) titan to move towards a position and stopping when within specified range. If ignoreEnemies is true, will not engage enemies along the way.|

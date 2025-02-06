@@ -4,7 +4,7 @@ Inherits from object
 ```csharp
 ```
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Position|[Vector3](../objects/Vector3.md)|False|Gets or sets the position of the transform.|
 |LocalPosition|[Vector3](../objects/Vector3.md)|False|Gets or sets the local position of the transform.|
@@ -16,7 +16,7 @@ Inherits from object
 |Forward|[Vector3](../objects/Vector3.md)|False|Gets the forward vector of the transform.|
 |Up|[Vector3](../objects/Vector3.md)|False|Gets the up vector of the transform.|
 |Right|[Vector3](../objects/Vector3.md)|False|Gets the right vector of the transform.|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|

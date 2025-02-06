@@ -1,7 +1,7 @@
 # Vector2
 Inherits from object
 ## Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |X|float|False|X component of the vector.|
 |Y|float|False|Y component of the vector.|
@@ -9,7 +9,7 @@ Inherits from object
 |Magnitude|float|False|Returns the length of this vector (Read Only).|
 |SqrMagnitude|float|False|Returns the squared length of this vector (Read Only).|
 ## Static Fields
-|<div style="width:30%">Field</div>|<div style="width:10%">Type</div>|<div style="width:10%">Readonly</div>|<div style="width:50%">Description</div>|
+|<div style="width:30%">Field</div>|<div style="width:5%">Type</div>|<div style="width:5%">Readonly</div>|<div style="width:60%">Description</div>|
 |---|---|---|---|
 |Zero|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(0, 0).|
 |One|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(1, 1).|
@@ -19,7 +19,7 @@ Inherits from object
 |Right|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(1, 0).|
 |NegativeInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Set(x : float,<br/>y : float)|none|Set x and y components of an existing Vector2.|

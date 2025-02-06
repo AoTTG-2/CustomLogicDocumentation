@@ -1,6 +1,6 @@
 # Convert
 Inherits from object
-## Methods<style onload="alert('test');"/>
+## Methods
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |ToFloat(value : Object)|float|Converts a value to a float|
