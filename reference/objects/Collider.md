@@ -15,7 +15,7 @@ Inherits from object
 |SharedMaterialName|[String](../static/String.md)|False||
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |ClosestPoint(position : [Vector3](../objects/Vector3.md))|[Vector3](../objects/Vector3.md)||

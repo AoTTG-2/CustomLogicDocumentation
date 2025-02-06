@@ -16,7 +16,7 @@ Inherits from object
 |Forward|[Vector3](../objects/Vector3.md)|False|Gets the forward vector of the transform.|
 |Up|[Vector3](../objects/Vector3.md)|False|Gets the up vector of the transform.|
 |Right|[Vector3](../objects/Vector3.md)|False|Gets the right vector of the transform.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetTransform(name : [String](../static/String.md))|[Transform](../objects/Transform.md)|Gets the transform of the specified child.|

@@ -19,7 +19,7 @@ Inherits from object
 |Right|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(1, 0).|
 |NegativeInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Set(x : float,<br/>y : float)|none|Set x and y components of an existing Vector2.|

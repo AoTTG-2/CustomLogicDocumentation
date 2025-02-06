@@ -47,7 +47,7 @@ Inherits from [Character](../objects/Character.md)
 |CustomDamage|int|False|Amount of custom damage to deal per attack.|
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |MoveTo(position : [Vector3](../objects/Vector3.md),<br/>range : float,<br/>ignoreEnemies : bool)|none|Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.|

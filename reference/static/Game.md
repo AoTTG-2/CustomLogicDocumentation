@@ -22,7 +22,7 @@ Inherits from object
 |ShowScoreboardStatus|bool|False|Is the status shown in the scoreboard?|
 |ForcedCharacterType|[String](../static/String.md)|False|Forced character type|
 |ForcedLoadout|[String](../static/String.md)|False|Forced loadout|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Debug(message : Object)|none|Print a debug statement to the console|

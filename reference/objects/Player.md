@@ -19,7 +19,7 @@ Inherits from object
 |Ping|int|False|The player's connection ping.|
 |SpectateID|int|False|The player's spectating ID. If not spectating anyone, returns -1.|
 |SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetCustomProperty(property : [String](../static/String.md))|Object|Get a custom property at given key. Must be a primitive type. This is synced to all clients.|

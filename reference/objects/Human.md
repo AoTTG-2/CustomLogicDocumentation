@@ -56,7 +56,7 @@ Inherits from [Character](../objects/Character.md)
 |CustomDamage|int|False|Amount of custom damage to deal per attack.|
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Refill()|bool|Refills the gas of the human|

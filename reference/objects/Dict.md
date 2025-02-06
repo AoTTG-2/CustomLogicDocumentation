@@ -10,7 +10,7 @@ example = Dict()
 |Count|int|False|Number of elements in the dictionary|
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Clear()|none|Clears the dictionary|

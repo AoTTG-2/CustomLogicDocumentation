@@ -27,7 +27,7 @@ Inherits from object
 |ID|int|False|The ID of the object|
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |AddComponent(name : [String](../static/String.md))|CustomLogicComponentInstance|Add a component to the object|

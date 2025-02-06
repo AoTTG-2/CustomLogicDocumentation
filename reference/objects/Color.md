@@ -7,7 +7,7 @@ Inherits from object
 |G|int|False|Green component of the color|
 |B|int|False|Blue component of the color|
 |A|int|False|Alpha component of the color|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |ToHexString()|[String](../static/String.md)|Converts the color to a hex string|

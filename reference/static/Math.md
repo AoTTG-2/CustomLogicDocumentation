@@ -9,7 +9,7 @@ Inherits from object
 |Rad2DegConstant|float|False|The value of Rad2Deg constant|
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |Clamp(value : Object,<br/>min : Object,<br/>max : Object)|Object|Clamp a value between a minimum and maximum value|

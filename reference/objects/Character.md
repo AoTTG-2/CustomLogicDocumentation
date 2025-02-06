@@ -27,7 +27,7 @@ Inherits from object
 |CustomDamage|int|False|Amount of custom damage to deal per attack.|
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetKilled(killer : [String](../static/String.md))|none|Kills the character. Callable by non-owners.|

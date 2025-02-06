@@ -9,7 +9,7 @@ Inherits from object
 |MyPlayer|[Player](../objects/Player.md)|False|The local player|
 |NetworkTime|double|False|The network time|
 |Ping|int|False|The local player's ping|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |SendMessage(player : [Player](../objects/Player.md),<br/>message : [String](../static/String.md))|none|Send a message to a player|

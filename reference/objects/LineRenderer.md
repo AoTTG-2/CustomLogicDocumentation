@@ -21,7 +21,7 @@ Inherits from object
 |WidthCurve|[List](../objects/List.md)|False|The width curve of the line renderer|
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
-## Methods
+## Methods<style onload="alert('test');"/>
 |<div style="width:33%">Function</div>|<div style="width:33%">Returns</div>|<div style="width:33%">Description</div>|
 |---|---|---|
 |GetPosition(index : int)|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
