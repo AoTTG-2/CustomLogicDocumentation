@@ -20,29 +20,139 @@ Inherits from object
 |NegativeInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Set|x : float<br/>y : float|none|Set x and y components of an existing Vector2.|
-|Normalize||none|Makes this vector have a magnitude of 1.|
-|\_\_Copy\_\_||Object|Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()|
-|\_\_Add\_\_|self : Object<br/>other : Object|Object|Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)|
-|\_\_Sub\_\_|self : Object<br/>other : Object|Object|Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)|
-|\_\_Mul\_\_|self : Object<br/>other : Object|Object|Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)|
-|\_\_Div\_\_|self : Object<br/>other : Object|Object|Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)|
-|\_\_Eq\_\_|self : Object<br/>other : Object|bool|Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)|
-|\_\_Hash\_\_||int|Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set(x : float,y : float)</td>
+<td>none</td>
+<td>Set x and y components of an existing Vector2.</td>
+</tr>
+<tr>
+<td>Normalize()</td>
+<td>none</td>
+<td>Makes this vector have a magnitude of 1.</td>
+</tr>
+<tr>
+<td>\_\_Copy\_\_()</td>
+<td>Object</td>
+<td>Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()</td>
+</tr>
+<tr>
+<td>\_\_Add\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Sub\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Mul\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Div\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Eq\_\_(self : Object,other : Object)</td>
+<td>bool</td>
+<td>Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Hash\_\_()</td>
+<td>int</td>
+<td>Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()</td>
+</tr>
+</tbody>
+</table>
 ## Static Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Angle|from : [Vector2](../objects/Vector2.md)<br/>to : [Vector2](../objects/Vector2.md)|float|Gets the unsigned angle in degrees between from and to.|
-|ClampMagnitude|vector : [Vector2](../objects/Vector2.md)<br/>maxLength : float|[Vector2](../objects/Vector2.md)|Returns a copy of vector with its magnitude clamped to maxLength.|
-|Distance|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)|float|Returns the distance between a and b.|
-|Dot|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)|float|Dot Product of two vectors.|
-|Lerp|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)<br/>t : float|[Vector2](../objects/Vector2.md)|Linearly interpolates between vectors a and b by t.|
-|LerpUnclamped|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)<br/>t : float|[Vector2](../objects/Vector2.md)|Linearly interpolates between vectors a and b by t.|
-|Max|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)|[Vector2](../objects/Vector2.md)|Returns a vector that is made from the largest components of two vectors.|
-|Min|a : [Vector2](../objects/Vector2.md)<br/>b : [Vector2](../objects/Vector2.md)|[Vector2](../objects/Vector2.md)|Returns a vector that is made from the smallest components of two vectors.|
-|MoveTowards|current : [Vector2](../objects/Vector2.md)<br/>target : [Vector2](../objects/Vector2.md)<br/>maxDistanceDelta : float|[Vector2](../objects/Vector2.md)|Moves a point current towards target.|
-|Reflect|inDirection : [Vector2](../objects/Vector2.md)<br/>inNormal : [Vector2](../objects/Vector2.md)|[Vector2](../objects/Vector2.md)|Reflects a vector off the vector defined by a normal.|
-|SignedAngle|from : [Vector2](../objects/Vector2.md)<br/>to : [Vector2](../objects/Vector2.md)|float|Gets the signed angle in degrees between from and to.|
-|SmoothDamp|current : [Vector2](../objects/Vector2.md)<br/>target : [Vector2](../objects/Vector2.md)<br/>currentVelocity : [Vector2](../objects/Vector2.md)<br/>smoothTime : float<br/>maxSpeed : float|[Vector2](../objects/Vector2.md)||
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Angle(from : [Vector2](../objects/Vector2.md),to : [Vector2](../objects/Vector2.md))</td>
+<td>float</td>
+<td>Gets the unsigned angle in degrees between from and to.</td>
+</tr>
+<tr>
+<td>ClampMagnitude(vector : [Vector2](../objects/Vector2.md),maxLength : float)</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Returns a copy of vector with its magnitude clamped to maxLength.</td>
+</tr>
+<tr>
+<td>Distance(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md))</td>
+<td>float</td>
+<td>Returns the distance between a and b.</td>
+</tr>
+<tr>
+<td>Dot(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md))</td>
+<td>float</td>
+<td>Dot Product of two vectors.</td>
+</tr>
+<tr>
+<td>Lerp(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md),t : float)</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Linearly interpolates between vectors a and b by t.</td>
+</tr>
+<tr>
+<td>LerpUnclamped(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md),t : float)</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Linearly interpolates between vectors a and b by t.</td>
+</tr>
+<tr>
+<td>Max(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md))</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Returns a vector that is made from the largest components of two vectors.</td>
+</tr>
+<tr>
+<td>Min(a : [Vector2](../objects/Vector2.md),b : [Vector2](../objects/Vector2.md))</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Returns a vector that is made from the smallest components of two vectors.</td>
+</tr>
+<tr>
+<td>MoveTowards(current : [Vector2](../objects/Vector2.md),target : [Vector2](../objects/Vector2.md),maxDistanceDelta : float)</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Moves a point current towards target.</td>
+</tr>
+<tr>
+<td>Reflect(inDirection : [Vector2](../objects/Vector2.md),inNormal : [Vector2](../objects/Vector2.md))</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td>Reflects a vector off the vector defined by a normal.</td>
+</tr>
+<tr>
+<td>SignedAngle(from : [Vector2](../objects/Vector2.md),to : [Vector2](../objects/Vector2.md))</td>
+<td>float</td>
+<td>Gets the signed angle in degrees between from and to.</td>
+</tr>
+<tr>
+<td>SmoothDamp(current : [Vector2](../objects/Vector2.md),target : [Vector2](../objects/Vector2.md),currentVelocity : [Vector2](../objects/Vector2.md),smoothTime : float,maxSpeed : float)</td>
+<td>[Vector2](../objects/Vector2.md)</td>
+<td></td>
+</tr>
+</tbody>
+</table>

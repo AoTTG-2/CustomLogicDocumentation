@@ -23,40 +23,194 @@ Inherits from object
 |NegativeInfinity|[Vector3](../objects/Vector3.md)|False|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector3](../objects/Vector3.md)|False|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Set|x : float<br/>y : float<br/>z : float|none|Set x, y and z components of an existing Vector3.|
-|Scale|scale : Object|[Vector3](../objects/Vector3.md)|Returns the Vector3 multiplied by scale.|
-|Multiply|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Returns the multiplication of two Vector3s.|
-|Divide|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Returns the division of two Vector3s.|
-|GetRotationDirection|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.|
-|\_\_Copy\_\_||Object|Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()|
-|\_\_Add\_\_|self : Object<br/>other : Object|Object|Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)|
-|\_\_Sub\_\_|self : Object<br/>other : Object|Object|Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)|
-|\_\_Mul\_\_|self : Object<br/>other : Object|Object|Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)|
-|\_\_Div\_\_|self : Object<br/>other : Object|Object|Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)|
-|\_\_Eq\_\_|self : Object<br/>other : Object|bool|Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)|
-|\_\_Hash\_\_||int|Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set(x : float,y : float,z : float)</td>
+<td>none</td>
+<td>Set x, y and z components of an existing Vector3.</td>
+</tr>
+<tr>
+<td>Scale(scale : Object)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns the Vector3 multiplied by scale.</td>
+</tr>
+<tr>
+<td>Multiply(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns the multiplication of two Vector3s.</td>
+</tr>
+<tr>
+<td>Divide(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns the division of two Vector3s.</td>
+</tr>
+<tr>
+<td>GetRotationDirection(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.</td>
+</tr>
+<tr>
+<td>\_\_Copy\_\_()</td>
+<td>Object</td>
+<td>Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()</td>
+</tr>
+<tr>
+<td>\_\_Add\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Sub\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Mul\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Div\_\_(self : Object,other : Object)</td>
+<td>Object</td>
+<td>Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Eq\_\_(self : Object,other : Object)</td>
+<td>bool</td>
+<td>Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)</td>
+</tr>
+<tr>
+<td>\_\_Hash\_\_()</td>
+<td>int</td>
+<td>Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()</td>
+</tr>
+</tbody>
+</table>
 ## Static Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Angle|from : [Vector3](../objects/Vector3.md)<br/>to : [Vector3](../objects/Vector3.md)|float|Calculates the angle between vectors from and.|
-|ClampMagnitude|vector : [Vector3](../objects/Vector3.md)<br/>maxLength : float|[Vector3](../objects/Vector3.md)|Returns a copy of vector with its magnitude clamped to maxLength.|
-|Cross|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Cross Product of two vectors.|
-|Distance|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|float|Returns the distance between a and b.|
-|Dot|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|float|Dot Product of two vectors.|
-|Lerp|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)<br/>t : float|[Vector3](../objects/Vector3.md)|Linearly interpolates between two points.|
-|LerpUnclamped|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)<br/>t : float|[Vector3](../objects/Vector3.md)|Linearly interpolates between two vectors.|
-|Max|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Returns a vector that is made from the largest components of two vectors.|
-|Min|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Returns a vector that is made from the smallest components of two vectors.|
-|MoveTowards|current : [Vector3](../objects/Vector3.md)<br/>target : [Vector3](../objects/Vector3.md)<br/>maxDistanceDelta : float|[Vector3](../objects/Vector3.md)|Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.|
-|Normalize|value : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Makes this vector have a magnitude of 1.|
-|OrthoNormalize|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|none||
-|Project|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Projects a vector onto another vector.|
-|ProjectOnPlane|vector : [Vector3](../objects/Vector3.md)<br/>plane : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Projects a vector onto a plane defined by a normal orthogonal to the plane.|
-|Reflect|inDirection : [Vector3](../objects/Vector3.md)<br/>inNormal : [Vector3](../objects/Vector3.md)|[Vector3](../objects/Vector3.md)|Reflects a vector off the plane defined by a normal.|
-|RotateTowards|current : [Vector3](../objects/Vector3.md)<br/>target : [Vector3](../objects/Vector3.md)<br/>maxRadiansDelta : float<br/>maxMagnitudeDelta : float|[Vector3](../objects/Vector3.md)|Rotates a vector current towards target.|
-|SignedAngle|from : [Vector3](../objects/Vector3.md)<br/>to : [Vector3](../objects/Vector3.md)<br/>axis : [Vector3](../objects/Vector3.md)|float|Calculates the signed angle between vectors from and to in relation to axis.|
-|Slerp|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)<br/>t : float|[Vector3](../objects/Vector3.md)|Spherically interpolates between two vectors.|
-|SlerpUnclamped|a : [Vector3](../objects/Vector3.md)<br/>b : [Vector3](../objects/Vector3.md)<br/>t : float|[Vector3](../objects/Vector3.md)|Spherically interpolates between two vectors.|
-|SmoothDamp|current : [Vector3](../objects/Vector3.md)<br/>target : [Vector3](../objects/Vector3.md)<br/>currentVelocity : [Vector3](../objects/Vector3.md)<br/>smoothTime : float<br/>maxSpeed : float|[Vector3](../objects/Vector3.md)||
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Angle(from : [Vector3](../objects/Vector3.md),to : [Vector3](../objects/Vector3.md))</td>
+<td>float</td>
+<td>Calculates the angle between vectors from and.</td>
+</tr>
+<tr>
+<td>ClampMagnitude(vector : [Vector3](../objects/Vector3.md),maxLength : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns a copy of vector with its magnitude clamped to maxLength.</td>
+</tr>
+<tr>
+<td>Cross(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Cross Product of two vectors.</td>
+</tr>
+<tr>
+<td>Distance(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>float</td>
+<td>Returns the distance between a and b.</td>
+</tr>
+<tr>
+<td>Dot(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>float</td>
+<td>Dot Product of two vectors.</td>
+</tr>
+<tr>
+<td>Lerp(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md),t : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Linearly interpolates between two points.</td>
+</tr>
+<tr>
+<td>LerpUnclamped(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md),t : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Linearly interpolates between two vectors.</td>
+</tr>
+<tr>
+<td>Max(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns a vector that is made from the largest components of two vectors.</td>
+</tr>
+<tr>
+<td>Min(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Returns a vector that is made from the smallest components of two vectors.</td>
+</tr>
+<tr>
+<td>MoveTowards(current : [Vector3](../objects/Vector3.md),target : [Vector3](../objects/Vector3.md),maxDistanceDelta : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.</td>
+</tr>
+<tr>
+<td>Normalize(value : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Makes this vector have a magnitude of 1.</td>
+</tr>
+<tr>
+<td>OrthoNormalize(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>Project(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Projects a vector onto another vector.</td>
+</tr>
+<tr>
+<td>ProjectOnPlane(vector : [Vector3](../objects/Vector3.md),plane : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Projects a vector onto a plane defined by a normal orthogonal to the plane.</td>
+</tr>
+<tr>
+<td>Reflect(inDirection : [Vector3](../objects/Vector3.md),inNormal : [Vector3](../objects/Vector3.md))</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Reflects a vector off the plane defined by a normal.</td>
+</tr>
+<tr>
+<td>RotateTowards(current : [Vector3](../objects/Vector3.md),target : [Vector3](../objects/Vector3.md),maxRadiansDelta : float,maxMagnitudeDelta : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Rotates a vector current towards target.</td>
+</tr>
+<tr>
+<td>SignedAngle(from : [Vector3](../objects/Vector3.md),to : [Vector3](../objects/Vector3.md),axis : [Vector3](../objects/Vector3.md))</td>
+<td>float</td>
+<td>Calculates the signed angle between vectors from and to in relation to axis.</td>
+</tr>
+<tr>
+<td>Slerp(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md),t : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Spherically interpolates between two vectors.</td>
+</tr>
+<tr>
+<td>SlerpUnclamped(a : [Vector3](../objects/Vector3.md),b : [Vector3](../objects/Vector3.md),t : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Spherically interpolates between two vectors.</td>
+</tr>
+<tr>
+<td>SmoothDamp(current : [Vector3](../objects/Vector3.md),target : [Vector3](../objects/Vector3.md),currentVelocity : [Vector3](../objects/Vector3.md),smoothTime : float,maxSpeed : float)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td></td>
+</tr>
+</tbody>
+</table>

@@ -22,11 +22,49 @@ Inherits from object
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|GetPosition|index : int|[Vector3](../objects/Vector3.md)|Get the position of a point in the line renderer|
-|SetPosition|index : int<br/>position : [Vector3](../objects/Vector3.md)|none|Set the position of a point in the line renderer|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GetPosition(index : int)</td>
+<td>[Vector3](../objects/Vector3.md)</td>
+<td>Get the position of a point in the line renderer</td>
+</tr>
+<tr>
+<td>SetPosition(index : int,position : [Vector3](../objects/Vector3.md))</td>
+<td>none</td>
+<td>Set the position of a point in the line renderer</td>
+</tr>
+</tbody>
+</table>
 ## Static Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|CreateLineRenderer||[LineRenderer](../objects/LineRenderer.md)|[Obselete] Create a new LineRenderer|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateLineRenderer()</td>
+<td>[LineRenderer](../objects/LineRenderer.md)</td>
+<td>[Obselete] Create a new LineRenderer</td>
+</tr>
+</tbody>
+</table>
