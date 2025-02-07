@@ -1,19 +1,88 @@
 # Map
 Inherits from object
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|FindAllMapObjects||[List](../objects/List.md)|Find all map objects|
-|FindMapObjectByName|objectName : [String](../static/String.md)|[MapObject](../objects/MapObject.md)|Find a map object by name|
-|FindMapObjectsByName|objectName : [String](../static/String.md)|[List](../objects/List.md)|Find all map objects by name|
-|FindMapObjectByComponent|className : [String](../static/String.md)|[MapObject](../objects/MapObject.md)|Find all map objects by component|
-|FindMapObjectsByComponent|className : [String](../static/String.md)|[List](../objects/List.md)|Find all map objects by component|
-|FindMapObjectByID|id : int|[MapObject](../objects/MapObject.md)|Find a map object by ID|
-|FindMapObjectByTag|tag : [String](../static/String.md)|[MapObject](../objects/MapObject.md)|Find a map object by tag|
-|FindMapObjectsByTag|tag : [String](../static/String.md)|[List](../objects/List.md)|Find all map objects by tag|
-|CreateMapObjectRaw|prefab : [String](../static/String.md)|[MapObject](../objects/MapObject.md)|Create a new map object|
-|DestroyMapObject|mapObject : [MapObject](../objects/MapObject.md)<br/>includeChildren : bool|none|Destroy a map object|
-|CopyMapObject|mapObject : [MapObject](../objects/MapObject.md)<br/>includeChildren : bool|[MapObject](../objects/MapObject.md)|Copy a map object|
-|DestroyMapTargetable|targetable : [MapTargetable](../objects/MapTargetable.md)|none|Destroy a map targetable|
-|UpdateNavMesh||none|Update the nav mesh|
-|UpdateNavMeshAsync||none|Update the nav mesh asynchronously|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FindAllMapObjects()</td>
+<td>[List](../objects/List.md)</td>
+<td>Find all map objects</td>
+</tr>
+<tr>
+<td>FindMapObjectByName(objectName : [String](../static/String.md))</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Find a map object by name</td>
+</tr>
+<tr>
+<td>FindMapObjectsByName(objectName : [String](../static/String.md))</td>
+<td>[List](../objects/List.md)</td>
+<td>Find all map objects by name</td>
+</tr>
+<tr>
+<td>FindMapObjectByComponent(className : [String](../static/String.md))</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Find all map objects by component</td>
+</tr>
+<tr>
+<td>FindMapObjectsByComponent(className : [String](../static/String.md))</td>
+<td>[List](../objects/List.md)</td>
+<td>Find all map objects by component</td>
+</tr>
+<tr>
+<td>FindMapObjectByID(id : int)</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Find a map object by ID</td>
+</tr>
+<tr>
+<td>FindMapObjectByTag(tag : [String](../static/String.md))</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Find a map object by tag</td>
+</tr>
+<tr>
+<td>FindMapObjectsByTag(tag : [String](../static/String.md))</td>
+<td>[List](../objects/List.md)</td>
+<td>Find all map objects by tag</td>
+</tr>
+<tr>
+<td>CreateMapObjectRaw(prefab : [String](../static/String.md))</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Create a new map object</td>
+</tr>
+<tr>
+<td>DestroyMapObject(mapObject : [MapObject](../objects/MapObject.md),includeChildren : bool)</td>
+<td>none</td>
+<td>Destroy a map object</td>
+</tr>
+<tr>
+<td>CopyMapObject(mapObject : [MapObject](../objects/MapObject.md),includeChildren : bool)</td>
+<td>[MapObject](../objects/MapObject.md)</td>
+<td>Copy a map object</td>
+</tr>
+<tr>
+<td>DestroyMapTargetable(targetable : [MapTargetable](../objects/MapTargetable.md))</td>
+<td>none</td>
+<td>Destroy a map targetable</td>
+</tr>
+<tr>
+<td>UpdateNavMesh()</td>
+<td>none</td>
+<td>Update the nav mesh</td>
+</tr>
+<tr>
+<td>UpdateNavMeshAsync()</td>
+<td>none</td>
+<td>Update the nav mesh asynchronously</td>
+</tr>
+</tbody>
+</table>

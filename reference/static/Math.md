@@ -10,43 +10,208 @@ Inherits from object
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Clamp|value : Object<br/>min : Object<br/>max : Object|Object|Clamp a value between a minimum and maximum value|
-|Max|a : Object<br/>b : Object|Object|Get the maximum of two values|
-|Min|a : Object<br/>b : Object|Object|Get the minimum of two values|
-|Pow|a : Object<br/>b : Object|Object|Raise a value to the power of another value|
-|Abs|value : Object|Object|Get the absolute value of a number|
-|Sqrt|value : Object|Object|Get the square root of a number|
-|Mod|a : Object<br/>b : Object|Object|Get the remainder of a division operation|
-|Sin|angle : Object|Object|Get the sine of an angle in degrees|
-|Cos|angle : Object|Object|Get the cosine of an angle in degrees|
-|Tan|angle : Object|Object|Get the tangent of an angle in degrees|
-|Asin|value : Object|Object|Get the arcsine of a value in degrees|
-|Acos|value : Object|Object|Get the arccosine of a value in degrees|
-|Atan|value : Object|Object|Get the arctangent of a value in degrees|
-|Atan2|a : Object<br/>b : Object|Object|Get the arctangent of a value in degrees|
-|Ceil|value : Object|Object|Get the smallest integer greater than or equal to a value|
-|Floor|value : Object|Object|Get the largest integer less than or equal to a value|
-|Round|value : Object|Object|Round a value to the nearest integer|
-|Deg2Rad|angle : Object|Object|Convert an angle from degrees to radians|
-|Rad2Deg|angle : Object|Object|Convert an angle from radians to degrees|
-|Lerp|a : Object<br/>b : Object<br/>t : Object|Object|Linearly interpolate between two values|
-|LerpUnclamped|a : Object<br/>b : Object<br/>t : Object|Object|Linearly interpolate between two values without clamping|
-|Sign|value : Object|Object|Get the sign of a value|
-|InverseLerp|a : Object<br/>b : Object<br/>value : Object|Object|Get the inverse lerp of two values|
-|LerpAngle|a : Object<br/>b : Object<br/>t : Object|Object|Linearly interpolate between two angles|
-|Log|value : Object|Object|Get the natural logarithm of a value|
-|MoveTowards|current : Object<br/>target : Object<br/>maxDelta : Object|Object|Move a value towards a target value|
-|MoveTowardsAngle|current : Object<br/>target : Object<br/>maxDelta : Object|Object|Move an angle towards a target angle|
-|PingPong|t : Object<br/>length : Object|Object|Get the ping pong value of a time value|
-|SmoothDamp|current : Object<br/>target : Object<br/>currentVelocity : Object<br/>smoothTime : Object<br/>maxSpeed : Object<br/>deltaTime : Object|Object|Smoothly damp a value towards a target value|
-|Exp|value : Object|Object|Get the exponential value of a number|
-|SmoothDampAngle|current : Object<br/>target : Object<br/>currentVelocity : Object<br/>smoothTime : Object<br/>maxSpeed : Object<br/>deltaTime : Object|Object|Smoothly damp an angle towards a target angle|
-|SmoothStep|a : Object<br/>b : Object<br/>t : Object|Object|Smoothly step between two values|
-|BitwiseAnd|a : Object<br/>b : Object|Object|Perform a bitwise AND operation|
-|BitwiseOr|a : Object<br/>b : Object|Object|Perform a bitwise OR operation|
-|BitwiseXor|a : Object<br/>b : Object|Object|Perform a bitwise XOR operation|
-|BitwiseNot|value : Object|Object|Perform a bitwise NOT operation|
-|BitwiseLeftShift|value : Object<br/>shift : Object|Object|Shift bits to the left|
-|BitwiseRightShift|value : Object<br/>shift : Object|Object|Shift bits to the right|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clamp(value : Object,min : Object,max : Object)</td>
+<td>Object</td>
+<td>Clamp a value between a minimum and maximum value</td>
+</tr>
+<tr>
+<td>Max(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Get the maximum of two values</td>
+</tr>
+<tr>
+<td>Min(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Get the minimum of two values</td>
+</tr>
+<tr>
+<td>Pow(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Raise a value to the power of another value</td>
+</tr>
+<tr>
+<td>Abs(value : Object)</td>
+<td>Object</td>
+<td>Get the absolute value of a number</td>
+</tr>
+<tr>
+<td>Sqrt(value : Object)</td>
+<td>Object</td>
+<td>Get the square root of a number</td>
+</tr>
+<tr>
+<td>Mod(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Get the remainder of a division operation</td>
+</tr>
+<tr>
+<td>Sin(angle : Object)</td>
+<td>Object</td>
+<td>Get the sine of an angle in degrees</td>
+</tr>
+<tr>
+<td>Cos(angle : Object)</td>
+<td>Object</td>
+<td>Get the cosine of an angle in degrees</td>
+</tr>
+<tr>
+<td>Tan(angle : Object)</td>
+<td>Object</td>
+<td>Get the tangent of an angle in degrees</td>
+</tr>
+<tr>
+<td>Asin(value : Object)</td>
+<td>Object</td>
+<td>Get the arcsine of a value in degrees</td>
+</tr>
+<tr>
+<td>Acos(value : Object)</td>
+<td>Object</td>
+<td>Get the arccosine of a value in degrees</td>
+</tr>
+<tr>
+<td>Atan(value : Object)</td>
+<td>Object</td>
+<td>Get the arctangent of a value in degrees</td>
+</tr>
+<tr>
+<td>Atan2(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Get the arctangent of a value in degrees</td>
+</tr>
+<tr>
+<td>Ceil(value : Object)</td>
+<td>Object</td>
+<td>Get the smallest integer greater than or equal to a value</td>
+</tr>
+<tr>
+<td>Floor(value : Object)</td>
+<td>Object</td>
+<td>Get the largest integer less than or equal to a value</td>
+</tr>
+<tr>
+<td>Round(value : Object)</td>
+<td>Object</td>
+<td>Round a value to the nearest integer</td>
+</tr>
+<tr>
+<td>Deg2Rad(angle : Object)</td>
+<td>Object</td>
+<td>Convert an angle from degrees to radians</td>
+</tr>
+<tr>
+<td>Rad2Deg(angle : Object)</td>
+<td>Object</td>
+<td>Convert an angle from radians to degrees</td>
+</tr>
+<tr>
+<td>Lerp(a : Object,b : Object,t : Object)</td>
+<td>Object</td>
+<td>Linearly interpolate between two values</td>
+</tr>
+<tr>
+<td>LerpUnclamped(a : Object,b : Object,t : Object)</td>
+<td>Object</td>
+<td>Linearly interpolate between two values without clamping</td>
+</tr>
+<tr>
+<td>Sign(value : Object)</td>
+<td>Object</td>
+<td>Get the sign of a value</td>
+</tr>
+<tr>
+<td>InverseLerp(a : Object,b : Object,value : Object)</td>
+<td>Object</td>
+<td>Get the inverse lerp of two values</td>
+</tr>
+<tr>
+<td>LerpAngle(a : Object,b : Object,t : Object)</td>
+<td>Object</td>
+<td>Linearly interpolate between two angles</td>
+</tr>
+<tr>
+<td>Log(value : Object)</td>
+<td>Object</td>
+<td>Get the natural logarithm of a value</td>
+</tr>
+<tr>
+<td>MoveTowards(current : Object,target : Object,maxDelta : Object)</td>
+<td>Object</td>
+<td>Move a value towards a target value</td>
+</tr>
+<tr>
+<td>MoveTowardsAngle(current : Object,target : Object,maxDelta : Object)</td>
+<td>Object</td>
+<td>Move an angle towards a target angle</td>
+</tr>
+<tr>
+<td>PingPong(t : Object,length : Object)</td>
+<td>Object</td>
+<td>Get the ping pong value of a time value</td>
+</tr>
+<tr>
+<td>SmoothDamp(current : Object,target : Object,currentVelocity : Object,smoothTime : Object,maxSpeed : Object,deltaTime : Object)</td>
+<td>Object</td>
+<td>Smoothly damp a value towards a target value</td>
+</tr>
+<tr>
+<td>Exp(value : Object)</td>
+<td>Object</td>
+<td>Get the exponential value of a number</td>
+</tr>
+<tr>
+<td>SmoothDampAngle(current : Object,target : Object,currentVelocity : Object,smoothTime : Object,maxSpeed : Object,deltaTime : Object)</td>
+<td>Object</td>
+<td>Smoothly damp an angle towards a target angle</td>
+</tr>
+<tr>
+<td>SmoothStep(a : Object,b : Object,t : Object)</td>
+<td>Object</td>
+<td>Smoothly step between two values</td>
+</tr>
+<tr>
+<td>BitwiseAnd(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Perform a bitwise AND operation</td>
+</tr>
+<tr>
+<td>BitwiseOr(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Perform a bitwise OR operation</td>
+</tr>
+<tr>
+<td>BitwiseXor(a : Object,b : Object)</td>
+<td>Object</td>
+<td>Perform a bitwise XOR operation</td>
+</tr>
+<tr>
+<td>BitwiseNot(value : Object)</td>
+<td>Object</td>
+<td>Perform a bitwise NOT operation</td>
+</tr>
+<tr>
+<td>BitwiseLeftShift(value : Object,shift : Object)</td>
+<td>Object</td>
+<td>Shift bits to the left</td>
+</tr>
+<tr>
+<td>BitwiseRightShift(value : Object,shift : Object)</td>
+<td>Object</td>
+<td>Shift bits to the right</td>
+</tr>
+</tbody>
+</table>

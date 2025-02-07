@@ -23,34 +23,163 @@ Inherits from object
 |ForcedCharacterType|[String](../static/String.md)|False|Forced character type|
 |ForcedLoadout|[String](../static/String.md)|False|Forced loadout|
 ## Methods
-|Function|Parameters|Returns|Description|
-|---|---|---|---|
-|Debug|message : Object|none|Print a debug statement to the console|
-|Print|message : Object|none|Print a message to the chat|
-|PrintAll|message : Object|none|Print a message to all players|
-|GetGeneralSetting|settingName : [String](../static/String.md)|Object|Get a general setting|
-|GetTitanSetting|settingName : [String](../static/String.md)|Object|Get a titan setting|
-|GetMiscSetting|settingName : [String](../static/String.md)|Object|Get a misc setting|
-|End|delay : float|none|End the game|
-|FindCharacterByViewID|viewID : int|[Character](../objects/Character.md)|Find a character by view ID|
-|SpawnTitan|type : [String](../static/String.md)|[Titan](../objects/Titan.md)|Spawn a titan|
-|SpawnTitanAt|type : [String](../static/String.md)<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|[Titan](../objects/Titan.md)|Spawn a titan at a position|
-|SpawnTitans|type : [String](../static/String.md)<br/>count : int|[List](../objects/List.md)|Spawn titans|
-|SpawnTitansAsync|type : [String](../static/String.md)<br/>count : int|none|Spawn titans asynchronously|
-|SpawnTitansAt|type : [String](../static/String.md)<br/>count : int<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|[List](../objects/List.md)|Spawn titans at a position|
-|SpawnTitansAtAsync|type : [String](../static/String.md)<br/>count : int<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|none|Spawn titans at a position asynchronously|
-|SpawnShifter|type : [String](../static/String.md)|[Shifter](../objects/Shifter.md)|Spawn a shifter|
-|SpawnShifterAt|type : [String](../static/String.md)<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|[Shifter](../objects/Shifter.md)|Spawn a shifter at a position|
-|SpawnProjectile|parameters : Object[]|none|Spawn a projectile|
-|SpawnProjectileWithOwner|parameters : Object[]|none|Spawn a projectile with an owner|
-|SpawnEffect|parameters : Object[]|none|Spawn an effect|
-|SpawnPlayer|player : [Player](../objects/Player.md)<br/>force : bool|none|Spawn a player|
-|SpawnPlayerAll|force : bool|none|Spawn a player for all players|
-|SpawnPlayerAt|player : [Player](../objects/Player.md)<br/>force : bool<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|none|Spawn a player at a position|
-|SpawnPlayerAtAll|force : bool<br/>position : [Vector3](../objects/Vector3.md)<br/>rotationY : float = 0|none|Spawn a player at a position for all players|
-|SetPlaylist|playlist : [String](../static/String.md)|none|Set the music playlist|
-|SetSong|song : [String](../static/String.md)|none|Set the music song|
-|DrawRay|start : [Vector3](../objects/Vector3.md)<br/>dir : [Vector3](../objects/Vector3.md)<br/>color : [Color](../objects/Color.md)<br/>duration : float|none|Draw a ray|
-|ShowKillScore|damage : int|none|Show the kill score|
-|ShowKillFeed|killer : [String](../static/String.md)<br/>victim : [String](../static/String.md)<br/>score : int<br/>weapon : [String](../static/String.md)|none|Show the kill feed|
-|ShowKillFeedAll|killer : [String](../static/String.md)<br/>victim : [String](../static/String.md)<br/>score : int<br/>weapon : [String](../static/String.md)|none|Show the kill feed for all players|
+<table>
+<colgroup><col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th>Function</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debug(message : Object)</td>
+<td>none</td>
+<td>Print a debug statement to the console</td>
+</tr>
+<tr>
+<td>Print(message : Object)</td>
+<td>none</td>
+<td>Print a message to the chat</td>
+</tr>
+<tr>
+<td>PrintAll(message : Object)</td>
+<td>none</td>
+<td>Print a message to all players</td>
+</tr>
+<tr>
+<td>GetGeneralSetting(settingName : [String](../static/String.md))</td>
+<td>Object</td>
+<td>Get a general setting</td>
+</tr>
+<tr>
+<td>GetTitanSetting(settingName : [String](../static/String.md))</td>
+<td>Object</td>
+<td>Get a titan setting</td>
+</tr>
+<tr>
+<td>GetMiscSetting(settingName : [String](../static/String.md))</td>
+<td>Object</td>
+<td>Get a misc setting</td>
+</tr>
+<tr>
+<td>End(delay : float)</td>
+<td>none</td>
+<td>End the game</td>
+</tr>
+<tr>
+<td>FindCharacterByViewID(viewID : int)</td>
+<td>[Character](../objects/Character.md)</td>
+<td>Find a character by view ID</td>
+</tr>
+<tr>
+<td>SpawnTitan(type : [String](../static/String.md))</td>
+<td>[Titan](../objects/Titan.md)</td>
+<td>Spawn a titan</td>
+</tr>
+<tr>
+<td>SpawnTitanAt(type : [String](../static/String.md),position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>[Titan](../objects/Titan.md)</td>
+<td>Spawn a titan at a position</td>
+</tr>
+<tr>
+<td>SpawnTitans(type : [String](../static/String.md),count : int)</td>
+<td>[List](../objects/List.md)</td>
+<td>Spawn titans</td>
+</tr>
+<tr>
+<td>SpawnTitansAsync(type : [String](../static/String.md),count : int)</td>
+<td>none</td>
+<td>Spawn titans asynchronously</td>
+</tr>
+<tr>
+<td>SpawnTitansAt(type : [String](../static/String.md),count : int,position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>[List](../objects/List.md)</td>
+<td>Spawn titans at a position</td>
+</tr>
+<tr>
+<td>SpawnTitansAtAsync(type : [String](../static/String.md),count : int,position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>none</td>
+<td>Spawn titans at a position asynchronously</td>
+</tr>
+<tr>
+<td>SpawnShifter(type : [String](../static/String.md))</td>
+<td>[Shifter](../objects/Shifter.md)</td>
+<td>Spawn a shifter</td>
+</tr>
+<tr>
+<td>SpawnShifterAt(type : [String](../static/String.md),position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>[Shifter](../objects/Shifter.md)</td>
+<td>Spawn a shifter at a position</td>
+</tr>
+<tr>
+<td>SpawnProjectile(parameters : Object[])</td>
+<td>none</td>
+<td>Spawn a projectile</td>
+</tr>
+<tr>
+<td>SpawnProjectileWithOwner(parameters : Object[])</td>
+<td>none</td>
+<td>Spawn a projectile with an owner</td>
+</tr>
+<tr>
+<td>SpawnEffect(parameters : Object[])</td>
+<td>none</td>
+<td>Spawn an effect</td>
+</tr>
+<tr>
+<td>SpawnPlayer(player : [Player](../objects/Player.md),force : bool)</td>
+<td>none</td>
+<td>Spawn a player</td>
+</tr>
+<tr>
+<td>SpawnPlayerAll(force : bool)</td>
+<td>none</td>
+<td>Spawn a player for all players</td>
+</tr>
+<tr>
+<td>SpawnPlayerAt(player : [Player](../objects/Player.md),force : bool,position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>none</td>
+<td>Spawn a player at a position</td>
+</tr>
+<tr>
+<td>SpawnPlayerAtAll(force : bool,position : [Vector3](../objects/Vector3.md),rotationY : float = 0)</td>
+<td>none</td>
+<td>Spawn a player at a position for all players</td>
+</tr>
+<tr>
+<td>SetPlaylist(playlist : [String](../static/String.md))</td>
+<td>none</td>
+<td>Set the music playlist</td>
+</tr>
+<tr>
+<td>SetSong(song : [String](../static/String.md))</td>
+<td>none</td>
+<td>Set the music song</td>
+</tr>
+<tr>
+<td>DrawRay(start : [Vector3](../objects/Vector3.md),dir : [Vector3](../objects/Vector3.md),color : [Color](../objects/Color.md),duration : float)</td>
+<td>none</td>
+<td>Draw a ray</td>
+</tr>
+<tr>
+<td>ShowKillScore(damage : int)</td>
+<td>none</td>
+<td>Show the kill score</td>
+</tr>
+<tr>
+<td>ShowKillFeed(killer : [String](../static/String.md),victim : [String](../static/String.md),score : int,weapon : [String](../static/String.md))</td>
+<td>none</td>
+<td>Show the kill feed</td>
+</tr>
+<tr>
+<td>ShowKillFeedAll(killer : [String](../static/String.md),victim : [String](../static/String.md),score : int,weapon : [String](../static/String.md))</td>
+<td>none</td>
+<td>Show the kill feed for all players</td>
+</tr>
+</tbody>
+</table>
