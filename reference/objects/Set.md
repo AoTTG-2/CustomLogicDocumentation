@@ -1,20 +1,14 @@
 # Set
-
 Inherits from object
-
 ## Initialization
-
 ```csharp
 example = Set()
 example = Set((CustomLogicListBuiltin))
 ```
-
 ## Fields
-
-| Field | Type | Readonly | Description                       |
-| ----- | ---- | -------- | --------------------------------- |
-| Count | int  | True     | The number of elements in the set |
-
+|Field|Type|Readonly|Description|
+|---|---|---|---|
+|Count|int|True|The number of elements in the set|
 ## Methods
 #### void Clear()
 - **Description:** Clear all set elements
@@ -83,4 +77,3 @@ example = Set((CustomLogicListBuiltin))
 
 #### [List](../objects/List.md) ToList()
 - **Description:** Convert the set to a list
-
