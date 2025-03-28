@@ -20,11 +20,11 @@ Inherits from object
 |SpectateID|int|False|The player's spectating ID. If not spectating anyone, returns -1.|
 |SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
 ## Methods
-#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">GetCustomProperty</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">property</span>)
+#### <span style="color:#509cd4;">Object</span> <span style="color:#dcdcaa;">GetCustomProperty</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">property</span>)
 Get a custom property at given key. Must be a primitive type. This is synced to all clients.
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetCustomProperty</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">property</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
+#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">SetCustomProperty</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">property</span>, <span style="color:#509cd4;">Object</span> <span style="color:#9cdcfe;">value</span>)
 Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">ClearKDR</span>()
+#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">ClearKDR</span>()
 Clears kills, deaths, highestdamage, and totaldamage properties.
 
 ---
