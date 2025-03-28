@@ -23,63 +23,63 @@ Inherits from object
 |ForcedCharacterType|[String](../static/String.md)|False|Forced character type|
 |ForcedLoadout|[String](../static/String.md)|False|Forced loadout|
 ## Methods
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Debug</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">message</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Debug</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">message</mark>)
 Print a debug statement to the console
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Print</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">message</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Print</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">message</mark>)
 Print a message to the chat
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">PrintAll</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">message</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PrintAll</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">message</mark>)
 Print a message to all players
-#### <mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">GetGeneralSetting</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">settingName</mark>)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">GetGeneralSetting</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">settingName</mark>)
 Get a general setting
-#### <mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">GetTitanSetting</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">settingName</mark>)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">GetTitanSetting</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">settingName</mark>)
 Get a titan setting
-#### <mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">GetMiscSetting</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">settingName</mark>)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">GetMiscSetting</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">settingName</mark>)
 Get a misc setting
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">End</mark>(<mark style="color:Blue;">float</mark> <mark style="color:Yellow;">delay</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">End</mark>(<mark style="color:blue;">float</mark> <mark style="color:yellow;">delay</mark>)
 End the game
-#### <mark style="color:Blue;">[Character](../objects/Character.md)</mark> <mark style="color:Yellow;">FindCharacterByViewID</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">viewID</mark>)
+#### <mark style="color:blue;">[Character](../objects/Character.md)</mark> <mark style="color:yellow;">FindCharacterByViewID</mark>(<mark style="color:blue;">int</mark> <mark style="color:yellow;">viewID</mark>)
 Find a character by view ID
-#### <mark style="color:Blue;">[Titan](../objects/Titan.md)</mark> <mark style="color:Yellow;">SpawnTitan</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>)
+#### <mark style="color:blue;">[Titan](../objects/Titan.md)</mark> <mark style="color:yellow;">SpawnTitan</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>)
 Spawn a titan
-#### <mark style="color:Blue;">[Titan](../objects/Titan.md)</mark> <mark style="color:Yellow;">SpawnTitanAt</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">[Titan](../objects/Titan.md)</mark> <mark style="color:yellow;">SpawnTitanAt</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn a titan at a position
-#### <mark style="color:Blue;">[List](../objects/List.md)</mark> <mark style="color:Yellow;">SpawnTitans</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">count</mark>)
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">SpawnTitans</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">count</mark>)
 Spawn titans
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnTitansAsync</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">count</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnTitansAsync</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">count</mark>)
 Spawn titans asynchronously
-#### <mark style="color:Blue;">[List](../objects/List.md)</mark> <mark style="color:Yellow;">SpawnTitansAt</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">count</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">SpawnTitansAt</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">count</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn titans at a position
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnTitansAtAsync</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">count</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnTitansAtAsync</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">count</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn titans at a position asynchronously
-#### <mark style="color:Blue;">[Shifter](../objects/Shifter.md)</mark> <mark style="color:Yellow;">SpawnShifter</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>)
+#### <mark style="color:blue;">[Shifter](../objects/Shifter.md)</mark> <mark style="color:yellow;">SpawnShifter</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>)
 Spawn a shifter
-#### <mark style="color:Blue;">[Shifter](../objects/Shifter.md)</mark> <mark style="color:Yellow;">SpawnShifterAt</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">type</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">[Shifter](../objects/Shifter.md)</mark> <mark style="color:yellow;">SpawnShifterAt</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">type</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn a shifter at a position
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnProjectile</mark>(<mark style="color:Blue;">Object[]</mark> <mark style="color:Yellow;">parameters</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnProjectile</mark>(<mark style="color:blue;">Object[]</mark> <mark style="color:yellow;">parameters</mark>)
 Spawn a projectile
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnProjectileWithOwner</mark>(<mark style="color:Blue;">Object[]</mark> <mark style="color:Yellow;">parameters</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnProjectileWithOwner</mark>(<mark style="color:blue;">Object[]</mark> <mark style="color:yellow;">parameters</mark>)
 Spawn a projectile with an owner
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnEffect</mark>(<mark style="color:Blue;">Object[]</mark> <mark style="color:Yellow;">parameters</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnEffect</mark>(<mark style="color:blue;">Object[]</mark> <mark style="color:yellow;">parameters</mark>)
 Spawn an effect
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnPlayer</mark>(<mark style="color:Blue;">[Player](../objects/Player.md)</mark> <mark style="color:Yellow;">player</mark>, <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">force</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnPlayer</mark>(<mark style="color:blue;">[Player](../objects/Player.md)</mark> <mark style="color:yellow;">player</mark>, <mark style="color:blue;">bool</mark> <mark style="color:yellow;">force</mark>)
 Spawn a player
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnPlayerAll</mark>(<mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">force</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnPlayerAll</mark>(<mark style="color:blue;">bool</mark> <mark style="color:yellow;">force</mark>)
 Spawn a player for all players
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnPlayerAt</mark>(<mark style="color:Blue;">[Player](../objects/Player.md)</mark> <mark style="color:Yellow;">player</mark>, <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">force</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnPlayerAt</mark>(<mark style="color:blue;">[Player](../objects/Player.md)</mark> <mark style="color:yellow;">player</mark>, <mark style="color:blue;">bool</mark> <mark style="color:yellow;">force</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn a player at a position
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SpawnPlayerAtAll</mark>(<mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">force</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">rotationY</mark> = <mark style="color:Blue;">0</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SpawnPlayerAtAll</mark>(<mark style="color:blue;">bool</mark> <mark style="color:yellow;">force</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">rotationY</mark> = <mark style="color:blue;">0</mark>)
 Spawn a player at a position for all players
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetPlaylist</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">playlist</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetPlaylist</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">playlist</mark>)
 Set the music playlist
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetSong</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">song</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetSong</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">song</mark>)
 Set the music song
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">DrawRay</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">start</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">dir</mark>, <mark style="color:Blue;">[Color](../objects/Color.md)</mark> <mark style="color:Yellow;">color</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">duration</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">DrawRay</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">start</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">dir</mark>, <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">color</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">duration</mark>)
 Draw a ray
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ShowKillScore</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">damage</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowKillScore</mark>(<mark style="color:blue;">int</mark> <mark style="color:yellow;">damage</mark>)
 Show the kill score
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ShowKillFeed</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">killer</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">victim</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">score</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">weapon</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowKillFeed</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">killer</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">victim</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">score</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">weapon</mark>)
 Show the kill feed
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ShowKillFeedAll</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">killer</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">victim</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">score</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">weapon</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowKillFeedAll</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">killer</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">victim</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">score</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">weapon</mark>)
 Show the kill feed for all players
 
 ---

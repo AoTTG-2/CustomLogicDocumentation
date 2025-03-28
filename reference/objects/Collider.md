@@ -16,11 +16,11 @@ Inherits from object
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
 ## Methods
-#### <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">ClosestPoint</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">ClosestPoint</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
 
-#### <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">ClosestPointOnBounds</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">ClosestPointOnBounds</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
 
-#### <mark style="color:Blue;">[LineCastHitResult](../objects/LineCastHitResult.md)</mark> <mark style="color:Yellow;">Raycast</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">start</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">end</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">maxDistance</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">collideWith</mark>)
+#### <mark style="color:blue;">[LineCastHitResult](../objects/LineCastHitResult.md)</mark> <mark style="color:yellow;">Raycast</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">start</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">end</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">maxDistance</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideWith</mark>)
 
 
 ---
