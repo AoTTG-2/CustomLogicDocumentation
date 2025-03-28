@@ -8,15 +8,15 @@ Inherits from object
 |B|int|False|Blue component of the color|
 |A|int|False|Alpha component of the color|
 ## Methods
-#### <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#dcdcaa;">ToHexString</span>()
+#### <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#dcdcaa;">ToHexString</mark>()
 Converts the color to a hex string
 
 ---
 
 ## Static Methods
-#### <span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#dcdcaa;">Lerp</span>(<span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe;">a</span>, <span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe;">b</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">t</span>)
+#### <mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#dcdcaa;">Lerp</mark>(<mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#9cdcfe;">a</mark>, <mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#9cdcfe;">b</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">t</mark>)
 Linearly interpolates between colors a and b by t
-#### <span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#dcdcaa;">Gradient</span>(<span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe;">a</span>, <span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe;">b</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">t</span>)
+#### <mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#dcdcaa;">Gradient</mark>(<mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#9cdcfe;">a</mark>, <mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#9cdcfe;">b</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">t</mark>)
 Creates a gradient color from two colors
 
 ---

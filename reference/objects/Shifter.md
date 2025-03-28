@@ -48,43 +48,43 @@ Inherits from [Character](../objects/Character.md)
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
 ## Methods
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">MoveTo</span>(<span style="color:#509cd4;">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe;">position</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">range</span>, <span style="color:#509cd4;">bool</span> <span style="color:#9cdcfe;">ignoreEnemies</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">MoveTo</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">position</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">range</mark>, <mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">ignoreEnemies</mark>)
 Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Target</span>(<span style="color:#509cd4;">Object</span> <span style="color:#9cdcfe;">enemyObj</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">focus</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Target</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">enemyObj</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">focus</mark>)
 Causes the (AI) shifter to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Idle</span>(<span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">time</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Idle</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">time</mark>)
 Causes the (AI) shifter to idle for time seconds before beginning to wander. During idle the titan will not react or move at all.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Wander</span>()
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Wander</mark>()
 Causes the (AI) shifter to cancel any move commands and begin wandering randomly.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Blind</span>()
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Blind</mark>()
 Causes the shifter to enter the blind state.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Cripple</span>(<span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">time</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Cripple</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">time</mark>)
 Causes the shifter to enter the cripple state.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">GetKilled</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">killer</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">GetKilled</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">killer</mark>)
 Kills the character. Callable by non-owners.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">GetDamaged</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">killer</span>, <span style="color:#509cd4;">int</span> <span style="color:#9cdcfe;">damage</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">GetDamaged</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">killer</mark>, <mark style="color:#509cd4;">int</mark> <mark style="color:#9cdcfe;">damage</mark>)
 Damages the character and kills it if its health reaches 0. Callable by non-owners.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Emote</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">emote</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Emote</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">emote</mark>)
 Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">PlayAnimation</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">animation</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">fade</span> = <span style="color:#509cd4;">0.1</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">PlayAnimation</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">animation</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">fade</mark> = <mark style="color:#509cd4;">0.1</mark>)
 Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">ForceAnimation</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">animation</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">fade</span> = <span style="color:#509cd4;">0.1</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ForceAnimation</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">animation</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">fade</mark> = <mark style="color:#509cd4;">0.1</mark>)
 Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-#### <span style="color:#509cd4;">float</span> <span style="color:#dcdcaa;">GetAnimationLength</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">animation</span>)
+#### <mark style="color:#509cd4;">float</mark> <mark style="color:#dcdcaa;">GetAnimationLength</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">animation</mark>)
 Gets the length of animation.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">PlaySound</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">sound</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">PlaySound</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">sound</mark>)
 Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">StopSound</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">sound</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">StopSound</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">sound</mark>)
 Stops the sound.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">LookAt</span>(<span style="color:#509cd4;">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe;">position</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">LookAt</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">position</mark>)
 Rotates the character such that it is looking towards a world position.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">AddForce</span>(<span style="color:#509cd4;">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe;">force</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">mode</span> = <span style="color:#509cd4;">Acceleration</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">AddForce</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">force</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">mode</mark> = <mark style="color:#509cd4;">Acceleration</mark>)
 Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Reveal</span>(<span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">delay</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Reveal</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">delay</mark>)
 Reveaal the titan for a set number of seconds.
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">AddOutline</span>(<span style="color:#509cd4;">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe;">color</span> = <span style="color:#509cd4;">null</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">mode</span> = <span style="color:#509cd4;">OutlineAll</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">AddOutline</mark>(<mark style="color:#509cd4;">[Color](../objects/Color.md)</mark> <mark style="color:#9cdcfe;">color</mark> = <mark style="color:#509cd4;">null</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">mode</mark> = <mark style="color:#509cd4;">OutlineAll</mark>)
 Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">RemoveOutline</span>()
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">RemoveOutline</mark>()
 Removes the outline effect from the character.
 
 ---

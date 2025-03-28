@@ -1,13 +1,13 @@
 # Cutscene
 Inherits from object
 ## Methods
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">Start</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">name</span>, <span style="color:#509cd4;">bool</span> <span style="color:#9cdcfe;">full</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Start</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">name</mark>, <mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">full</mark>)
 Start a cutscene
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">ShowDialogue</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">icon</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">title</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">content</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ShowDialogue</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">icon</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">title</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">content</mark>)
 Show a dialogue box
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">ShowDialogueForTime</span>(<span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">icon</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">title</span>, <span style="color:#509cd4;">[String](../static/String.md)</span> <span style="color:#9cdcfe;">content</span>, <span style="color:#509cd4;">float</span> <span style="color:#9cdcfe;">time</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ShowDialogueForTime</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">icon</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">title</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">content</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">time</mark>)
 Show a dialogue box for a certain amount of time
-#### <span style="color:#509cd4;">void</span> <span style="color:#dcdcaa;">HideDialogue</span>()
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">HideDialogue</mark>()
 Hide the dialogue box
 
 ---
