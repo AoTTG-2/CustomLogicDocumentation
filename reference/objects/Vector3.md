@@ -26,10 +26,16 @@ Inherits from object
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Set</mark>(<mark style="color:blue;">float</mark> x, <mark style="color:blue;">float</mark> y, <mark style="color:blue;">float</mark> z)
 > Set x, y and z components of an existing Vector3.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Scale</mark>(<mark style="color:blue;">Object</mark> scale)
+> This method is obsolete.
+> **Note:** <mark style="color:red;">Use multiply operator instead</mark>
 > Returns the Vector3 multiplied by scale.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Multiply</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
+> This method is obsolete.
+> **Note:** <mark style="color:red;">Use multiply operator instead</mark>
 > Returns the multiplication of two Vector3s.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Divide</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
+> This method is obsolete.
+> **Note:** <mark style="color:red;">Use divide operator instead</mark>
 > Returns the division of two Vector3s.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetRotationDirection</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
 > Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.
@@ -74,7 +80,7 @@ Inherits from object
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Normalize</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> value)
 > Makes this vector have a magnitude of 1.
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">OrthoNormalize</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
-> 
+> <mark style="color:red;">Missing description, please ping dev to fix this or if you need clarification :)</mark>
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Project</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
 > Projects a vector onto another vector.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">ProjectOnPlane</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> vector, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> plane)
@@ -90,7 +96,7 @@ Inherits from object
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">SlerpUnclamped</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b, <mark style="color:blue;">float</mark> t)
 > Spherically interpolates between two vectors.
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">SmoothDamp</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> current, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> target, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> currentVelocity, <mark style="color:blue;">float</mark> smoothTime, <mark style="color:blue;">float</mark> maxSpeed)
-> 
+> <mark style="color:red;">Missing description, please ping dev to fix this or if you need clarification :)</mark>
 
 ---
 
