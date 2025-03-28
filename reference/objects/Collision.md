@@ -7,10 +7,10 @@ Inherits from object
 |Impulse|[Vector3](../objects/Vector3.md)|False||
 |RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
-##### void GetContact(int index)
-- **Description:** 
-##### void GetContacts()
-- **Description:** 
+#### void <span style="color":#dcdcaa>GetContact<span>(int <span style="color":#9cdcfe>index<span>)
+
+#### void <span style="color":#dcdcaa>GetContacts<span>()
+
 
 ---
 

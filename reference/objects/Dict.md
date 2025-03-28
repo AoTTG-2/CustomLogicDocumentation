@@ -11,16 +11,16 @@ example = Dict()
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
 ## Methods
-##### void Clear()
-- **Description:** Clears the dictionary
-##### Object Get(Object key, Object defaultValue = null)
-- **Description:** Gets a value from the dictionary
-##### void Set(Object key, Object value)
-- **Description:** Sets a value in the dictionary
-##### void Remove(Object key)
-- **Description:** Removes a value from the dictionary
-##### bool Contains(Object key)
-- **Description:** Checks if the dictionary contains a key
+#### void <span style="color":#dcdcaa>Clear<span>()
+Clears the dictionary
+#### Object <span style="color":#dcdcaa>Get<span>(Object <span style="color":#9cdcfe>key<span>, Object <span style="color":#9cdcfe>defaultValue<span> = null)
+Gets a value from the dictionary
+#### void <span style="color":#dcdcaa>Set<span>(Object <span style="color":#9cdcfe>key<span>, Object <span style="color":#9cdcfe>value<span>)
+Sets a value in the dictionary
+#### void <span style="color":#dcdcaa>Remove<span>(Object <span style="color":#9cdcfe>key<span>)
+Removes a value from the dictionary
+#### bool <span style="color":#dcdcaa>Contains<span>(Object <span style="color":#9cdcfe>key<span>)
+Checks if the dictionary contains a key
 
 ---
 

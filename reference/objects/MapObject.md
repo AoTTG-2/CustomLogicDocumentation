@@ -28,56 +28,56 @@ Inherits from object
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
 ## Methods
-##### CustomLogicComponentInstance AddComponent([String](../static/String.md) name)
-- **Description:** Add a component to the object
-##### void RemoveComponent([String](../static/String.md) name)
-- **Description:** Remove a component from the object
-##### CustomLogicComponentInstance GetComponent([String](../static/String.md) name)
-- **Description:** Get a component from the object
-##### void SetComponentEnabled([String](../static/String.md) name, bool enabled)
-- **Description:** Set whether a component is enabled
-##### void SetComponentsEnabled(bool enabled)
-- **Description:** Set whether all components are enabled
-##### void AddSphereCollider([String](../static/String.md) collideMode, [String](../static/String.md) collideWith, [Vector3](../objects/Vector3.md) center, float radius)
-- **Description:** Add a sphere collider to the object
-##### void AddBoxCollider([String](../static/String.md) collideMode, [String](../static/String.md) collideWith, [Vector3](../objects/Vector3.md) center = null, [Vector3](../objects/Vector3.md) size = null)
-- **Description:** Add a box collider to the object
-##### [MapTargetable](../objects/MapTargetable.md) AddSphereTarget([String](../static/String.md) team, [Vector3](../objects/Vector3.md) center, float radius)
-- **Description:** Add a sphere target to the object
-##### [MapTargetable](../objects/MapTargetable.md) AddBoxTarget([String](../static/String.md) team, [Vector3](../objects/Vector3.md) center, [Vector3](../objects/Vector3.md) size)
-- **Description:** Add a box target to the object
-##### [MapObject](../objects/MapObject.md) GetChild([String](../static/String.md) name)
-- **Description:** Get a child object by name
-##### [List](../objects/List.md) GetChildren()
-- **Description:** Get all child objects
-##### [Transform](../objects/Transform.md) GetTransform([String](../static/String.md) name)
-- **Description:** Get a child transform by name
-##### void SetColorAll([Color](../objects/Color.md) color)
-- **Description:** Set the color of all renderers on the object
-##### bool InBounds([Vector3](../objects/Vector3.md) position)
-- **Description:** Check if a position is within the object's bounds
-##### [Vector3](../objects/Vector3.md) GetBoundsAverageCenter()
-- **Description:** Get the bounds average center
-##### [Vector3](../objects/Vector3.md) GetBoundsCenter()
-- **Description:** Get the bounds center
-##### [Vector3](../objects/Vector3.md) GetBoundsSize()
-- **Description:** Get the bounds size
-##### [Vector3](../objects/Vector3.md) GetBoundsMin()
-- **Description:** Get the bounds min
-##### [Vector3](../objects/Vector3.md) GetBoundsMax()
-- **Description:** Get the bounds max
-##### [Vector3](../objects/Vector3.md) GetBoundsExtents()
-- **Description:** Get the bounds extents
-##### [List](../objects/List.md) GetCorners()
-- **Description:** Get the corners of the bounds
-##### void AddBuiltinComponent(Object parameter0 = null, Object parameter1 = null, Object parameter2 = null, Object parameter3 = null, Object parameter4 = null)
-- **Description:** [OBSELETE] Add builtin component
-##### bool HasTag([String](../static/String.md) tag)
-- **Description:** Whether or not the object has the given tag
-##### Object ReadBuiltinComponent([String](../static/String.md) name, [String](../static/String.md) param)
-- **Description:** [OBSELETE] Read a builtin component
-##### void UpdateBuiltinComponent(Object parameter0 = null, Object parameter1 = null, Object parameter2 = null, Object parameter3 = null, Object parameter4 = null)
-- **Description:** [OBSELETE] Update a builtin component
+#### CustomLogicComponentInstance <span style="color":#dcdcaa>AddComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+Add a component to the object
+#### void <span style="color":#dcdcaa>RemoveComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+Remove a component from the object
+#### CustomLogicComponentInstance <span style="color":#dcdcaa>GetComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+Get a component from the object
+#### void <span style="color":#dcdcaa>SetComponentEnabled<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>, bool <span style="color":#9cdcfe>enabled<span>)
+Set whether a component is enabled
+#### void <span style="color":#dcdcaa>SetComponentsEnabled<span>(bool <span style="color":#9cdcfe>enabled<span>)
+Set whether all components are enabled
+#### void <span style="color":#dcdcaa>AddSphereCollider<span>([String](../static/String.md) <span style="color":#9cdcfe>collideMode<span>, [String](../static/String.md) <span style="color":#9cdcfe>collideWith<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, float <span style="color":#9cdcfe>radius<span>)
+Add a sphere collider to the object
+#### void <span style="color":#dcdcaa>AddBoxCollider<span>([String](../static/String.md) <span style="color":#9cdcfe>collideMode<span>, [String](../static/String.md) <span style="color":#9cdcfe>collideWith<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span> = null, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>size<span> = null)
+Add a box collider to the object
+#### [MapTargetable](../objects/MapTargetable.md) <span style="color":#dcdcaa>AddSphereTarget<span>([String](../static/String.md) <span style="color":#9cdcfe>team<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, float <span style="color":#9cdcfe>radius<span>)
+Add a sphere target to the object
+#### [MapTargetable](../objects/MapTargetable.md) <span style="color":#dcdcaa>AddBoxTarget<span>([String](../static/String.md) <span style="color":#9cdcfe>team<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>size<span>)
+Add a box target to the object
+#### [MapObject](../objects/MapObject.md) <span style="color":#dcdcaa>GetChild<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+Get a child object by name
+#### [List](../objects/List.md) <span style="color":#dcdcaa>GetChildren<span>()
+Get all child objects
+#### [Transform](../objects/Transform.md) <span style="color":#dcdcaa>GetTransform<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+Get a child transform by name
+#### void <span style="color":#dcdcaa>SetColorAll<span>([Color](../objects/Color.md) <span style="color":#9cdcfe>color<span>)
+Set the color of all renderers on the object
+#### bool <span style="color":#dcdcaa>InBounds<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+Check if a position is within the object's bounds
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsAverageCenter<span>()
+Get the bounds average center
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsCenter<span>()
+Get the bounds center
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsSize<span>()
+Get the bounds size
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsMin<span>()
+Get the bounds min
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsMax<span>()
+Get the bounds max
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsExtents<span>()
+Get the bounds extents
+#### [List](../objects/List.md) <span style="color":#dcdcaa>GetCorners<span>()
+Get the corners of the bounds
+#### void <span style="color":#dcdcaa>AddBuiltinComponent<span>(Object <span style="color":#9cdcfe>parameter0<span> = null, Object <span style="color":#9cdcfe>parameter1<span> = null, Object <span style="color":#9cdcfe>parameter2<span> = null, Object <span style="color":#9cdcfe>parameter3<span> = null, Object <span style="color":#9cdcfe>parameter4<span> = null)
+[OBSELETE] Add builtin component
+#### bool <span style="color":#dcdcaa>HasTag<span>([String](../static/String.md) <span style="color":#9cdcfe>tag<span>)
+Whether or not the object has the given tag
+#### Object <span style="color":#dcdcaa>ReadBuiltinComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>, [String](../static/String.md) <span style="color":#9cdcfe>param<span>)
+[OBSELETE] Read a builtin component
+#### void <span style="color":#dcdcaa>UpdateBuiltinComponent<span>(Object <span style="color":#9cdcfe>parameter0<span> = null, Object <span style="color":#9cdcfe>parameter1<span> = null, Object <span style="color":#9cdcfe>parameter2<span> = null, Object <span style="color":#9cdcfe>parameter3<span> = null, Object <span style="color":#9cdcfe>parameter4<span> = null)
+[OBSELETE] Update a builtin component
 
 ---
 

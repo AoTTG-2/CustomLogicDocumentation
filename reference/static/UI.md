@@ -14,46 +14,46 @@ Inherits from object
 |BottomRight|[String](../static/String.md)|False|"BottomRight" constant|
 |GetPopups|[List](../objects/List.md)|False|Returns a list of all popups|
 ## Static Methods
-##### void SetLabel([String](../static/String.md) label, [String](../static/String.md) message)
-- **Description:** Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
-##### void SetLabelForTime([String](../static/String.md) label, [String](../static/String.md) message, float time)
-- **Description:** Sets the label for a certain time, after which it will be cleared.
-##### void SetLabelAll([String](../static/String.md) label, [String](../static/String.md) message)
-- **Description:** Sets the label for all players. Master client only. Be careful not to call this often.
-##### void SetLabelForTimeAll([String](../static/String.md) label, [String](../static/String.md) message, float time)
-- **Description:** Sets the label for all players for a certain time. Master client only.
-##### [String](../static/String.md) CreatePopup([String](../static/String.md) popupName, [String](../static/String.md) title, int width, int height)
-- **Description:** Creates a new popup. This popup is hidden until shown.
-##### void ShowPopup([String](../static/String.md) popupName)
-- **Description:** Shows the popup with given name.
-##### void HidePopup([String](../static/String.md) popupName)
-- **Description:** Hides the popup with given name.
-##### void ClearPopup([String](../static/String.md) popupName)
-- **Description:** Clears all elements in popup with given name.
-##### void AddPopupLabel([String](../static/String.md) popupName, [String](../static/String.md) label)
-- **Description:** Adds a text row to the popup with label as content.
-##### void AddPopupButton([String](../static/String.md) popupName, [String](../static/String.md) label, [String](../static/String.md) callback)
-- **Description:** Adds a button row to the popup with given button name and display text. When button is pressed, OnButtonClick is called in Main with buttonName parameter.
-##### void AddPopupBottomButton([String](../static/String.md) popupName, [String](../static/String.md) label, [String](../static/String.md) callback)
-- **Description:** Adds a button to the bottom bar of the popup.
-##### void AddPopupButtons([String](../static/String.md) popupName, [List](../objects/List.md) labels, [List](../objects/List.md) callbacks)
-- **Description:** Adds a list of buttons in a row to the popup.
-##### [String](../static/String.md) WrapStyleTag([String](../static/String.md) text, [String](../static/String.md) style, [String](../static/String.md) arg = null)
-- **Description:** Returns a wrapped string given style and args.
-##### [String](../static/String.md) GetLocale([String](../static/String.md) cat, [String](../static/String.md) sub, [String](../static/String.md) key)
-- **Description:** Gets translated locale from the current Language.json file with given category, subcategory, and key pattern.
-##### [String](../static/String.md) GetLanguage()
-- **Description:** Returns the current language (e.g. "English" or "简体中文").
-##### void ShowChangeCharacterMenu()
-- **Description:** Shows the change character menu if main character is Human.
-##### void SetScoreboardHeader([String](../static/String.md) header)
-- **Description:** Sets the display of the scoreboard header (default "Kills / Deaths...")
-##### void SetScoreboardProperty([String](../static/String.md) property)
-- **Description:** Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.
-##### [Color](../objects/Color.md) GetThemeColor([String](../static/String.md) panel, [String](../static/String.md) category, [String](../static/String.md) item)
-- **Description:** Gets the color of the specified item. See theme json for reference.
-##### bool IsPopupActive([String](../static/String.md) popupName)
-- **Description:** Returns if the given popup is active
+#### void <span style="color":#dcdcaa>SetLabel<span>([String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>message<span>)
+Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
+#### void <span style="color":#dcdcaa>SetLabelForTime<span>([String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>message<span>, float <span style="color":#9cdcfe>time<span>)
+Sets the label for a certain time, after which it will be cleared.
+#### void <span style="color":#dcdcaa>SetLabelAll<span>([String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>message<span>)
+Sets the label for all players. Master client only. Be careful not to call this often.
+#### void <span style="color":#dcdcaa>SetLabelForTimeAll<span>([String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>message<span>, float <span style="color":#9cdcfe>time<span>)
+Sets the label for all players for a certain time. Master client only.
+#### [String](../static/String.md) <span style="color":#dcdcaa>CreatePopup<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>, [String](../static/String.md) <span style="color":#9cdcfe>title<span>, int <span style="color":#9cdcfe>width<span>, int <span style="color":#9cdcfe>height<span>)
+Creates a new popup. This popup is hidden until shown.
+#### void <span style="color":#dcdcaa>ShowPopup<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>)
+Shows the popup with given name.
+#### void <span style="color":#dcdcaa>HidePopup<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>)
+Hides the popup with given name.
+#### void <span style="color":#dcdcaa>ClearPopup<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>)
+Clears all elements in popup with given name.
+#### void <span style="color":#dcdcaa>AddPopupLabel<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>, [String](../static/String.md) <span style="color":#9cdcfe>label<span>)
+Adds a text row to the popup with label as content.
+#### void <span style="color":#dcdcaa>AddPopupButton<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>, [String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>callback<span>)
+Adds a button row to the popup with given button name and display text. When button is pressed, OnButtonClick is called in Main with buttonName parameter.
+#### void <span style="color":#dcdcaa>AddPopupBottomButton<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>, [String](../static/String.md) <span style="color":#9cdcfe>label<span>, [String](../static/String.md) <span style="color":#9cdcfe>callback<span>)
+Adds a button to the bottom bar of the popup.
+#### void <span style="color":#dcdcaa>AddPopupButtons<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>, [List](../objects/List.md) <span style="color":#9cdcfe>labels<span>, [List](../objects/List.md) <span style="color":#9cdcfe>callbacks<span>)
+Adds a list of buttons in a row to the popup.
+#### [String](../static/String.md) <span style="color":#dcdcaa>WrapStyleTag<span>([String](../static/String.md) <span style="color":#9cdcfe>text<span>, [String](../static/String.md) <span style="color":#9cdcfe>style<span>, [String](../static/String.md) <span style="color":#9cdcfe>arg<span> = null)
+Returns a wrapped string given style and args.
+#### [String](../static/String.md) <span style="color":#dcdcaa>GetLocale<span>([String](../static/String.md) <span style="color":#9cdcfe>cat<span>, [String](../static/String.md) <span style="color":#9cdcfe>sub<span>, [String](../static/String.md) <span style="color":#9cdcfe>key<span>)
+Gets translated locale from the current Language.json file with given category, subcategory, and key pattern.
+#### [String](../static/String.md) <span style="color":#dcdcaa>GetLanguage<span>()
+Returns the current language (e.g. "English" or "简体中文").
+#### void <span style="color":#dcdcaa>ShowChangeCharacterMenu<span>()
+Shows the change character menu if main character is Human.
+#### void <span style="color":#dcdcaa>SetScoreboardHeader<span>([String](../static/String.md) <span style="color":#9cdcfe>header<span>)
+Sets the display of the scoreboard header (default "Kills / Deaths...")
+#### void <span style="color":#dcdcaa>SetScoreboardProperty<span>([String](../static/String.md) <span style="color":#9cdcfe>property<span>)
+Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.
+#### [Color](../objects/Color.md) <span style="color":#dcdcaa>GetThemeColor<span>([String](../static/String.md) <span style="color":#9cdcfe>panel<span>, [String](../static/String.md) <span style="color":#9cdcfe>category<span>, [String](../static/String.md) <span style="color":#9cdcfe>item<span>)
+Gets the color of the specified item. See theme json for reference.
+#### bool <span style="color":#dcdcaa>IsPopupActive<span>([String](../static/String.md) <span style="color":#9cdcfe>popupName<span>)
+Returns if the given popup is active
 
 ---
 

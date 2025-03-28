@@ -16,12 +16,12 @@ Inherits from object
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
 ## Methods
-##### [Vector3](../objects/Vector3.md) ClosestPoint([Vector3](../objects/Vector3.md) position)
-- **Description:** 
-##### [Vector3](../objects/Vector3.md) ClosestPointOnBounds([Vector3](../objects/Vector3.md) position)
-- **Description:** 
-##### [LineCastHitResult](../objects/LineCastHitResult.md) Raycast([Vector3](../objects/Vector3.md) start, [Vector3](../objects/Vector3.md) end, float maxDistance, [String](../static/String.md) collideWith)
-- **Description:** 
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>ClosestPoint<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>ClosestPointOnBounds<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+
+#### [LineCastHitResult](../objects/LineCastHitResult.md) <span style="color":#dcdcaa>Raycast<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>start<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>end<span>, float <span style="color":#9cdcfe>maxDistance<span>, [String](../static/String.md) <span style="color":#9cdcfe>collideWith<span>)
+
 
 ---
 

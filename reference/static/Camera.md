@@ -14,24 +14,24 @@ Inherits from object
 |Up|[Vector3](../objects/Vector3.md)|False|Up vector of the camera.|
 |FollowDistance|float|False|Distance from the camera to the character.|
 ## Static Methods
-##### void SetManual(bool manual)
-- **Description:** Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.
-##### void SetPosition([Vector3](../objects/Vector3.md) position)
-- **Description:** Sets camera position.
-##### void SetRotation([Vector3](../objects/Vector3.md) rotation)
-- **Description:** Sets camera rotation.
-##### void SetVelocity([Vector3](../objects/Vector3.md) velocity)
-- **Description:** Sets camera velocity.
-##### void LookAt([Vector3](../objects/Vector3.md) position)
-- **Description:** Sets the camera forward direction such that it is looking at a world position.
-##### void SetFOV(float fov)
-- **Description:** Sets the camera field of view. Use 0 to use the default field of view.
-##### void SetCameraMode([String](../static/String.md) mode)
-- **Description:** Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.
-##### void ResetDistance()
-- **Description:** Resets the follow distance to player's settings.
-##### void ResetCameraMode()
-- **Description:** Resets the camera mode to player's settings.
+#### void <span style="color":#dcdcaa>SetManual<span>(bool <span style="color":#9cdcfe>manual<span>)
+Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.
+#### void <span style="color":#dcdcaa>SetPosition<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+Sets camera position.
+#### void <span style="color":#dcdcaa>SetRotation<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>rotation<span>)
+Sets camera rotation.
+#### void <span style="color":#dcdcaa>SetVelocity<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>velocity<span>)
+Sets camera velocity.
+#### void <span style="color":#dcdcaa>LookAt<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+Sets the camera forward direction such that it is looking at a world position.
+#### void <span style="color":#dcdcaa>SetFOV<span>(float <span style="color":#9cdcfe>fov<span>)
+Sets the camera field of view. Use 0 to use the default field of view.
+#### void <span style="color":#dcdcaa>SetCameraMode<span>([String](../static/String.md) <span style="color":#9cdcfe>mode<span>)
+Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.
+#### void <span style="color":#dcdcaa>ResetDistance<span>()
+Resets the follow distance to player's settings.
+#### void <span style="color":#dcdcaa>ResetCameraMode<span>()
+Resets the camera mode to player's settings.
 
 ---
 

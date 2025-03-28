@@ -57,56 +57,56 @@ Inherits from [Character](../objects/Character.md)
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
 ## Methods
-##### bool Refill()
-- **Description:** Refills the gas of the human
-##### void RefillImmediate()
-- **Description:** Refills the gas of the human immediately
-##### void ClearHooks()
-- **Description:** Clears all hooks
-##### void ClearLeftHook()
-- **Description:** Clears the left hook
-##### void ClearRightHook()
-- **Description:** Clears the right hook
-##### void MountMapObject([MapObject](../objects/MapObject.md) mapObject, [Vector3](../objects/Vector3.md) positionOffset, [Vector3](../objects/Vector3.md) rotationOffset)
-- **Description:** Mounts the human on a map object
-##### void MountTransform([Transform](../objects/Transform.md) transform, [Vector3](../objects/Vector3.md) positionOffset, [Vector3](../objects/Vector3.md) rotationOffset)
-- **Description:** Mounts the human on a transform
-##### void Unmount()
-- **Description:** Unmounts the human
-##### void SetSpecial([String](../static/String.md) special)
-- **Description:** Sets the special of the human
-##### void ActivateSpecial()
-- **Description:** Activates the special of the human
-##### void SetWeapon([String](../static/String.md) weapon)
-- **Description:** Sets the weapon of the human
-##### void DisablePerks()
-- **Description:** Disables all perks of the human
-##### void GetKilled([String](../static/String.md) killer)
-- **Description:** Kills the character. Callable by non-owners.
-##### void GetDamaged([String](../static/String.md) killer, int damage)
-- **Description:** Damages the character and kills it if its health reaches 0. Callable by non-owners.
-##### void Emote([String](../static/String.md) emote)
-- **Description:** Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
-##### void PlayAnimation([String](../static/String.md) animation, float fade = 0.1)
-- **Description:** Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-##### void ForceAnimation([String](../static/String.md) animation, float fade = 0.1)
-- **Description:** Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-##### float GetAnimationLength([String](../static/String.md) animation)
-- **Description:** Gets the length of animation.
-##### void PlaySound([String](../static/String.md) sound)
-- **Description:** Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
-##### void StopSound([String](../static/String.md) sound)
-- **Description:** Stops the sound.
-##### void LookAt([Vector3](../objects/Vector3.md) position)
-- **Description:** Rotates the character such that it is looking towards a world position.
-##### void AddForce([Vector3](../objects/Vector3.md) force, [String](../static/String.md) mode = Acceleration)
-- **Description:** Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
-##### void Reveal(float delay)
-- **Description:** Reveaal the titan for a set number of seconds.
-##### void AddOutline([Color](../objects/Color.md) color = null, [String](../static/String.md) mode = OutlineAll)
-- **Description:** Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
-##### void RemoveOutline()
-- **Description:** Removes the outline effect from the character.
+#### bool <span style="color":#dcdcaa>Refill<span>()
+Refills the gas of the human
+#### void <span style="color":#dcdcaa>RefillImmediate<span>()
+Refills the gas of the human immediately
+#### void <span style="color":#dcdcaa>ClearHooks<span>()
+Clears all hooks
+#### void <span style="color":#dcdcaa>ClearLeftHook<span>()
+Clears the left hook
+#### void <span style="color":#dcdcaa>ClearRightHook<span>()
+Clears the right hook
+#### void <span style="color":#dcdcaa>MountMapObject<span>([MapObject](../objects/MapObject.md) <span style="color":#9cdcfe>mapObject<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>positionOffset<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>rotationOffset<span>)
+Mounts the human on a map object
+#### void <span style="color":#dcdcaa>MountTransform<span>([Transform](../objects/Transform.md) <span style="color":#9cdcfe>transform<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>positionOffset<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>rotationOffset<span>)
+Mounts the human on a transform
+#### void <span style="color":#dcdcaa>Unmount<span>()
+Unmounts the human
+#### void <span style="color":#dcdcaa>SetSpecial<span>([String](../static/String.md) <span style="color":#9cdcfe>special<span>)
+Sets the special of the human
+#### void <span style="color":#dcdcaa>ActivateSpecial<span>()
+Activates the special of the human
+#### void <span style="color":#dcdcaa>SetWeapon<span>([String](../static/String.md) <span style="color":#9cdcfe>weapon<span>)
+Sets the weapon of the human
+#### void <span style="color":#dcdcaa>DisablePerks<span>()
+Disables all perks of the human
+#### void <span style="color":#dcdcaa>GetKilled<span>([String](../static/String.md) <span style="color":#9cdcfe>killer<span>)
+Kills the character. Callable by non-owners.
+#### void <span style="color":#dcdcaa>GetDamaged<span>([String](../static/String.md) <span style="color":#9cdcfe>killer<span>, int <span style="color":#9cdcfe>damage<span>)
+Damages the character and kills it if its health reaches 0. Callable by non-owners.
+#### void <span style="color":#dcdcaa>Emote<span>([String](../static/String.md) <span style="color":#9cdcfe>emote<span>)
+Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
+#### void <span style="color":#dcdcaa>PlayAnimation<span>([String](../static/String.md) <span style="color":#9cdcfe>animation<span>, float <span style="color":#9cdcfe>fade<span> = 0.1)
+Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
+#### void <span style="color":#dcdcaa>ForceAnimation<span>([String](../static/String.md) <span style="color":#9cdcfe>animation<span>, float <span style="color":#9cdcfe>fade<span> = 0.1)
+Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
+#### float <span style="color":#dcdcaa>GetAnimationLength<span>([String](../static/String.md) <span style="color":#9cdcfe>animation<span>)
+Gets the length of animation.
+#### void <span style="color":#dcdcaa>PlaySound<span>([String](../static/String.md) <span style="color":#9cdcfe>sound<span>)
+Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
+#### void <span style="color":#dcdcaa>StopSound<span>([String](../static/String.md) <span style="color":#9cdcfe>sound<span>)
+Stops the sound.
+#### void <span style="color":#dcdcaa>LookAt<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+Rotates the character such that it is looking towards a world position.
+#### void <span style="color":#dcdcaa>AddForce<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>force<span>, [String](../static/String.md) <span style="color":#9cdcfe>mode<span> = Acceleration)
+Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
+#### void <span style="color":#dcdcaa>Reveal<span>(float <span style="color":#9cdcfe>delay<span>)
+Reveaal the titan for a set number of seconds.
+#### void <span style="color":#dcdcaa>AddOutline<span>([Color](../objects/Color.md) <span style="color":#9cdcfe>color<span> = null, [String](../static/String.md) <span style="color":#9cdcfe>mode<span> = OutlineAll)
+Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
+#### void <span style="color":#dcdcaa>RemoveOutline<span>()
+Removes the outline effect from the character.
 
 ---
 
