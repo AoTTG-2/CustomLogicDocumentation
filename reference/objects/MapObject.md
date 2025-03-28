@@ -72,6 +72,8 @@ Inherits from object
 - **Description:** Get the corners of the bounds
 ##### void AddBuiltinComponent(Object parameter0 = null, Object parameter1 = null, Object parameter2 = null, Object parameter3 = null, Object parameter4 = null)
 - **Description:** [OBSELETE] Add builtin component
+##### bool HasTag([String](../static/String.md) tag)
+- **Description:** Whether or not the object has the given tag
 ##### Object ReadBuiltinComponent([String](../static/String.md) name, [String](../static/String.md) param)
 - **Description:** [OBSELETE] Read a builtin component
 ##### void UpdateBuiltinComponent(Object parameter0 = null, Object parameter1 = null, Object parameter2 = null, Object parameter3 = null, Object parameter4 = null)
