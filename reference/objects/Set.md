@@ -1,80 +1,44 @@
 # Set
-
 Inherits from object
-
 ## Initialization
-
 ```csharp
 example = Set()
 example = Set((CustomLogicListBuiltin))
 ```
-
 ## Fields
-
-| Field | Type | Readonly | Description                       |
-| ----- | ---- | -------- | --------------------------------- |
-| Count | int  | True     | The number of elements in the set |
-
+|Field|Type|Readonly|Description|
+|---|---|---|---|
+|Count|int|True|The number of elements in the set|
 ## Methods
-
-#### void <mark style="color:blue;">Clear</mark>()
-
-<mark style="background-color:blue;">Clear all set elements</mark>
-
-#### bool Contains(Object value)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Clear</mark>()
+Clear all set elements
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">Contains</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">value</mark>)
 Check if the set contains the specified element
-
-#### void Add(Object value)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Add</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">value</mark>)
 Add an element to the set
-
-#### void Remove(Object value)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Remove</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">value</mark>)
 Remove the element from the set
-
-#### void Union([Set](Set.md) set)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Union</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Union with another set
-
-#### void Intersect([Set](Set.md) set)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Intersect</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Intersect with another set
-
-#### void Difference([Set](Set.md) set)
-
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">Difference</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Difference with another set
-
-#### bool IsSubsetOf([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">IsSubsetOf</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set is a subset of another set
-
-#### bool IsSupersetOf([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">IsSupersetOf</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set is a superset of another set
-
-#### bool IsProperSubsetOf([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">IsProperSubsetOf</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set is a proper subset of another set
-
-#### bool IsProperSupersetOf([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">IsProperSupersetOf</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set is a proper superset of another set
-
-#### bool Overlaps([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">Overlaps</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set overlaps with another set
-
-#### bool SetEquals([Set](Set.md) set)
-
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">SetEquals</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set has the same elements as another set
-
-#### [List](List.md) ToList()
-
-Convert the set to a list
-
-#### [List](List.md) ToList()
+#### <mark style="color:Blue;">[List](../objects/List.md)</mark> <mark style="color:Yellow;">ToList</mark>()
 
 Convert the set to a list
 
-***
+---
+

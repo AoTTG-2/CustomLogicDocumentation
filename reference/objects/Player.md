@@ -20,11 +20,11 @@ Inherits from object
 |SpectateID|int|False|The player's spectating ID. If not spectating anyone, returns -1.|
 |SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
 ## Methods
-#### <mark style="color:#509cd4;">Object</mark> <mark style="color:#dcdcaa;">GetCustomProperty</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">property</mark>)
+#### <mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">GetCustomProperty</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">property</mark>)
 Get a custom property at given key. Must be a primitive type. This is synced to all clients.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetCustomProperty</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">property</mark>, <mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">value</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetCustomProperty</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">property</mark>, <mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">value</mark>)
 Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ClearKDR</mark>()
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ClearKDR</mark>()
 Clears kills, deaths, highestdamage, and totaldamage properties.
 
 ---

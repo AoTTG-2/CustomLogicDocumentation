@@ -10,15 +10,15 @@ Inherits from object
 |NetworkTime|double|False|The network time|
 |Ping|int|False|The local player's ping|
 ## Methods
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SendMessage</mark>(<mark style="color:#509cd4;">[Player](../objects/Player.md)</mark> <mark style="color:#9cdcfe;">player</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">message</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SendMessage</mark>(<mark style="color:Blue;">[Player](../objects/Player.md)</mark> <mark style="color:Yellow;">player</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">message</mark>)
 Send a message to a player
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SendMessageAll</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">message</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SendMessageAll</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">message</mark>)
 Send a message to all players
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SendMessageOthers</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">message</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SendMessageOthers</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">message</mark>)
 Send a message to all players except the sender
-#### <mark style="color:#509cd4;">double</mark> <mark style="color:#dcdcaa;">GetTimestampDifference</mark>(<mark style="color:#509cd4;">double</mark> <mark style="color:#9cdcfe;">timestamp1</mark>, <mark style="color:#509cd4;">double</mark> <mark style="color:#9cdcfe;">timestamp2</mark>)
+#### <mark style="color:Blue;">double</mark> <mark style="color:Yellow;">GetTimestampDifference</mark>(<mark style="color:Blue;">double</mark> <mark style="color:Yellow;">timestamp1</mark>, <mark style="color:Blue;">double</mark> <mark style="color:Yellow;">timestamp2</mark>)
 Get the difference between two photon timestamps
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">KickPlayer</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">target</mark>, <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">reason</mark> = <mark style="color:#509cd4;">.</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">KickPlayer</mark>(<mark style="color:Blue;">Object</mark> <mark style="color:Yellow;">target</mark>, <mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">reason</mark> = <mark style="color:Blue;">.</mark>)
 Kick the given player by id or player reference.
 
 ---

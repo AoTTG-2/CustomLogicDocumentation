@@ -14,23 +14,23 @@ Inherits from object
 |Up|[Vector3](../objects/Vector3.md)|False|Up vector of the camera.|
 |FollowDistance|float|False|Distance from the camera to the character.|
 ## Static Methods
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetManual</mark>(<mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">manual</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetManual</mark>(<mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">manual</mark>)
 Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetPosition</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">position</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetPosition</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>)
 Sets camera position.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetRotation</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">rotation</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetRotation</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">rotation</mark>)
 Sets camera rotation.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetVelocity</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">velocity</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetVelocity</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">velocity</mark>)
 Sets camera velocity.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">LookAt</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">position</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">LookAt</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>)
 Sets the camera forward direction such that it is looking at a world position.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetFOV</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">fov</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetFOV</mark>(<mark style="color:Blue;">float</mark> <mark style="color:Yellow;">fov</mark>)
 Sets the camera field of view. Use 0 to use the default field of view.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetCameraMode</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">mode</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetCameraMode</mark>(<mark style="color:Blue;">[String](../static/String.md)</mark> <mark style="color:Yellow;">mode</mark>)
 Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ResetDistance</mark>()
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ResetDistance</mark>()
 Resets the follow distance to player's settings.
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">ResetCameraMode</mark>()
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">ResetCameraMode</mark>()
 Resets the camera mode to player's settings.
 
 ---
