@@ -28,55 +28,55 @@ Inherits from object
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
 ## Methods
-#### CustomLogicComponentInstance <span style="color":#dcdcaa>AddComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+#### <span style="color:#509cd4">CustomLogicComponentInstance</span> <span style="color:#dcdcaa">AddComponent</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>)
 Add a component to the object
-#### void <span style="color":#dcdcaa>RemoveComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">RemoveComponent</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>)
 Remove a component from the object
-#### CustomLogicComponentInstance <span style="color":#dcdcaa>GetComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+#### <span style="color:#509cd4">CustomLogicComponentInstance</span> <span style="color:#dcdcaa">GetComponent</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>)
 Get a component from the object
-#### void <span style="color":#dcdcaa>SetComponentEnabled<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>, bool <span style="color":#9cdcfe>enabled<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetComponentEnabled</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>, <span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">enabled</span>)
 Set whether a component is enabled
-#### void <span style="color":#dcdcaa>SetComponentsEnabled<span>(bool <span style="color":#9cdcfe>enabled<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetComponentsEnabled</span>(<span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">enabled</span>)
 Set whether all components are enabled
-#### void <span style="color":#dcdcaa>AddSphereCollider<span>([String](../static/String.md) <span style="color":#9cdcfe>collideMode<span>, [String](../static/String.md) <span style="color":#9cdcfe>collideWith<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, float <span style="color":#9cdcfe>radius<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">AddSphereCollider</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">collideMode</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">collideWith</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">center</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">radius</span>)
 Add a sphere collider to the object
-#### void <span style="color":#dcdcaa>AddBoxCollider<span>([String](../static/String.md) <span style="color":#9cdcfe>collideMode<span>, [String](../static/String.md) <span style="color":#9cdcfe>collideWith<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span> = null, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>size<span> = null)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">AddBoxCollider</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">collideMode</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">collideWith</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">center</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">size</span> = <span style="color:#509cd4">null</span>)
 Add a box collider to the object
-#### [MapTargetable](../objects/MapTargetable.md) <span style="color":#dcdcaa>AddSphereTarget<span>([String](../static/String.md) <span style="color":#9cdcfe>team<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, float <span style="color":#9cdcfe>radius<span>)
+#### <span style="color:#509cd4">[MapTargetable](../objects/MapTargetable.md)</span> <span style="color:#dcdcaa">AddSphereTarget</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">team</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">center</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">radius</span>)
 Add a sphere target to the object
-#### [MapTargetable](../objects/MapTargetable.md) <span style="color":#dcdcaa>AddBoxTarget<span>([String](../static/String.md) <span style="color":#9cdcfe>team<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>center<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>size<span>)
+#### <span style="color:#509cd4">[MapTargetable](../objects/MapTargetable.md)</span> <span style="color:#dcdcaa">AddBoxTarget</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">team</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">center</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">size</span>)
 Add a box target to the object
-#### [MapObject](../objects/MapObject.md) <span style="color":#dcdcaa>GetChild<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+#### <span style="color:#509cd4">[MapObject](../objects/MapObject.md)</span> <span style="color:#dcdcaa">GetChild</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>)
 Get a child object by name
-#### [List](../objects/List.md) <span style="color":#dcdcaa>GetChildren<span>()
+#### <span style="color:#509cd4">[List](../objects/List.md)</span> <span style="color:#dcdcaa">GetChildren</span>()
 Get all child objects
-#### [Transform](../objects/Transform.md) <span style="color":#dcdcaa>GetTransform<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>)
+#### <span style="color:#509cd4">[Transform](../objects/Transform.md)</span> <span style="color:#dcdcaa">GetTransform</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>)
 Get a child transform by name
-#### void <span style="color":#dcdcaa>SetColorAll<span>([Color](../objects/Color.md) <span style="color":#9cdcfe>color<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetColorAll</span>(<span style="color:#509cd4">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe">color</span>)
 Set the color of all renderers on the object
-#### bool <span style="color":#dcdcaa>InBounds<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">InBounds</span>(<span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>)
 Check if a position is within the object's bounds
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsAverageCenter<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsAverageCenter</span>()
 Get the bounds average center
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsCenter<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsCenter</span>()
 Get the bounds center
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsSize<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsSize</span>()
 Get the bounds size
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsMin<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsMin</span>()
 Get the bounds min
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsMax<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsMax</span>()
 Get the bounds max
-#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetBoundsExtents<span>()
+#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetBoundsExtents</span>()
 Get the bounds extents
-#### [List](../objects/List.md) <span style="color":#dcdcaa>GetCorners<span>()
+#### <span style="color:#509cd4">[List](../objects/List.md)</span> <span style="color:#dcdcaa">GetCorners</span>()
 Get the corners of the bounds
-#### void <span style="color":#dcdcaa>AddBuiltinComponent<span>(Object <span style="color":#9cdcfe>parameter0<span> = null, Object <span style="color":#9cdcfe>parameter1<span> = null, Object <span style="color":#9cdcfe>parameter2<span> = null, Object <span style="color":#9cdcfe>parameter3<span> = null, Object <span style="color":#9cdcfe>parameter4<span> = null)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">AddBuiltinComponent</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter0</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter1</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter2</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter3</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter4</span> = <span style="color:#509cd4">null</span>)
 [OBSELETE] Add builtin component
-#### bool <span style="color":#dcdcaa>HasTag<span>([String](../static/String.md) <span style="color":#9cdcfe>tag<span>)
+#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">HasTag</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">tag</span>)
 Whether or not the object has the given tag
-#### Object <span style="color":#dcdcaa>ReadBuiltinComponent<span>([String](../static/String.md) <span style="color":#9cdcfe>name<span>, [String](../static/String.md) <span style="color":#9cdcfe>param<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">ReadBuiltinComponent</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">name</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">param</span>)
 [OBSELETE] Read a builtin component
-#### void <span style="color":#dcdcaa>UpdateBuiltinComponent<span>(Object <span style="color":#9cdcfe>parameter0<span> = null, Object <span style="color":#9cdcfe>parameter1<span> = null, Object <span style="color":#9cdcfe>parameter2<span> = null, Object <span style="color":#9cdcfe>parameter3<span> = null, Object <span style="color":#9cdcfe>parameter4<span> = null)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">UpdateBuiltinComponent</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter0</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter1</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter2</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter3</span> = <span style="color:#509cd4">null</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">parameter4</span> = <span style="color:#509cd4">null</span>)
 [OBSELETE] Update a builtin component
 
 ---
