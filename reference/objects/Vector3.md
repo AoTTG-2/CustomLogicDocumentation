@@ -27,23 +27,17 @@ Inherits from object
 > Set x, y and z components of an existing Vector3.
 
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Scale</mark>(<mark style="color:blue;">Object</mark> scale)
-> <mark style="color:red;">This method is obselete</mark>
-
-> **Note:** <mark style="color:green;">Use multiply operator instead</mark>
+> <mark style="color:red;">This method is obselete</mark>: Use multiply operator instead
 
 > Returns the Vector3 multiplied by scale.
 
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Multiply</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
-> <mark style="color:red;">This method is obselete</mark>
-
-> **Note:** <mark style="color:green;">Use multiply operator instead</mark>
+> <mark style="color:red;">This method is obselete</mark>: Use multiply operator instead
 
 > Returns the multiplication of two Vector3s.
 
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">Divide</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> a, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> b)
-> <mark style="color:red;">This method is obselete</mark>
-
-> **Note:** <mark style="color:green;">Use divide operator instead</mark>
+> <mark style="color:red;">This method is obselete</mark>: Use divide operator instead
 
 > Returns the division of two Vector3s.
 
