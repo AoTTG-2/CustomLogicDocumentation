@@ -8,7 +8,7 @@ Inherits from object
 |ID|int|False|Player unique ID.|
 |Name|[String](../static/String.md)|False|Player name.|
 |Guild|[String](../static/String.md)|False|Player guild.|
-|Team|[String](../static/String.md)|False|Player's chosen team ("None", "Blue", "Red", "Titan", "Human").             Note that this may be different from the character's final team (Character.Team field) if the character's team field is modified.|
+|Team|[String](../static/String.md)|False|Player's chosen team ("None", "Blue", "Red", "Titan", "Human"). Note that this may be different from the character's final team (Character.Team field) if the character's team field is modified.|
 |Status|[String](../static/String.md)|False|Player's spawn status ("Alive", "Dead", "Spectating").|
 |CharacterType|[String](../static/String.md)|False|Player's chosen character ("Human", "Titan", "Shifter")|
 |Loadout|[String](../static/String.md)|False|Player's chosen loadout ("Blades", "AHSS", "APG", "Thunderspears").|
