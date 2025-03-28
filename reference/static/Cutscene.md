@@ -1,13 +1,13 @@
 # Cutscene
 Inherits from object
 ## Methods
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Start</span>(<span style="color:blue;">[String](../static/String.md)</span> name, <span style="color:blue;">bool</span> full)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Start</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> name, <mark style="color:blue;">bool</mark> full)
 > Start a cutscene
-#### <span style="color:blue;">void</span> <span style="color:yellow;">ShowDialogue</span>(<span style="color:blue;">[String](../static/String.md)</span> icon, <span style="color:blue;">[String](../static/String.md)</span> title, <span style="color:blue;">[String](../static/String.md)</span> content)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowDialogue</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> icon, <mark style="color:blue;">[String](../static/String.md)</mark> title, <mark style="color:blue;">[String](../static/String.md)</mark> content)
 > Show a dialogue box
-#### <span style="color:blue;">void</span> <span style="color:yellow;">ShowDialogueForTime</span>(<span style="color:blue;">[String](../static/String.md)</span> icon, <span style="color:blue;">[String](../static/String.md)</span> title, <span style="color:blue;">[String](../static/String.md)</span> content, <span style="color:blue;">float</span> time)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowDialogueForTime</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> icon, <mark style="color:blue;">[String](../static/String.md)</mark> title, <mark style="color:blue;">[String](../static/String.md)</mark> content, <mark style="color:blue;">float</mark> time)
 > Show a dialogue box for a certain amount of time
-#### <span style="color:blue;">void</span> <span style="color:yellow;">HideDialogue</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">HideDialogue</mark>()
 > Hide the dialogue box
 
 ---

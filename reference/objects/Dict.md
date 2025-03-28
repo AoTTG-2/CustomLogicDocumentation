@@ -11,15 +11,15 @@ example = Dict()
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
 ## Methods
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Clear</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Clear</mark>()
 > Clears the dictionary
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">Get</span>(<span style="color:blue;">Object</span> key, <span style="color:blue;">Object</span> defaultValue = <span style="color:blue;">null</span>)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Get</mark>(<mark style="color:blue;">Object</mark> key, <mark style="color:blue;">Object</mark> defaultValue = <mark style="color:blue;">null</mark>)
 > Gets a value from the dictionary
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Set</span>(<span style="color:blue;">Object</span> key, <span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Set</mark>(<mark style="color:blue;">Object</mark> key, <mark style="color:blue;">Object</mark> value)
 > Sets a value in the dictionary
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Remove</span>(<span style="color:blue;">Object</span> key)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Remove</mark>(<mark style="color:blue;">Object</mark> key)
 > Removes a value from the dictionary
-#### <span style="color:blue;">bool</span> <span style="color:yellow;">Contains</span>(<span style="color:blue;">Object</span> key)
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">Contains</mark>(<mark style="color:blue;">Object</mark> key)
 > Checks if the dictionary contains a key
 
 ---

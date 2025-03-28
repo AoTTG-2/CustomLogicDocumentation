@@ -17,35 +17,35 @@ Inherits from object
 |Up|[Vector3](../objects/Vector3.md)|False|Gets the up vector of the transform.|
 |Right|[Vector3](../objects/Vector3.md)|False|Gets the right vector of the transform.|
 ## Methods
-#### <span style="color:blue;">[Transform](../objects/Transform.md)</span> <span style="color:yellow;">GetTransform</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+#### <mark style="color:blue;">[Transform](../objects/Transform.md)</mark> <mark style="color:yellow;">GetTransform</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> name)
 > Gets the transform of the specified child.
-#### <span style="color:blue;">[List](../objects/List.md)</span> <span style="color:yellow;">GetTransforms</span>()
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">GetTransforms</mark>()
 > Gets all child transforms.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">PlayAnimation</span>(<span style="color:blue;">[String](../static/String.md)</span> anim, <span style="color:blue;">float</span> fade = <span style="color:blue;">0.1</span>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlayAnimation</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> anim, <mark style="color:blue;">float</mark> fade = <mark style="color:blue;">0.1</mark>)
 > Plays the specified animation.
-#### <span style="color:blue;">float</span> <span style="color:yellow;">GetAnimationLength</span>(<span style="color:blue;">[String](../static/String.md)</span> anim)
+#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">GetAnimationLength</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> anim)
 > Gets the length of the specified animation.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">PlaySound</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlaySound</mark>()
 > Plays the sound.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">StopSound</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">StopSound</mark>()
 > Stops the sound.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">ToggleParticle</span>(<span style="color:blue;">bool</span> enabled)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ToggleParticle</mark>(<mark style="color:blue;">bool</mark> enabled)
 > Toggles the particle system.
-#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">InverseTransformDirection</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> direction)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">InverseTransformDirection</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> direction)
 > Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.
-#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">InverseTransformPoint</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> point)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">InverseTransformPoint</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> point)
 > Transforms position from world space to local space.
-#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">TransformDirection</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> direction)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">TransformDirection</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> direction)
 > Transforms direction from local space to world space.
-#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">TransformPoint</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> point)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">TransformPoint</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> point)
 > Transforms position from local space to world space.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Rotate</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> rotation)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Rotate</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> rotation)
 > Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).
-#### <span style="color:blue;">void</span> <span style="color:yellow;">RotateAround</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> point, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> axis, <span style="color:blue;">float</span> angle)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RotateAround</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> point, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> axis, <mark style="color:blue;">float</mark> angle)
 > Rotates the transform about axis passing through point in world coordinates by angle degrees.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">LookAt</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> target)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">LookAt</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> target)
 > Rotates the transform so the forward vector points at worldPosition.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">SetRenderersEnabled</span>(<span style="color:blue;">bool</span> enabled)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetRenderersEnabled</mark>(<mark style="color:blue;">bool</mark> enabled)
 > Sets the enabled state of all child renderers.
 
 ---
