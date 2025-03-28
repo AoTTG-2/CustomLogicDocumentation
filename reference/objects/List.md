@@ -10,35 +10,35 @@ example = List((CustomLogicSetBuiltin))
 |---|---|---|---|
 |Count|int|True|The number of elements in the list|
 ## Methods
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Clear</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Clear</mark>()
 > Clear all list elements
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">Get</span>(<span style="color:blue;">int</span> index)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Get</mark>(<mark style="color:blue;">int</mark> index)
 > Get the element at the specified index
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Set</span>(<span style="color:blue;">int</span> index, <span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Set</mark>(<mark style="color:blue;">int</mark> index, <mark style="color:blue;">Object</mark> value)
 > Set the element at the specified index
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Add</span>(<span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Add</mark>(<mark style="color:blue;">Object</mark> value)
 > Add an element to the end of the list
-#### <span style="color:blue;">void</span> <span style="color:yellow;">InsertAt</span>(<span style="color:blue;">int</span> index, <span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">InsertAt</mark>(<mark style="color:blue;">int</mark> index, <mark style="color:blue;">Object</mark> value)
 > Insert an element at the specified index
-#### <span style="color:blue;">void</span> <span style="color:yellow;">RemoveAt</span>(<span style="color:blue;">int</span> index)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveAt</mark>(<mark style="color:blue;">int</mark> index)
 > Remove the element at the specified index
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Remove</span>(<span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Remove</mark>(<mark style="color:blue;">Object</mark> value)
 > Remove the first occurrence of the specified element
-#### <span style="color:blue;">bool</span> <span style="color:yellow;">Contains</span>(<span style="color:blue;">Object</span> value)
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">Contains</mark>(<mark style="color:blue;">Object</mark> value)
 > Check if the list contains the specified element
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Sort</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Sort</mark>()
 > Sort the list
-#### <span style="color:blue;">void</span> <span style="color:yellow;">SortCustom</span>(<span style="color:blue;">UserMethod</span> method)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SortCustom</mark>(<mark style="color:blue;">UserMethod</mark> method)
 > Sort the list using a custom method, expects a method with the signature int method(a,b)
-#### <span style="color:blue;">[List](../objects/List.md)</span> <span style="color:yellow;">Filter</span>(<span style="color:blue;">UserMethod</span> method)
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">Filter</mark>(<mark style="color:blue;">UserMethod</mark> method)
 > Filter the list using a custom method, expects a method with the signature bool method(element)
-#### <span style="color:blue;">[List](../objects/List.md)</span> <span style="color:yellow;">Map</span>(<span style="color:blue;">UserMethod</span> method)
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">Map</mark>(<mark style="color:blue;">UserMethod</mark> method)
 > Map the list using a custom method, expects a method with the signature object method(element)
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">Reduce</span>(<span style="color:blue;">UserMethod</span> method, <span style="color:blue;">Object</span> initialValue)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Reduce</mark>(<mark style="color:blue;">UserMethod</mark> method, <mark style="color:blue;">Object</mark> initialValue)
 > Reduce the list using a custom method, expects a method with the signature object method(acc, element)
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Randomize</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Randomize</mark>()
 > Randomize the list
-#### <span style="color:blue;">[Set](../objects/Set.md)</span> <span style="color:yellow;">ToSet</span>()
+#### <mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">ToSet</mark>()
 > Convert the list to a set
 
 ---

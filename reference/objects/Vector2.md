@@ -20,51 +20,51 @@ Inherits from object
 |NegativeInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 ## Methods
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Set</span>(<span style="color:blue;">float</span> x, <span style="color:blue;">float</span> y)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Set</mark>(<mark style="color:blue;">float</mark> x, <mark style="color:blue;">float</mark> y)
 > Set x and y components of an existing Vector2.
-#### <span style="color:blue;">void</span> <span style="color:yellow;">Normalize</span>()
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Normalize</mark>()
 > Makes this vector have a magnitude of 1.
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">\_\_Copy\_\_</span>()
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">\_\_Copy\_\_</mark>()
 > Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">\_\_Add\_\_</span>(<span style="color:blue;">Object</span> self, <span style="color:blue;">Object</span> other)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">\_\_Add\_\_</mark>(<mark style="color:blue;">Object</mark> self, <mark style="color:blue;">Object</mark> other)
 > Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">\_\_Sub\_\_</span>(<span style="color:blue;">Object</span> self, <span style="color:blue;">Object</span> other)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">\_\_Sub\_\_</mark>(<mark style="color:blue;">Object</mark> self, <mark style="color:blue;">Object</mark> other)
 > Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">\_\_Mul\_\_</span>(<span style="color:blue;">Object</span> self, <span style="color:blue;">Object</span> other)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">\_\_Mul\_\_</mark>(<mark style="color:blue;">Object</mark> self, <mark style="color:blue;">Object</mark> other)
 > Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)
-#### <span style="color:blue;">Object</span> <span style="color:yellow;">\_\_Div\_\_</span>(<span style="color:blue;">Object</span> self, <span style="color:blue;">Object</span> other)
+#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">\_\_Div\_\_</mark>(<mark style="color:blue;">Object</mark> self, <mark style="color:blue;">Object</mark> other)
 > Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)
-#### <span style="color:blue;">bool</span> <span style="color:yellow;">\_\_Eq\_\_</span>(<span style="color:blue;">Object</span> self, <span style="color:blue;">Object</span> other)
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">\_\_Eq\_\_</mark>(<mark style="color:blue;">Object</mark> self, <mark style="color:blue;">Object</mark> other)
 > Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)
-#### <span style="color:blue;">int</span> <span style="color:yellow;">\_\_Hash\_\_</span>()
+#### <mark style="color:blue;">int</mark> <mark style="color:yellow;">\_\_Hash\_\_</mark>()
 > Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
 
 ---
 
 ## Static Methods
-#### <span style="color:blue;">float</span> <span style="color:yellow;">Angle</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> from, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> to)
+#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">Angle</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> from, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> to)
 > Gets the unsigned angle in degrees between from and to.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">ClampMagnitude</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> vector, <span style="color:blue;">float</span> maxLength)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">ClampMagnitude</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> vector, <mark style="color:blue;">float</mark> maxLength)
 > Returns a copy of vector with its magnitude clamped to maxLength.
-#### <span style="color:blue;">float</span> <span style="color:yellow;">Distance</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b)
+#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">Distance</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b)
 > Returns the distance between a and b.
-#### <span style="color:blue;">float</span> <span style="color:yellow;">Dot</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b)
+#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">Dot</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b)
 > Dot Product of two vectors.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">Lerp</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b, <span style="color:blue;">float</span> t)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">Lerp</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b, <mark style="color:blue;">float</mark> t)
 > Linearly interpolates between vectors a and b by t.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">LerpUnclamped</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b, <span style="color:blue;">float</span> t)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">LerpUnclamped</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b, <mark style="color:blue;">float</mark> t)
 > Linearly interpolates between vectors a and b by t.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">Max</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">Max</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b)
 > Returns a vector that is made from the largest components of two vectors.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">Min</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> a, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> b)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">Min</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> a, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> b)
 > Returns a vector that is made from the smallest components of two vectors.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">MoveTowards</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> current, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> target, <span style="color:blue;">float</span> maxDistanceDelta)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">MoveTowards</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> current, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> target, <mark style="color:blue;">float</mark> maxDistanceDelta)
 > Moves a point current towards target.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">Reflect</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> inDirection, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> inNormal)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">Reflect</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> inDirection, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> inNormal)
 > Reflects a vector off the vector defined by a normal.
-#### <span style="color:blue;">float</span> <span style="color:yellow;">SignedAngle</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> from, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> to)
+#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">SignedAngle</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> from, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> to)
 > Gets the signed angle in degrees between from and to.
-#### <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> <span style="color:yellow;">SmoothDamp</span>(<span style="color:blue;">[Vector2](../objects/Vector2.md)</span> current, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> target, <span style="color:blue;">[Vector2](../objects/Vector2.md)</span> currentVelocity, <span style="color:blue;">float</span> smoothTime, <span style="color:blue;">float</span> maxSpeed)
+#### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">SmoothDamp</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> current, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> target, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> currentVelocity, <mark style="color:blue;">float</mark> smoothTime, <mark style="color:blue;">float</mark> maxSpeed)
 > 
 
 ---
