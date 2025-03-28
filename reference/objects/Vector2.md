@@ -65,7 +65,7 @@ Inherits from object
 #### <mark style="color:blue;">float</mark> <mark style="color:yellow;">SignedAngle</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> from, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> to)
 > Gets the signed angle in degrees between from and to.
 #### <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> <mark style="color:yellow;">SmoothDamp</mark>(<mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> current, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> target, <mark style="color:blue;">[Vector2](../objects/Vector2.md)</mark> currentVelocity, <mark style="color:blue;">float</mark> smoothTime, <mark style="color:blue;">float</mark> maxSpeed)
-> 
+> <mark style="color:red;">Missing description, please ping dev to fix this or if you need clarification :)</mark>
 
 ---
 
