@@ -12,7 +12,7 @@ Inherits from object
 |BottomCenter|[String](../static/String.md)|False|"BottomCenter" constant|
 |BottomLeft|[String](../static/String.md)|False|"BottomLeft" constant|
 |BottomRight|[String](../static/String.md)|False|"BottomRight" constant|
-|Popups|[List](../objects/List.md)|False|Returns a list of all popups|
+|GetPopups|[List](../objects/List.md)|False|Returns a list of all popups|
 ## Static Methods
 ##### void SetLabel([String](../static/String.md) label, [String](../static/String.md) message)
 - **Description:** Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
