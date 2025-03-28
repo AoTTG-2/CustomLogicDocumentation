@@ -10,82 +10,82 @@ Inherits from object
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
 ## Methods
-##### Object Clamp(Object value, Object min, Object max)
-- **Description:** Clamp a value between a minimum and maximum value
-##### Object Max(Object a, Object b)
-- **Description:** Get the maximum of two values
-##### Object Min(Object a, Object b)
-- **Description:** Get the minimum of two values
-##### Object Pow(Object a, Object b)
-- **Description:** Raise a value to the power of another value
-##### Object Abs(Object value)
-- **Description:** Get the absolute value of a number
-##### Object Sqrt(Object value)
-- **Description:** Get the square root of a number
-##### Object Mod(Object a, Object b)
-- **Description:** Get the remainder of a division operation
-##### Object Sin(Object angle)
-- **Description:** Get the sine of an angle in degrees
-##### Object Cos(Object angle)
-- **Description:** Get the cosine of an angle in degrees
-##### Object Tan(Object angle)
-- **Description:** Get the tangent of an angle in degrees
-##### Object Asin(Object value)
-- **Description:** Get the arcsine of a value in degrees
-##### Object Acos(Object value)
-- **Description:** Get the arccosine of a value in degrees
-##### Object Atan(Object value)
-- **Description:** Get the arctangent of a value in degrees
-##### Object Atan2(Object a, Object b)
-- **Description:** Get the arctangent of a value in degrees
-##### Object Ceil(Object value)
-- **Description:** Get the smallest integer greater than or equal to a value
-##### Object Floor(Object value)
-- **Description:** Get the largest integer less than or equal to a value
-##### Object Round(Object value)
-- **Description:** Round a value to the nearest integer
-##### Object Deg2Rad(Object angle)
-- **Description:** Convert an angle from degrees to radians
-##### Object Rad2Deg(Object angle)
-- **Description:** Convert an angle from radians to degrees
-##### Object Lerp(Object a, Object b, Object t)
-- **Description:** Linearly interpolate between two values
-##### Object LerpUnclamped(Object a, Object b, Object t)
-- **Description:** Linearly interpolate between two values without clamping
-##### Object Sign(Object value)
-- **Description:** Get the sign of a value
-##### Object InverseLerp(Object a, Object b, Object value)
-- **Description:** Get the inverse lerp of two values
-##### Object LerpAngle(Object a, Object b, Object t)
-- **Description:** Linearly interpolate between two angles
-##### Object Log(Object value)
-- **Description:** Get the natural logarithm of a value
-##### Object MoveTowards(Object current, Object target, Object maxDelta)
-- **Description:** Move a value towards a target value
-##### Object MoveTowardsAngle(Object current, Object target, Object maxDelta)
-- **Description:** Move an angle towards a target angle
-##### Object PingPong(Object t, Object length)
-- **Description:** Get the ping pong value of a time value
-##### Object SmoothDamp(Object current, Object target, Object currentVelocity, Object smoothTime, Object maxSpeed, Object deltaTime)
-- **Description:** Smoothly damp a value towards a target value
-##### Object Exp(Object value)
-- **Description:** Get the exponential value of a number
-##### Object SmoothDampAngle(Object current, Object target, Object currentVelocity, Object smoothTime, Object maxSpeed, Object deltaTime)
-- **Description:** Smoothly damp an angle towards a target angle
-##### Object SmoothStep(Object a, Object b, Object t)
-- **Description:** Smoothly step between two values
-##### Object BitwiseAnd(Object a, Object b)
-- **Description:** Perform a bitwise AND operation
-##### Object BitwiseOr(Object a, Object b)
-- **Description:** Perform a bitwise OR operation
-##### Object BitwiseXor(Object a, Object b)
-- **Description:** Perform a bitwise XOR operation
-##### Object BitwiseNot(Object value)
-- **Description:** Perform a bitwise NOT operation
-##### Object BitwiseLeftShift(Object value, Object shift)
-- **Description:** Shift bits to the left
-##### Object BitwiseRightShift(Object value, Object shift)
-- **Description:** Shift bits to the right
+#### Object <span style="color":#dcdcaa>Clamp<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>min<span>, Object <span style="color":#9cdcfe>max<span>)
+Clamp a value between a minimum and maximum value
+#### Object <span style="color":#dcdcaa>Max<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Get the maximum of two values
+#### Object <span style="color":#dcdcaa>Min<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Get the minimum of two values
+#### Object <span style="color":#dcdcaa>Pow<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Raise a value to the power of another value
+#### Object <span style="color":#dcdcaa>Abs<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the absolute value of a number
+#### Object <span style="color":#dcdcaa>Sqrt<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the square root of a number
+#### Object <span style="color":#dcdcaa>Mod<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Get the remainder of a division operation
+#### Object <span style="color":#dcdcaa>Sin<span>(Object <span style="color":#9cdcfe>angle<span>)
+Get the sine of an angle in degrees
+#### Object <span style="color":#dcdcaa>Cos<span>(Object <span style="color":#9cdcfe>angle<span>)
+Get the cosine of an angle in degrees
+#### Object <span style="color":#dcdcaa>Tan<span>(Object <span style="color":#9cdcfe>angle<span>)
+Get the tangent of an angle in degrees
+#### Object <span style="color":#dcdcaa>Asin<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the arcsine of a value in degrees
+#### Object <span style="color":#dcdcaa>Acos<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the arccosine of a value in degrees
+#### Object <span style="color":#dcdcaa>Atan<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the arctangent of a value in degrees
+#### Object <span style="color":#dcdcaa>Atan2<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Get the arctangent of a value in degrees
+#### Object <span style="color":#dcdcaa>Ceil<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the smallest integer greater than or equal to a value
+#### Object <span style="color":#dcdcaa>Floor<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the largest integer less than or equal to a value
+#### Object <span style="color":#dcdcaa>Round<span>(Object <span style="color":#9cdcfe>value<span>)
+Round a value to the nearest integer
+#### Object <span style="color":#dcdcaa>Deg2Rad<span>(Object <span style="color":#9cdcfe>angle<span>)
+Convert an angle from degrees to radians
+#### Object <span style="color":#dcdcaa>Rad2Deg<span>(Object <span style="color":#9cdcfe>angle<span>)
+Convert an angle from radians to degrees
+#### Object <span style="color":#dcdcaa>Lerp<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+Linearly interpolate between two values
+#### Object <span style="color":#dcdcaa>LerpUnclamped<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+Linearly interpolate between two values without clamping
+#### Object <span style="color":#dcdcaa>Sign<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the sign of a value
+#### Object <span style="color":#dcdcaa>InverseLerp<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>value<span>)
+Get the inverse lerp of two values
+#### Object <span style="color":#dcdcaa>LerpAngle<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+Linearly interpolate between two angles
+#### Object <span style="color":#dcdcaa>Log<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the natural logarithm of a value
+#### Object <span style="color":#dcdcaa>MoveTowards<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>maxDelta<span>)
+Move a value towards a target value
+#### Object <span style="color":#dcdcaa>MoveTowardsAngle<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>maxDelta<span>)
+Move an angle towards a target angle
+#### Object <span style="color":#dcdcaa>PingPong<span>(Object <span style="color":#9cdcfe>t<span>, Object <span style="color":#9cdcfe>length<span>)
+Get the ping pong value of a time value
+#### Object <span style="color":#dcdcaa>SmoothDamp<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>currentVelocity<span>, Object <span style="color":#9cdcfe>smoothTime<span>, Object <span style="color":#9cdcfe>maxSpeed<span>, Object <span style="color":#9cdcfe>deltaTime<span>)
+Smoothly damp a value towards a target value
+#### Object <span style="color":#dcdcaa>Exp<span>(Object <span style="color":#9cdcfe>value<span>)
+Get the exponential value of a number
+#### Object <span style="color":#dcdcaa>SmoothDampAngle<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>currentVelocity<span>, Object <span style="color":#9cdcfe>smoothTime<span>, Object <span style="color":#9cdcfe>maxSpeed<span>, Object <span style="color":#9cdcfe>deltaTime<span>)
+Smoothly damp an angle towards a target angle
+#### Object <span style="color":#dcdcaa>SmoothStep<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+Smoothly step between two values
+#### Object <span style="color":#dcdcaa>BitwiseAnd<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Perform a bitwise AND operation
+#### Object <span style="color":#dcdcaa>BitwiseOr<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Perform a bitwise OR operation
+#### Object <span style="color":#dcdcaa>BitwiseXor<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+Perform a bitwise XOR operation
+#### Object <span style="color":#dcdcaa>BitwiseNot<span>(Object <span style="color":#9cdcfe>value<span>)
+Perform a bitwise NOT operation
+#### Object <span style="color":#dcdcaa>BitwiseLeftShift<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>shift<span>)
+Shift bits to the left
+#### Object <span style="color":#dcdcaa>BitwiseRightShift<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>shift<span>)
+Shift bits to the right
 
 ---
 

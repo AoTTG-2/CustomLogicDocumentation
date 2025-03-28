@@ -23,74 +23,74 @@ Inherits from object
 |NegativeInfinity|[Vector3](../objects/Vector3.md)|False|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector3](../objects/Vector3.md)|False|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
 ## Methods
-##### void Set(float x, float y, float z)
-- **Description:** Set x, y and z components of an existing Vector3.
-##### [Vector3](../objects/Vector3.md) Scale(Object scale)
-- **Description:** Returns the Vector3 multiplied by scale.
-##### [Vector3](../objects/Vector3.md) Multiply([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Returns the multiplication of two Vector3s.
-##### [Vector3](../objects/Vector3.md) Divide([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Returns the division of two Vector3s.
-##### [Vector3](../objects/Vector3.md) GetRotationDirection([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.
-##### Object \_\_Copy\_\_()
-- **Description:** Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()
-##### Object \_\_Add\_\_(Object self, Object other)
-- **Description:** Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)
-##### Object \_\_Sub\_\_(Object self, Object other)
-- **Description:** Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)
-##### Object \_\_Mul\_\_(Object self, Object other)
-- **Description:** Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)
-##### Object \_\_Div\_\_(Object self, Object other)
-- **Description:** Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)
-##### bool \_\_Eq\_\_(Object self, Object other)
-- **Description:** Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)
-##### int \_\_Hash\_\_()
-- **Description:** Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
+#### void <span style="color":#dcdcaa>Set<span>(float <span style="color":#9cdcfe>x<span>, float <span style="color":#9cdcfe>y<span>, float <span style="color":#9cdcfe>z<span>)
+Set x, y and z components of an existing Vector3.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Scale<span>(Object <span style="color":#9cdcfe>scale<span>)
+Returns the Vector3 multiplied by scale.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Multiply<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Returns the multiplication of two Vector3s.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Divide<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Returns the division of two Vector3s.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetRotationDirection<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.
+#### Object <span style="color":#dcdcaa>\_\_Copy\_\_<span>()
+Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()
+#### Object <span style="color":#dcdcaa>\_\_Add\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Sub\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Mul\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Div\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)
+#### bool <span style="color":#dcdcaa>\_\_Eq\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)
+#### int <span style="color":#dcdcaa>\_\_Hash\_\_<span>()
+Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
 
 ---
 
 ## Static Methods
-##### float Angle([Vector3](../objects/Vector3.md) from, [Vector3](../objects/Vector3.md) to)
-- **Description:** Calculates the angle between vectors from and.
-##### [Vector3](../objects/Vector3.md) ClampMagnitude([Vector3](../objects/Vector3.md) vector, float maxLength)
-- **Description:** Returns a copy of vector with its magnitude clamped to maxLength.
-##### [Vector3](../objects/Vector3.md) Cross([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Cross Product of two vectors.
-##### float Distance([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Returns the distance between a and b.
-##### float Dot([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Dot Product of two vectors.
-##### [Vector3](../objects/Vector3.md) Lerp([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b, float t)
-- **Description:** Linearly interpolates between two points.
-##### [Vector3](../objects/Vector3.md) LerpUnclamped([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b, float t)
-- **Description:** Linearly interpolates between two vectors.
-##### [Vector3](../objects/Vector3.md) Max([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Returns a vector that is made from the largest components of two vectors.
-##### [Vector3](../objects/Vector3.md) Min([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Returns a vector that is made from the smallest components of two vectors.
-##### [Vector3](../objects/Vector3.md) MoveTowards([Vector3](../objects/Vector3.md) current, [Vector3](../objects/Vector3.md) target, float maxDistanceDelta)
-- **Description:** Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.
-##### [Vector3](../objects/Vector3.md) Normalize([Vector3](../objects/Vector3.md) value)
-- **Description:** Makes this vector have a magnitude of 1.
-##### void OrthoNormalize([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** 
-##### [Vector3](../objects/Vector3.md) Project([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b)
-- **Description:** Projects a vector onto another vector.
-##### [Vector3](../objects/Vector3.md) ProjectOnPlane([Vector3](../objects/Vector3.md) vector, [Vector3](../objects/Vector3.md) plane)
-- **Description:** Projects a vector onto a plane defined by a normal orthogonal to the plane.
-##### [Vector3](../objects/Vector3.md) Reflect([Vector3](../objects/Vector3.md) inDirection, [Vector3](../objects/Vector3.md) inNormal)
-- **Description:** Reflects a vector off the plane defined by a normal.
-##### [Vector3](../objects/Vector3.md) RotateTowards([Vector3](../objects/Vector3.md) current, [Vector3](../objects/Vector3.md) target, float maxRadiansDelta, float maxMagnitudeDelta)
-- **Description:** Rotates a vector current towards target.
-##### float SignedAngle([Vector3](../objects/Vector3.md) from, [Vector3](../objects/Vector3.md) to, [Vector3](../objects/Vector3.md) axis)
-- **Description:** Calculates the signed angle between vectors from and to in relation to axis.
-##### [Vector3](../objects/Vector3.md) Slerp([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b, float t)
-- **Description:** Spherically interpolates between two vectors.
-##### [Vector3](../objects/Vector3.md) SlerpUnclamped([Vector3](../objects/Vector3.md) a, [Vector3](../objects/Vector3.md) b, float t)
-- **Description:** Spherically interpolates between two vectors.
-##### [Vector3](../objects/Vector3.md) SmoothDamp([Vector3](../objects/Vector3.md) current, [Vector3](../objects/Vector3.md) target, [Vector3](../objects/Vector3.md) currentVelocity, float smoothTime, float maxSpeed)
-- **Description:** 
+#### float <span style="color":#dcdcaa>Angle<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>from<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>to<span>)
+Calculates the angle between vectors from and.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>ClampMagnitude<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>vector<span>, float <span style="color":#9cdcfe>maxLength<span>)
+Returns a copy of vector with its magnitude clamped to maxLength.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Cross<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Cross Product of two vectors.
+#### float <span style="color":#dcdcaa>Distance<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Returns the distance between a and b.
+#### float <span style="color":#dcdcaa>Dot<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Dot Product of two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Lerp<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Linearly interpolates between two points.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>LerpUnclamped<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Linearly interpolates between two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Max<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Returns a vector that is made from the largest components of two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Min<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Returns a vector that is made from the smallest components of two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>MoveTowards<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>current<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>target<span>, float <span style="color":#9cdcfe>maxDistanceDelta<span>)
+Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Normalize<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>value<span>)
+Makes this vector have a magnitude of 1.
+#### void <span style="color":#dcdcaa>OrthoNormalize<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Project<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>)
+Projects a vector onto another vector.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>ProjectOnPlane<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>vector<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>plane<span>)
+Projects a vector onto a plane defined by a normal orthogonal to the plane.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Reflect<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>inDirection<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>inNormal<span>)
+Reflects a vector off the plane defined by a normal.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>RotateTowards<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>current<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>target<span>, float <span style="color":#9cdcfe>maxRadiansDelta<span>, float <span style="color":#9cdcfe>maxMagnitudeDelta<span>)
+Rotates a vector current towards target.
+#### float <span style="color":#dcdcaa>SignedAngle<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>from<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>to<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>axis<span>)
+Calculates the signed angle between vectors from and to in relation to axis.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>Slerp<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Spherically interpolates between two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>SlerpUnclamped<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>a<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Spherically interpolates between two vectors.
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>SmoothDamp<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>current<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>target<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>currentVelocity<span>, float <span style="color":#9cdcfe>smoothTime<span>, float <span style="color":#9cdcfe>maxSpeed<span>)
+
 
 ---
 

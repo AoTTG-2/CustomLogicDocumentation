@@ -20,52 +20,52 @@ Inherits from object
 |NegativeInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 |PositiveInfinity|[Vector2](../objects/Vector2.md)|False|Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).|
 ## Methods
-##### void Set(float x, float y)
-- **Description:** Set x and y components of an existing Vector2.
-##### void Normalize()
-- **Description:** Makes this vector have a magnitude of 1.
-##### Object \_\_Copy\_\_()
-- **Description:** Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()
-##### Object \_\_Add\_\_(Object self, Object other)
-- **Description:** Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)
-##### Object \_\_Sub\_\_(Object self, Object other)
-- **Description:** Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)
-##### Object \_\_Mul\_\_(Object self, Object other)
-- **Description:** Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)
-##### Object \_\_Div\_\_(Object self, Object other)
-- **Description:** Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)
-##### bool \_\_Eq\_\_(Object self, Object other)
-- **Description:** Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)
-##### int \_\_Hash\_\_()
-- **Description:** Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
+#### void <span style="color":#dcdcaa>Set<span>(float <span style="color":#9cdcfe>x<span>, float <span style="color":#9cdcfe>y<span>)
+Set x and y components of an existing Vector2.
+#### void <span style="color":#dcdcaa>Normalize<span>()
+Makes this vector have a magnitude of 1.
+#### Object <span style="color":#dcdcaa>\_\_Copy\_\_<span>()
+Override to deepcopy object on assignment, used for structs. Ex: copy = original is equivalent to copy = original.\_\_Copy\_\_()
+#### Object <span style="color":#dcdcaa>\_\_Add\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement addition, used for + operator. Ex: a + b is equivalent to a.\_\_Add\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Sub\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement subtraction, used for - operator. Ex: a - b is equivalent to a.\_\_Sub\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Mul\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement multiplication, used for * operator. Ex: a * b is equivalent to a.\_\_Mul\_\_(a, b)
+#### Object <span style="color":#dcdcaa>\_\_Div\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement division, used for / operator. Ex: a / b is equivalent to a.\_\_Div\_\_(a, b)
+#### bool <span style="color":#dcdcaa>\_\_Eq\_\_<span>(Object <span style="color":#9cdcfe>self<span>, Object <span style="color":#9cdcfe>other<span>)
+Override to implement equality comparison, used for == and != operators. Ex: a == b is equivalent to a.\_\_Eq\_\_(a, b)
+#### int <span style="color":#dcdcaa>\_\_Hash\_\_<span>()
+Override to implement hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
 
 ---
 
 ## Static Methods
-##### float Angle([Vector2](../objects/Vector2.md) from, [Vector2](../objects/Vector2.md) to)
-- **Description:** Gets the unsigned angle in degrees between from and to.
-##### [Vector2](../objects/Vector2.md) ClampMagnitude([Vector2](../objects/Vector2.md) vector, float maxLength)
-- **Description:** Returns a copy of vector with its magnitude clamped to maxLength.
-##### float Distance([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b)
-- **Description:** Returns the distance between a and b.
-##### float Dot([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b)
-- **Description:** Dot Product of two vectors.
-##### [Vector2](../objects/Vector2.md) Lerp([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b, float t)
-- **Description:** Linearly interpolates between vectors a and b by t.
-##### [Vector2](../objects/Vector2.md) LerpUnclamped([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b, float t)
-- **Description:** Linearly interpolates between vectors a and b by t.
-##### [Vector2](../objects/Vector2.md) Max([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b)
-- **Description:** Returns a vector that is made from the largest components of two vectors.
-##### [Vector2](../objects/Vector2.md) Min([Vector2](../objects/Vector2.md) a, [Vector2](../objects/Vector2.md) b)
-- **Description:** Returns a vector that is made from the smallest components of two vectors.
-##### [Vector2](../objects/Vector2.md) MoveTowards([Vector2](../objects/Vector2.md) current, [Vector2](../objects/Vector2.md) target, float maxDistanceDelta)
-- **Description:** Moves a point current towards target.
-##### [Vector2](../objects/Vector2.md) Reflect([Vector2](../objects/Vector2.md) inDirection, [Vector2](../objects/Vector2.md) inNormal)
-- **Description:** Reflects a vector off the vector defined by a normal.
-##### float SignedAngle([Vector2](../objects/Vector2.md) from, [Vector2](../objects/Vector2.md) to)
-- **Description:** Gets the signed angle in degrees between from and to.
-##### [Vector2](../objects/Vector2.md) SmoothDamp([Vector2](../objects/Vector2.md) current, [Vector2](../objects/Vector2.md) target, [Vector2](../objects/Vector2.md) currentVelocity, float smoothTime, float maxSpeed)
-- **Description:** 
+#### float <span style="color":#dcdcaa>Angle<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>from<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>to<span>)
+Gets the unsigned angle in degrees between from and to.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>ClampMagnitude<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>vector<span>, float <span style="color":#9cdcfe>maxLength<span>)
+Returns a copy of vector with its magnitude clamped to maxLength.
+#### float <span style="color":#dcdcaa>Distance<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>)
+Returns the distance between a and b.
+#### float <span style="color":#dcdcaa>Dot<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>)
+Dot Product of two vectors.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>Lerp<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Linearly interpolates between vectors a and b by t.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>LerpUnclamped<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>, float <span style="color":#9cdcfe>t<span>)
+Linearly interpolates between vectors a and b by t.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>Max<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>)
+Returns a vector that is made from the largest components of two vectors.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>Min<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>a<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>b<span>)
+Returns a vector that is made from the smallest components of two vectors.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>MoveTowards<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>current<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>target<span>, float <span style="color":#9cdcfe>maxDistanceDelta<span>)
+Moves a point current towards target.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>Reflect<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>inDirection<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>inNormal<span>)
+Reflects a vector off the vector defined by a normal.
+#### float <span style="color":#dcdcaa>SignedAngle<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>from<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>to<span>)
+Gets the signed angle in degrees between from and to.
+#### [Vector2](../objects/Vector2.md) <span style="color":#dcdcaa>SmoothDamp<span>([Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>current<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>target<span>, [Vector2](../objects/Vector2.md) <span style="color":#9cdcfe>currentVelocity<span>, float <span style="color":#9cdcfe>smoothTime<span>, float <span style="color":#9cdcfe>maxSpeed<span>)
+
 
 ---
 

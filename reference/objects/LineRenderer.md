@@ -22,16 +22,16 @@ Inherits from object
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
 ## Methods
-##### [Vector3](../objects/Vector3.md) GetPosition(int index)
-- **Description:** Get the position of a point in the line renderer
-##### void SetPosition(int index, [Vector3](../objects/Vector3.md) position)
-- **Description:** Set the position of a point in the line renderer
+#### [Vector3](../objects/Vector3.md) <span style="color":#dcdcaa>GetPosition<span>(int <span style="color":#9cdcfe>index<span>)
+Get the position of a point in the line renderer
+#### void <span style="color":#dcdcaa>SetPosition<span>(int <span style="color":#9cdcfe>index<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>)
+Set the position of a point in the line renderer
 
 ---
 
 ## Static Methods
-##### [LineRenderer](../objects/LineRenderer.md) CreateLineRenderer()
-- **Description:** [Obselete] Create a new LineRenderer
+#### [LineRenderer](../objects/LineRenderer.md) <span style="color":#dcdcaa>CreateLineRenderer<span>()
+[Obselete] Create a new LineRenderer
 
 ---
 
