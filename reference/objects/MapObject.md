@@ -28,56 +28,56 @@ Inherits from object
 |Tag|[String](../static/String.md)|False|The tag of the object|
 |Layer|int|False|The layer of the object|
 ## Methods
-#### <mark style="color:blue;">CustomLogicComponentInstance</mark> <mark style="color:yellow;">AddComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>)
-Add a component to the object
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>)
-Remove a component from the object
-#### <mark style="color:blue;">CustomLogicComponentInstance</mark> <mark style="color:yellow;">GetComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>)
-Get a component from the object
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetComponentEnabled</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>, <mark style="color:blue;">bool</mark> <mark style="color:yellow;">enabled</mark>)
-Set whether a component is enabled
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetComponentsEnabled</mark>(<mark style="color:blue;">bool</mark> <mark style="color:yellow;">enabled</mark>)
-Set whether all components are enabled
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddSphereCollider</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideMode</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideWith</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">center</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">radius</mark>)
-Add a sphere collider to the object
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddBoxCollider</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideMode</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideWith</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">center</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">size</mark> = <mark style="color:blue;">null</mark>)
-Add a box collider to the object
-#### <mark style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</mark> <mark style="color:yellow;">AddSphereTarget</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">team</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">center</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">radius</mark>)
-Add a sphere target to the object
-#### <mark style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</mark> <mark style="color:yellow;">AddBoxTarget</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">team</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">center</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">size</mark>)
-Add a box target to the object
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">GetChild</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>)
-Get a child object by name
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">GetChildren</mark>()
-Get all child objects
-#### <mark style="color:blue;">[Transform](../objects/Transform.md)</mark> <mark style="color:yellow;">GetTransform</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>)
-Get a child transform by name
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetColorAll</mark>(<mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">color</mark>)
-Set the color of all renderers on the object
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">InBounds</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
-Check if a position is within the object's bounds
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsAverageCenter</mark>()
-Get the bounds average center
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsCenter</mark>()
-Get the bounds center
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsSize</mark>()
-Get the bounds size
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsMin</mark>()
-Get the bounds min
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsMax</mark>()
-Get the bounds max
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetBoundsExtents</mark>()
-Get the bounds extents
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">GetCorners</mark>()
-Get the corners of the bounds
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddBuiltinComponent</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter0</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter1</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter2</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter3</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter4</mark> = <mark style="color:blue;">null</mark>)
-[OBSELETE] Add builtin component
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">HasTag</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">tag</mark>)
-Whether or not the object has the given tag
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">ReadBuiltinComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">name</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">param</mark>)
-[OBSELETE] Read a builtin component
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">UpdateBuiltinComponent</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter0</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter1</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter2</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter3</mark> = <mark style="color:blue;">null</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">parameter4</mark> = <mark style="color:blue;">null</mark>)
-[OBSELETE] Update a builtin component
+#### <span style="color:blue;">CustomLogicComponentInstance</span> <span style="color:yellow;">AddComponent</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+> Add a component to the object
+#### <span style="color:blue;">void</span> <span style="color:yellow;">RemoveComponent</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+> Remove a component from the object
+#### <span style="color:blue;">CustomLogicComponentInstance</span> <span style="color:yellow;">GetComponent</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+> Get a component from the object
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetComponentEnabled</span>(<span style="color:blue;">[String](../static/String.md)</span> name, <span style="color:blue;">bool</span> enabled)
+> Set whether a component is enabled
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetComponentsEnabled</span>(<span style="color:blue;">bool</span> enabled)
+> Set whether all components are enabled
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddSphereCollider</span>(<span style="color:blue;">[String](../static/String.md)</span> collideMode, <span style="color:blue;">[String](../static/String.md)</span> collideWith, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> center, <span style="color:blue;">float</span> radius)
+> Add a sphere collider to the object
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddBoxCollider</span>(<span style="color:blue;">[String](../static/String.md)</span> collideMode, <span style="color:blue;">[String](../static/String.md)</span> collideWith, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> center = <span style="color:blue;">null</span>, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> size = <span style="color:blue;">null</span>)
+> Add a box collider to the object
+#### <span style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</span> <span style="color:yellow;">AddSphereTarget</span>(<span style="color:blue;">[String](../static/String.md)</span> team, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> center, <span style="color:blue;">float</span> radius)
+> Add a sphere target to the object
+#### <span style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</span> <span style="color:yellow;">AddBoxTarget</span>(<span style="color:blue;">[String](../static/String.md)</span> team, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> center, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> size)
+> Add a box target to the object
+#### <span style="color:blue;">[MapObject](../objects/MapObject.md)</span> <span style="color:yellow;">GetChild</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+> Get a child object by name
+#### <span style="color:blue;">[List](../objects/List.md)</span> <span style="color:yellow;">GetChildren</span>()
+> Get all child objects
+#### <span style="color:blue;">[Transform](../objects/Transform.md)</span> <span style="color:yellow;">GetTransform</span>(<span style="color:blue;">[String](../static/String.md)</span> name)
+> Get a child transform by name
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetColorAll</span>(<span style="color:blue;">[Color](../objects/Color.md)</span> color)
+> Set the color of all renderers on the object
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">InBounds</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> position)
+> Check if a position is within the object's bounds
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsAverageCenter</span>()
+> Get the bounds average center
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsCenter</span>()
+> Get the bounds center
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsSize</span>()
+> Get the bounds size
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsMin</span>()
+> Get the bounds min
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsMax</span>()
+> Get the bounds max
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">GetBoundsExtents</span>()
+> Get the bounds extents
+#### <span style="color:blue;">[List](../objects/List.md)</span> <span style="color:yellow;">GetCorners</span>()
+> Get the corners of the bounds
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddBuiltinComponent</span>(<span style="color:blue;">Object</span> parameter0 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter1 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter2 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter3 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter4 = <span style="color:blue;">null</span>)
+> [OBSELETE] Add builtin component
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">HasTag</span>(<span style="color:blue;">[String](../static/String.md)</span> tag)
+> Whether or not the object has the given tag
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">ReadBuiltinComponent</span>(<span style="color:blue;">[String](../static/String.md)</span> name, <span style="color:blue;">[String](../static/String.md)</span> param)
+> [OBSELETE] Read a builtin component
+#### <span style="color:blue;">void</span> <span style="color:yellow;">UpdateBuiltinComponent</span>(<span style="color:blue;">Object</span> parameter0 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter1 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter2 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter3 = <span style="color:blue;">null</span>, <span style="color:blue;">Object</span> parameter4 = <span style="color:blue;">null</span>)
+> [OBSELETE] Update a builtin component
 
 ---
 

@@ -7,10 +7,10 @@ Inherits from object
 |Impulse|[Vector3](../objects/Vector3.md)|False||
 |RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetContact</mark>(<mark style="color:blue;">int</mark> <mark style="color:yellow;">index</mark>)
-
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetContacts</mark>()
-
+#### <span style="color:blue;">void</span> <span style="color:yellow;">GetContact</span>(<span style="color:blue;">int</span> index)
+> 
+#### <span style="color:blue;">void</span> <span style="color:yellow;">GetContacts</span>()
+> 
 
 ---
 

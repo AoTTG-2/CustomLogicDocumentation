@@ -16,12 +16,12 @@ Inherits from object
 |Transform|[Transform](../objects/Transform.md)|False||
 |GameObjectTransform|[Transform](../objects/Transform.md)|False||
 ## Methods
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">ClosestPoint</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
-
-#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">ClosestPointOnBounds</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
-
-#### <mark style="color:blue;">[LineCastHitResult](../objects/LineCastHitResult.md)</mark> <mark style="color:yellow;">Raycast</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">start</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">end</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">maxDistance</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">collideWith</mark>)
-
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">ClosestPoint</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> position)
+> 
+#### <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> <span style="color:yellow;">ClosestPointOnBounds</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> position)
+> 
+#### <span style="color:blue;">[LineCastHitResult](../objects/LineCastHitResult.md)</span> <span style="color:yellow;">Raycast</span>(<span style="color:blue;">[Vector3](../objects/Vector3.md)</span> start, <span style="color:blue;">[Vector3](../objects/Vector3.md)</span> end, <span style="color:blue;">float</span> maxDistance, <span style="color:blue;">[String](../static/String.md)</span> collideWith)
+> 
 
 ---
 
