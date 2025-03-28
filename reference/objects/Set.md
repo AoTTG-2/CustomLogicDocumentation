@@ -16,60 +16,34 @@ example = Set((CustomLogicListBuiltin))
 | Count | int  | True     | The number of elements in the set |
 
 ## Methods
-
-#### void Clear()
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Clear</mark>()
 Clear all set elements
-
-#### bool Contains(Object value)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">Contains</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
 Check if the set contains the specified element
-
-#### void Add(Object value)
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Add</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
 Add an element to the set
-
-#### void Remove(Object value)
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Remove</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
 Remove the element from the set
-
-#### void Union([Set](Set.md) set)
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Union</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Union with another set
-
-#### void Intersect([Set](Set.md) set)
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Intersect</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Intersect with another set
-
-#### void Difference([Set](Set.md) set)
-
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Difference</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Difference with another set
-
-#### bool IsSubsetOf([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsSubsetOf</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set is a subset of another set
-
-#### bool IsSupersetOf([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsSupersetOf</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set is a superset of another set
-
-#### bool IsProperSubsetOf([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsProperSubsetOf</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set is a proper subset of another set
-
-#### bool IsProperSupersetOf([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsProperSupersetOf</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set is a proper superset of another set
-
-#### bool Overlaps([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">Overlaps</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set overlaps with another set
-
-#### bool SetEquals([Set](Set.md) set)
-
+#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">SetEquals</mark>(<mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">set</mark>)
 Check if the set has the same elements as another set
-
-#### [List](List.md) ToList()
+#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">ToList</mark>()
+Convert the set to a list
 
 <mark style="color:blue;">Convert the set to a list</mark>
 

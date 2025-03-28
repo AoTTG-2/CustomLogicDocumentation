@@ -22,15 +22,15 @@ Inherits from object
 |WidthMultiplier|float|False|The width multiplier of the line renderer|
 |ColorGradientMode|[String](../static/String.md)|False|The color gradient mode of the line renderer|
 ## Methods
-#### <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">GetPosition</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">index</mark>)
+#### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetPosition</mark>(<mark style="color:blue;">int</mark> <mark style="color:yellow;">index</mark>)
 Get the position of a point in the line renderer
-#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">SetPosition</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">index</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">position</mark>)
+#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetPosition</mark>(<mark style="color:blue;">int</mark> <mark style="color:yellow;">index</mark>, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">position</mark>)
 Set the position of a point in the line renderer
 
 ---
 
 ## Static Methods
-#### <mark style="color:Blue;">[LineRenderer](../objects/LineRenderer.md)</mark> <mark style="color:Yellow;">CreateLineRenderer</mark>()
+#### <mark style="color:blue;">[LineRenderer](../objects/LineRenderer.md)</mark> <mark style="color:yellow;">CreateLineRenderer</mark>()
 [Obselete] Create a new LineRenderer
 
 ---
