@@ -37,6 +37,7 @@ Check if the set overlaps with another set
 #### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">SetEquals</mark>(<mark style="color:Blue;">[Set](../objects/Set.md)</mark> <mark style="color:Yellow;">set</mark>)
 Check if the set has the same elements as another set
 #### <mark style="color:Blue;">[List](../objects/List.md)</mark> <mark style="color:Yellow;">ToList</mark>()
+
 Convert the set to a list
 
 ---
