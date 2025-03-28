@@ -1,14 +1,20 @@
 # Set
+
 Inherits from object
+
 ## Initialization
+
 ```csharp
 example = Set()
 example = Set((CustomLogicListBuiltin))
 ```
+
 ## Fields
-|Field|Type|Readonly|Description|
-|---|---|---|---|
-|Count|int|True|The number of elements in the set|
+
+| Field | Type | Readonly | Description                       |
+| ----- | ---- | -------- | --------------------------------- |
+| Count | int  | True     | The number of elements in the set |
+
 ## Methods
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Clear</mark>()
 Clear all set elements
@@ -39,5 +45,6 @@ Check if the set has the same elements as another set
 #### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">ToList</mark>()
 Convert the set to a list
 
----
+<mark style="color:blue;">Convert the set to a list</mark>
 
+***
