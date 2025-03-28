@@ -55,42 +55,61 @@ Inherits from [Character](../objects/Character.md)
 ## Methods
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">MoveTo</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> position, <mark style="color:blue;">float</mark> range, <mark style="color:blue;">bool</mark> ignoreEnemies)
 > Causes the (AI) titan to move towards a position and stopping when within specified range. If ignoreEnemies is true, will not engage enemies along the way.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Target</mark>(<mark style="color:blue;">Object</mark> enemyObj, <mark style="color:blue;">float</mark> focus)
 > Causes the (AI) titan to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Idle</mark>(<mark style="color:blue;">float</mark> time)
 > Causes the (AI) titan to idle for time seconds before beginning to wander. During idle the titan will not react or move at all.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Wander</mark>()
 > Causes the (AI) titan to cancel any move commands and begin wandering randomly.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Blind</mark>()
 > Causes the titan to enter the blind state.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Cripple</mark>(<mark style="color:blue;">float</mark> time)
 > Causes the titan to enter the cripple state for time seconds. Using 0 will use the default cripple time.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetKilled</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> killer)
 > Kills the character. Callable by non-owners.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetDamaged</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> killer, <mark style="color:blue;">int</mark> damage)
 > Damages the character and kills it if its health reaches 0. Callable by non-owners.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Emote</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> emote)
 > Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlayAnimation</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation, <mark style="color:blue;">float</mark> fade = <mark style="color:blue;">0.1</mark>)
 > Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ForceAnimation</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation, <mark style="color:blue;">float</mark> fade = <mark style="color:blue;">0.1</mark>)
 > Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
+
 #### <mark style="color:blue;">float</mark> <mark style="color:yellow;">GetAnimationLength</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation)
 > Gets the length of animation.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlaySound</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> sound)
 > Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">StopSound</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> sound)
 > Stops the sound.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">LookAt</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> position)
 > Rotates the character such that it is looking towards a world position.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddForce</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> force, <mark style="color:blue;">[String](../static/String.md)</mark> mode = <mark style="color:blue;">Acceleration</mark>)
 > Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Reveal</mark>(<mark style="color:blue;">float</mark> delay)
 > Reveaal the titan for a set number of seconds.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddOutline</mark>(<mark style="color:blue;">[Color](../objects/Color.md)</mark> color = <mark style="color:blue;">null</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> mode = <mark style="color:blue;">OutlineAll</mark>)
 > Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveOutline</mark>()
 > Removes the outline effect from the character.
+
 
 ---
 

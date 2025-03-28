@@ -22,10 +22,13 @@ Inherits from object
 ## Methods
 #### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">GetCustomProperty</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> property)
 > Get a custom property at given key. Must be a primitive type. This is synced to all clients.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetCustomProperty</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> property, <mark style="color:blue;">Object</mark> value)
 > Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ClearKDR</mark>()
 > Clears kills, deaths, highestdamage, and totaldamage properties.
+
 
 ---
 

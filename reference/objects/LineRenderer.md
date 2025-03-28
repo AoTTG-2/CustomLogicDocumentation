@@ -24,14 +24,17 @@ Inherits from object
 ## Methods
 #### <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:yellow;">GetPosition</mark>(<mark style="color:blue;">int</mark> index)
 > Get the position of a point in the line renderer
+
 #### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetPosition</mark>(<mark style="color:blue;">int</mark> index, <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> position)
 > Set the position of a point in the line renderer
+
 
 ---
 
 ## Static Methods
 #### <mark style="color:blue;">[LineRenderer](../objects/LineRenderer.md)</mark> <mark style="color:yellow;">CreateLineRenderer</mark>()
 > [Obselete] Create a new LineRenderer
+
 
 ---
 
