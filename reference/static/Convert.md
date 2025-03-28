@@ -1,36 +1,36 @@
 # Convert
 Inherits from object
 ## Methods
-#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">ToFloat</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Converts a value to a float
-#### <mark style="color:blue;">int</mark> <mark style="color:yellow;">ToInt</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Converts a value to an int
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">ToBool</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Converts a value to a bool
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">ToString</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Converts a value to a string
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsFloat</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is a float
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsInt</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is an int
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsBool</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is a bool
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsString</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is a string
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsObject</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is an object
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsList</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is a list
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsDict</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Checks if the value is a dictionary
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">HasVariable</mark>(<mark style="color:blue;">CustomLogicClassInstance</mark> <mark style="color:yellow;">cInstance</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">variableName</mark>)
-Checks if the class instance has a variable
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">DefineVariable</mark>(<mark style="color:blue;">CustomLogicClassInstance</mark> <mark style="color:yellow;">cInstance</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">variableName</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Defines a variable for the class instance
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveVariable</mark>(<mark style="color:blue;">CustomLogicClassInstance</mark> <mark style="color:yellow;">cInstance</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">variableName</mark>)
-Removes a variable from the class instance
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">GetType</mark>(<mark style="color:blue;">CustomLogicClassInstance</mark> <mark style="color:yellow;">cInstance</mark>)
-Gets the type of the class instance
+#### <span style="color:blue;">float</span> <span style="color:yellow;">ToFloat</span>(<span style="color:blue;">Object</span> value)
+> Converts a value to a float
+#### <span style="color:blue;">int</span> <span style="color:yellow;">ToInt</span>(<span style="color:blue;">Object</span> value)
+> Converts a value to an int
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">ToBool</span>(<span style="color:blue;">Object</span> value)
+> Converts a value to a bool
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">ToString</span>(<span style="color:blue;">Object</span> value)
+> Converts a value to a string
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsFloat</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is a float
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsInt</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is an int
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsBool</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is a bool
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsString</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is a string
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsObject</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is an object
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsList</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is a list
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsDict</span>(<span style="color:blue;">Object</span> value)
+> Checks if the value is a dictionary
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">HasVariable</span>(<span style="color:blue;">CustomLogicClassInstance</span> cInstance, <span style="color:blue;">[String](../static/String.md)</span> variableName)
+> Checks if the class instance has a variable
+#### <span style="color:blue;">void</span> <span style="color:yellow;">DefineVariable</span>(<span style="color:blue;">CustomLogicClassInstance</span> cInstance, <span style="color:blue;">[String](../static/String.md)</span> variableName, <span style="color:blue;">Object</span> value)
+> Defines a variable for the class instance
+#### <span style="color:blue;">void</span> <span style="color:yellow;">RemoveVariable</span>(<span style="color:blue;">CustomLogicClassInstance</span> cInstance, <span style="color:blue;">[String](../static/String.md)</span> variableName)
+> Removes a variable from the class instance
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">GetType</span>(<span style="color:blue;">CustomLogicClassInstance</span> cInstance)
+> Gets the type of the class instance
 
 ---
 

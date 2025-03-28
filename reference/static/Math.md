@@ -10,82 +10,82 @@ Inherits from object
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
 ## Methods
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Clamp</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">min</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">max</mark>)
-Clamp a value between a minimum and maximum value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Max</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Get the maximum of two values
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Min</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Get the minimum of two values
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Pow</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Raise a value to the power of another value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Abs</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the absolute value of a number
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Sqrt</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the square root of a number
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Mod</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Get the remainder of a division operation
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Sin</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">angle</mark>)
-Get the sine of an angle in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Cos</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">angle</mark>)
-Get the cosine of an angle in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Tan</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">angle</mark>)
-Get the tangent of an angle in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Asin</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the arcsine of a value in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Acos</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the arccosine of a value in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Atan</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the arctangent of a value in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Atan2</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Get the arctangent of a value in degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Ceil</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the smallest integer greater than or equal to a value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Floor</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the largest integer less than or equal to a value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Round</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Round a value to the nearest integer
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Deg2Rad</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">angle</mark>)
-Convert an angle from degrees to radians
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Rad2Deg</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">angle</mark>)
-Convert an angle from radians to degrees
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Lerp</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">t</mark>)
-Linearly interpolate between two values
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">LerpUnclamped</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">t</mark>)
-Linearly interpolate between two values without clamping
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Sign</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the sign of a value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">InverseLerp</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the inverse lerp of two values
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">LerpAngle</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">t</mark>)
-Linearly interpolate between two angles
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Log</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the natural logarithm of a value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">MoveTowards</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">current</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">target</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">maxDelta</mark>)
-Move a value towards a target value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">MoveTowardsAngle</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">current</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">target</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">maxDelta</mark>)
-Move an angle towards a target angle
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">PingPong</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">t</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">length</mark>)
-Get the ping pong value of a time value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">SmoothDamp</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">current</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">target</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">currentVelocity</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">smoothTime</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">maxSpeed</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">deltaTime</mark>)
-Smoothly damp a value towards a target value
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Exp</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Get the exponential value of a number
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">SmoothDampAngle</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">current</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">target</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">currentVelocity</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">smoothTime</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">maxSpeed</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">deltaTime</mark>)
-Smoothly damp an angle towards a target angle
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">SmoothStep</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">t</mark>)
-Smoothly step between two values
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseAnd</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Perform a bitwise AND operation
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseOr</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Perform a bitwise OR operation
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseXor</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">b</mark>)
-Perform a bitwise XOR operation
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseNot</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>)
-Perform a bitwise NOT operation
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseLeftShift</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">shift</mark>)
-Shift bits to the left
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">BitwiseRightShift</mark>(<mark style="color:blue;">Object</mark> <mark style="color:yellow;">value</mark>, <mark style="color:blue;">Object</mark> <mark style="color:yellow;">shift</mark>)
-Shift bits to the right
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Clamp</span>(<span style="color:blue;">Object</span> value, <span style="color:blue;">Object</span> min, <span style="color:blue;">Object</span> max)
+> Clamp a value between a minimum and maximum value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Max</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Get the maximum of two values
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Min</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Get the minimum of two values
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Pow</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Raise a value to the power of another value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Abs</span>(<span style="color:blue;">Object</span> value)
+> Get the absolute value of a number
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Sqrt</span>(<span style="color:blue;">Object</span> value)
+> Get the square root of a number
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Mod</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Get the remainder of a division operation
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Sin</span>(<span style="color:blue;">Object</span> angle)
+> Get the sine of an angle in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Cos</span>(<span style="color:blue;">Object</span> angle)
+> Get the cosine of an angle in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Tan</span>(<span style="color:blue;">Object</span> angle)
+> Get the tangent of an angle in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Asin</span>(<span style="color:blue;">Object</span> value)
+> Get the arcsine of a value in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Acos</span>(<span style="color:blue;">Object</span> value)
+> Get the arccosine of a value in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Atan</span>(<span style="color:blue;">Object</span> value)
+> Get the arctangent of a value in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Atan2</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Get the arctangent of a value in degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Ceil</span>(<span style="color:blue;">Object</span> value)
+> Get the smallest integer greater than or equal to a value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Floor</span>(<span style="color:blue;">Object</span> value)
+> Get the largest integer less than or equal to a value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Round</span>(<span style="color:blue;">Object</span> value)
+> Round a value to the nearest integer
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Deg2Rad</span>(<span style="color:blue;">Object</span> angle)
+> Convert an angle from degrees to radians
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Rad2Deg</span>(<span style="color:blue;">Object</span> angle)
+> Convert an angle from radians to degrees
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Lerp</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b, <span style="color:blue;">Object</span> t)
+> Linearly interpolate between two values
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">LerpUnclamped</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b, <span style="color:blue;">Object</span> t)
+> Linearly interpolate between two values without clamping
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Sign</span>(<span style="color:blue;">Object</span> value)
+> Get the sign of a value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">InverseLerp</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b, <span style="color:blue;">Object</span> value)
+> Get the inverse lerp of two values
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">LerpAngle</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b, <span style="color:blue;">Object</span> t)
+> Linearly interpolate between two angles
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Log</span>(<span style="color:blue;">Object</span> value)
+> Get the natural logarithm of a value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">MoveTowards</span>(<span style="color:blue;">Object</span> current, <span style="color:blue;">Object</span> target, <span style="color:blue;">Object</span> maxDelta)
+> Move a value towards a target value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">MoveTowardsAngle</span>(<span style="color:blue;">Object</span> current, <span style="color:blue;">Object</span> target, <span style="color:blue;">Object</span> maxDelta)
+> Move an angle towards a target angle
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">PingPong</span>(<span style="color:blue;">Object</span> t, <span style="color:blue;">Object</span> length)
+> Get the ping pong value of a time value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">SmoothDamp</span>(<span style="color:blue;">Object</span> current, <span style="color:blue;">Object</span> target, <span style="color:blue;">Object</span> currentVelocity, <span style="color:blue;">Object</span> smoothTime, <span style="color:blue;">Object</span> maxSpeed, <span style="color:blue;">Object</span> deltaTime)
+> Smoothly damp a value towards a target value
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">Exp</span>(<span style="color:blue;">Object</span> value)
+> Get the exponential value of a number
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">SmoothDampAngle</span>(<span style="color:blue;">Object</span> current, <span style="color:blue;">Object</span> target, <span style="color:blue;">Object</span> currentVelocity, <span style="color:blue;">Object</span> smoothTime, <span style="color:blue;">Object</span> maxSpeed, <span style="color:blue;">Object</span> deltaTime)
+> Smoothly damp an angle towards a target angle
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">SmoothStep</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b, <span style="color:blue;">Object</span> t)
+> Smoothly step between two values
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseAnd</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Perform a bitwise AND operation
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseOr</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Perform a bitwise OR operation
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseXor</span>(<span style="color:blue;">Object</span> a, <span style="color:blue;">Object</span> b)
+> Perform a bitwise XOR operation
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseNot</span>(<span style="color:blue;">Object</span> value)
+> Perform a bitwise NOT operation
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseLeftShift</span>(<span style="color:blue;">Object</span> value, <span style="color:blue;">Object</span> shift)
+> Shift bits to the left
+#### <span style="color:blue;">Object</span> <span style="color:yellow;">BitwiseRightShift</span>(<span style="color:blue;">Object</span> value, <span style="color:blue;">Object</span> shift)
+> Shift bits to the right
 
 ---
 

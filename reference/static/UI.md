@@ -14,46 +14,46 @@ Inherits from object
 |BottomRight|[String](../static/String.md)|False|"BottomRight" constant|
 |GetPopups|[List](../objects/List.md)|False|Returns a list of all popups|
 ## Static Methods
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetLabel</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">message</mark>)
-Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetLabelForTime</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">message</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">time</mark>)
-Sets the label for a certain time, after which it will be cleared.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetLabelAll</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">message</mark>)
-Sets the label for all players. Master client only. Be careful not to call this often.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetLabelForTimeAll</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">message</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">time</mark>)
-Sets the label for all players for a certain time. Master client only.
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">CreatePopup</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">title</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">width</mark>, <mark style="color:blue;">int</mark> <mark style="color:yellow;">height</mark>)
-Creates a new popup. This popup is hidden until shown.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowPopup</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>)
-Shows the popup with given name.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">HidePopup</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>)
-Hides the popup with given name.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ClearPopup</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>)
-Clears all elements in popup with given name.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddPopupLabel</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>)
-Adds a text row to the popup with label as content.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddPopupButton</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">callback</mark>)
-Adds a button row to the popup with given button name and display text. When button is pressed, OnButtonClick is called in Main with buttonName parameter.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddPopupBottomButton</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">label</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">callback</mark>)
-Adds a button to the bottom bar of the popup.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddPopupButtons</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>, <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">labels</mark>, <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">callbacks</mark>)
-Adds a list of buttons in a row to the popup.
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">WrapStyleTag</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">text</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">style</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">arg</mark> = <mark style="color:blue;">null</mark>)
-Returns a wrapped string given style and args.
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">GetLocale</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">cat</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">sub</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">key</mark>)
-Gets translated locale from the current Language.json file with given category, subcategory, and key pattern.
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">GetLanguage</mark>()
-Returns the current language (e.g. "English" or "简体中文").
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ShowChangeCharacterMenu</mark>()
-Shows the change character menu if main character is Human.
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetScoreboardHeader</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">header</mark>)
-Sets the display of the scoreboard header (default "Kills / Deaths...")
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SetScoreboardProperty</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">property</mark>)
-Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.
-#### <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">GetThemeColor</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">panel</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">category</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">item</mark>)
-Gets the color of the specified item. See theme json for reference.
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">IsPopupActive</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">popupName</mark>)
-Returns if the given popup is active
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetLabel</span>(<span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> message)
+> Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetLabelForTime</span>(<span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> message, <span style="color:blue;">float</span> time)
+> Sets the label for a certain time, after which it will be cleared.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetLabelAll</span>(<span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> message)
+> Sets the label for all players. Master client only. Be careful not to call this often.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetLabelForTimeAll</span>(<span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> message, <span style="color:blue;">float</span> time)
+> Sets the label for all players for a certain time. Master client only.
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">CreatePopup</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName, <span style="color:blue;">[String](../static/String.md)</span> title, <span style="color:blue;">int</span> width, <span style="color:blue;">int</span> height)
+> Creates a new popup. This popup is hidden until shown.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">ShowPopup</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName)
+> Shows the popup with given name.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">HidePopup</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName)
+> Hides the popup with given name.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">ClearPopup</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName)
+> Clears all elements in popup with given name.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddPopupLabel</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName, <span style="color:blue;">[String](../static/String.md)</span> label)
+> Adds a text row to the popup with label as content.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddPopupButton</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName, <span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> callback)
+> Adds a button row to the popup with given button name and display text. When button is pressed, OnButtonClick is called in Main with buttonName parameter.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddPopupBottomButton</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName, <span style="color:blue;">[String](../static/String.md)</span> label, <span style="color:blue;">[String](../static/String.md)</span> callback)
+> Adds a button to the bottom bar of the popup.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">AddPopupButtons</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName, <span style="color:blue;">[List](../objects/List.md)</span> labels, <span style="color:blue;">[List](../objects/List.md)</span> callbacks)
+> Adds a list of buttons in a row to the popup.
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">WrapStyleTag</span>(<span style="color:blue;">[String](../static/String.md)</span> text, <span style="color:blue;">[String](../static/String.md)</span> style, <span style="color:blue;">[String](../static/String.md)</span> arg = <span style="color:blue;">null</span>)
+> Returns a wrapped string given style and args.
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">GetLocale</span>(<span style="color:blue;">[String](../static/String.md)</span> cat, <span style="color:blue;">[String](../static/String.md)</span> sub, <span style="color:blue;">[String](../static/String.md)</span> key)
+> Gets translated locale from the current Language.json file with given category, subcategory, and key pattern.
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">GetLanguage</span>()
+> Returns the current language (e.g. "English" or "简体中文").
+#### <span style="color:blue;">void</span> <span style="color:yellow;">ShowChangeCharacterMenu</span>()
+> Shows the change character menu if main character is Human.
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetScoreboardHeader</span>(<span style="color:blue;">[String](../static/String.md)</span> header)
+> Sets the display of the scoreboard header (default "Kills / Deaths...")
+#### <span style="color:blue;">void</span> <span style="color:yellow;">SetScoreboardProperty</span>(<span style="color:blue;">[String](../static/String.md)</span> property)
+> Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.
+#### <span style="color:blue;">[Color](../objects/Color.md)</span> <span style="color:yellow;">GetThemeColor</span>(<span style="color:blue;">[String](../static/String.md)</span> panel, <span style="color:blue;">[String](../static/String.md)</span> category, <span style="color:blue;">[String](../static/String.md)</span> item)
+> Gets the color of the specified item. See theme json for reference.
+#### <span style="color:blue;">bool</span> <span style="color:yellow;">IsPopupActive</span>(<span style="color:blue;">[String](../static/String.md)</span> popupName)
+> Returns if the given popup is active
 
 ---
 

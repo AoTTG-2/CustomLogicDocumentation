@@ -8,16 +8,16 @@ Inherits from object
 |B|int|False|Blue component of the color|
 |A|int|False|Alpha component of the color|
 ## Methods
-#### <mark style="color:blue;">[String](../static/String.md)</mark> <mark style="color:yellow;">ToHexString</mark>()
-Converts the color to a hex string
+#### <span style="color:blue;">[String](../static/String.md)</span> <span style="color:yellow;">ToHexString</span>()
+> Converts the color to a hex string
 
 ---
 
 ## Static Methods
-#### <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">Lerp</mark>(<mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">t</mark>)
-Linearly interpolates between colors a and b by t
-#### <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">Gradient</mark>(<mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">a</mark>, <mark style="color:blue;">[Color](../objects/Color.md)</mark> <mark style="color:yellow;">b</mark>, <mark style="color:blue;">float</mark> <mark style="color:yellow;">t</mark>)
-Creates a gradient color from two colors
+#### <span style="color:blue;">[Color](../objects/Color.md)</span> <span style="color:yellow;">Lerp</span>(<span style="color:blue;">[Color](../objects/Color.md)</span> a, <span style="color:blue;">[Color](../objects/Color.md)</span> b, <span style="color:blue;">float</span> t)
+> Linearly interpolates between colors a and b by t
+#### <span style="color:blue;">[Color](../objects/Color.md)</span> <span style="color:yellow;">Gradient</span>(<span style="color:blue;">[Color](../objects/Color.md)</span> a, <span style="color:blue;">[Color](../objects/Color.md)</span> b, <span style="color:blue;">float</span> t)
+> Creates a gradient color from two colors
 
 ---
 
