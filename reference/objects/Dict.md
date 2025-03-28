@@ -11,15 +11,15 @@ example = Dict()
 |Keys|[List](../objects/List.md)|False|Keys in the dictionary|
 |Values|[List](../objects/List.md)|False|Values in the dictionary|
 ## Methods
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">Clear</span>()
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Clear</mark>()
 Clears the dictionary
-#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Get</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">key</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">defaultValue</span> = <span style="color:#509cd4">null</span>)
+#### <mark style="color:#509cd4;">Object</mark> <mark style="color:#dcdcaa;">Get</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">key</mark>, <mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">defaultValue</mark> = <mark style="color:#509cd4;">null</mark>)
 Gets a value from the dictionary
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">Set</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">key</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Set</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">key</mark>, <mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">value</mark>)
 Sets a value in the dictionary
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">Remove</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">Remove</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">key</mark>)
 Removes a value from the dictionary
-#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">Contains</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">bool</mark> <mark style="color:#dcdcaa;">Contains</mark>(<mark style="color:#509cd4;">Object</mark> <mark style="color:#9cdcfe;">key</mark>)
 Checks if the dictionary contains a key
 
 ---

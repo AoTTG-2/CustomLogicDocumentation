@@ -1,27 +1,27 @@
 # Input
 Inherits from object
 ## Static Methods
-#### <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#dcdcaa">GetKeyName</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#dcdcaa;">GetKeyName</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>)
 Gets the key name the player assigned to the key setting
-#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">GetKeyHold</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">bool</mark> <mark style="color:#dcdcaa;">GetKeyHold</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>)
 Returns true if the key is being held down
-#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">GetKeyDown</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">bool</mark> <mark style="color:#dcdcaa;">GetKeyDown</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>)
 Returns true if the key was pressed down this frame
-#### <span style="color:#509cd4">bool</span> <span style="color:#dcdcaa">GetKeyUp</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>)
+#### <mark style="color:#509cd4;">bool</mark> <mark style="color:#dcdcaa;">GetKeyUp</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>)
 Returns true if the key was released this frame
-#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetMouseAim</span>()
+#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">GetMouseAim</mark>()
 Returns the position the player is aiming at
-#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetCursorAimDirection</span>()
+#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">GetCursorAimDirection</mark>()
 Returns the ray the player is aiming at
-#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetMouseSpeed</span>()
+#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">GetMouseSpeed</mark>()
 Returns the speed of the mouse
-#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetMousePosition</span>()
+#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">GetMousePosition</mark>()
 Returns the position of the mouse
-#### <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#dcdcaa">GetScreenDimensions</span>()
+#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">GetScreenDimensions</mark>()
 Returns the dimensions of the screen
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetKeyDefaultEnabled</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>, <span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">enabled</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetKeyDefaultEnabled</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>, <mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">enabled</mark>)
 Sets whether the key is enabled by default
-#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetKeyHold</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">key</span>, <span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">enabled</span>)
+#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">SetKeyHold</mark>(<mark style="color:#509cd4;">[String](../static/String.md)</mark> <mark style="color:#9cdcfe;">key</mark>, <mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">enabled</mark>)
 Sets whether the key is being held down
 
 ---
