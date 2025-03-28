@@ -1,19 +1,19 @@
 # Random
 Inherits from object
 ## Methods
-#### <mark style="color:#509cd4;">int</mark> <mark style="color:#dcdcaa;">RandomInt</mark>(<mark style="color:#509cd4;">int</mark> <mark style="color:#9cdcfe;">min</mark>, <mark style="color:#509cd4;">int</mark> <mark style="color:#9cdcfe;">max</mark>)
+#### <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">RandomInt</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">min</mark>, <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">max</mark>)
 Generates a random integer between the specified range.
-#### <mark style="color:#509cd4;">float</mark> <mark style="color:#dcdcaa;">RandomFloat</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">min</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">max</mark>)
+#### <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">RandomFloat</mark>(<mark style="color:Blue;">float</mark> <mark style="color:Yellow;">min</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">max</mark>)
 Generates a random float between the specified range.
-#### <mark style="color:#509cd4;">bool</mark> <mark style="color:#dcdcaa;">RandomBool</mark>()
+#### <mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">RandomBool</mark>()
 Returns random boolean.
-#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">RandomVector3</mark>(<mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">a</mark>, <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#9cdcfe;">b</mark>)
+#### <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">RandomVector3</mark>(<mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">a</mark>, <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">b</mark>)
 Generates a random Vector3 between the specified ranges.
-#### <mark style="color:#509cd4;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:#dcdcaa;">RandomDirection</mark>(<mark style="color:#509cd4;">bool</mark> <mark style="color:#9cdcfe;">flat</mark> = <mark style="color:#509cd4;">False</mark>)
+#### <mark style="color:Blue;">[Vector3](../objects/Vector3.md)</mark> <mark style="color:Yellow;">RandomDirection</mark>(<mark style="color:Blue;">bool</mark> <mark style="color:Yellow;">flat</mark> = <mark style="color:Blue;">False</mark>)
 Generates a random normalized direction vector. If flat is true, the y component will be zero.
-#### <mark style="color:#509cd4;">int</mark> <mark style="color:#dcdcaa;">RandomSign</mark>()
+#### <mark style="color:Blue;">int</mark> <mark style="color:Yellow;">RandomSign</mark>()
 Generates a random sign, either 1 or -1.
-#### <mark style="color:#509cd4;">float</mark> <mark style="color:#dcdcaa;">PerlinNoise</mark>(<mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">x</mark>, <mark style="color:#509cd4;">float</mark> <mark style="color:#9cdcfe;">y</mark>)
+#### <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">PerlinNoise</mark>(<mark style="color:Blue;">float</mark> <mark style="color:Yellow;">x</mark>, <mark style="color:Blue;">float</mark> <mark style="color:Yellow;">y</mark>)
 Returns a point sampled from generated 2d perlin noise. (see Unity Mathf.PerlinNoise for more information)
 
 ---

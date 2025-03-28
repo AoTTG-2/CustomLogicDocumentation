@@ -7,9 +7,9 @@ Inherits from object
 |Impulse|[Vector3](../objects/Vector3.md)|False||
 |RelativeVelocity|[Vector3](../objects/Vector3.md)|False||
 ## Methods
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">GetContact</mark>(<mark style="color:#509cd4;">int</mark> <mark style="color:#9cdcfe;">index</mark>)
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">GetContact</mark>(<mark style="color:Blue;">int</mark> <mark style="color:Yellow;">index</mark>)
 
-#### <mark style="color:#509cd4;">void</mark> <mark style="color:#dcdcaa;">GetContacts</mark>()
+#### <mark style="color:Blue;">void</mark> <mark style="color:Yellow;">GetContacts</mark>()
 
 
 ---
