@@ -10,81 +10,81 @@ Inherits from object
 |Deg2RadConstant|float|False|The value of Deg2Rad constant|
 |Epsilon|float|False|The value of Epsilon|
 ## Methods
-#### Object <span style="color":#dcdcaa>Clamp<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>min<span>, Object <span style="color":#9cdcfe>max<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Clamp</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">min</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">max</span>)
 Clamp a value between a minimum and maximum value
-#### Object <span style="color":#dcdcaa>Max<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Max</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Get the maximum of two values
-#### Object <span style="color":#dcdcaa>Min<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Min</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Get the minimum of two values
-#### Object <span style="color":#dcdcaa>Pow<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Pow</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Raise a value to the power of another value
-#### Object <span style="color":#dcdcaa>Abs<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Abs</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the absolute value of a number
-#### Object <span style="color":#dcdcaa>Sqrt<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Sqrt</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the square root of a number
-#### Object <span style="color":#dcdcaa>Mod<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Mod</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Get the remainder of a division operation
-#### Object <span style="color":#dcdcaa>Sin<span>(Object <span style="color":#9cdcfe>angle<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Sin</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">angle</span>)
 Get the sine of an angle in degrees
-#### Object <span style="color":#dcdcaa>Cos<span>(Object <span style="color":#9cdcfe>angle<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Cos</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">angle</span>)
 Get the cosine of an angle in degrees
-#### Object <span style="color":#dcdcaa>Tan<span>(Object <span style="color":#9cdcfe>angle<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Tan</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">angle</span>)
 Get the tangent of an angle in degrees
-#### Object <span style="color":#dcdcaa>Asin<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Asin</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the arcsine of a value in degrees
-#### Object <span style="color":#dcdcaa>Acos<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Acos</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the arccosine of a value in degrees
-#### Object <span style="color":#dcdcaa>Atan<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Atan</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the arctangent of a value in degrees
-#### Object <span style="color":#dcdcaa>Atan2<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Atan2</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Get the arctangent of a value in degrees
-#### Object <span style="color":#dcdcaa>Ceil<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Ceil</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the smallest integer greater than or equal to a value
-#### Object <span style="color":#dcdcaa>Floor<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Floor</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the largest integer less than or equal to a value
-#### Object <span style="color":#dcdcaa>Round<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Round</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Round a value to the nearest integer
-#### Object <span style="color":#dcdcaa>Deg2Rad<span>(Object <span style="color":#9cdcfe>angle<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Deg2Rad</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">angle</span>)
 Convert an angle from degrees to radians
-#### Object <span style="color":#dcdcaa>Rad2Deg<span>(Object <span style="color":#9cdcfe>angle<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Rad2Deg</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">angle</span>)
 Convert an angle from radians to degrees
-#### Object <span style="color":#dcdcaa>Lerp<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Lerp</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">t</span>)
 Linearly interpolate between two values
-#### Object <span style="color":#dcdcaa>LerpUnclamped<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">LerpUnclamped</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">t</span>)
 Linearly interpolate between two values without clamping
-#### Object <span style="color":#dcdcaa>Sign<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Sign</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the sign of a value
-#### Object <span style="color":#dcdcaa>InverseLerp<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">InverseLerp</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the inverse lerp of two values
-#### Object <span style="color":#dcdcaa>LerpAngle<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">LerpAngle</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">t</span>)
 Linearly interpolate between two angles
-#### Object <span style="color":#dcdcaa>Log<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Log</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the natural logarithm of a value
-#### Object <span style="color":#dcdcaa>MoveTowards<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>maxDelta<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">MoveTowards</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">current</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">target</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">maxDelta</span>)
 Move a value towards a target value
-#### Object <span style="color":#dcdcaa>MoveTowardsAngle<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>maxDelta<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">MoveTowardsAngle</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">current</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">target</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">maxDelta</span>)
 Move an angle towards a target angle
-#### Object <span style="color":#dcdcaa>PingPong<span>(Object <span style="color":#9cdcfe>t<span>, Object <span style="color":#9cdcfe>length<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">PingPong</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">t</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">length</span>)
 Get the ping pong value of a time value
-#### Object <span style="color":#dcdcaa>SmoothDamp<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>currentVelocity<span>, Object <span style="color":#9cdcfe>smoothTime<span>, Object <span style="color":#9cdcfe>maxSpeed<span>, Object <span style="color":#9cdcfe>deltaTime<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">SmoothDamp</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">current</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">target</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">currentVelocity</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">smoothTime</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">maxSpeed</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">deltaTime</span>)
 Smoothly damp a value towards a target value
-#### Object <span style="color":#dcdcaa>Exp<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">Exp</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Get the exponential value of a number
-#### Object <span style="color":#dcdcaa>SmoothDampAngle<span>(Object <span style="color":#9cdcfe>current<span>, Object <span style="color":#9cdcfe>target<span>, Object <span style="color":#9cdcfe>currentVelocity<span>, Object <span style="color":#9cdcfe>smoothTime<span>, Object <span style="color":#9cdcfe>maxSpeed<span>, Object <span style="color":#9cdcfe>deltaTime<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">SmoothDampAngle</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">current</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">target</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">currentVelocity</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">smoothTime</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">maxSpeed</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">deltaTime</span>)
 Smoothly damp an angle towards a target angle
-#### Object <span style="color":#dcdcaa>SmoothStep<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>, Object <span style="color":#9cdcfe>t<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">SmoothStep</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">t</span>)
 Smoothly step between two values
-#### Object <span style="color":#dcdcaa>BitwiseAnd<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseAnd</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Perform a bitwise AND operation
-#### Object <span style="color":#dcdcaa>BitwiseOr<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseOr</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Perform a bitwise OR operation
-#### Object <span style="color":#dcdcaa>BitwiseXor<span>(Object <span style="color":#9cdcfe>a<span>, Object <span style="color":#9cdcfe>b<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseXor</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">a</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">b</span>)
 Perform a bitwise XOR operation
-#### Object <span style="color":#dcdcaa>BitwiseNot<span>(Object <span style="color":#9cdcfe>value<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseNot</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>)
 Perform a bitwise NOT operation
-#### Object <span style="color":#dcdcaa>BitwiseLeftShift<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>shift<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseLeftShift</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">shift</span>)
 Shift bits to the left
-#### Object <span style="color":#dcdcaa>BitwiseRightShift<span>(Object <span style="color":#9cdcfe>value<span>, Object <span style="color":#9cdcfe>shift<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">BitwiseRightShift</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">value</span>, <span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">shift</span>)
 Shift bits to the right
 
 ---

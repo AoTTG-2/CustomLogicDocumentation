@@ -23,63 +23,63 @@ Inherits from object
 |ForcedCharacterType|[String](../static/String.md)|False|Forced character type|
 |ForcedLoadout|[String](../static/String.md)|False|Forced loadout|
 ## Methods
-#### void <span style="color":#dcdcaa>Debug<span>(Object <span style="color":#9cdcfe>message<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">Debug</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">message</span>)
 Print a debug statement to the console
-#### void <span style="color":#dcdcaa>Print<span>(Object <span style="color":#9cdcfe>message<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">Print</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">message</span>)
 Print a message to the chat
-#### void <span style="color":#dcdcaa>PrintAll<span>(Object <span style="color":#9cdcfe>message<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">PrintAll</span>(<span style="color:#509cd4">Object</span> <span style="color:#9cdcfe">message</span>)
 Print a message to all players
-#### Object <span style="color":#dcdcaa>GetGeneralSetting<span>([String](../static/String.md) <span style="color":#9cdcfe>settingName<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">GetGeneralSetting</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">settingName</span>)
 Get a general setting
-#### Object <span style="color":#dcdcaa>GetTitanSetting<span>([String](../static/String.md) <span style="color":#9cdcfe>settingName<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">GetTitanSetting</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">settingName</span>)
 Get a titan setting
-#### Object <span style="color":#dcdcaa>GetMiscSetting<span>([String](../static/String.md) <span style="color":#9cdcfe>settingName<span>)
+#### <span style="color:#509cd4">Object</span> <span style="color:#dcdcaa">GetMiscSetting</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">settingName</span>)
 Get a misc setting
-#### void <span style="color":#dcdcaa>End<span>(float <span style="color":#9cdcfe>delay<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">End</span>(<span style="color:#509cd4">float</span> <span style="color:#9cdcfe">delay</span>)
 End the game
-#### [Character](../objects/Character.md) <span style="color":#dcdcaa>FindCharacterByViewID<span>(int <span style="color":#9cdcfe>viewID<span>)
+#### <span style="color:#509cd4">[Character](../objects/Character.md)</span> <span style="color:#dcdcaa">FindCharacterByViewID</span>(<span style="color:#509cd4">int</span> <span style="color:#9cdcfe">viewID</span>)
 Find a character by view ID
-#### [Titan](../objects/Titan.md) <span style="color":#dcdcaa>SpawnTitan<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>)
+#### <span style="color:#509cd4">[Titan](../objects/Titan.md)</span> <span style="color:#dcdcaa">SpawnTitan</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>)
 Spawn a titan
-#### [Titan](../objects/Titan.md) <span style="color":#dcdcaa>SpawnTitanAt<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">[Titan](../objects/Titan.md)</span> <span style="color:#dcdcaa">SpawnTitanAt</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn a titan at a position
-#### [List](../objects/List.md) <span style="color":#dcdcaa>SpawnTitans<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, int <span style="color":#9cdcfe>count<span>)
+#### <span style="color:#509cd4">[List](../objects/List.md)</span> <span style="color:#dcdcaa">SpawnTitans</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">count</span>)
 Spawn titans
-#### void <span style="color":#dcdcaa>SpawnTitansAsync<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, int <span style="color":#9cdcfe>count<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnTitansAsync</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">count</span>)
 Spawn titans asynchronously
-#### [List](../objects/List.md) <span style="color":#dcdcaa>SpawnTitansAt<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, int <span style="color":#9cdcfe>count<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">[List](../objects/List.md)</span> <span style="color:#dcdcaa">SpawnTitansAt</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">count</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn titans at a position
-#### void <span style="color":#dcdcaa>SpawnTitansAtAsync<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, int <span style="color":#9cdcfe>count<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnTitansAtAsync</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">count</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn titans at a position asynchronously
-#### [Shifter](../objects/Shifter.md) <span style="color":#dcdcaa>SpawnShifter<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>)
+#### <span style="color:#509cd4">[Shifter](../objects/Shifter.md)</span> <span style="color:#dcdcaa">SpawnShifter</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>)
 Spawn a shifter
-#### [Shifter](../objects/Shifter.md) <span style="color":#dcdcaa>SpawnShifterAt<span>([String](../static/String.md) <span style="color":#9cdcfe>type<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">[Shifter](../objects/Shifter.md)</span> <span style="color:#dcdcaa">SpawnShifterAt</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">type</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn a shifter at a position
-#### void <span style="color":#dcdcaa>SpawnProjectile<span>(Object[] <span style="color":#9cdcfe>parameters<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnProjectile</span>(<span style="color:#509cd4">Object[]</span> <span style="color:#9cdcfe">parameters</span>)
 Spawn a projectile
-#### void <span style="color":#dcdcaa>SpawnProjectileWithOwner<span>(Object[] <span style="color":#9cdcfe>parameters<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnProjectileWithOwner</span>(<span style="color:#509cd4">Object[]</span> <span style="color:#9cdcfe">parameters</span>)
 Spawn a projectile with an owner
-#### void <span style="color":#dcdcaa>SpawnEffect<span>(Object[] <span style="color":#9cdcfe>parameters<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnEffect</span>(<span style="color:#509cd4">Object[]</span> <span style="color:#9cdcfe">parameters</span>)
 Spawn an effect
-#### void <span style="color":#dcdcaa>SpawnPlayer<span>([Player](../objects/Player.md) <span style="color":#9cdcfe>player<span>, bool <span style="color":#9cdcfe>force<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnPlayer</span>(<span style="color:#509cd4">[Player](../objects/Player.md)</span> <span style="color:#9cdcfe">player</span>, <span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">force</span>)
 Spawn a player
-#### void <span style="color":#dcdcaa>SpawnPlayerAll<span>(bool <span style="color":#9cdcfe>force<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnPlayerAll</span>(<span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">force</span>)
 Spawn a player for all players
-#### void <span style="color":#dcdcaa>SpawnPlayerAt<span>([Player](../objects/Player.md) <span style="color":#9cdcfe>player<span>, bool <span style="color":#9cdcfe>force<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnPlayerAt</span>(<span style="color:#509cd4">[Player](../objects/Player.md)</span> <span style="color:#9cdcfe">player</span>, <span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">force</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn a player at a position
-#### void <span style="color":#dcdcaa>SpawnPlayerAtAll<span>(bool <span style="color":#9cdcfe>force<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>position<span>, float <span style="color":#9cdcfe>rotationY<span> = 0)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SpawnPlayerAtAll</span>(<span style="color:#509cd4">bool</span> <span style="color:#9cdcfe">force</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">position</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">rotationY</span> = <span style="color:#509cd4">0</span>)
 Spawn a player at a position for all players
-#### void <span style="color":#dcdcaa>SetPlaylist<span>([String](../static/String.md) <span style="color":#9cdcfe>playlist<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetPlaylist</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">playlist</span>)
 Set the music playlist
-#### void <span style="color":#dcdcaa>SetSong<span>([String](../static/String.md) <span style="color":#9cdcfe>song<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">SetSong</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">song</span>)
 Set the music song
-#### void <span style="color":#dcdcaa>DrawRay<span>([Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>start<span>, [Vector3](../objects/Vector3.md) <span style="color":#9cdcfe>dir<span>, [Color](../objects/Color.md) <span style="color":#9cdcfe>color<span>, float <span style="color":#9cdcfe>duration<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">DrawRay</span>(<span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">start</span>, <span style="color:#509cd4">[Vector3](../objects/Vector3.md)</span> <span style="color:#9cdcfe">dir</span>, <span style="color:#509cd4">[Color](../objects/Color.md)</span> <span style="color:#9cdcfe">color</span>, <span style="color:#509cd4">float</span> <span style="color:#9cdcfe">duration</span>)
 Draw a ray
-#### void <span style="color":#dcdcaa>ShowKillScore<span>(int <span style="color":#9cdcfe>damage<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">ShowKillScore</span>(<span style="color:#509cd4">int</span> <span style="color:#9cdcfe">damage</span>)
 Show the kill score
-#### void <span style="color":#dcdcaa>ShowKillFeed<span>([String](../static/String.md) <span style="color":#9cdcfe>killer<span>, [String](../static/String.md) <span style="color":#9cdcfe>victim<span>, int <span style="color":#9cdcfe>score<span>, [String](../static/String.md) <span style="color":#9cdcfe>weapon<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">ShowKillFeed</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">killer</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">victim</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">score</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">weapon</span>)
 Show the kill feed
-#### void <span style="color":#dcdcaa>ShowKillFeedAll<span>([String](../static/String.md) <span style="color":#9cdcfe>killer<span>, [String](../static/String.md) <span style="color":#9cdcfe>victim<span>, int <span style="color":#9cdcfe>score<span>, [String](../static/String.md) <span style="color":#9cdcfe>weapon<span>)
+#### <span style="color:#509cd4">void</span> <span style="color:#dcdcaa">ShowKillFeedAll</span>(<span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">killer</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">victim</span>, <span style="color:#509cd4">int</span> <span style="color:#9cdcfe">score</span>, <span style="color:#509cd4">[String](../static/String.md)</span> <span style="color:#9cdcfe">weapon</span>)
 Show the kill feed for all players
 
 ---
