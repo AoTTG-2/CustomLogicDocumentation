@@ -28,43 +28,43 @@ Inherits from object
 |CurrentAnimation|[String](../static/String.md)|False|Character's current playing animation.|
 |Grounded|bool|False|Character's grounded status.|
 ## Methods
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetKilled</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> killer)
+#### <mark style="color:yellow;">GetKilled</mark>(killer:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Kills the character. Callable by non-owners.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">GetDamaged</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> killer, <mark style="color:blue;">int</mark> damage)
+#### <mark style="color:yellow;">GetDamaged</mark>(killer:<mark style="color:blue;">[String](../static/String.md)</mark>, damage:<mark style="color:blue;">int</mark>) -> <mark style="color:blue;">void</mark>
 > Damages the character and kills it if its health reaches 0. Callable by non-owners.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Emote</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> emote)
+#### <mark style="color:yellow;">Emote</mark>(emote:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlayAnimation</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation, <mark style="color:blue;">float</mark> fade = <mark style="color:blue;">0.1</mark>)
+#### <mark style="color:yellow;">PlayAnimation</mark>(animation:<mark style="color:blue;">[String](../static/String.md)</mark>, fade:<mark style="color:blue;">float</mark> = <mark style="color:blue;">0.1</mark>) -> <mark style="color:blue;">void</mark>
 > Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">ForceAnimation</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation, <mark style="color:blue;">float</mark> fade = <mark style="color:blue;">0.1</mark>)
+#### <mark style="color:yellow;">ForceAnimation</mark>(animation:<mark style="color:blue;">[String](../static/String.md)</mark>, fade:<mark style="color:blue;">float</mark> = <mark style="color:blue;">0.1</mark>) -> <mark style="color:blue;">void</mark>
 > Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
 
-#### <mark style="color:blue;">float</mark> <mark style="color:yellow;">GetAnimationLength</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> animation)
+#### <mark style="color:yellow;">GetAnimationLength</mark>(animation:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">float</mark>
 > Gets the length of animation.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">PlaySound</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> sound)
+#### <mark style="color:yellow;">PlaySound</mark>(sound:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">StopSound</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> sound)
+#### <mark style="color:yellow;">StopSound</mark>(sound:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Stops the sound.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">LookAt</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> position)
+#### <mark style="color:yellow;">LookAt</mark>(position:<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Rotates the character such that it is looking towards a world position.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddForce</mark>(<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark> force, <mark style="color:blue;">[String](../static/String.md)</mark> mode = <mark style="color:blue;">Acceleration</mark>)
+#### <mark style="color:yellow;">AddForce</mark>(force:<mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, mode:<mark style="color:blue;">[String](../static/String.md)</mark> = <mark style="color:blue;">Acceleration</mark>) -> <mark style="color:blue;">void</mark>
 > Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Reveal</mark>(<mark style="color:blue;">float</mark> delay)
+#### <mark style="color:yellow;">Reveal</mark>(delay:<mark style="color:blue;">float</mark>) -> <mark style="color:blue;">void</mark>
 > Reveaal the titan for a set number of seconds.
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">AddOutline</mark>(<mark style="color:blue;">[Color](../objects/Color.md)</mark> color = <mark style="color:blue;">null</mark>, <mark style="color:blue;">[String](../static/String.md)</mark> mode = <mark style="color:blue;">OutlineAll</mark>)
+#### <mark style="color:yellow;">AddOutline</mark>(color:<mark style="color:blue;">[Color](../objects/Color.md)</mark> = <mark style="color:blue;">null</mark>, mode:<mark style="color:blue;">[String](../static/String.md)</mark> = <mark style="color:blue;">OutlineAll</mark>) -> <mark style="color:blue;">void</mark>
 > Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveOutline</mark>()
+#### <mark style="color:yellow;">RemoveOutline</mark>() -> <mark style="color:blue;">void</mark>
 > Removes the outline effect from the character.
 
 
