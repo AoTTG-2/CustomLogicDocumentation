@@ -2,57 +2,60 @@
 Inherits from object
 ## Initialization
 ```csharp
+# List()
 example = List()
-example = List((CustomLogicSetBuiltin))
+
+# List(CustomLogicSetBuiltin)
+example = List(CustomLogicSetBuiltin)
 ```
 ## Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Count|int|True|The number of elements in the list|
 ## Methods
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Clear</mark>()
+#### <mark style="color:yellow;">Clear</mark>() -> <mark style="color:blue;">void</mark>
 > Clear all list elements
 
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Get</mark>(<mark style="color:blue;">int</mark> index)
+#### <mark style="color:yellow;">Get</mark>(index:<mark style="color:blue;">int</mark>) -> <mark style="color:blue;">Object</mark>
 > Get the element at the specified index
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Set</mark>(<mark style="color:blue;">int</mark> index, <mark style="color:blue;">Object</mark> value)
+#### <mark style="color:yellow;">Set</mark>(index:<mark style="color:blue;">int</mark>, value:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">void</mark>
 > Set the element at the specified index
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Add</mark>(<mark style="color:blue;">Object</mark> value)
+#### <mark style="color:yellow;">Add</mark>(value:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">void</mark>
 > Add an element to the end of the list
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">InsertAt</mark>(<mark style="color:blue;">int</mark> index, <mark style="color:blue;">Object</mark> value)
+#### <mark style="color:yellow;">InsertAt</mark>(index:<mark style="color:blue;">int</mark>, value:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">void</mark>
 > Insert an element at the specified index
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">RemoveAt</mark>(<mark style="color:blue;">int</mark> index)
+#### <mark style="color:yellow;">RemoveAt</mark>(index:<mark style="color:blue;">int</mark>) -> <mark style="color:blue;">void</mark>
 > Remove the element at the specified index
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Remove</mark>(<mark style="color:blue;">Object</mark> value)
+#### <mark style="color:yellow;">Remove</mark>(value:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">void</mark>
 > Remove the first occurrence of the specified element
 
-#### <mark style="color:blue;">bool</mark> <mark style="color:yellow;">Contains</mark>(<mark style="color:blue;">Object</mark> value)
+#### <mark style="color:yellow;">Contains</mark>(value:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">bool</mark>
 > Check if the list contains the specified element
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Sort</mark>()
+#### <mark style="color:yellow;">Sort</mark>() -> <mark style="color:blue;">void</mark>
 > Sort the list
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">SortCustom</mark>(<mark style="color:blue;">UserMethod</mark> method)
+#### <mark style="color:yellow;">SortCustom</mark>(method:<mark style="color:blue;">UserMethod</mark>) -> <mark style="color:blue;">void</mark>
 > Sort the list using a custom method, expects a method with the signature int method(a,b)
 
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">Filter</mark>(<mark style="color:blue;">UserMethod</mark> method)
+#### <mark style="color:yellow;">Filter</mark>(method:<mark style="color:blue;">UserMethod</mark>) -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Filter the list using a custom method, expects a method with the signature bool method(element)
 
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">Map</mark>(<mark style="color:blue;">UserMethod</mark> method)
+#### <mark style="color:yellow;">Map</mark>(method:<mark style="color:blue;">UserMethod</mark>) -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Map the list using a custom method, expects a method with the signature object method(element)
 
-#### <mark style="color:blue;">Object</mark> <mark style="color:yellow;">Reduce</mark>(<mark style="color:blue;">UserMethod</mark> method, <mark style="color:blue;">Object</mark> initialValue)
+#### <mark style="color:yellow;">Reduce</mark>(method:<mark style="color:blue;">UserMethod</mark>, initialValue:<mark style="color:blue;">Object</mark>) -> <mark style="color:blue;">Object</mark>
 > Reduce the list using a custom method, expects a method with the signature object method(acc, element)
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">Randomize</mark>()
+#### <mark style="color:yellow;">Randomize</mark>() -> <mark style="color:blue;">void</mark>
 > Randomize the list
 
-#### <mark style="color:blue;">[Set](../objects/Set.md)</mark> <mark style="color:yellow;">ToSet</mark>()
+#### <mark style="color:yellow;">ToSet</mark>() -> <mark style="color:blue;">[Set](../objects/Set.md)</mark>
 > Convert the list to a set
 
 

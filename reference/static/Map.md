@@ -1,46 +1,46 @@
 # Map
 Inherits from object
 ## Methods
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">FindAllMapObjects</mark>()
+#### <mark style="color:yellow;">FindAllMapObjects</mark>() -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Find all map objects
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">FindMapObjectByName</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> objectName)
+#### <mark style="color:yellow;">FindMapObjectByName</mark>(objectName:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Find a map object by name
 
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">FindMapObjectsByName</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> objectName)
+#### <mark style="color:yellow;">FindMapObjectsByName</mark>(objectName:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Find all map objects by name
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">FindMapObjectByComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> className)
+#### <mark style="color:yellow;">FindMapObjectByComponent</mark>(className:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Find all map objects by component
 
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">FindMapObjectsByComponent</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> className)
+#### <mark style="color:yellow;">FindMapObjectsByComponent</mark>(className:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Find all map objects by component
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">FindMapObjectByID</mark>(<mark style="color:blue;">int</mark> id)
+#### <mark style="color:yellow;">FindMapObjectByID</mark>(id:<mark style="color:blue;">int</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Find a map object by ID
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">FindMapObjectByTag</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> tag)
+#### <mark style="color:yellow;">FindMapObjectByTag</mark>(tag:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Find a map object by tag
 
-#### <mark style="color:blue;">[List](../objects/List.md)</mark> <mark style="color:yellow;">FindMapObjectsByTag</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> tag)
+#### <mark style="color:yellow;">FindMapObjectsByTag</mark>(tag:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[List](../objects/List.md)</mark>
 > Find all map objects by tag
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">CreateMapObjectRaw</mark>(<mark style="color:blue;">[String](../static/String.md)</mark> prefab)
+#### <mark style="color:yellow;">CreateMapObjectRaw</mark>(prefab:<mark style="color:blue;">[String](../static/String.md)</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Create a new map object
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">DestroyMapObject</mark>(<mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> mapObject, <mark style="color:blue;">bool</mark> includeChildren)
+#### <mark style="color:yellow;">DestroyMapObject</mark>(mapObject:<mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>, includeChildren:<mark style="color:blue;">bool</mark>) -> <mark style="color:blue;">void</mark>
 > Destroy a map object
 
-#### <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> <mark style="color:yellow;">CopyMapObject</mark>(<mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark> mapObject, <mark style="color:blue;">bool</mark> includeChildren)
+#### <mark style="color:yellow;">CopyMapObject</mark>(mapObject:<mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>, includeChildren:<mark style="color:blue;">bool</mark>) -> <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
 > Copy a map object
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">DestroyMapTargetable</mark>(<mark style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</mark> targetable)
+#### <mark style="color:yellow;">DestroyMapTargetable</mark>(targetable:<mark style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</mark>) -> <mark style="color:blue;">void</mark>
 > Destroy a map targetable
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">UpdateNavMesh</mark>()
+#### <mark style="color:yellow;">UpdateNavMesh</mark>() -> <mark style="color:blue;">void</mark>
 > Update the nav mesh
 
-#### <mark style="color:blue;">void</mark> <mark style="color:yellow;">UpdateNavMeshAsync</mark>()
+#### <mark style="color:yellow;">UpdateNavMeshAsync</mark>() -> <mark style="color:blue;">void</mark>
 > Update the nav mesh asynchronously
 
 
