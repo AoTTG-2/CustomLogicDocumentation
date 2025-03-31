@@ -1,7 +1,8 @@
 # Math
 Inherits from object
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Static Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Static Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |PI|float|True|The value of PI|

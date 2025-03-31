@@ -1,7 +1,8 @@
 # NetworkView
 Inherits from object
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Owner|[Player](../objects/Player.md)|True|The network view's owner.|

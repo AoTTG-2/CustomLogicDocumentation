@@ -1,7 +1,8 @@
 # Collision
 Inherits from object
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Collider|[Collider](../objects/Collider.md)|True||

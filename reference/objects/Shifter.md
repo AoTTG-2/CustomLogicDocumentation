@@ -1,7 +1,8 @@
 # Shifter
 Inherits from [Character](../objects/Character.md)
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Name|string|False|Shifter's name.|

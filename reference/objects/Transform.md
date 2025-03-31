@@ -1,7 +1,8 @@
 # Transform
 Inherits from object
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Position|[Vector3](../objects/Vector3.md)|False|Gets or sets the position of the transform.|

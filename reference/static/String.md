@@ -1,7 +1,8 @@
 # String
 Inherits from object
 ## Initialization
-<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>## Static Fields
+<mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
+## Static Fields
 |Field|Type|Readonly|Description|
 |---|---|---|---|
 |Newline|string|True|Returns the newline character.|
