@@ -57,14 +57,14 @@ function OnCharacterSpawn(character) {
 |Grounded|bool|True|Character's grounded status.|
 ## Methods
 ```ts
-function AddForce(force: Vector3, mode: string = "Acceleration")
+function AddForce(force: Vector3[^1], mode: string = "Acceleration")
 ```
+[^1]: [Vector3](./Vector3.md)
 > Adds a force to the character with given force vector and optional mode.
 > **Parameters**:
-> - `force`: Force to add [^Vector3]
+> - `force`: Force to add
 > - `mode`: Force mode. Valid modes are `Force`, `Acceleration`, `Impulse`, `VelocityChange` with default being `Acceleration`
 > - 
-[^Vector3]: [Vector3](./Vector3.md)
 
 ###### function <mark style="color:yellow;">GetKilled</mark>(killer: <mark style="color:blue;">string</mark>)
 > Kills the character. Callable by non-owners.
