@@ -4,7 +4,8 @@ Inherits from Object
 ## Initialization
 <mark style="color:red;">This class is abstract and cannot be instantiated.</mark>
 
-> Character is the base class that Human, Titan, and Shifter inherit from.             Only character owner can modify fields and call functions unless otherwise specified.
+> Character is the base class that Human, Titan, and Shifter inherit from.
+             Only character owner can modify fields and call functions unless otherwise specified.
 > Example:
 ```csharp
 
@@ -55,6 +56,13 @@ function OnCharacterSpawn(character) {
 |CurrentAnimation|string|True|Character's current playing animation.|
 |Grounded|bool|True|Character's grounded status.|
 ## Methods
+```ts
+function AddForce(force: [^Vector3], mode: string = "Acceleration")
+```
+> Adds a force to the character with given force vector and optional mode.
+> **Parameters**:
+> - `force`: Force to add
+> - `mode`: Force mode. Valid modes are `Force`, `Acceleration`, `Impulse`, `VelocityChange` with default being `Acceleration`
 ###### function <mark style="color:yellow;">GetKilled</mark>(killer: <mark style="color:blue;">string</mark>)
 > Kills the character. Callable by non-owners.
 
@@ -96,4 +104,5 @@ function OnCharacterSpawn(character) {
 
 
 ---
+[^Vector3]: [Vector3](./Vector3.md)
 
