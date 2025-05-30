@@ -56,9 +56,7 @@ function OnCharacterSpawn(character) {
 |CurrentAnimation|string|True|Character's current playing animation.|
 |Grounded|bool|True|Character's grounded status.|
 ## Methods
-```ts
-function AddForce(force: Vector3[^1], mode: string = "Acceleration")
-```
+<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-1">Vector3</a>, mode: string = "Acceleration")</code></pre>
 [^1]: [Vector3](./Vector3.md)
 > Adds a force to the character with given force vector and optional mode.
 > **Parameters**:
