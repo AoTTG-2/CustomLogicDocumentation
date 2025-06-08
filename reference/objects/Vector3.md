@@ -66,21 +66,21 @@ example = Vector3(0, 0, 0)
 > Overrides hashing, used for GetHashCode - Used for Dictionaries/Sets. Ex: hash = obj.GetHashCode() is equivalent to hash = obj.\_\_Hash\_\_()
 
 <pre class="language-typescript"><code class="lang-typescript">function Scale(scale: Object) → <a data-footnote-ref href="#user-content-fn-1">Vector3</a></code></pre>
-> {% hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use multiply operator instead
 {% endhint %}
 
 > Returns the Vector3 multiplied by scale.
 
 <pre class="language-typescript"><code class="lang-typescript">function Multiply(a: <a data-footnote-ref href="#user-content-fn-1">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-1">Vector3</a>) → <a data-footnote-ref href="#user-content-fn-1">Vector3</a></code></pre>
-> {% hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use multiply operator instead
 {% endhint %}
 
 > Returns the multiplication of two Vector3s.
 
 <pre class="language-typescript"><code class="lang-typescript">function Divide(a: <a data-footnote-ref href="#user-content-fn-1">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-1">Vector3</a>) → <a data-footnote-ref href="#user-content-fn-1">Vector3</a></code></pre>
-> {% hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use divide operator instead
 {% endhint %}
 
