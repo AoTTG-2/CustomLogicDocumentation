@@ -1,5 +1,5 @@
 # Character
-Inherits from [Object](../md/objects/Object.md)
+Inherits from [Object](../objects/Object.md)
 
 Character is the base class that Human, Titan, and Shifter inherit from.
 Only character owner can modify fields and call functions unless otherwise specified.
@@ -9,21 +9,21 @@ Only character owner can modify fields and call functions unless otherwise speci
 |---|---|---|---|
 |Name|string|False|Character's name.|
 |Guild|string|False|Character's guild.|
-|Player|[Player](../md/objects/Player.md)|True|Player who owns this character.|
+|Player|[Player](../objects/Player.md)|True|Player who owns this character.|
 |IsAI|bool|True|Is this character AI?|
 |ViewID|int|True|Network view ID of the character.|
 |IsMine|bool|True|Is this character mine?|
 |IsMainCharacter|bool|True|Character belongs to my player and is the main character (the camera-followed player).|
-|Transform|[Transform](../md/objects/Transform.md)|True|Unity transform of the character.|
-|Position|[Vector3](../md/objects/Vector3.md)|False|Position of the character.|
-|Rotation|[Vector3](../md/objects/Vector3.md)|False|Rotation of the character.|
-|QuaternionRotation|[Quaternion](../md/objects/Quaternion.md)|False|Quaternion rotation of the character.|
-|Velocity|[Vector3](../md/objects/Vector3.md)|False|Velocity of the character.|
-|Forward|[Vector3](../md/objects/Vector3.md)|False|Forward direction of the character.|
-|Right|[Vector3](../md/objects/Vector3.md)|False|Right direction of the character.|
-|Up|[Vector3](../md/objects/Vector3.md)|False|Up direction of the character.|
+|Transform|[Transform](../objects/Transform.md)|True|Unity transform of the character.|
+|Position|[Vector3](../objects/Vector3.md)|False|Position of the character.|
+|Rotation|[Vector3](../objects/Vector3.md)|False|Rotation of the character.|
+|QuaternionRotation|[Quaternion](../objects/Quaternion.md)|False|Quaternion rotation of the character.|
+|Velocity|[Vector3](../objects/Vector3.md)|False|Velocity of the character.|
+|Forward|[Vector3](../objects/Vector3.md)|False|Forward direction of the character.|
+|Right|[Vector3](../objects/Vector3.md)|False|Right direction of the character.|
+|Up|[Vector3](../objects/Vector3.md)|False|Up direction of the character.|
 |HasTargetDirection|bool|True|If the character has a target direction it is turning towards.|
-|TargetDirection|[Vector3](../md/objects/Vector3.md)|True|The character's target direction.|
+|TargetDirection|[Vector3](../objects/Vector3.md)|True|The character's target direction.|
 |Team|string|False|Team character belongs to.|
 |Health|float|False|Character's current health.|
 |MaxHealth|float|False|Character's maximum health.|
@@ -74,42 +74,42 @@ Only character owner can modify fields and call functions unless otherwise speci
 > Removes the outline effect from the character.
 
 
-[^Camera]: [Camera](../md/static/Camera.md)
-[^Character]: [Character](../md/objects/Character.md)
-[^Collider]: [Collider](../md/objects/Collider.md)
-[^Collision]: [Collision](../md/objects/Collision.md)
-[^Color]: [Color](../md/objects/Color.md)
-[^Convert]: [Convert](../md/static/Convert.md)
-[^Cutscene]: [Cutscene](../md/static/Cutscene.md)
-[^Dict]: [Dict](../md/objects/Dict.md)
-[^Game]: [Game](../md/static/Game.md)
-[^Human]: [Human](../md/objects/Human.md)
-[^Input]: [Input](../md/static/Input.md)
-[^Json]: [Json](../md/static/Json.md)
-[^LineCastHitResult]: [LineCastHitResult](../md/objects/LineCastHitResult.md)
-[^LineRenderer]: [LineRenderer](../md/objects/LineRenderer.md)
-[^List]: [List](../md/objects/List.md)
-[^Map]: [Map](../md/static/Map.md)
-[^MapObject]: [MapObject](../md/objects/MapObject.md)
-[^MapTargetable]: [MapTargetable](../md/objects/MapTargetable.md)
-[^Math]: [Math](../md/static/Math.md)
-[^Network]: [Network](../md/static/Network.md)
-[^NetworkView]: [NetworkView](../md/objects/NetworkView.md)
-[^PersistentData]: [PersistentData](../md/static/PersistentData.md)
-[^Physics]: [Physics](../md/static/Physics.md)
-[^Player]: [Player](../md/objects/Player.md)
-[^Quaternion]: [Quaternion](../md/objects/Quaternion.md)
-[^Random]: [Random](../md/objects/Random.md)
-[^Range]: [Range](../md/objects/Range.md)
-[^RoomData]: [RoomData](../md/static/RoomData.md)
-[^Set]: [Set](../md/objects/Set.md)
-[^Shifter]: [Shifter](../md/objects/Shifter.md)
-[^String]: [String](../md/static/String.md)
-[^Time]: [Time](../md/static/Time.md)
-[^Titan]: [Titan](../md/objects/Titan.md)
-[^Transform]: [Transform](../md/objects/Transform.md)
-[^UI]: [UI](../md/static/UI.md)
-[^Vector2]: [Vector2](../md/objects/Vector2.md)
-[^Vector3]: [Vector3](../md/objects/Vector3.md)
-[^Object]: [Object](../md/objects/Object.md)
-[^Component]: [Component](../md/objects/Component.md)
+[^Camera]: [Camera](../static/Camera.md)
+[^Character]: [Character](../objects/Character.md)
+[^Collider]: [Collider](../objects/Collider.md)
+[^Collision]: [Collision](../objects/Collision.md)
+[^Color]: [Color](../objects/Color.md)
+[^Convert]: [Convert](../static/Convert.md)
+[^Cutscene]: [Cutscene](../static/Cutscene.md)
+[^Dict]: [Dict](../objects/Dict.md)
+[^Game]: [Game](../static/Game.md)
+[^Human]: [Human](../objects/Human.md)
+[^Input]: [Input](../static/Input.md)
+[^Json]: [Json](../static/Json.md)
+[^LineCastHitResult]: [LineCastHitResult](../objects/LineCastHitResult.md)
+[^LineRenderer]: [LineRenderer](../objects/LineRenderer.md)
+[^List]: [List](../objects/List.md)
+[^Map]: [Map](../static/Map.md)
+[^MapObject]: [MapObject](../objects/MapObject.md)
+[^MapTargetable]: [MapTargetable](../objects/MapTargetable.md)
+[^Math]: [Math](../static/Math.md)
+[^Network]: [Network](../static/Network.md)
+[^NetworkView]: [NetworkView](../objects/NetworkView.md)
+[^PersistentData]: [PersistentData](../static/PersistentData.md)
+[^Physics]: [Physics](../static/Physics.md)
+[^Player]: [Player](../objects/Player.md)
+[^Quaternion]: [Quaternion](../objects/Quaternion.md)
+[^Random]: [Random](../objects/Random.md)
+[^Range]: [Range](../objects/Range.md)
+[^RoomData]: [RoomData](../static/RoomData.md)
+[^Set]: [Set](../objects/Set.md)
+[^Shifter]: [Shifter](../objects/Shifter.md)
+[^String]: [String](../static/String.md)
+[^Time]: [Time](../static/Time.md)
+[^Titan]: [Titan](../objects/Titan.md)
+[^Transform]: [Transform](../objects/Transform.md)
+[^UI]: [UI](../static/UI.md)
+[^Vector2]: [Vector2](../objects/Vector2.md)
+[^Vector3]: [Vector3](../objects/Vector3.md)
+[^Object]: [Object](../objects/Object.md)
+[^Component]: [Component](../objects/Component.md)

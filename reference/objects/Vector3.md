@@ -1,5 +1,5 @@
 # Vector3
-Inherits from [Object](../md/objects/Object.md)
+Inherits from [Object](../objects/Object.md)
 ### Remarks
 Overloads operators: 
 - `__Copy__`
@@ -23,7 +23,7 @@ Vector3(x: float, y: float, z: float)
 |X|float|False|X component of the vector.|
 |Y|float|False|Y component of the vector.|
 |Z|float|False|Z component of the vector.|
-|Normalized|[Vector3](../md/objects/Vector3.md)|True|Returns this vector with a magnitude of 1 (Read Only).|
+|Normalized|[Vector3](../objects/Vector3.md)|True|Returns this vector with a magnitude of 1 (Read Only).|
 |Magnitude|float|True|Returns the length of this vector (Read Only).|
 |SqrMagnitude|float|True|Returns the squared length of this vector (Read Only).|
 
@@ -31,16 +31,16 @@ Vector3(x: float, y: float, z: float)
 ### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Zero|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, 0).|
-|One|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(1, 1, 1).|
-|Up|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(0, 1, 0).|
-|Down|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(0, -1, 0).|
-|Left|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(-1, 0, 0).|
-|Right|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(1, 0, 0).|
-|Forward|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, 1).|
-|Back|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, -1).|
-|NegativeInfinity|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
-|PositiveInfinity|[Vector3](../md/objects/Vector3.md)|True|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
+|Zero|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, 0).|
+|One|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(1, 1, 1).|
+|Up|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(0, 1, 0).|
+|Down|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(0, -1, 0).|
+|Left|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(-1, 0, 0).|
+|Right|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(1, 0, 0).|
+|Forward|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, 1).|
+|Back|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(0, 0, -1).|
+|NegativeInfinity|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
+|PositiveInfinity|[Vector3](../objects/Vector3.md)|True|Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).|
 
 
 ### Methods
@@ -152,42 +152,42 @@ Vector3(x: float, y: float, z: float)
 
 <pre class="language-typescript"><code class="lang-typescript">function SmoothDamp(current: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, target: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, currentVelocity: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, smoothTime: float, maxSpeed: float) -> <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a></code></pre>
 
-[^Camera]: [Camera](../md/static/Camera.md)
-[^Character]: [Character](../md/objects/Character.md)
-[^Collider]: [Collider](../md/objects/Collider.md)
-[^Collision]: [Collision](../md/objects/Collision.md)
-[^Color]: [Color](../md/objects/Color.md)
-[^Convert]: [Convert](../md/static/Convert.md)
-[^Cutscene]: [Cutscene](../md/static/Cutscene.md)
-[^Dict]: [Dict](../md/objects/Dict.md)
-[^Game]: [Game](../md/static/Game.md)
-[^Human]: [Human](../md/objects/Human.md)
-[^Input]: [Input](../md/static/Input.md)
-[^Json]: [Json](../md/static/Json.md)
-[^LineCastHitResult]: [LineCastHitResult](../md/objects/LineCastHitResult.md)
-[^LineRenderer]: [LineRenderer](../md/objects/LineRenderer.md)
-[^List]: [List](../md/objects/List.md)
-[^Map]: [Map](../md/static/Map.md)
-[^MapObject]: [MapObject](../md/objects/MapObject.md)
-[^MapTargetable]: [MapTargetable](../md/objects/MapTargetable.md)
-[^Math]: [Math](../md/static/Math.md)
-[^Network]: [Network](../md/static/Network.md)
-[^NetworkView]: [NetworkView](../md/objects/NetworkView.md)
-[^PersistentData]: [PersistentData](../md/static/PersistentData.md)
-[^Physics]: [Physics](../md/static/Physics.md)
-[^Player]: [Player](../md/objects/Player.md)
-[^Quaternion]: [Quaternion](../md/objects/Quaternion.md)
-[^Random]: [Random](../md/objects/Random.md)
-[^Range]: [Range](../md/objects/Range.md)
-[^RoomData]: [RoomData](../md/static/RoomData.md)
-[^Set]: [Set](../md/objects/Set.md)
-[^Shifter]: [Shifter](../md/objects/Shifter.md)
-[^String]: [String](../md/static/String.md)
-[^Time]: [Time](../md/static/Time.md)
-[^Titan]: [Titan](../md/objects/Titan.md)
-[^Transform]: [Transform](../md/objects/Transform.md)
-[^UI]: [UI](../md/static/UI.md)
-[^Vector2]: [Vector2](../md/objects/Vector2.md)
-[^Vector3]: [Vector3](../md/objects/Vector3.md)
-[^Object]: [Object](../md/objects/Object.md)
-[^Component]: [Component](../md/objects/Component.md)
+[^Camera]: [Camera](../static/Camera.md)
+[^Character]: [Character](../objects/Character.md)
+[^Collider]: [Collider](../objects/Collider.md)
+[^Collision]: [Collision](../objects/Collision.md)
+[^Color]: [Color](../objects/Color.md)
+[^Convert]: [Convert](../static/Convert.md)
+[^Cutscene]: [Cutscene](../static/Cutscene.md)
+[^Dict]: [Dict](../objects/Dict.md)
+[^Game]: [Game](../static/Game.md)
+[^Human]: [Human](../objects/Human.md)
+[^Input]: [Input](../static/Input.md)
+[^Json]: [Json](../static/Json.md)
+[^LineCastHitResult]: [LineCastHitResult](../objects/LineCastHitResult.md)
+[^LineRenderer]: [LineRenderer](../objects/LineRenderer.md)
+[^List]: [List](../objects/List.md)
+[^Map]: [Map](../static/Map.md)
+[^MapObject]: [MapObject](../objects/MapObject.md)
+[^MapTargetable]: [MapTargetable](../objects/MapTargetable.md)
+[^Math]: [Math](../static/Math.md)
+[^Network]: [Network](../static/Network.md)
+[^NetworkView]: [NetworkView](../objects/NetworkView.md)
+[^PersistentData]: [PersistentData](../static/PersistentData.md)
+[^Physics]: [Physics](../static/Physics.md)
+[^Player]: [Player](../objects/Player.md)
+[^Quaternion]: [Quaternion](../objects/Quaternion.md)
+[^Random]: [Random](../objects/Random.md)
+[^Range]: [Range](../objects/Range.md)
+[^RoomData]: [RoomData](../static/RoomData.md)
+[^Set]: [Set](../objects/Set.md)
+[^Shifter]: [Shifter](../objects/Shifter.md)
+[^String]: [String](../static/String.md)
+[^Time]: [Time](../static/Time.md)
+[^Titan]: [Titan](../objects/Titan.md)
+[^Transform]: [Transform](../objects/Transform.md)
+[^UI]: [UI](../static/UI.md)
+[^Vector2]: [Vector2](../objects/Vector2.md)
+[^Vector3]: [Vector3](../objects/Vector3.md)
+[^Object]: [Object](../objects/Object.md)
+[^Component]: [Component](../objects/Component.md)
