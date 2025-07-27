@@ -1,52 +1,88 @@
 # Map
-Inherits from Object
+Inherits from [Object](../md/objects/Object.md)
 
-<mark style="color:red;">This class is static and cannot be instantiated.</mark>
+Finding, creating, and destroying map objects.
 
-> Finding, creating, and destroying map objects.
-## Methods
-###### function <mark style="color:yellow;">FindAllMapObjects</mark>() → <mark style="color:blue;">[List](../objects/List.md)</mark>
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function FindAllMapObjects() -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Find all map objects
 
-###### function <mark style="color:yellow;">FindMapObjectByName</mark>(objectName: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByName(objectName: string) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Find a map object by name
 
-###### function <mark style="color:yellow;">FindMapObjectsByName</mark>(objectName: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByName(objectName: string) -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Find all map objects by name
 
-###### function <mark style="color:yellow;">FindMapObjectByComponent</mark>(className: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByComponent(className: string) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Find all map objects by component
 
-###### function <mark style="color:yellow;">FindMapObjectsByComponent</mark>(className: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByComponent(className: string) -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Find all map objects by component
 
-###### function <mark style="color:yellow;">FindMapObjectByID</mark>(id: <mark style="color:blue;">int</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByID(id: int) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Find a map object by ID
 
-###### function <mark style="color:yellow;">FindMapObjectByTag</mark>(tag: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByTag(tag: string) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Find a map object by tag
 
-###### function <mark style="color:yellow;">FindMapObjectsByTag</mark>(tag: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByTag(tag: string) -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Find all map objects by tag
 
-###### function <mark style="color:yellow;">CreateMapObjectRaw</mark>(prefab: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function CreateMapObjectRaw(prefab: string) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Create a new map object
 
-###### function <mark style="color:yellow;">DestroyMapObject</mark>(mapObject: <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>, includeChildren: <mark style="color:blue;">bool</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function DestroyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a>, includeChildren: bool) -> null</code></pre>
 > Destroy a map object
 
-###### function <mark style="color:yellow;">CopyMapObject</mark>(mapObject: <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>, includeChildren: <mark style="color:blue;">bool</mark>) → <mark style="color:blue;">[MapObject](../objects/MapObject.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function CopyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a>, includeChildren: bool) -> <a data-footnote-ref href="#user-content-fn-MapObject">MapObject</a></code></pre>
 > Copy a map object
 
-###### function <mark style="color:yellow;">DestroyMapTargetable</mark>(targetable: <mark style="color:blue;">[MapTargetable](../objects/MapTargetable.md)</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function DestroyMapTargetable(targetable: <a data-footnote-ref href="#user-content-fn-MapTargetable">MapTargetable</a>) -> null</code></pre>
 > Destroy a map targetable
 
-###### function <mark style="color:yellow;">UpdateNavMesh</mark>()
+<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMesh() -> null</code></pre>
 > Update the nav mesh
 
-###### function <mark style="color:yellow;">UpdateNavMeshAsync</mark>()
+<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMeshAsync() -> null</code></pre>
 > Update the nav mesh asynchronously
 
 
----
-
+[^Camera]: [Camera](../md/static/Camera.md)
+[^Character]: [Character](../md/objects/Character.md)
+[^Collider]: [Collider](../md/objects/Collider.md)
+[^Collision]: [Collision](../md/objects/Collision.md)
+[^Color]: [Color](../md/objects/Color.md)
+[^Convert]: [Convert](../md/static/Convert.md)
+[^Cutscene]: [Cutscene](../md/static/Cutscene.md)
+[^Dict]: [Dict](../md/objects/Dict.md)
+[^Game]: [Game](../md/static/Game.md)
+[^Human]: [Human](../md/objects/Human.md)
+[^Input]: [Input](../md/static/Input.md)
+[^Json]: [Json](../md/static/Json.md)
+[^LineCastHitResult]: [LineCastHitResult](../md/objects/LineCastHitResult.md)
+[^LineRenderer]: [LineRenderer](../md/objects/LineRenderer.md)
+[^List]: [List](../md/objects/List.md)
+[^Map]: [Map](../md/static/Map.md)
+[^MapObject]: [MapObject](../md/objects/MapObject.md)
+[^MapTargetable]: [MapTargetable](../md/objects/MapTargetable.md)
+[^Math]: [Math](../md/static/Math.md)
+[^Network]: [Network](../md/static/Network.md)
+[^NetworkView]: [NetworkView](../md/objects/NetworkView.md)
+[^PersistentData]: [PersistentData](../md/static/PersistentData.md)
+[^Physics]: [Physics](../md/static/Physics.md)
+[^Player]: [Player](../md/objects/Player.md)
+[^Quaternion]: [Quaternion](../md/objects/Quaternion.md)
+[^Random]: [Random](../md/objects/Random.md)
+[^Range]: [Range](../md/objects/Range.md)
+[^RoomData]: [RoomData](../md/static/RoomData.md)
+[^Set]: [Set](../md/objects/Set.md)
+[^Shifter]: [Shifter](../md/objects/Shifter.md)
+[^String]: [String](../md/static/String.md)
+[^Time]: [Time](../md/static/Time.md)
+[^Titan]: [Titan](../md/objects/Titan.md)
+[^Transform]: [Transform](../md/objects/Transform.md)
+[^UI]: [UI](../md/static/UI.md)
+[^Vector2]: [Vector2](../md/objects/Vector2.md)
+[^Vector3]: [Vector3](../md/objects/Vector3.md)
+[^Object]: [Object](../md/objects/Object.md)
+[^Component]: [Component](../md/objects/Component.md)

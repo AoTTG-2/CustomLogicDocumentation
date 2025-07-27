@@ -1,24 +1,23 @@
 # Game
-Inherits from Object
+Inherits from [Object](../md/objects/Object.md)
 
-<mark style="color:red;">This class is static and cannot be instantiated.</mark>
+Game functions such as spawning titans and managing game state.
 
-> Game functions such as spawning titans and managing game state.
-## Fields
-|Field|Type|Readonly|Description|
+### Properties
+|Name|Type|Readonly|Description|
 |---|---|---|---|
 |IsEnding|bool|True|Is the game ending?|
 |EndTimeLeft|float|True|Time left until the game ends|
-|Titans|[List](../objects/List.md)|True|List of all titans|
-|AITitans|[List](../objects/List.md)|True|List of all AI titans|
-|PlayerTitans|[List](../objects/List.md)|True|List of all player titans|
-|Shifters|[List](../objects/List.md)|True|List of all shifters|
-|AIShifters|[List](../objects/List.md)|True|List of all AI shifters|
-|PlayerShifters|[List](../objects/List.md)|True|List of all player shifters|
-|Humans|[List](../objects/List.md)|True|List of all humans|
-|AIHumans|[List](../objects/List.md)|True|List of all AI humans|
-|PlayerHumans|[List](../objects/List.md)|True|List of all player humans|
-|Loadouts|[List](../objects/List.md)|True|List of all loadouts|
+|Titans|[List](../md/objects/List.md)|True|List of all titans|
+|AITitans|[List](../md/objects/List.md)|True|List of all AI titans|
+|PlayerTitans|[List](../md/objects/List.md)|True|List of all player titans|
+|Shifters|[List](../md/objects/List.md)|True|List of all shifters|
+|AIShifters|[List](../md/objects/List.md)|True|List of all AI shifters|
+|PlayerShifters|[List](../md/objects/List.md)|True|List of all player shifters|
+|Humans|[List](../md/objects/List.md)|True|List of all humans|
+|AIHumans|[List](../md/objects/List.md)|True|List of all AI humans|
+|PlayerHumans|[List](../md/objects/List.md)|True|List of all player humans|
+|Loadouts|[List](../md/objects/List.md)|True|List of all loadouts|
 |DefaultShowKillScore|bool|False|Is the kill score shown by default?|
 |DefaultHideKillScore|bool|False|Is the kill feed shown by default?|
 |DefaultAddKillScore|bool|False|Is the kill score added by default?|
@@ -26,94 +25,133 @@ Inherits from Object
 |ShowScoreboardStatus|bool|False|Is the status shown in the scoreboard?|
 |ForcedCharacterType|string|False|Forced character type|
 |ForcedLoadout|string|False|Forced loadout|
-## Methods
-###### function <mark style="color:yellow;">Debug</mark>(message: <mark style="color:blue;">Object</mark>)
+
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Debug(message: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Print a debug statement to the console
 
-###### function <mark style="color:yellow;">Print</mark>(message: <mark style="color:blue;">Object</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function Print(message: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Print a message to the chat
 
-###### function <mark style="color:yellow;">PrintAll</mark>(message: <mark style="color:blue;">Object</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function PrintAll(message: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Print a message to all players
 
-###### function <mark style="color:yellow;">GetGeneralSetting</mark>(settingName: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">Object</mark>
+<pre class="language-typescript"><code class="lang-typescript">function GetGeneralSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-Object">Object</a></code></pre>
 > Get a general setting
 
-###### function <mark style="color:yellow;">GetTitanSetting</mark>(settingName: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">Object</mark>
+<pre class="language-typescript"><code class="lang-typescript">function GetTitanSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-Object">Object</a></code></pre>
 > Get a titan setting
 
-###### function <mark style="color:yellow;">GetMiscSetting</mark>(settingName: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">Object</mark>
+<pre class="language-typescript"><code class="lang-typescript">function GetMiscSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-Object">Object</a></code></pre>
 > Get a misc setting
 
-###### function <mark style="color:yellow;">End</mark>(delay: <mark style="color:blue;">float</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function End(delay: float) -> null</code></pre>
 > End the game
 
-###### function <mark style="color:yellow;">FindCharacterByViewID</mark>(viewID: <mark style="color:blue;">int</mark>) → <mark style="color:blue;">[Character](../objects/Character.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function FindCharacterByViewID(viewID: int) -> <a data-footnote-ref href="#user-content-fn-Character">Character</a></code></pre>
 > Find a character by view ID
 
-###### function <mark style="color:yellow;">SpawnTitan</mark>(type: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[Titan](../objects/Titan.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitan(type: string) -> <a data-footnote-ref href="#user-content-fn-Titan">Titan</a></code></pre>
 > Spawn a titan
 
-###### function <mark style="color:yellow;">SpawnTitanAt</mark>(type: <mark style="color:blue;">string</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>) → <mark style="color:blue;">[Titan](../objects/Titan.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitanAt(type: string, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> <a data-footnote-ref href="#user-content-fn-Titan">Titan</a></code></pre>
 > Spawn a titan at a position
 
-###### function <mark style="color:yellow;">SpawnTitans</mark>(type: <mark style="color:blue;">string</mark>, count: <mark style="color:blue;">int</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitans(type: string, count: int) -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Spawn titans
 
-###### function <mark style="color:yellow;">SpawnTitansAsync</mark>(type: <mark style="color:blue;">string</mark>, count: <mark style="color:blue;">int</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitansAsync(type: string, count: int) -> null</code></pre>
 > Spawn titans asynchronously
 
-###### function <mark style="color:yellow;">SpawnTitansAt</mark>(type: <mark style="color:blue;">string</mark>, count: <mark style="color:blue;">int</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitansAt(type: string, count: int, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> <a data-footnote-ref href="#user-content-fn-List">List</a></code></pre>
 > Spawn titans at a position
 
-###### function <mark style="color:yellow;">SpawnTitansAtAsync</mark>(type: <mark style="color:blue;">string</mark>, count: <mark style="color:blue;">int</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnTitansAtAsync(type: string, count: int, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> null</code></pre>
 > Spawn titans at a position asynchronously
 
-###### function <mark style="color:yellow;">SpawnShifter</mark>(type: <mark style="color:blue;">string</mark>) → <mark style="color:blue;">[Shifter](../objects/Shifter.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnShifter(type: string) -> <a data-footnote-ref href="#user-content-fn-Shifter">Shifter</a></code></pre>
 > Spawn a shifter
 
-###### function <mark style="color:yellow;">SpawnShifterAt</mark>(type: <mark style="color:blue;">string</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>) → <mark style="color:blue;">[Shifter](../objects/Shifter.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnShifterAt(type: string, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> <a data-footnote-ref href="#user-content-fn-Shifter">Shifter</a></code></pre>
 > Spawn a shifter at a position
 
-###### function <mark style="color:yellow;">SpawnProjectile</mark>(parameters: <mark style="color:blue;">Object[]</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectile(parameters: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Spawn a projectile
 
-###### function <mark style="color:yellow;">SpawnProjectileWithOwner</mark>(parameters: <mark style="color:blue;">Object[]</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectileWithOwner(parameters: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Spawn a projectile with an owner
 
-###### function <mark style="color:yellow;">SpawnEffect</mark>(parameters: <mark style="color:blue;">Object[]</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnEffect(parameters: <a data-footnote-ref href="#user-content-fn-Object">Object</a>) -> null</code></pre>
 > Spawn an effect
 
-###### function <mark style="color:yellow;">SpawnPlayer</mark>(player: <mark style="color:blue;">[Player](../objects/Player.md)</mark>, force: <mark style="color:blue;">bool</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnPlayer(player: <a data-footnote-ref href="#user-content-fn-Player">Player</a>, force: bool) -> null</code></pre>
 > Spawn a player
 
-###### function <mark style="color:yellow;">SpawnPlayerAll</mark>(force: <mark style="color:blue;">bool</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnPlayerAll(force: bool) -> null</code></pre>
 > Spawn a player for all players
 
-###### function <mark style="color:yellow;">SpawnPlayerAt</mark>(player: <mark style="color:blue;">[Player](../objects/Player.md)</mark>, force: <mark style="color:blue;">bool</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnPlayerAt(player: <a data-footnote-ref href="#user-content-fn-Player">Player</a>, force: bool, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> null</code></pre>
 > Spawn a player at a position
 
-###### function <mark style="color:yellow;">SpawnPlayerAtAll</mark>(force: <mark style="color:blue;">bool</mark>, position: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, rotationY: <mark style="color:blue;">float</mark> = <mark style="color:blue;">0</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SpawnPlayerAtAll(force: bool, position: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, [rotationY: float = 0]) -> null</code></pre>
 > Spawn a player at a position for all players
 
-###### function <mark style="color:yellow;">SetPlaylist</mark>(playlist: <mark style="color:blue;">string</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SetPlaylist(playlist: string) -> null</code></pre>
 > Set the music playlist
 
-###### function <mark style="color:yellow;">SetSong</mark>(song: <mark style="color:blue;">string</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function SetSong(song: string) -> null</code></pre>
 > Set the music song
 
-###### function <mark style="color:yellow;">DrawRay</mark>(start: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, dir: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, color: <mark style="color:blue;">[Color](../objects/Color.md)</mark>, duration: <mark style="color:blue;">float</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function DrawRay(start: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, dir: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, color: <a data-footnote-ref href="#user-content-fn-Color">Color</a>, duration: float) -> null</code></pre>
 > Draw a ray
 
-###### function <mark style="color:yellow;">ShowKillScore</mark>(damage: <mark style="color:blue;">int</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function ShowKillScore(damage: int) -> null</code></pre>
 > Show the kill score
 
-###### function <mark style="color:yellow;">ShowKillFeed</mark>(killer: <mark style="color:blue;">string</mark>, victim: <mark style="color:blue;">string</mark>, score: <mark style="color:blue;">int</mark>, weapon: <mark style="color:blue;">string</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function ShowKillFeed(killer: string, victim: string, score: int, weapon: string) -> null</code></pre>
 > Show the kill feed
 
-###### function <mark style="color:yellow;">ShowKillFeedAll</mark>(killer: <mark style="color:blue;">string</mark>, victim: <mark style="color:blue;">string</mark>, score: <mark style="color:blue;">int</mark>, weapon: <mark style="color:blue;">string</mark>)
+<pre class="language-typescript"><code class="lang-typescript">function ShowKillFeedAll(killer: string, victim: string, score: int, weapon: string) -> null</code></pre>
 > Show the kill feed for all players
 
 
----
-
+[^Camera]: [Camera](../md/static/Camera.md)
+[^Character]: [Character](../md/objects/Character.md)
+[^Collider]: [Collider](../md/objects/Collider.md)
+[^Collision]: [Collision](../md/objects/Collision.md)
+[^Color]: [Color](../md/objects/Color.md)
+[^Convert]: [Convert](../md/static/Convert.md)
+[^Cutscene]: [Cutscene](../md/static/Cutscene.md)
+[^Dict]: [Dict](../md/objects/Dict.md)
+[^Game]: [Game](../md/static/Game.md)
+[^Human]: [Human](../md/objects/Human.md)
+[^Input]: [Input](../md/static/Input.md)
+[^Json]: [Json](../md/static/Json.md)
+[^LineCastHitResult]: [LineCastHitResult](../md/objects/LineCastHitResult.md)
+[^LineRenderer]: [LineRenderer](../md/objects/LineRenderer.md)
+[^List]: [List](../md/objects/List.md)
+[^Map]: [Map](../md/static/Map.md)
+[^MapObject]: [MapObject](../md/objects/MapObject.md)
+[^MapTargetable]: [MapTargetable](../md/objects/MapTargetable.md)
+[^Math]: [Math](../md/static/Math.md)
+[^Network]: [Network](../md/static/Network.md)
+[^NetworkView]: [NetworkView](../md/objects/NetworkView.md)
+[^PersistentData]: [PersistentData](../md/static/PersistentData.md)
+[^Physics]: [Physics](../md/static/Physics.md)
+[^Player]: [Player](../md/objects/Player.md)
+[^Quaternion]: [Quaternion](../md/objects/Quaternion.md)
+[^Random]: [Random](../md/objects/Random.md)
+[^Range]: [Range](../md/objects/Range.md)
+[^RoomData]: [RoomData](../md/static/RoomData.md)
+[^Set]: [Set](../md/objects/Set.md)
+[^Shifter]: [Shifter](../md/objects/Shifter.md)
+[^String]: [String](../md/static/String.md)
+[^Time]: [Time](../md/static/Time.md)
+[^Titan]: [Titan](../md/objects/Titan.md)
+[^Transform]: [Transform](../md/objects/Transform.md)
+[^UI]: [UI](../md/static/UI.md)
+[^Vector2]: [Vector2](../md/objects/Vector2.md)
+[^Vector3]: [Vector3](../md/objects/Vector3.md)
+[^Object]: [Object](../md/objects/Object.md)
+[^Component]: [Component](../md/objects/Component.md)

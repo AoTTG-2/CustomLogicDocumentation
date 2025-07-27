@@ -1,44 +1,90 @@
 # Random
-Inherits from Object
+Inherits from [Object](../md/objects/Object.md)
 
-## Initialization
-> Random can be initialized as a class with a string given as the seed value.             Note that this is optional, and you can reference Random directly as a static class.
-> Constructors:
+Random can be initialized as a class with an int given as the seed value.
+Note that this is optional, and you can reference Random directly as a static class.
+
+### Example
 ```csharp
+# Use random methods directly
+r = Random.RandomInt(0, 100);
 
-# Create an instance of Random with a seed of 123
+# Or create an instance of Random with a seed
 generator = Random(123);
-            
+
 # Use it
 a = generator.RandomInt(0, 100);
-            
+
 # Seed allows repeatable random values
 generator2 = Random(123);
 b = generator.RandomInt(0, 100);
 compared = a == b;    # Always True
 ```
-## Methods
-###### function <mark style="color:yellow;">RandomInt</mark>(min: <mark style="color:blue;">int</mark>, max: <mark style="color:blue;">int</mark>) → <mark style="color:blue;">int</mark>
+### Initialization
+```csharp
+Random()
+Random(seed: int)
+```
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function RandomInt(min: int, max: int) -> int</code></pre>
 > Generates a random integer between the specified range.
 
-###### function <mark style="color:yellow;">RandomFloat</mark>(min: <mark style="color:blue;">float</mark>, max: <mark style="color:blue;">float</mark>) → <mark style="color:blue;">float</mark>
+<pre class="language-typescript"><code class="lang-typescript">function RandomFloat(min: float, max: float) -> float</code></pre>
 > Generates a random float between the specified range.
 
-###### function <mark style="color:yellow;">RandomBool</mark>() → <mark style="color:blue;">bool</mark>
+<pre class="language-typescript"><code class="lang-typescript">function RandomBool() -> bool</code></pre>
 > Returns random boolean.
 
-###### function <mark style="color:yellow;">RandomVector3</mark>(a: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>, b: <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>) → <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function RandomVector3(a: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a></code></pre>
 > Generates a random Vector3 between the specified ranges.
 
-###### function <mark style="color:yellow;">RandomDirection</mark>(flat: <mark style="color:blue;">bool</mark> = <mark style="color:blue;">False</mark>) → <mark style="color:blue;">[Vector3](../objects/Vector3.md)</mark>
+<pre class="language-typescript"><code class="lang-typescript">function RandomDirection([flat: bool = False]) -> <a data-footnote-ref href="#user-content-fn-Vector3">Vector3</a></code></pre>
 > Generates a random normalized direction vector. If flat is true, the y component will be zero.
 
-###### function <mark style="color:yellow;">RandomSign</mark>() → <mark style="color:blue;">int</mark>
+<pre class="language-typescript"><code class="lang-typescript">function RandomSign() -> int</code></pre>
 > Generates a random sign, either 1 or -1.
 
-###### function <mark style="color:yellow;">PerlinNoise</mark>(x: <mark style="color:blue;">float</mark>, y: <mark style="color:blue;">float</mark>) → <mark style="color:blue;">float</mark>
+<pre class="language-typescript"><code class="lang-typescript">function PerlinNoise(x: float, y: float) -> float</code></pre>
 > Returns a point sampled from generated 2d perlin noise. (see Unity Mathf.PerlinNoise for more information)
 
 
----
-
+[^Camera]: [Camera](../md/static/Camera.md)
+[^Character]: [Character](../md/objects/Character.md)
+[^Collider]: [Collider](../md/objects/Collider.md)
+[^Collision]: [Collision](../md/objects/Collision.md)
+[^Color]: [Color](../md/objects/Color.md)
+[^Convert]: [Convert](../md/static/Convert.md)
+[^Cutscene]: [Cutscene](../md/static/Cutscene.md)
+[^Dict]: [Dict](../md/objects/Dict.md)
+[^Game]: [Game](../md/static/Game.md)
+[^Human]: [Human](../md/objects/Human.md)
+[^Input]: [Input](../md/static/Input.md)
+[^Json]: [Json](../md/static/Json.md)
+[^LineCastHitResult]: [LineCastHitResult](../md/objects/LineCastHitResult.md)
+[^LineRenderer]: [LineRenderer](../md/objects/LineRenderer.md)
+[^List]: [List](../md/objects/List.md)
+[^Map]: [Map](../md/static/Map.md)
+[^MapObject]: [MapObject](../md/objects/MapObject.md)
+[^MapTargetable]: [MapTargetable](../md/objects/MapTargetable.md)
+[^Math]: [Math](../md/static/Math.md)
+[^Network]: [Network](../md/static/Network.md)
+[^NetworkView]: [NetworkView](../md/objects/NetworkView.md)
+[^PersistentData]: [PersistentData](../md/static/PersistentData.md)
+[^Physics]: [Physics](../md/static/Physics.md)
+[^Player]: [Player](../md/objects/Player.md)
+[^Quaternion]: [Quaternion](../md/objects/Quaternion.md)
+[^Random]: [Random](../md/objects/Random.md)
+[^Range]: [Range](../md/objects/Range.md)
+[^RoomData]: [RoomData](../md/static/RoomData.md)
+[^Set]: [Set](../md/objects/Set.md)
+[^Shifter]: [Shifter](../md/objects/Shifter.md)
+[^String]: [String](../md/static/String.md)
+[^Time]: [Time](../md/static/Time.md)
+[^Titan]: [Titan](../md/objects/Titan.md)
+[^Transform]: [Transform](../md/objects/Transform.md)
+[^UI]: [UI](../md/static/UI.md)
+[^Vector2]: [Vector2](../md/objects/Vector2.md)
+[^Vector3]: [Vector3](../md/objects/Vector3.md)
+[^Object]: [Object](../md/objects/Object.md)
+[^Component]: [Component](../md/objects/Component.md)
