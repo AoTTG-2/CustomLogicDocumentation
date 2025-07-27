@@ -10,9 +10,9 @@ Overloads operators:
 - `==`
 - `__Hash__`
 ### Initialization
-```python
-Vector3() # Default constructor. Initializes the Vector3 to (0, 0, 0).
-Vector3(xyz: float) # Default constructor. Initializes the Vector3 to (xyz, xyz, xyz).
+```csharp
+Vector3() // Default constructor. Initializes the Vector3 to (0, 0, 0).
+Vector3(xyz: float) // Default constructor. Initializes the Vector3 to (xyz, xyz, xyz).
 Vector3(x: float, y: float)
 Vector3(x: float, y: float, z: float)
 ```
@@ -46,7 +46,7 @@ Vector3(x: float, y: float, z: float)
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Set(x: float, y: float, z: float) -> null</code></pre>
 > Set x, y and z components of an existing Vector3.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Scale(scale: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
 {% hint style="warning" %}
@@ -54,10 +54,10 @@ Vector3(x: float, y: float, z: float)
 {% endhint %}
 
 > Returns the Vector3 multiplied by scale.
-
+> 
 > **Parameters**:
 > - `scale`: float | Vector3
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Multiply(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
 {% hint style="warning" %}
@@ -65,11 +65,11 @@ Vector3(x: float, y: float, z: float)
 {% endhint %}
 
 > Returns the multiplication of two Vector3s.
-
+> 
 > **Parameters**:
 > - `a`: Vector3
 > - `b`: Vector3
-
+> 
 > **Returns**: Vector3
 <pre class="language-typescript"><code class="lang-typescript">function Divide(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
@@ -78,78 +78,78 @@ Vector3(x: float, y: float, z: float)
 {% endhint %}
 
 > Returns the division of two Vector3s.
-
+> 
 > **Parameters**:
 > - `a`: Vector3
 > - `b`: Vector3
-
+> 
 > **Returns**: Vector3
 <pre class="language-typescript"><code class="lang-typescript">function GetRotationDirection(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Gets the relational Vector3 "b" using "a" as a reference. This is equivalent to setting MapObject.Forward to Vector "a", and finding the relative "b" vector.
-
+> 
 
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function Angle(from: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, to: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> float</code></pre>
 > Calculates the angle between vectors from and.
-
+> 
 > **Returns**: The angle in degrees between the two vectors.
 <pre class="language-typescript"><code class="lang-typescript">function ClampMagnitude(vector: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, maxLength: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns a copy of vector with its magnitude clamped to maxLength.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Cross(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Cross Product of two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Distance(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> float</code></pre>
 > Returns the distance between a and b.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Dot(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> float</code></pre>
 > Dot Product of two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Lerp(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Linearly interpolates between two points.
-
+> 
 > **Returns**: Interpolated value, equals to a + (b - a) * t.
 <pre class="language-typescript"><code class="lang-typescript">function LerpUnclamped(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Linearly interpolates between two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Max(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns a vector that is made from the largest components of two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Min(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns a vector that is made from the smallest components of two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function MoveTowards(current: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, target: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, maxDistanceDelta: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.
-
+> 
 > **Returns**: The new position.
 <pre class="language-typescript"><code class="lang-typescript">function Normalize(value: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Makes this vector have a magnitude of 1.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function OrthoNormalize(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 <pre class="language-typescript"><code class="lang-typescript">function Project(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Projects a vector onto another vector.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ProjectOnPlane(vector: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, plane: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Projects a vector onto a plane defined by a normal orthogonal to the plane.
-
+> 
 > **Returns**: The location of the vector on the plane.
 <pre class="language-typescript"><code class="lang-typescript">function Reflect(inDirection: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, inNormal: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Reflects a vector off the plane defined by a normal.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RotateTowards(current: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, target: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, maxRadiansDelta: float, maxMagnitudeDelta: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Rotates a vector current towards target.
-
+> 
 > **Returns**: The location that RotateTowards generates.
 <pre class="language-typescript"><code class="lang-typescript">function SignedAngle(from: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, to: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, axis: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> float</code></pre>
 > Calculates the signed angle between vectors from and to in relation to axis.
-
+> 
 > **Returns**: Returns the signed angle between from and to in degrees.
 <pre class="language-typescript"><code class="lang-typescript">function Slerp(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Spherically interpolates between two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SlerpUnclamped(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Spherically interpolates between two vectors.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SmoothDamp(current: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, target: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, currentVelocity: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, smoothTime: float, maxSpeed: float) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
 [^0]: [Camera](../static/Camera.md)

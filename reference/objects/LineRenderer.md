@@ -1,8 +1,8 @@
 # LineRenderer
 Inherits from [Object](../objects/Object.md)
 ### Initialization
-```python
-LineRenderer(parameterValues: Object) # Default constructor is parameterless.
+```csharp
+LineRenderer(parameterValues: Object) // Default constructor is parameterless.
 lr = LineRenderer();
 lr.StartWidth = 1;
 ```
@@ -33,10 +33,10 @@ lr.StartWidth = 1;
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function GetPosition(index: int) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the position of a point in the line renderer
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetPosition(index: int, position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Set the position of a point in the line renderer
-
+> 
 
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function CreateLineRenderer() -> <a data-footnote-ref href="#user-content-fn-13">LineRenderer</a></code></pre>
@@ -46,7 +46,7 @@ lr.StartWidth = 1;
 {% endhint %}
 
 > Create a new LineRenderer
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

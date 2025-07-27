@@ -35,80 +35,80 @@ MapObject represents a map object created in the editor or spawned at runtime us
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function AddComponent(name: string) -> component</code></pre>
 > Add a component to the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RemoveComponent(name: string) -> null</code></pre>
 > Remove a component from the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetComponent(name: string) -> component</code></pre>
 > Get a component from the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetComponentEnabled(name: string, enabled: bool) -> null</code></pre>
 > Set whether a component is enabled
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetComponentsEnabled(enabled: bool) -> null</code></pre>
 > Set whether all components are enabled
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function AddSphereCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, radius: float) -> null</code></pre>
 > Add a sphere collider to the object
-
-<pre class="language-typescript"><code class="lang-typescript">function AddBoxCollider(collideMode: string, collideWith: string, [center: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null], [size: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function AddBoxCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null, size: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null) -> null</code></pre>
 > Add a box collider to the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function AddSphereTarget(team: string, center: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, radius: float) -> <a data-footnote-ref href="#user-content-fn-17">MapTargetable</a></code></pre>
 > Add a sphere target to the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function AddBoxTarget(team: string, center: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, size: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-17">MapTargetable</a></code></pre>
 > Add a box target to the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetChild(name: string) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Get a child object by name
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetChildren() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Get all child objects
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetTransform(name: string) -> <a data-footnote-ref href="#user-content-fn-33">Transform</a></code></pre>
 > Get a child transform by name
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetColorAll(color: <a data-footnote-ref href="#user-content-fn-4">Color</a>) -> null</code></pre>
 > Set the color of all renderers on the object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function InBounds(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> bool</code></pre>
 > Check if a position is within the object's bounds
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsAverageCenter() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds average center
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsCenter() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds center
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsSize() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds size
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsMin() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds min
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsMax() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds max
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetBoundsExtents() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Get the bounds extents
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetCorners() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Get the corners of the bounds
-
-<pre class="language-typescript"><code class="lang-typescript">function AddBuiltinComponent([componentName: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter1: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter2: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter3: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter4: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function AddBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null) -> null</code></pre>
 > Add a builtin component to the object.
 Components: Daylight, PointLight, Tag, Rigidbody, CustomPhysicsMaterial, NavMeshObstacle
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function HasTag(tag: string) -> bool</code></pre>
 > Whether or not the object has the given tag
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ReadBuiltinComponent(name: string, param: string) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Read a builtin component
-
-<pre class="language-typescript"><code class="lang-typescript">function UpdateBuiltinComponent([componentName: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter1: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter2: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter3: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null], [parameter4: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function UpdateBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null) -> null</code></pre>
 > Update a builtin component
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

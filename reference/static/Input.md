@@ -6,37 +6,37 @@ Reading player key inputs. Note that inputs are best handled in OnFrame rather t
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function GetKeyName(key: string) -> string</code></pre>
 > Gets the key name the player assigned to the key setting
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetKeyHold(key: string) -> bool</code></pre>
 > Returns true if the key is being held down
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetKeyDown(key: string) -> bool</code></pre>
 > Returns true if the key was pressed down this frame
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetKeyUp(key: string) -> bool</code></pre>
 > Returns true if the key was released this frame
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetMouseAim() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns the position the player is aiming at
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetCursorAimDirection() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns the ray the player is aiming at
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetMouseSpeed() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns the speed of the mouse
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetMousePosition() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns the position of the mouse
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetScreenDimensions() -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns the dimensions of the screen
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetKeyDefaultEnabled(key: string, enabled: bool) -> null</code></pre>
 > Sets whether the key is enabled by default
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetKeyHold(key: string, enabled: bool) -> null</code></pre>
 > Sets whether the key is being held down
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

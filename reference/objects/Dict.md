@@ -1,7 +1,7 @@
 # Dict
 Inherits from [Object](../objects/Object.md)
 ### Initialization
-```python
+```csharp
 Dict()
 ```
 
@@ -16,19 +16,19 @@ Dict()
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
 > Clears the dictionary
-
-<pre class="language-typescript"><code class="lang-typescript">function Get(key: <a data-footnote-ref href="#user-content-fn-37">Object</a>, [defaultValue: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null]) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Get(key: <a data-footnote-ref href="#user-content-fn-37">Object</a>, defaultValue: <a data-footnote-ref href="#user-content-fn-37">Object</a> = null) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Gets a value from the dictionary
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Set(key: <a data-footnote-ref href="#user-content-fn-37">Object</a>, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Sets a value in the dictionary
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Remove(key: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Removes a value from the dictionary
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Contains(key: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the dictionary contains a key
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

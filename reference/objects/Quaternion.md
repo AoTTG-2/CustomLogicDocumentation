@@ -12,7 +12,7 @@ Overloads operators:
 quaternion = Quaternion(0.5, 0.5, 0.5, 0.5);
 ```
 ### Initialization
-```python
+```csharp
 Quaternion(parameterValues: Object)
 ```
 
@@ -37,35 +37,35 @@ Quaternion(parameterValues: Object)
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function Lerp(a: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, b: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Interpolates between a and b by t and normalizes the result afterwards.
-
+> 
 > **Returns**: A unit quaternion interpolated between quaternions a and b.
 <pre class="language-typescript"><code class="lang-typescript">function LerpUnclamped(a: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, b: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Interpolates between a and b by t and normalizes the result afterwards. The parameter t is not clamped.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Slerp(a: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, b: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Spherically linear interpolates between unit quaternions a and b by a ratio of t.
-
+> 
 > **Returns**: A unit quaternion spherically interpolated between quaternions a and b.
 <pre class="language-typescript"><code class="lang-typescript">function SlerpUnclamped(a: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, b: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Spherically linear interpolates between unit quaternions a and b by t.
-
+> 
 > **Returns**: A unit quaternion spherically interpolated between unit quaternions a and b.
 <pre class="language-typescript"><code class="lang-typescript">function FromEuler(euler: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Returns the Quaternion rotation from the given euler angles.
-
-<pre class="language-typescript"><code class="lang-typescript">function LookRotation(forward: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, [upwards: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null]) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function LookRotation(forward: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, upwards: <a data-footnote-ref href="#user-content-fn-36">Vector3</a> = null) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Creates a rotation with the specified forward and upwards directions.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FromToRotation(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Creates a rotation from fromDirection to toDirection.
-
+> 
 > **Returns**: A unit quaternion which rotates from fromDirection to toDirection.
 <pre class="language-typescript"><code class="lang-typescript">function Inverse(q: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Returns the Inverse of rotation.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RotateTowards(from: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, to: <a data-footnote-ref href="#user-content-fn-24">Quaternion</a>, maxDegreesDelta: float) -> <a data-footnote-ref href="#user-content-fn-24">Quaternion</a></code></pre>
 > Rotates a rotation from towards to.
-
+> 
 > **Returns**: A unit quaternion rotated towards to by an angular step of maxDegreesDelta.
 
 [^0]: [Camera](../static/Camera.md)

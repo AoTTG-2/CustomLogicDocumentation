@@ -25,11 +25,11 @@ Overloads operators:
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function ClosestPoint(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > Returns a point on the collider that is closest to a given location.
-
+> 
 > **Returns**: The point on the collider that is closest to the specified location.
 <pre class="language-typescript"><code class="lang-typescript">function ClosestPointOnBounds(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 > The closest point to the bounding box of the attached collider.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Raycast(start: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, maxDistance: float, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-12">LineCastHitResult</a></code></pre>
 
 [^0]: [Camera](../static/Camera.md)

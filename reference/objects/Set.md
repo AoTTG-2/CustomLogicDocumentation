@@ -1,7 +1,7 @@
 # Set
 Inherits from [Object](../objects/Object.md)
 ### Initialization
-```python
+```csharp
 Set()
 Set(parameterValues: Object)
 ```
@@ -15,46 +15,46 @@ Set(parameterValues: Object)
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
 > Clear all set elements
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Contains(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Check if the set contains the specified element
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Add(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Add an element to the set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Remove(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Remove the element from the set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Union(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> null</code></pre>
 > Union with another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Intersect(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> null</code></pre>
 > Intersect with another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Difference(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> null</code></pre>
 > Difference with another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsSubsetOf(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set is a subset of another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsSupersetOf(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set is a superset of another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsProperSubsetOf(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set is a proper subset of another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsProperSupersetOf(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set is a proper superset of another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Overlaps(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set overlaps with another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetEquals(set: <a data-footnote-ref href="#user-content-fn-28">Set</a>) -> bool</code></pre>
 > Check if the set has the same elements as another set
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ToList() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Convert the set to a list
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

@@ -28,13 +28,13 @@ Note that this may be different from the character's final team (Character.Team 
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function GetCustomProperty(property: string) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Get a custom property at given key. Must be a primitive type. This is synced to all clients.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetCustomProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ClearKDR() -> null</code></pre>
 > Clears kills, deaths, highestdamage, and totaldamage properties.
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

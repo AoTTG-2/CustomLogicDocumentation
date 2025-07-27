@@ -6,49 +6,49 @@ Converting objects to different types.
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function ToFloat(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> float</code></pre>
 > Converts a value to a float
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ToInt(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> int</code></pre>
 > Converts a value to an int
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ToBool(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Converts a value to a bool
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ToString(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> string</code></pre>
 > Converts a value to a string
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsFloat(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is a float
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsInt(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is an int
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsBool(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is a bool
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsString(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is a string
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsObject(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is an object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsList(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is a list
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsDict(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Checks if the value is a dictionary
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function HasVariable(cInstance: class, variableName: string) -> bool</code></pre>
 > Checks if the class instance has a variable
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function DefineVariable(cInstance: class, variableName: string, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Defines a variable for the class instance
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RemoveVariable(cInstance: class, variableName: string) -> null</code></pre>
 > Removes a variable from the class instance
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetType(cInstance: class) -> string</code></pre>
 > Gets the type of the class instance
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

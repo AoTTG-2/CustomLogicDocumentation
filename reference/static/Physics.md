@@ -6,10 +6,10 @@ Physics class for custom logic.
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function LineCast(start: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-12">LineCastHitResult</a></code></pre>
 > Performs a line cast between two points, returns a LineCastHitResult object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SphereCast(start: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, radius: float, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Performs a sphere cast between two points, returns the object hit (Human, Titan, etc...).
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

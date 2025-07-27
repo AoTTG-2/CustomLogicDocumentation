@@ -45,27 +45,27 @@ TODO: Bother someone for good practice example - maybe move this into Networking
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Transfer(player: <a data-footnote-ref href="#user-content-fn-23">Player</a>) -> null</code></pre>
 > Owner only. Transfer ownership of this NetworkView to another player.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SendMessage(target: <a data-footnote-ref href="#user-content-fn-23">Player</a>, msg: string) -> null</code></pre>
 > Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(msg: string) -> null</code></pre>
 > Send a message to all players including myself.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(msg: string) -> null</code></pre>
 > Send a message to players excluding myself.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SendStream(obj: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Send an object to the network sync stream.
 This represents sending data from the object owner to all non-owner observers,
 and should only be called in the SendNetworkStream callback in the attached component.
 It only works with some object types: primitives and Vector3.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ReceiveStream() -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Receive an object through the network sync stream.
 This represents receiving data from the object owner as a non-owner observer,
 and should only be called in the OnNetworkStream callback.
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

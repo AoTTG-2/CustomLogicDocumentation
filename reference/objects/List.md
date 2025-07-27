@@ -35,7 +35,7 @@ return a * 2;
 }
 ```
 ### Initialization
-```python
+```csharp
 List()
 List(parameterValues: Object)
 ```
@@ -49,49 +49,49 @@ List(parameterValues: Object)
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
 > Clear all list elements
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Get(index: int) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Get the element at the specified index
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Set(index: int, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Set the element at the specified index
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Add(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Add an element to the end of the list
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function InsertAt(index: int, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Insert an element at the specified index
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RemoveAt(index: int) -> null</code></pre>
 > Remove the element at the specified index
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Remove(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Remove the first occurrence of the specified element
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Contains(value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> bool</code></pre>
 > Check if the list contains the specified element
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Sort() -> null</code></pre>
 > Sort the list
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SortCustom(method: function) -> null</code></pre>
 > Sort the list using a custom method, expects a method with the signature int method(a,b)
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Filter(method: function) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Filter the list using a custom method, expects a method with the signature bool method(element)
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Map(method: function) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Map the list using a custom method, expects a method with the signature object method(element)
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Reduce(method: function, initialValue: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Reduce the list using a custom method, expects a method with the signature object method(acc, element)
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Randomize() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Returns a randomized version of the list.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ToSet() -> <a data-footnote-ref href="#user-content-fn-28">Set</a></code></pre>
 > Convert the list to a set
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

@@ -52,61 +52,61 @@ Inherits from [Character](../objects/Character.md)
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function MoveTo(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, range: float, ignoreEnemies: bool) -> null</code></pre>
 > Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Target(enemyObj: <a data-footnote-ref href="#user-content-fn-37">Object</a>, focus: float) -> null</code></pre>
 > Causes the (AI) shifter to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Idle(time: float) -> null</code></pre>
 > Causes the (AI) shifter to idle for time seconds before beginning to wander. During idle the titan will not react or move at all.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Wander() -> null</code></pre>
 > Causes the (AI) shifter to cancel any move commands and begin wandering randomly.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Blind() -> null</code></pre>
 > Causes the shifter to enter the blind state.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Cripple(time: float) -> null</code></pre>
 > Causes the shifter to enter the cripple state.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string) -> null</code></pre>
 > Kills the character. Callable by non-owners.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetDamaged(killer: string, damage: int) -> null</code></pre>
 > Damages the character and kills it if its health reaches 0. Callable by non-owners.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Emote(emote: string) -> null</code></pre>
 > Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
-
-<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, [fade: float = 0.1]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
 > Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-
-<pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, [fade: float = 0.1]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
 > Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetAnimationLength(animation: string) -> float</code></pre>
 > Gets the length of animation.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string) -> null</code></pre>
 > Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string) -> null</code></pre>
 > Stops the sound.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Rotates the character such that it is looking towards a world position.
-
-<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, [mode: string = Acceleration]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, mode: string = "Acceleration") -> null</code></pre>
 > Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Reveal(delay: float) -> null</code></pre>
 > Reveal the titan for a set number of seconds.
-
-<pre class="language-typescript"><code class="lang-typescript">function AddOutline([color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null], [mode: string = OutlineAll]) -> null</code></pre>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function AddOutline(color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null, mode: string = "OutlineAll") -> null</code></pre>
 > Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function RemoveOutline() -> null</code></pre>
 > Removes the outline effect from the character.
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

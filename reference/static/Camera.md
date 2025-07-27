@@ -21,31 +21,31 @@ References the main game camera.
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function SetManual(manual: bool) -> null</code></pre>
 > Sets the camera manual mode. If true, camera will only be controlled by custom logic. If false, camera will follow the spawned or spectated player and read input.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetPosition(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Sets camera position.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetRotation(rotation: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Sets camera rotation.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetVelocity(velocity: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Sets camera velocity.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
 > Sets the camera forward direction such that it is looking at a world position.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetFOV(fov: float) -> null</code></pre>
 > Sets the camera field of view. Use 0 to use the default field of view.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetCameraMode(mode: string) -> null</code></pre>
 > Forces the player to use a certain camera mode, taking priority over their camera setting. Accepted values are TPS, Original, FPS.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ResetDistance() -> null</code></pre>
 > Resets the follow distance to player's settings.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function ResetCameraMode() -> null</code></pre>
 > Resets the camera mode to player's settings.
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

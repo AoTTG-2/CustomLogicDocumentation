@@ -8,10 +8,10 @@ Dict and List must contain only the supported types, and can be nested.
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function LoadFromString(json: string) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Loads a json string into a custom logic object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SaveToString(obj: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> string</code></pre>
 > Saves a custom logic object into a json string
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

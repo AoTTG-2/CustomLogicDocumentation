@@ -6,46 +6,46 @@ Finding, creating, and destroying map objects.
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function FindAllMapObjects() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Find all map objects
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByName(objectName: string) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Find a map object by name
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByName(objectName: string) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Find all map objects by name
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByComponent(className: string) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Find all map objects by component
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByComponent(className: string) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Find all map objects by component
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByID(id: int) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Find a map object by ID
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectByTag(tag: string) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Find a map object by tag
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function FindMapObjectsByTag(tag: string) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Find all map objects by tag
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function CreateMapObjectRaw(prefab: string) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Create a new map object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function DestroyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-16">MapObject</a>, includeChildren: bool) -> null</code></pre>
 > Destroy a map object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function CopyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-16">MapObject</a>, includeChildren: bool) -> <a data-footnote-ref href="#user-content-fn-16">MapObject</a></code></pre>
 > Copy a map object
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function DestroyMapTargetable(targetable: <a data-footnote-ref href="#user-content-fn-17">MapTargetable</a>) -> null</code></pre>
 > Destroy a map targetable
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function UpdateNavMesh() -> null</code></pre>
 > Update the nav mesh
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function UpdateNavMeshAsync() -> null</code></pre>
 > Update the nav mesh asynchronously
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

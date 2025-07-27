@@ -7,13 +7,13 @@ Note that RoomData is local only and does not sync.You must use network messages
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> null</code></pre>
 > Sets the property with given name to the object value. Valid value types are float, string, bool, and int.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetProperty(property: string, defaultValue: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> <a data-footnote-ref href="#user-content-fn-37">Object</a></code></pre>
 > Gets the property with given name. If property does not exist, returns defaultValue.
-
+> 
 <pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
 > Clears all room data.
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

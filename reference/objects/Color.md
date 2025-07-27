@@ -1,7 +1,7 @@
 # Color
 Inherits from [Object](../objects/Object.md)
 
-Represents a color.
+Represents a color. Every component is in the range [0, 255].
 
 ### Remarks
 Implements `__Copy__` which means that this class will act like a struct.
@@ -20,11 +20,11 @@ Overloads operators:
 Game.Print(color.ToHexString()) // Prints the color in hex format
 ```
 ### Initialization
-```python
-Color() # Default constructor, creates a white color.
-Color(hexString: string) # Creates a color from a hex string
-Color(r: int, g: int, b: int) # Creates a color from RGB
-Color(r: int, g: int, b: int, a: int) # Creates a color from RGBA
+```csharp
+Color() // Default constructor, creates a white color.
+Color(hexString: string) // Creates a color from a hex string
+Color(r: int, g: int, b: int) // Creates a color from RGB
+Color(r: int, g: int, b: int, a: int) // Creates a color from RGBA
 ```
 
 ### Properties
@@ -39,21 +39,21 @@ Color(r: int, g: int, b: int, a: int) # Creates a color from RGBA
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function ToHexString() -> string</code></pre>
 > Converts the color to a hex string
-
+> 
 
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function Lerp(a: <a data-footnote-ref href="#user-content-fn-4">Color</a>, b: <a data-footnote-ref href="#user-content-fn-4">Color</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-4">Color</a></code></pre>
 > Linearly interpolates between colors `a` and `b` by `t`
-
+> 
 > **Parameters**:
 > - `a`: Color to interpolate from
 > - `b`: Color to interpolate to
 > - `t`: Interpolation factor. 0 = `a`, 1 = `b`
-
+> 
 > **Returns**: A new color between `a` and `b`
 <pre class="language-typescript"><code class="lang-typescript">function Gradient(a: <a data-footnote-ref href="#user-content-fn-4">Color</a>, b: <a data-footnote-ref href="#user-content-fn-4">Color</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-4">Color</a></code></pre>
 > Creates a gradient color from two colors
-
+> 
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)
