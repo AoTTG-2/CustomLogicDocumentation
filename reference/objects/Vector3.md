@@ -49,9 +49,9 @@ Vector3(x: float, y: float, z: float)
 
 <pre class="language-typescript"><code class="lang-typescript">function Scale(scale: <a data-footnote-ref href="#user-content-fn-37">Object</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
-%{ hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use multiply operator instead
-%{ endhint %}
+{% endhint %}
 
 > Returns the Vector3 multiplied by scale.
 
@@ -60,9 +60,9 @@ Vector3(x: float, y: float, z: float)
 
 <pre class="language-typescript"><code class="lang-typescript">function Multiply(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
-%{ hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use multiply operator instead
-%{ endhint %}
+{% endhint %}
 
 > Returns the multiplication of two Vector3s.
 
@@ -73,9 +73,9 @@ Vector3(x: float, y: float, z: float)
 > **Returns**: Vector3
 <pre class="language-typescript"><code class="lang-typescript">function Divide(a: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
 
-%{ hint style="warning" %}
+{% hint style="warning" %}
 **Obsolete**: Use divide operator instead
-%{ endhint %}
+{% endhint %}
 
 > Returns the division of two Vector3s.
 
