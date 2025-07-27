@@ -52,6 +52,7 @@ Vector3(x: float, y: float, z: float)
 %{ hint style="warning" %}
 **Obsolete**: Use multiply operator instead
 %{ endhint %}
+
 > Returns the Vector3 multiplied by scale.
 
 > **Parameters**:
@@ -62,6 +63,7 @@ Vector3(x: float, y: float, z: float)
 %{ hint style="warning" %}
 **Obsolete**: Use multiply operator instead
 %{ endhint %}
+
 > Returns the multiplication of two Vector3s.
 
 > **Parameters**:
@@ -74,6 +76,7 @@ Vector3(x: float, y: float, z: float)
 %{ hint style="warning" %}
 **Obsolete**: Use divide operator instead
 %{ endhint %}
+
 > Returns the division of two Vector3s.
 
 > **Parameters**:
