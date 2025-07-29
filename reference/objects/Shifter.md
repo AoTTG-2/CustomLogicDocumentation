@@ -1,5 +1,9 @@
 # Shifter
 Inherits from [Character](../objects/Character.md)
+### Remarks
+Overloads operators: 
+- `==`
+- `__Hash__`
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
@@ -50,10 +54,10 @@ Inherits from [Character](../objects/Character.md)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function MoveTo(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, range: float, ignoreEnemies: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MoveTo(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, range: float, ignoreEnemies: bool) -> null</code></pre>
 > Causes the (AI) shifter to move towards a position. If ignoreEnemies is true, will not engage enemies along the way.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Target(enemyObj: <a data-footnote-ref href="#user-content-fn-37">Object</a>, focus: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Target(enemyObj: <a data-footnote-ref href="#user-content-fn-38">Object</a>, focus: float) -> null</code></pre>
 > Causes the (AI) shifter to target an enemy character or MapTargetable for focusTime seconds. If focusTime is 0 it will use the default focus time.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Idle(time: float) -> null</code></pre>
@@ -69,41 +73,21 @@ Inherits from [Character](../objects/Character.md)
 > Causes the shifter to enter the cripple state.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string) -> null</code></pre>
-> Kills the character. Callable by non-owners.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function GetDamaged(killer: string, damage: int) -> null</code></pre>
-> Damages the character and kills it if its health reaches 0. Callable by non-owners.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function Emote(emote: string) -> null</code></pre>
-> Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
-> Causes the character to play an animation.  If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
-> Forces the character to play an animation. If the fade parameter is provided, will crossfade the animation by this timestep. Available animations can be found here: Human, Titan, Annie, Eren. Use the right-hand string value for the animation.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function GetAnimationLength(animation: string) -> float</code></pre>
 > Gets the length of animation.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string) -> null</code></pre>
-> Plays a sound if present in the character. Available sound names can be found here: Humans, Shifters, Titans. Note that shifters also have all titan sounds.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string) -> null</code></pre>
-> Stops the sound.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
-> Rotates the character such that it is looking towards a world position.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, mode: string = "Acceleration") -> null</code></pre>
-> Adds a force to the character with given force vector and optional mode. Valid modes are Force, Acceleration, Impulse, VelocityChange with default being Acceleration.
-> 
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, mode: string = "Acceleration") -> null</code></pre>
 <pre class="language-typescript"><code class="lang-typescript">function Reveal(delay: float) -> null</code></pre>
 > Reveal the titan for a set number of seconds.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function AddOutline(color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null, mode: string = "OutlineAll") -> null</code></pre>
-> Adds an outline effect with the given color and mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
-> 
 <pre class="language-typescript"><code class="lang-typescript">function RemoveOutline() -> null</code></pre>
 > Removes the outline effect from the character.
 > 
@@ -123,27 +107,28 @@ Inherits from [Character](../objects/Character.md)
 [^12]: [LineCastHitResult](../objects/LineCastHitResult.md)
 [^13]: [LineRenderer](../objects/LineRenderer.md)
 [^14]: [List](../objects/List.md)
-[^15]: [Map](../static/Map.md)
-[^16]: [MapObject](../objects/MapObject.md)
-[^17]: [MapTargetable](../objects/MapTargetable.md)
-[^18]: [Math](../static/Math.md)
-[^19]: [Network](../static/Network.md)
-[^20]: [NetworkView](../objects/NetworkView.md)
-[^21]: [PersistentData](../static/PersistentData.md)
-[^22]: [Physics](../static/Physics.md)
-[^23]: [Player](../objects/Player.md)
-[^24]: [Quaternion](../objects/Quaternion.md)
-[^25]: [Random](../objects/Random.md)
-[^26]: [Range](../objects/Range.md)
-[^27]: [RoomData](../static/RoomData.md)
-[^28]: [Set](../objects/Set.md)
-[^29]: [Shifter](../objects/Shifter.md)
-[^30]: [String](../static/String.md)
-[^31]: [Time](../static/Time.md)
-[^32]: [Titan](../objects/Titan.md)
-[^33]: [Transform](../objects/Transform.md)
-[^34]: [UI](../static/UI.md)
-[^35]: [Vector2](../objects/Vector2.md)
-[^36]: [Vector3](../objects/Vector3.md)
-[^37]: [Object](../objects/Object.md)
-[^38]: [Component](../objects/Component.md)
+[^15]: [Locale](../objects/Locale.md)
+[^16]: [Map](../static/Map.md)
+[^17]: [MapObject](../objects/MapObject.md)
+[^18]: [MapTargetable](../objects/MapTargetable.md)
+[^19]: [Math](../static/Math.md)
+[^20]: [Network](../static/Network.md)
+[^21]: [NetworkView](../objects/NetworkView.md)
+[^22]: [PersistentData](../static/PersistentData.md)
+[^23]: [Physics](../static/Physics.md)
+[^24]: [Player](../objects/Player.md)
+[^25]: [Quaternion](../objects/Quaternion.md)
+[^26]: [Random](../objects/Random.md)
+[^27]: [Range](../objects/Range.md)
+[^28]: [RoomData](../static/RoomData.md)
+[^29]: [Set](../objects/Set.md)
+[^30]: [Shifter](../objects/Shifter.md)
+[^31]: [String](../static/String.md)
+[^32]: [Time](../static/Time.md)
+[^33]: [Titan](../objects/Titan.md)
+[^34]: [Transform](../objects/Transform.md)
+[^35]: [UI](../static/UI.md)
+[^36]: [Vector2](../objects/Vector2.md)
+[^37]: [Vector3](../objects/Vector3.md)
+[^38]: [Object](../objects/Object.md)
+[^39]: [Component](../objects/Component.md)

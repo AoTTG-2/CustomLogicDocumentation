@@ -22,7 +22,7 @@ Overloads operators:
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function GetTransform(name: string) -> <a data-footnote-ref href="#user-content-fn-33">Transform</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetTransform(name: string) -> <a data-footnote-ref href="#user-content-fn-34">Transform</a></code></pre>
 > Gets the transform of the specified child.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetTransforms() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
@@ -49,25 +49,25 @@ Overloads operators:
 <pre class="language-typescript"><code class="lang-typescript">function ToggleParticle(enabled: bool) -> null</code></pre>
 > Toggles the particle system.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function InverseTransformDirection(direction: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function InverseTransformDirection(direction: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function InverseTransformPoint(point: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function InverseTransformPoint(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Transforms position from world space to local space.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransformDirection(direction: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransformDirection(direction: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Transforms direction from local space to world space.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransformPoint(point: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-36">Vector3</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransformPoint(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Transforms position from local space to world space.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Rotate(rotation: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Rotate(rotation: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
 > Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RotateAround(point: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, axis: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>, angle: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RotateAround(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, axis: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, angle: float) -> null</code></pre>
 > Rotates the transform about axis passing through point in world coordinates by angle degrees.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(target: <a data-footnote-ref href="#user-content-fn-36">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(target: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
 > Rotates the transform so the forward vector points at worldPosition.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SetRenderersEnabled(enabled: bool) -> null</code></pre>
@@ -92,27 +92,28 @@ Overloads operators:
 [^12]: [LineCastHitResult](../objects/LineCastHitResult.md)
 [^13]: [LineRenderer](../objects/LineRenderer.md)
 [^14]: [List](../objects/List.md)
-[^15]: [Map](../static/Map.md)
-[^16]: [MapObject](../objects/MapObject.md)
-[^17]: [MapTargetable](../objects/MapTargetable.md)
-[^18]: [Math](../static/Math.md)
-[^19]: [Network](../static/Network.md)
-[^20]: [NetworkView](../objects/NetworkView.md)
-[^21]: [PersistentData](../static/PersistentData.md)
-[^22]: [Physics](../static/Physics.md)
-[^23]: [Player](../objects/Player.md)
-[^24]: [Quaternion](../objects/Quaternion.md)
-[^25]: [Random](../objects/Random.md)
-[^26]: [Range](../objects/Range.md)
-[^27]: [RoomData](../static/RoomData.md)
-[^28]: [Set](../objects/Set.md)
-[^29]: [Shifter](../objects/Shifter.md)
-[^30]: [String](../static/String.md)
-[^31]: [Time](../static/Time.md)
-[^32]: [Titan](../objects/Titan.md)
-[^33]: [Transform](../objects/Transform.md)
-[^34]: [UI](../static/UI.md)
-[^35]: [Vector2](../objects/Vector2.md)
-[^36]: [Vector3](../objects/Vector3.md)
-[^37]: [Object](../objects/Object.md)
-[^38]: [Component](../objects/Component.md)
+[^15]: [Locale](../objects/Locale.md)
+[^16]: [Map](../static/Map.md)
+[^17]: [MapObject](../objects/MapObject.md)
+[^18]: [MapTargetable](../objects/MapTargetable.md)
+[^19]: [Math](../static/Math.md)
+[^20]: [Network](../static/Network.md)
+[^21]: [NetworkView](../objects/NetworkView.md)
+[^22]: [PersistentData](../static/PersistentData.md)
+[^23]: [Physics](../static/Physics.md)
+[^24]: [Player](../objects/Player.md)
+[^25]: [Quaternion](../objects/Quaternion.md)
+[^26]: [Random](../objects/Random.md)
+[^27]: [Range](../objects/Range.md)
+[^28]: [RoomData](../static/RoomData.md)
+[^29]: [Set](../objects/Set.md)
+[^30]: [Shifter](../objects/Shifter.md)
+[^31]: [String](../static/String.md)
+[^32]: [Time](../static/Time.md)
+[^33]: [Titan](../objects/Titan.md)
+[^34]: [Transform](../objects/Transform.md)
+[^35]: [UI](../static/UI.md)
+[^36]: [Vector2](../objects/Vector2.md)
+[^37]: [Vector3](../objects/Vector3.md)
+[^38]: [Object](../objects/Object.md)
+[^39]: [Component](../objects/Component.md)
