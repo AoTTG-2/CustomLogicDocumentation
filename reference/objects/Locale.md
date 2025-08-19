@@ -94,12 +94,6 @@ Game.Print("missing_key: " + Locale.Get("missing_key"));
 Locale()
 ```
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|DutchLanguage|string|True|Dutch language code|
-
-
 ### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
@@ -107,6 +101,7 @@ Locale()
 |BrazilianPortugueseLanguage|string|True|Brazilian Portuguese language code|
 |ChineseLanguage|string|True|Chinese language code|
 |CzechLanguage|string|True|Czech language code|
+|DutchLanguage|string|True|Dutch language code|
 |EnglishLanguage|string|True|English language code|
 |FrenchLanguage|string|True|French language code|
 |GermanLanguage|string|True|German language code|
