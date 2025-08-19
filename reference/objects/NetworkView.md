@@ -43,19 +43,19 @@ TODO: Bother someone for good practice example - maybe move this into Networking
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Transfer(player: <a data-footnote-ref href="#user-content-fn-24">Player</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Transfer(player: <a data-footnote-ref href="#user-content-fn-24">Player</a>)</code></pre>
 > Owner only. Transfer ownership of this NetworkView to another player.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendMessage(target: <a data-footnote-ref href="#user-content-fn-24">Player</a>, msg: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessage(target: <a data-footnote-ref href="#user-content-fn-24">Player</a>, msg: string)</code></pre>
 > Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(msg: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(msg: string)</code></pre>
 > Send a message to all players including myself.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(msg: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(msg: string)</code></pre>
 > Send a message to players excluding myself.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendStream(obj: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendStream(obj: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Send an object to the network sync stream.
 This represents sending data from the object owner to all non-owner observers,
 and should only be called in the SendNetworkStream callback in the attached component.

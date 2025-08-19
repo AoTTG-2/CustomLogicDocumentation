@@ -1,8 +1,20 @@
 # Physics
 Inherits from [Object](../objects/Object.md)
 
-Physics class for custom logic.
+Static Physics class. Contains some common physics functions
 
+### Example
+```csharp
+start = Vector3(0);
+end = Vector3(10);
+result = Physics.LineCast(start, end, "Entities");
+Game.Print(result.IsCharacter);
+Game.Print(result.IsMapObject);
+Game.Print(result.Point);
+Game.Print(result.Normal);
+Game.Print(result.Distance);
+Game.Print(result.Collider);
+```
 ### Static Methods
 <pre class="language-typescript"><code class="lang-typescript">function LineCast(start: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-12">LineCastHitResult</a></code></pre>
 > Performs a line cast between two points, returns a LineCastHitResult object

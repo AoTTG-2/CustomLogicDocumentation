@@ -19,7 +19,7 @@ References the main game camera.
 
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function SetManual(manual: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetManual(manual: bool)</code></pre>
 > Sets the camera manual mode.
 If true, camera will only be controlled by custom logic.
 If false, camera will follow the spawned or spectated player and read input.
@@ -27,38 +27,38 @@ If false, camera will follow the spawned or spectated player and read input.
 > **Parameters**:
 > - `manual`: True to enable manual mode, false to disable.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetPosition(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPosition(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Sets camera position.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetRotation(rotation: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetRotation(rotation: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Sets camera rotation.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetVelocity(velocity: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetVelocity(velocity: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Sets camera velocity.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Sets the camera forward direction such that it is looking at a world position.
 > 
 > **Parameters**:
 > - `position`: The world position to look at
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetFOV(fov: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetFOV(fov: float)</code></pre>
 > Sets the camera field of view.
 > 
 > **Parameters**:
 > - `fov`: The new field of view. Use 0 to use the default field of view.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetCameraMode(mode: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetCameraMode(mode: string)</code></pre>
 > Forces the player to use a certain camera mode,
 taking priority over their camera setting.
 > 
 > **Parameters**:
 > - `mode`: The camera mode. Accepted values are TPS, Original, FPS.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ResetDistance() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ResetDistance()</code></pre>
 > Resets the follow distance to player's settings.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ResetCameraMode() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ResetCameraMode()</code></pre>
 > Resets the camera mode to player's settings.
 > 
 

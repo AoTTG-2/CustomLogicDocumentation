@@ -29,10 +29,10 @@ Note that this may be different from the character's final team (Character.Team 
 <pre class="language-typescript"><code class="lang-typescript">function GetCustomProperty(property: string) -> <a data-footnote-ref href="#user-content-fn-38">Object</a></code></pre>
 > Get a custom property at given key. Must be a primitive type. This is synced to all clients.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetCustomProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetCustomProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearKDR() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ClearKDR()</code></pre>
 > Clears kills, deaths, highestdamage, and totaldamage properties.
 > 
 

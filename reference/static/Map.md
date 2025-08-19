@@ -31,19 +31,19 @@ Finding, creating, and destroying map objects.
 <pre class="language-typescript"><code class="lang-typescript">function CreateMapObjectRaw(prefab: string) -> <a data-footnote-ref href="#user-content-fn-17">MapObject</a></code></pre>
 > Create a new map object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function DestroyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-17">MapObject</a>, includeChildren: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function DestroyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-17">MapObject</a>, includeChildren: bool)</code></pre>
 > Destroy a map object
 > 
 <pre class="language-typescript"><code class="lang-typescript">function CopyMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-17">MapObject</a>, includeChildren: bool) -> <a data-footnote-ref href="#user-content-fn-17">MapObject</a></code></pre>
 > Copy a map object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function DestroyMapTargetable(targetable: <a data-footnote-ref href="#user-content-fn-18">MapTargetable</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function DestroyMapTargetable(targetable: <a data-footnote-ref href="#user-content-fn-18">MapTargetable</a>)</code></pre>
 > Destroy a map targetable
 > 
-<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMesh() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMesh()</code></pre>
 > Update the nav mesh
 > 
-<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMeshAsync() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function UpdateNavMeshAsync()</code></pre>
 > Update the nav mesh asynchronously
 > 
 

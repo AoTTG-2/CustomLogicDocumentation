@@ -1,14 +1,24 @@
 # Human
 Inherits from [Character](../objects/Character.md)
-### Remarks
-Overloads operators: 
-- `==`
-- `__Hash__`
+
+Represents a human character.
+Only character owner can modify fields and call functions unless otherwise specified.
+
+### Example
+```csharp
+function OnCharacterSpawn(character)
+{
+    if (character.IsMainCharacter && character.Type == "Human")
+    {
+        character.SetWeapon("Blade");
+        character.SetSpecial("Potato");
+        character.CurrentGas = character.MaxGas / 2;
+    }
+}
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Name|string|False|The human's name|
-|Guild|string|False|The human's guild|
 |Weapon|string|False|The weapon the human is using|
 |CurrentSpecial|string|False|The current special the human is using|
 |SpecialCooldown|float|False|The cooldown of the special|
@@ -38,85 +48,47 @@ Overloads operators:
 |IsInvincible|bool|False|Whether the human is invincible|
 |InvincibleTimeLeft|float|False|The time left for invincibility|
 |IsCarried|bool|True|If the human is carried.|
-|Player|[Player](../objects/Player.md)|True|Player who owns this character.|
-|IsAI|bool|True|Is this character AI?|
-|ViewID|int|True|Network view ID of the character.|
-|IsMine|bool|True|Is this character mine?|
-|IsMainCharacter|bool|True|Character belongs to my player and is the main character (the camera-followed player).|
-|Transform|[Transform](../objects/Transform.md)|True|Unity transform of the character.|
-|Position|[Vector3](../objects/Vector3.md)|False|Position of the character.|
-|Rotation|[Vector3](../objects/Vector3.md)|False|Rotation of the character.|
-|QuaternionRotation|[Quaternion](../objects/Quaternion.md)|False|Quaternion rotation of the character.|
-|Velocity|[Vector3](../objects/Vector3.md)|False|Velocity of the character.|
-|Forward|[Vector3](../objects/Vector3.md)|False|Forward direction of the character.|
-|Right|[Vector3](../objects/Vector3.md)|False|Right direction of the character.|
-|Up|[Vector3](../objects/Vector3.md)|False|Up direction of the character.|
-|HasTargetDirection|bool|True|If the character has a target direction it is turning towards.|
-|TargetDirection|[Vector3](../objects/Vector3.md)|True|The character's target direction.|
-|Team|string|False|Team character belongs to.|
-|Health|float|False|Character's current health.|
-|MaxHealth|float|False|Character's maximum health.|
-|CustomDamageEnabled|bool|False|Is custom damage dealing enabled.|
-|CustomDamage|int|False|Amount of custom damage to deal per attack.|
-|CurrentAnimation|string|True|Character's current playing animation.|
-|Grounded|bool|True|Character's grounded status.|
 
 
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function Refill() -> bool</code></pre>
 > Refills the gas of the human
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RefillImmediate() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RefillImmediate()</code></pre>
 > Refills the gas of the human immediately
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearHooks() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ClearHooks()</code></pre>
 > Clears all hooks
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearLeftHook() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ClearLeftHook()</code></pre>
 > Clears the left hook
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearRightHook() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ClearRightHook()</code></pre>
 > Clears the right hook
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MountMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-17">MapObject</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, canMountedAttack: bool = False) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MountMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-17">MapObject</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, canMountedAttack: bool = False)</code></pre>
 > Mounts the human on a map object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MountTransform(transform: <a data-footnote-ref href="#user-content-fn-34">Transform</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, canMountedAttack: bool = False) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MountTransform(transform: <a data-footnote-ref href="#user-content-fn-34">Transform</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, canMountedAttack: bool = False)</code></pre>
 > Mounts the human on a transform
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Unmount(immediate: bool = True) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Unmount(immediate: bool = True)</code></pre>
 > Unmounts the human
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetSpecial(special: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetSpecial(special: string)</code></pre>
 > Sets the special of the human
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ActivateSpecial() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ActivateSpecial()</code></pre>
 > Activates the special of the human
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetWeapon(weapon: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetWeapon(weapon: string)</code></pre>
 > Sets the weapon of the human
 > 
-<pre class="language-typescript"><code class="lang-typescript">function DisablePerks() -> null</code></pre>
+> **Parameters**:
+> - `weapon`: Name of the weapon. Available weapons: "Blade", "AHSS", "APG", "Thunderspear"
+> 
+<pre class="language-typescript"><code class="lang-typescript">function DisablePerks()</code></pre>
 > Disables all perks of the human
-> 
-<pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function GetDamaged(killer: string, damage: int) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function Emote(emote: string) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function GetAnimationLength(animation: string) -> float</code></pre>
-> Gets the length of animation.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, mode: string = "Acceleration") -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function Reveal(delay: float) -> null</code></pre>
-> Reveal the titan for a set number of seconds.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function AddOutline(color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null, mode: string = "OutlineAll") -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function RemoveOutline() -> null</code></pre>
-> Removes the outline effect from the character.
 > 
 
 [^0]: [Camera](../static/Camera.md)

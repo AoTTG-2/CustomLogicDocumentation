@@ -1,10 +1,12 @@
 # LineRenderer
 Inherits from [Object](../objects/Object.md)
+
+Represents a LineRenderer
+
 ### Initialization
 ```csharp
-LineRenderer(parameterValues: Object) // Default constructor is parameterless.
-lr = LineRenderer();
-lr.StartWidth = 1;
+LineRenderer() // Default constructor, Creates a black line with a width of 1
+LineRenderer(color: Color, width: float) // Creates a line with the given color and width
 ```
 
 ### Properties
@@ -34,7 +36,7 @@ lr.StartWidth = 1;
 <pre class="language-typescript"><code class="lang-typescript">function GetPosition(index: int) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Get the position of a point in the line renderer
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetPosition(index: int, position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPosition(index: int, position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Set the position of a point in the line renderer
 > 
 

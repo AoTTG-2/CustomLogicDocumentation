@@ -19,52 +19,52 @@ UI label functions.
 
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function SetLabel(label: string, message: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetLabel(label: string, message: string)</code></pre>
 > Sets the label at a certain location. Valid types: "TopCenter", "TopLeft", "TopRight", "MiddleCenter", "MiddleLeft", "MiddleRight", "BottomLeft", "BottomRight", "BottomCenter".
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetLabelForTime(label: string, message: string, time: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetLabelForTime(label: string, message: string, time: float)</code></pre>
 > Sets the label for a certain time, after which it will be cleared.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetLabelAll(label: string, message: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetLabelAll(label: string, message: string)</code></pre>
 > Sets the label for all players. Master client only. Be careful not to call this often.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetLabelForTimeAll(label: string, message: string, time: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetLabelForTimeAll(label: string, message: string, time: float)</code></pre>
 > Sets the label for all players for a certain time. Master client only.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function CreatePopup(popupName: string, title: string, width: int, height: int) -> string</code></pre>
 > Creates a new popup. This popup is hidden until shown.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ShowPopup(popupName: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ShowPopup(popupName: string)</code></pre>
 > Shows the popup with given name.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function HidePopup(popupName: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function HidePopup(popupName: string)</code></pre>
 > Hides the popup with given name.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearPopup(popupName: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ClearPopup(popupName: string)</code></pre>
 > Clears all elements in popup with given name.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupLabel(popupName: string, label: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupLabel(popupName: string, label: string)</code></pre>
 > Adds a text row to the popup with label as content.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupButton(popupName: string, label: string, callback: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupButton(popupName: string, label: string, callback: string)</code></pre>
 > Adds a button row to the popup with given button name and display text. When button is pressed, OnButtonClick is called in Main with buttonName parameter.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupBottomButton(popupName: string, label: string, callback: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupBottomButton(popupName: string, label: string, callback: string)</code></pre>
 > Adds a button to the bottom bar of the popup.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupButtons(popupName: string, labels: <a data-footnote-ref href="#user-content-fn-14">List</a>, callbacks: <a data-footnote-ref href="#user-content-fn-14">List</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupButtons(popupName: string, labels: <a data-footnote-ref href="#user-content-fn-14">List</a>, callbacks: <a data-footnote-ref href="#user-content-fn-14">List</a>)</code></pre>
 > Adds a list of buttons in a row to the popup.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function WrapStyleTag(text: string, style: string, arg: string = null) -> string</code></pre>
 > Returns a wrapped string given style and args.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ShowChangeCharacterMenu() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ShowChangeCharacterMenu()</code></pre>
 > Shows the change character menu if main character is Human.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetScoreboardHeader(header: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetScoreboardHeader(header: string)</code></pre>
 > Sets the display of the scoreboard header (default "Kills / Deaths...")
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetScoreboardProperty(property: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetScoreboardProperty(property: string)</code></pre>
 > Sets which Player custom property to read from to display on the scoreboard. If set to empty string, will use the default "Kills / Deaths..." display.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetThemeColor(panel: string, category: string, item: string) -> <a data-footnote-ref href="#user-content-fn-4">Color</a></code></pre>

@@ -5,13 +5,13 @@ Store and retrieve room variables. Room data is cleared upon joining or creating
 Note that RoomData is local only and does not sync.You must use network messages to sync room variables.
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Sets the property with given name to the object value. Valid value types are float, string, bool, and int.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetProperty(property: string, defaultValue: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> <a data-footnote-ref href="#user-content-fn-38">Object</a></code></pre>
 > Gets the property with given name. If property does not exist, returns defaultValue.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
 > Clears all room data.
 > 
 

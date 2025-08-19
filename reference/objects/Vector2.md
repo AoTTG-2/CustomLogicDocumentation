@@ -40,10 +40,10 @@ Vector2(x: float, y: float)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Set(x: float, y: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Set(x: float, y: float)</code></pre>
 > Set x and y components of an existing Vector2.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Normalize() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Normalize()</code></pre>
 > Makes this vector have a magnitude of 1.
 > 
 

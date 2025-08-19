@@ -1,5 +1,8 @@
 # Transform
 Inherits from [Object](../objects/Object.md)
+
+Represents a transform.
+
 ### Remarks
 Overloads operators: 
 - `==`
@@ -28,25 +31,25 @@ Overloads operators:
 <pre class="language-typescript"><code class="lang-typescript">function GetTransforms() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Gets all child transforms.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(anim: string, fade: float = 0.1) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(anim: string, fade: float = 0.1)</code></pre>
 > Plays the specified animation.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PlayAnimationAt(anim: string, normalizedTime: float, fade: float = 0.1) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlayAnimationAt(anim: string, normalizedTime: float, fade: float = 0.1)</code></pre>
 > Plays the specified animation starting from a normalized time.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetAnimationSpeed(speed: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetAnimationSpeed(speed: float)</code></pre>
 > Sets the animation playback speed
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetAnimationLength(anim: string) -> float</code></pre>
 > Gets the length of the specified animation.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PlaySound() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlaySound()</code></pre>
 > Plays the sound.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function StopSound() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function StopSound()</code></pre>
 > Stops the sound.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ToggleParticle(enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ToggleParticle(enabled: bool)</code></pre>
 > Toggles the particle system.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function InverseTransformDirection(direction: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
@@ -61,16 +64,16 @@ Overloads operators:
 <pre class="language-typescript"><code class="lang-typescript">function TransformPoint(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Transforms position from local space to world space.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Rotate(rotation: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Rotate(rotation: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order).
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RotateAround(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, axis: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, angle: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RotateAround(point: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, axis: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, angle: float)</code></pre>
 > Rotates the transform about axis passing through point in world coordinates by angle degrees.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(target: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(target: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Rotates the transform so the forward vector points at worldPosition.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetRenderersEnabled(enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetRenderersEnabled(enabled: bool)</code></pre>
 > Sets the enabled state of all child renderers.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetColliders(recursive: bool = False) -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>

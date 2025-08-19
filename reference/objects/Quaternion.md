@@ -1,19 +1,18 @@
 # Quaternion
 Inherits from [Object](../objects/Object.md)
+
+Represents a quaternion.
+
 ### Remarks
 Overloads operators: 
 - `__Copy__`
 - `*`
 - `==`
 - `__Hash__`
-### Example
-```csharp
-# Quaternion takes four floats X, Y, Z and W as parameters when initializing. 
-quaternion = Quaternion(0.5, 0.5, 0.5, 0.5);
-```
 ### Initialization
 ```csharp
-Quaternion(parameterValues: Object)
+Quaternion()
+Quaternion(x: float, y: float, z: float, w: float) // Creates a new Quaternion from the given values.
 ```
 
 ### Properties

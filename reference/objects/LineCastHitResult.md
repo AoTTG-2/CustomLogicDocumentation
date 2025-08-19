@@ -1,5 +1,13 @@
 # LineCastHitResult
 Inherits from [Object](../objects/Object.md)
+
+The result of a Physics.LineCast
+
+### Remarks
+Overloads operators: 
+- `__Copy__`
+- `==`
+- `__Hash__`
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
@@ -10,6 +18,8 @@ Inherits from [Object](../objects/Object.md)
 |Normal|[Vector3](../objects/Vector3.md)|True|The normal of the surface the linecast hit|
 |Collider|[Collider](../objects/Collider.md)|True|The collider that was hit|
 
+
+### Methods
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

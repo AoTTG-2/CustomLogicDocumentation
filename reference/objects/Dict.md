@@ -1,8 +1,13 @@
 # Dict
 Inherits from [Object](../objects/Object.md)
+
+Collection of key-value pairs.
+Keys must be unique.
+
 ### Initialization
 ```csharp
-Dict()
+Dict() // Creates an empty dictionary
+Dict(capacity: int) // Creates a dictionary with the specified capacity
 ```
 
 ### Properties
@@ -14,21 +19,37 @@ Dict()
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
 > Clears the dictionary
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Get(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>, defaultValue: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null) -> <a data-footnote-ref href="#user-content-fn-38">Object</a></code></pre>
 > Gets a value from the dictionary
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Set(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+> **Parameters**:
+> - `key`: The key of the value to get
+> - `defaultValue`: The value to return if the key is not found
+> 
+> **Returns**: The value associated with the key, or the default value if the key is not found
+<pre class="language-typescript"><code class="lang-typescript">function Set(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Sets a value in the dictionary
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Remove(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+> **Parameters**:
+> - `key`: The key of the value to set
+> - `value`: The value to set
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Remove(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Removes a value from the dictionary
+> 
+> **Parameters**:
+> - `key`: The key of the value to remove
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Contains(key: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> bool</code></pre>
 > Checks if the dictionary contains a key
 > 
+> **Parameters**:
+> - `key`: The key to check
+> 
+> **Returns**: True if the dictionary contains the key, false otherwise
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

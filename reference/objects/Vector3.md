@@ -11,10 +11,10 @@ Overloads operators:
 - `__Hash__`
 ### Initialization
 ```csharp
-Vector3() // Default constructor. Initializes the Vector3 to (0, 0, 0).
-Vector3(xyz: float) // Default constructor. Initializes the Vector3 to (xyz, xyz, xyz).
-Vector3(x: float, y: float)
-Vector3(x: float, y: float, z: float)
+Vector3() // Default constructor, Initializes the Vector3 to (0, 0, 0).
+Vector3(xyz: float) // Initializes the Vector3 to (xyz, xyz, xyz).
+Vector3(x: float, y: float) // Initializes the Vector3 to (x, y, 0).
+Vector3(x: float, y: float, z: float) // Initializes the Vector3 to (x, y, z).
 ```
 
 ### Properties
@@ -44,7 +44,7 @@ Vector3(x: float, y: float, z: float)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Set(x: float, y: float, z: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Set(x: float, y: float, z: float)</code></pre>
 > Set x, y and z components of an existing Vector3.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Scale(scale: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
@@ -125,7 +125,7 @@ Vector3(x: float, y: float, z: float)
 <pre class="language-typescript"><code class="lang-typescript">function Normalize(value: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Makes this vector have a magnitude of 1.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function OrthoNormalize(a: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function OrthoNormalize(a: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 <pre class="language-typescript"><code class="lang-typescript">function Project(a: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Projects a vector onto another vector.
 > 

@@ -6,19 +6,19 @@ Note that any game mode may use the same file names, so it is recommended that y
 Saved files are located in Documents/Aottg2/PersistentData.
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Sets the property with given name to the object value. Valid value types are float, string, bool, and int.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetProperty(property: string, defaultValue: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> <a data-footnote-ref href="#user-content-fn-38">Object</a></code></pre>
 > Gets the property with given name. If property does not exist, returns defaultValue.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function LoadFromFile(fileName: string, encrypted: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function LoadFromFile(fileName: string, encrypted: bool)</code></pre>
 > Loads persistent data from given file name. If encrypted is true, will treat the file as having been saved as encrypted.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SaveToFile(fileName: string, encrypted: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SaveToFile(fileName: string, encrypted: bool)</code></pre>
 > Saves current persistent data to given file name. If encrypted is true, will also encrypt the file instead of using plaintext.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
 > Clears current persistent data.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function IsValidFileName(fileName: string) -> bool</code></pre>

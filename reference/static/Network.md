@@ -15,19 +15,19 @@ Networking functions.
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function SendMessage(player: <a data-footnote-ref href="#user-content-fn-24">Player</a>, message: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessage(player: <a data-footnote-ref href="#user-content-fn-24">Player</a>, message: string)</code></pre>
 > Send a message to a player
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(message: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(message: string)</code></pre>
 > Send a message to all players
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(message: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(message: string)</code></pre>
 > Send a message to all players except the sender
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetTimestampDifference(timestamp1: Double, timestamp2: Double) -> Double</code></pre>
 > Get the difference between two photon timestamps
 > 
-<pre class="language-typescript"><code class="lang-typescript">function KickPlayer(target: <a data-footnote-ref href="#user-content-fn-38">Object</a>, reason: string = ".") -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function KickPlayer(target: <a data-footnote-ref href="#user-content-fn-38">Object</a>, reason: string = ".")</code></pre>
 > Kick the given player by id or player reference.
 > 
 

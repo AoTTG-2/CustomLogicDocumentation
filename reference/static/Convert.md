@@ -40,10 +40,10 @@ Converting objects to different types.
 <pre class="language-typescript"><code class="lang-typescript">function HasVariable(cInstance: class, variableName: string) -> bool</code></pre>
 > Checks if the class instance has a variable
 > 
-<pre class="language-typescript"><code class="lang-typescript">function DefineVariable(cInstance: class, variableName: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function DefineVariable(cInstance: class, variableName: string, value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Defines a variable for the class instance
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RemoveVariable(cInstance: class, variableName: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RemoveVariable(cInstance: class, variableName: string)</code></pre>
 > Removes a variable from the class instance
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetType(cInstance: class) -> string</code></pre>

@@ -64,46 +64,48 @@ function OnCharacterSpawn(character)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string)</code></pre>
 > Kills the character. Callable by non-owners.
 > 
 > **Parameters**:
 > - `killer`: Killer name
 > 
-<pre class="language-typescript"><code class="lang-typescript">function GetDamaged(killer: string, damage: int) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetDamaged(killer: string, damage: int)</code></pre>
 > Damages the character and kills it if its health reaches 0. Callable by non-owners.
 > 
 > **Parameters**:
 > - `killer`: Killer name
 > - `damage`: Damage amount
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Emote(emote: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Emote(emote: string)</code></pre>
 > Causes the character to emote. The list of available emotes is the same as those shown in the in-game emote menu.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(animation: string, fade: float = 0.1)</code></pre>
 > Causes the character to play an animation.
 > 
 > **Parameters**:
 > - `animation`: Name of the animation.
 Available animations can be found here:
-- Human: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Human/HumanAnimations.cs`
-- Titan: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Titan/BasicTitanAnimations.cs`
-- Annie: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Annie/AnnieAnimations.cs`
-- Eren: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Eren/ErenAnimations.cs`
+- [Human](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Human/HumanAnimations.cs)
+- [Titan](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Titan/BasicTitanAnimations.cs)
+- [Annie](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Annie/AnnieAnimations.cs)
+- [Eren](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Eren/ErenAnimations.cs)
+
 Use the right-hand string value for the animation.
 Note that shifters also have all titan animations.
 > - `fade`: Fade time. If provided, will crossfade the animation by this timestep
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, fade: float = 0.1) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ForceAnimation(animation: string, fade: float = 0.1)</code></pre>
 > Forces the character to play an animation.
 > 
 > **Parameters**:
 > - `animation`: Name of the animation.
 Available animations can be found here:
-- Human: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Human/HumanAnimations.cs`
-- Titan: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Titan/BasicTitanAnimations.cs`
-- Annie: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Annie/AnnieAnimations.cs`
-- Eren: `https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Eren/ErenAnimations.cs`
+- [Human](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Human/HumanAnimations.cs)
+- [Titan](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Titan/BasicTitanAnimations.cs)
+- [Annie](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Annie/AnnieAnimations.cs)
+- [Eren](https://raw.githubusercontent.com/AoTTG-2/Aottg2-Unity/d631c1648d1432de6f95f07c2f158ff710cdd76d/Assets/Scripts/Characters/Shifters/Eren/ErenAnimations.cs)
+
 Use the right-hand string value for the animation.
 Note that shifters also have all titan animations.
 > - `fade`: Fade time. If provided, will crossfade the animation by this timestep
@@ -111,42 +113,42 @@ Note that shifters also have all titan animations.
 <pre class="language-typescript"><code class="lang-typescript">function GetAnimationLength(animation: string) -> float</code></pre>
 > Gets the length of animation.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string)</code></pre>
 > Plays a sound if present in the character.
 > 
 > **Parameters**:
 > - `sound`: Name of the sound to play. Available sound names can be found here: `Humans`, `Shifters`, `Titans`. Note that shifters also have all titan sounds
 > 
-<pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string)</code></pre>
 > Stops a sound if present in the character.
 > 
 > **Parameters**:
 > - `sound`: Name of the sound to stop.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>)</code></pre>
 > Rotates the character such that it is looking towards a world position.
 > 
 > **Parameters**:
 > - `position`: Target world position
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, mode: string = "Acceleration") -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddForce(force: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, mode: string = "Acceleration")</code></pre>
 > Adds a force to the character with given force vector and optional mode.
 > 
 > **Parameters**:
 > - `force`: Force vector
 > - `mode`: Force mode. Valid modes are Force, Acceleration, Impulse, VelocityChange
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Reveal(delay: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Reveal(delay: float)</code></pre>
 > Reveal the titan for a set number of seconds.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddOutline(color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null, mode: string = "OutlineAll") -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddOutline(color: <a data-footnote-ref href="#user-content-fn-4">Color</a> = null, mode: string = "OutlineAll")</code></pre>
 > Adds an outline effect with the given color and mode.
 > 
 > **Parameters**:
 > - `color`: Outline color
 > - `mode`: Outline mode. Valid modes are: OutlineAll, OutlineVisible, OutlineHidden, OutlineAndSilhouette, SilhouetteOnly, OutlineAndLightenColor
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RemoveOutline() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RemoveOutline()</code></pre>
 > Removes the outline effect from the character.
 > 
 

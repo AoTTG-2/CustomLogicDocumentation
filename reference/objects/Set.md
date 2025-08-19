@@ -1,5 +1,8 @@
 # Set
 Inherits from [Object](../objects/Object.md)
+
+Collection of unique elements
+
 ### Initialization
 ```csharp
 Set()
@@ -13,25 +16,25 @@ Set(parameterValues: Object)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Clear() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
 > Clear all set elements
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Contains(value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> bool</code></pre>
 > Check if the set contains the specified element
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Add(value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Add(value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Add an element to the set
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Remove(value: <a data-footnote-ref href="#user-content-fn-38">Object</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Remove(value: <a data-footnote-ref href="#user-content-fn-38">Object</a>)</code></pre>
 > Remove the element from the set
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Union(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Union(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>)</code></pre>
 > Union with another set
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Intersect(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Intersect(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>)</code></pre>
 > Intersect with another set
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Difference(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Difference(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>)</code></pre>
 > Difference with another set
 > 
 <pre class="language-typescript"><code class="lang-typescript">function IsSubsetOf(set: <a data-footnote-ref href="#user-content-fn-29">Set</a>) -> bool</code></pre>

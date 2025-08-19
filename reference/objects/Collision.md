@@ -9,8 +9,8 @@ Inherits from [Object](../objects/Object.md)
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function GetContact(index: int) -> null</code></pre>
-<pre class="language-typescript"><code class="lang-typescript">function GetContacts() -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetContact(index: int)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetContacts()</code></pre>
 
 [^0]: [Camera](../static/Camera.md)
 [^1]: [Character](../objects/Character.md)

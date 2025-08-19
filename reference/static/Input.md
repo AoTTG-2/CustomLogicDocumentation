@@ -31,10 +31,10 @@ Reading player key inputs. Note that inputs are best handled in OnFrame rather t
 <pre class="language-typescript"><code class="lang-typescript">function GetScreenDimensions() -> <a data-footnote-ref href="#user-content-fn-37">Vector3</a></code></pre>
 > Returns the dimensions of the screen
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetKeyDefaultEnabled(key: string, enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetKeyDefaultEnabled(key: string, enabled: bool)</code></pre>
 > Sets whether the key is enabled by default
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetKeyHold(key: string, enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetKeyHold(key: string, enabled: bool)</code></pre>
 > Sets whether the key is being held down
 > 
 

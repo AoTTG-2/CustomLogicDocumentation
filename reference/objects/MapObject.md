@@ -36,22 +36,22 @@ MapObject represents a map object created in the editor or spawned at runtime us
 <pre class="language-typescript"><code class="lang-typescript">function AddComponent(name: string) -> component</code></pre>
 > Add a component to the object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RemoveComponent(name: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RemoveComponent(name: string)</code></pre>
 > Remove a component from the object
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetComponent(name: string) -> component</code></pre>
 > Get a component from the object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetComponentEnabled(name: string, enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetComponentEnabled(name: string, enabled: bool)</code></pre>
 > Set whether a component is enabled
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetComponentsEnabled(enabled: bool) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetComponentsEnabled(enabled: bool)</code></pre>
 > Set whether all components are enabled
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddSphereCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, radius: float) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddSphereCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, radius: float)</code></pre>
 > Add a sphere collider to the object
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddBoxCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-37">Vector3</a> = null, size: <a data-footnote-ref href="#user-content-fn-37">Vector3</a> = null) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddBoxCollider(collideMode: string, collideWith: string, center: <a data-footnote-ref href="#user-content-fn-37">Vector3</a> = null, size: <a data-footnote-ref href="#user-content-fn-37">Vector3</a> = null)</code></pre>
 > Add a box collider to the object
 > 
 <pre class="language-typescript"><code class="lang-typescript">function AddSphereTarget(team: string, center: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>, radius: float) -> <a data-footnote-ref href="#user-content-fn-18">MapTargetable</a></code></pre>
@@ -69,7 +69,7 @@ MapObject represents a map object created in the editor or spawned at runtime us
 <pre class="language-typescript"><code class="lang-typescript">function GetTransform(name: string) -> <a data-footnote-ref href="#user-content-fn-34">Transform</a></code></pre>
 > Get a child transform by name
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetColorAll(color: <a data-footnote-ref href="#user-content-fn-4">Color</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetColorAll(color: <a data-footnote-ref href="#user-content-fn-4">Color</a>)</code></pre>
 > Set the color of all renderers on the object
 > 
 <pre class="language-typescript"><code class="lang-typescript">function InBounds(position: <a data-footnote-ref href="#user-content-fn-37">Vector3</a>) -> bool</code></pre>
@@ -96,7 +96,7 @@ MapObject represents a map object created in the editor or spawned at runtime us
 <pre class="language-typescript"><code class="lang-typescript">function GetCorners() -> <a data-footnote-ref href="#user-content-fn-14">List</a></code></pre>
 > Get the corners of the bounds
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null)</code></pre>
 > Add a builtin component to the object.
 Components: Daylight, PointLight, Tag, Rigidbody, CustomPhysicsMaterial, NavMeshObstacle
 > 
@@ -106,7 +106,7 @@ Components: Daylight, PointLight, Tag, Rigidbody, CustomPhysicsMaterial, NavMesh
 <pre class="language-typescript"><code class="lang-typescript">function ReadBuiltinComponent(name: string, param: string) -> <a data-footnote-ref href="#user-content-fn-38">Object</a></code></pre>
 > Read a builtin component
 > 
-<pre class="language-typescript"><code class="lang-typescript">function UpdateBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function UpdateBuiltinComponent(componentName: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter1: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter2: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter3: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null, parameter4: <a data-footnote-ref href="#user-content-fn-38">Object</a> = null)</code></pre>
 > Update a builtin component
 > 
 

@@ -129,19 +129,19 @@ Locale()
 <pre class="language-typescript"><code class="lang-typescript">function Get(key: string) -> string</code></pre>
 > Get the localized string for the given key. Searches the current UI language, then any registered fallbacks, and finally the default language. Throws an exception if the key is not found in any language pack.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Set(language: string, key: string, value: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Set(language: string, key: string, value: string)</code></pre>
 > Set or override a localized string for the specified language and key.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterLanguage(language: string, strings: <a data-footnote-ref href="#user-content-fn-7">Dict</a>) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterLanguage(language: string, strings: <a data-footnote-ref href="#user-content-fn-7">Dict</a>)</code></pre>
 > Register a single-level (non-recursive) fallback: if a string is not found in 'fromLanguage', the system will search only in 'toLanguage', without chaining further.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterLanguages(pattern: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterLanguages(pattern: string)</code></pre>
 > Register all localized strings from JSON files for a specific category across all available languages. Use 'internal://' prefix for internal files (e.g., 'internal://BasicTutorialMap') or no prefix for external files (e.g., 'MyCustomMod').
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterFallback(fromLanguage: string, toLanguage: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterFallback(fromLanguage: string, toLanguage: string)</code></pre>
 > Register a fallback language. When a string is not found in 'fromLanguage', it will try 'toLanguage'.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RemoveFallback(fromLanguage: string) -> null</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RemoveFallback(fromLanguage: string)</code></pre>
 > Remove a language fallback.
 > 
 
