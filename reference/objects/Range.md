@@ -1,72 +1,75 @@
 # Range
-## Initialization
-> Inherits from List. Allows you to create lists of integers for convenient iteration, particularly in for loops.
-> Constructors:
+
+Range allows you to create lists of integers for convenient iteration, particularly in for loops.
+
+### Example
 ```csharp
-
 for (a in Range(10))
+{
     Game.Print(a);
-                
+}
+    
 for (a in Range(1, 10))
+{
     Game.Print(a);
-                
+}
+    
 for (a in Range(1, 10, 2))
+{
     Game.Print(a);
+}
 ```
-<details>
-<summary>Derived Fields</summary>
+### Initialization
+```csharp
+Range(end: int) // Creates a range from 0 to end-1
+Range(start: int, end: int) // Creates a range from start to end-1
+Range(start: int, end: int, step: int) // Creates a range from start to end-1 with the specified step
+```
 
-|Field|Type|Readonly|Description|
-|---|---|---|---|
-|Count|int|True|The number of elements in the list|
-</details>
-
-## Methods
-###### function <mark style="color:yellow;">Clear</mark>()
-> Clear all list elements
-
-###### function <mark style="color:yellow;">Get</mark>(index: <mark style="color:blue;">int</mark>) → <mark style="color:blue;">Object</mark>
-> Get the element at the specified index
-
-###### function <mark style="color:yellow;">Set</mark>(index: <mark style="color:blue;">int</mark>, value: <mark style="color:blue;">Object</mark>)
-> Set the element at the specified index
-
-###### function <mark style="color:yellow;">Add</mark>(value: <mark style="color:blue;">Object</mark>)
-> Add an element to the end of the list
-
-###### function <mark style="color:yellow;">InsertAt</mark>(index: <mark style="color:blue;">int</mark>, value: <mark style="color:blue;">Object</mark>)
-> Insert an element at the specified index
-
-###### function <mark style="color:yellow;">RemoveAt</mark>(index: <mark style="color:blue;">int</mark>)
-> Remove the element at the specified index
-
-###### function <mark style="color:yellow;">Remove</mark>(value: <mark style="color:blue;">Object</mark>)
-> Remove the first occurrence of the specified element
-
-###### function <mark style="color:yellow;">Contains</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">bool</mark>
-> Check if the list contains the specified element
-
-###### function <mark style="color:yellow;">Sort</mark>()
-> Sort the list
-
-###### function <mark style="color:yellow;">SortCustom</mark>(method: <mark style="color:blue;">function</mark>)
-> Sort the list using a custom method, expects a method with the signature int method(a,b)
-
-###### function <mark style="color:yellow;">Filter</mark>(method: <mark style="color:blue;">function</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
-> Filter the list using a custom method, expects a method with the signature bool method(element)
-
-###### function <mark style="color:yellow;">Map</mark>(method: <mark style="color:blue;">function</mark>) → <mark style="color:blue;">[List](../objects/List.md)</mark>
-> Map the list using a custom method, expects a method with the signature object method(element)
-
-###### function <mark style="color:yellow;">Reduce</mark>(method: <mark style="color:blue;">function</mark>, initialValue: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Reduce the list using a custom method, expects a method with the signature object method(acc, element)
-
-###### function <mark style="color:yellow;">Randomize</mark>() → <mark style="color:blue;">[List](../objects/List.md)</mark>
-> Returns a randomized version of the list.
-
-###### function <mark style="color:yellow;">ToSet</mark>() → <mark style="color:blue;">[Set](../objects/Set.md)</mark>
-> Convert the list to a set
-
-
----
-
+[^0]: [Camera](../static/Camera.md)
+[^1]: [Character](../objects/Character.md)
+[^2]: [Collider](../objects/Collider.md)
+[^3]: [Collision](../objects/Collision.md)
+[^4]: [Color](../objects/Color.md)
+[^5]: [Convert](../static/Convert.md)
+[^6]: [Cutscene](../static/Cutscene.md)
+[^7]: [Dict](../objects/Dict.md)
+[^8]: [Game](../static/Game.md)
+[^9]: [Human](../objects/Human.md)
+[^10]: [Input](../static/Input.md)
+[^11]: [Json](../static/Json.md)
+[^12]: [LightBuiltin](../static/LightBuiltin.md)
+[^13]: [LineCastHitResult](../objects/LineCastHitResult.md)
+[^14]: [LineRenderer](../objects/LineRenderer.md)
+[^15]: [List](../objects/List.md)
+[^16]: [Locale](../static/Locale.md)
+[^17]: [LodBuiltin](../static/LodBuiltin.md)
+[^18]: [Map](../static/Map.md)
+[^19]: [MapObject](../objects/MapObject.md)
+[^20]: [MapTargetable](../objects/MapTargetable.md)
+[^21]: [Math](../static/Math.md)
+[^22]: [NavmeshObstacleBuiltin](../static/NavmeshObstacleBuiltin.md)
+[^23]: [Network](../static/Network.md)
+[^24]: [NetworkView](../objects/NetworkView.md)
+[^25]: [PersistentData](../static/PersistentData.md)
+[^26]: [Physics](../static/Physics.md)
+[^27]: [PhysicsMaterialBuiltin](../static/PhysicsMaterialBuiltin.md)
+[^28]: [Player](../objects/Player.md)
+[^29]: [Prefab](../objects/Prefab.md)
+[^30]: [Quaternion](../objects/Quaternion.md)
+[^31]: [Random](../objects/Random.md)
+[^32]: [Range](../objects/Range.md)
+[^33]: [RigidbodyBuiltin](../static/RigidbodyBuiltin.md)
+[^34]: [RoomData](../static/RoomData.md)
+[^35]: [Set](../objects/Set.md)
+[^36]: [Shifter](../objects/Shifter.md)
+[^37]: [String](../static/String.md)
+[^38]: [Time](../static/Time.md)
+[^39]: [Titan](../objects/Titan.md)
+[^40]: [Transform](../objects/Transform.md)
+[^41]: [UI](../static/UI.md)
+[^42]: [Vector2](../objects/Vector2.md)
+[^43]: [Vector3](../objects/Vector3.md)
+[^44]: [WallColossal](../objects/WallColossal.md)
+[^45]: [Object](../objects/Object.md)
+[^46]: [Component](../objects/Component.md)

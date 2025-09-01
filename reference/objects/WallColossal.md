@@ -1,38 +1,38 @@
-# Player
-Inherits from [Object](../objects/Object.md)
+# WallColossal
+Inherits from [Shifter](../objects/Shifter.md)
 
-Represents a network player. Only master client or player may modify fields.
+Only character owner can modify fields and call functions unless otherwise specified.
 
+### Example
+```csharp
+function OnCharacterSpawn(character) {
+    if (character.IsMine && character.Type == "WallColossal") {
+        character.Size = 2;
+        if (Network.MyPlayer.Status == "Alive" && Network.MyPlayer.Character.Type == "Human") {
+            character.Target(Network.MyPlayer, 10);
+        }
+    }
+}
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Character|[Character](../objects/Character.md)|True|Player's current character, if alive.|
-|Connected|bool|True|Player is still connected to the room.|
-|ID|int|True|Player unique ID.|
-|Name|string|True|Player name.|
-|Guild|string|True|Player guild.|
-|Team|string|True|Player's chosen team ("None", "Blue", "Red", "Titan", "Human"). Note that this may be different from the character's final team (Character.Team field) if the character's team field is modified.|
-|Status|string|True|Player's spawn status ("Alive", "Dead", "Spectating").|
-|CharacterType|string|True|Player's chosen character ("Human", "Titan", "Shifter")|
-|Loadout|string|True|Player's chosen loadout ("Blades", "AHSS", "APG", "Thunderspears").|
-|Kills|int|False|Player's kills.|
-|Deaths|int|False|Player's deaths.|
-|HighestDamage|int|False|Player's highest damage.|
-|TotalDamage|int|False|Player's total damage.|
-|Ping|int|True|The player's connection ping.|
-|SpectateID|int|True|The player's spectating ID. If not spectating anyone, returns -1.|
-|SpawnPoint|[Vector3](../objects/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
+|HandHealth|int|False|Colossal's current hand health.|
+|MaxHandHealth|int|False|Colossal's maximum hand health.|
+|WallAttackCooldown|float|False|Colossal's (AI) wall attack cooldown per attack.|
+|WallAttackCooldownLeft|float|False|Colossal's (AI) wall attack cooldown remaining.|
+|SteamState|string|True|Colossal's current steam state (Off, Warning, or Damage).|
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function GetCustomProperty(property: string) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
-> Get a custom property at given key. Must be a primitive type. This is synced to all clients.
+<pre class="language-typescript"><code class="lang-typescript">function AttackSteam()</code></pre>
+> Causes the colossal to perform steam attack.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetCustomProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-45">Object</a>)</code></pre>
-> Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
+<pre class="language-typescript"><code class="lang-typescript">function StopSteam()</code></pre>
+> Causes the colossal to stop steam attack.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ClearKDR()</code></pre>
-> Clears kills, deaths, highestdamage, and totaldamage properties.
+<pre class="language-typescript"><code class="lang-typescript">function WallAttack()</code></pre>
+> Causes the (AI) colossal to perform a random wall attack.
 > 
 
 [^0]: [Camera](../static/Camera.md)

@@ -1,11 +1,11 @@
 # Math
-Inherits from Object
+Inherits from [Object](../objects/Object.md)
 
-<mark style="color:red;">This class is static and cannot be instantiated.</mark>
+Math functions. Note that parameter types can be either int or float unless otherwise specified.
+Functions may return int or float depending on the parameter types given.
 
-> Math functions. Note that parameter types can be either int or float unless otherwise specified.             Functions may return int or float depending on the parameter types given.
-## Static Fields
-|Field|Type|Readonly|Description|
+### Static Properties
+|Name|Type|Readonly|Description|
 |---|---|---|---|
 |PI|float|True|The value of PI|
 |Infinity|float|True|The value of Infinity|
@@ -13,121 +13,196 @@ Inherits from Object
 |Rad2DegConstant|float|True|The value of Rad2Deg constant|
 |Deg2RadConstant|float|True|The value of Deg2Rad constant|
 |Epsilon|float|True|The value of Epsilon|
-## Methods
-###### function <mark style="color:yellow;">Clamp</mark>(value: <mark style="color:blue;">Object</mark>, min: <mark style="color:blue;">Object</mark>, max: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Clamp(value: <a data-footnote-ref href="#user-content-fn-45">Object</a>, min: <a data-footnote-ref href="#user-content-fn-45">Object</a>, max: <a data-footnote-ref href="#user-content-fn-45">Object</a>) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
 > Clamp a value between a minimum and maximum value
-
-###### function <mark style="color:yellow;">Max</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+> **Parameters**:
+> - `value`: The value to clamp. Can be int or float
+> - `min`: The minimum value. Can be int or float
+> - `max`: The maximum value. Can be int or float
+> 
+> **Returns**: The clamped value. Will be the same type as the inputs
+<pre class="language-typescript"><code class="lang-typescript">function Max(a: <a data-footnote-ref href="#user-content-fn-45">Object</a>, b: <a data-footnote-ref href="#user-content-fn-45">Object</a>) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
 > Get the maximum of two values
-
-###### function <mark style="color:yellow;">Min</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+> **Parameters**:
+> - `a`: The first value. Can be int or float
+> - `b`: The second value. Can be int or float
+> 
+> **Returns**: The maximum of the two values. Will be the same type as the inputs
+<pre class="language-typescript"><code class="lang-typescript">function Min(a: <a data-footnote-ref href="#user-content-fn-45">Object</a>, b: <a data-footnote-ref href="#user-content-fn-45">Object</a>) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
 > Get the minimum of two values
-
-###### function <mark style="color:yellow;">Pow</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+> **Parameters**:
+> - `a`: The first value. Can be int or float
+> - `b`: The second value. Can be int or float
+> 
+> **Returns**: The minimum of the two values. Will be the same type as the inputs
+<pre class="language-typescript"><code class="lang-typescript">function Pow(a: float, b: float) -> float</code></pre>
 > Raise a value to the power of another value
-
-###### function <mark style="color:yellow;">Abs</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Abs(value: <a data-footnote-ref href="#user-content-fn-45">Object</a>) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
 > Get the absolute value of a number
-
-###### function <mark style="color:yellow;">Sqrt</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+> **Parameters**:
+> - `value`: The number. Can be int or float
+> 
+> **Returns**: The absolute value. Will be the same type as the input
+<pre class="language-typescript"><code class="lang-typescript">function Sqrt(value: float) -> float</code></pre>
 > Get the square root of a number
-
-###### function <mark style="color:yellow;">Mod</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Repeat(value: <a data-footnote-ref href="#user-content-fn-45">Object</a>, max: <a data-footnote-ref href="#user-content-fn-45">Object</a>) -> <a data-footnote-ref href="#user-content-fn-45">Object</a></code></pre>
+> Modulo for floats
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Mod(a: int, b: int) -> int</code></pre>
 > Get the remainder of a division operation
-
-###### function <mark style="color:yellow;">Sin</mark>(angle: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Get the sine of an angle in degrees
-
-###### function <mark style="color:yellow;">Cos</mark>(angle: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Get the cosine of an angle in degrees
-
-###### function <mark style="color:yellow;">Tan</mark>(angle: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Get the tangent of an angle in degrees
-
-###### function <mark style="color:yellow;">Asin</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Sin(angle: float) -> float</code></pre>
+> Get the sine of an angle
+> 
+> **Parameters**:
+> - `angle`: The angle in degrees
+> 
+> **Returns**: Value between -1 and 1
+<pre class="language-typescript"><code class="lang-typescript">function Cos(angle: float) -> float</code></pre>
+> Get the cosine of an angle
+> 
+> **Parameters**:
+> - `angle`: The angle in degrees
+> 
+> **Returns**: Value between -1 and 1
+<pre class="language-typescript"><code class="lang-typescript">function Tan(angle: float) -> float</code></pre>
+> Get the tangent of an angle in radians
+> 
+> **Parameters**:
+> - `angle`: The angle in degrees
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Asin(value: float) -> float</code></pre>
 > Get the arcsine of a value in degrees
-
-###### function <mark style="color:yellow;">Acos</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Acos(value: float) -> float</code></pre>
 > Get the arccosine of a value in degrees
-
-###### function <mark style="color:yellow;">Atan</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Atan(value: float) -> float</code></pre>
 > Get the arctangent of a value in degrees
-
-###### function <mark style="color:yellow;">Atan2</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Atan2(a: float, b: float) -> float</code></pre>
 > Get the arctangent of a value in degrees
-
-###### function <mark style="color:yellow;">Ceil</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Ceil(value: float) -> int</code></pre>
 > Get the smallest integer greater than or equal to a value
-
-###### function <mark style="color:yellow;">Floor</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Floor(value: float) -> int</code></pre>
 > Get the largest integer less than or equal to a value
-
-###### function <mark style="color:yellow;">Round</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Round(value: float) -> int</code></pre>
 > Round a value to the nearest integer
-
-###### function <mark style="color:yellow;">Deg2Rad</mark>(angle: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Deg2Rad(angle: float) -> float</code></pre>
 > Convert an angle from degrees to radians
-
-###### function <mark style="color:yellow;">Rad2Deg</mark>(angle: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Rad2Deg(angle: float) -> float</code></pre>
 > Convert an angle from radians to degrees
-
-###### function <mark style="color:yellow;">Lerp</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>, t: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Lerp(a: float, b: float, t: float) -> float</code></pre>
 > Linearly interpolate between two values
-
-###### function <mark style="color:yellow;">LerpUnclamped</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>, t: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function LerpUnclamped(a: float, b: float, t: float) -> float</code></pre>
 > Linearly interpolate between two values without clamping
-
-###### function <mark style="color:yellow;">Sign</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Sign(value: float) -> float</code></pre>
 > Get the sign of a value
-
-###### function <mark style="color:yellow;">InverseLerp</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>, value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function InverseLerp(a: float, b: float, value: float) -> float</code></pre>
 > Get the inverse lerp of two values
-
-###### function <mark style="color:yellow;">LerpAngle</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>, t: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function LerpAngle(a: float, b: float, t: float) -> float</code></pre>
 > Linearly interpolate between two angles
-
-###### function <mark style="color:yellow;">Log</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Log(value: float) -> float</code></pre>
 > Get the natural logarithm of a value
-
-###### function <mark style="color:yellow;">MoveTowards</mark>(current: <mark style="color:blue;">Object</mark>, target: <mark style="color:blue;">Object</mark>, maxDelta: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function MoveTowards(current: float, target: float, maxDelta: float) -> float</code></pre>
 > Move a value towards a target value
-
-###### function <mark style="color:yellow;">MoveTowardsAngle</mark>(current: <mark style="color:blue;">Object</mark>, target: <mark style="color:blue;">Object</mark>, maxDelta: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function MoveTowardsAngle(current: float, target: float, maxDelta: float) -> float</code></pre>
 > Move an angle towards a target angle
-
-###### function <mark style="color:yellow;">PingPong</mark>(t: <mark style="color:blue;">Object</mark>, length: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function PingPong(t: float, length: float) -> float</code></pre>
 > Get the ping pong value of a time value
-
-###### function <mark style="color:yellow;">SmoothDamp</mark>(current: <mark style="color:blue;">Object</mark>, target: <mark style="color:blue;">Object</mark>, currentVelocity: <mark style="color:blue;">Object</mark>, smoothTime: <mark style="color:blue;">Object</mark>, maxSpeed: <mark style="color:blue;">Object</mark>, deltaTime: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Smoothly damp a value towards a target value
-
-###### function <mark style="color:yellow;">Exp</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Exp(value: float) -> float</code></pre>
 > Get the exponential value of a number
-
-###### function <mark style="color:yellow;">SmoothDampAngle</mark>(current: <mark style="color:blue;">Object</mark>, target: <mark style="color:blue;">Object</mark>, currentVelocity: <mark style="color:blue;">Object</mark>, smoothTime: <mark style="color:blue;">Object</mark>, maxSpeed: <mark style="color:blue;">Object</mark>, deltaTime: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
-> Smoothly damp an angle towards a target angle
-
-###### function <mark style="color:yellow;">SmoothStep</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>, t: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SmoothStep(a: float, b: float, t: float) -> float</code></pre>
 > Smoothly step between two values
-
-###### function <mark style="color:yellow;">BitwiseAnd</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseAnd(a: int, b: int) -> int</code></pre>
 > Perform a bitwise AND operation
-
-###### function <mark style="color:yellow;">BitwiseOr</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseOr(a: int, b: int) -> int</code></pre>
 > Perform a bitwise OR operation
-
-###### function <mark style="color:yellow;">BitwiseXor</mark>(a: <mark style="color:blue;">Object</mark>, b: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseXor(a: int, b: int) -> int</code></pre>
 > Perform a bitwise XOR operation
-
-###### function <mark style="color:yellow;">BitwiseNot</mark>(value: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseNot(value: int) -> int</code></pre>
 > Perform a bitwise NOT operation
-
-###### function <mark style="color:yellow;">BitwiseLeftShift</mark>(value: <mark style="color:blue;">Object</mark>, shift: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseLeftShift(value: int, shift: int) -> int</code></pre>
 > Shift bits to the left
-
-###### function <mark style="color:yellow;">BitwiseRightShift</mark>(value: <mark style="color:blue;">Object</mark>, shift: <mark style="color:blue;">Object</mark>) → <mark style="color:blue;">Object</mark>
+> 
+<pre class="language-typescript"><code class="lang-typescript">function BitwiseRightShift(value: int, shift: int) -> int</code></pre>
 > Shift bits to the right
+> 
 
-
----
-
+[^0]: [Camera](../static/Camera.md)
+[^1]: [Character](../objects/Character.md)
+[^2]: [Collider](../objects/Collider.md)
+[^3]: [Collision](../objects/Collision.md)
+[^4]: [Color](../objects/Color.md)
+[^5]: [Convert](../static/Convert.md)
+[^6]: [Cutscene](../static/Cutscene.md)
+[^7]: [Dict](../objects/Dict.md)
+[^8]: [Game](../static/Game.md)
+[^9]: [Human](../objects/Human.md)
+[^10]: [Input](../static/Input.md)
+[^11]: [Json](../static/Json.md)
+[^12]: [LightBuiltin](../static/LightBuiltin.md)
+[^13]: [LineCastHitResult](../objects/LineCastHitResult.md)
+[^14]: [LineRenderer](../objects/LineRenderer.md)
+[^15]: [List](../objects/List.md)
+[^16]: [Locale](../static/Locale.md)
+[^17]: [LodBuiltin](../static/LodBuiltin.md)
+[^18]: [Map](../static/Map.md)
+[^19]: [MapObject](../objects/MapObject.md)
+[^20]: [MapTargetable](../objects/MapTargetable.md)
+[^21]: [Math](../static/Math.md)
+[^22]: [NavmeshObstacleBuiltin](../static/NavmeshObstacleBuiltin.md)
+[^23]: [Network](../static/Network.md)
+[^24]: [NetworkView](../objects/NetworkView.md)
+[^25]: [PersistentData](../static/PersistentData.md)
+[^26]: [Physics](../static/Physics.md)
+[^27]: [PhysicsMaterialBuiltin](../static/PhysicsMaterialBuiltin.md)
+[^28]: [Player](../objects/Player.md)
+[^29]: [Prefab](../objects/Prefab.md)
+[^30]: [Quaternion](../objects/Quaternion.md)
+[^31]: [Random](../objects/Random.md)
+[^32]: [Range](../objects/Range.md)
+[^33]: [RigidbodyBuiltin](../static/RigidbodyBuiltin.md)
+[^34]: [RoomData](../static/RoomData.md)
+[^35]: [Set](../objects/Set.md)
+[^36]: [Shifter](../objects/Shifter.md)
+[^37]: [String](../static/String.md)
+[^38]: [Time](../static/Time.md)
+[^39]: [Titan](../objects/Titan.md)
+[^40]: [Transform](../objects/Transform.md)
+[^41]: [UI](../static/UI.md)
+[^42]: [Vector2](../objects/Vector2.md)
+[^43]: [Vector3](../objects/Vector3.md)
+[^44]: [WallColossal](../objects/WallColossal.md)
+[^45]: [Object](../objects/Object.md)
+[^46]: [Component](../objects/Component.md)
