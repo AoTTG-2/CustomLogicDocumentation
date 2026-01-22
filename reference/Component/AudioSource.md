@@ -1,13 +1,35 @@
-# Object
+# AudioSource
 
-The base type of all objects in the game.
+Represents an AudioSource component for playing audio clips.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Volume|float|False|Volume of the sound.|
+|Time|float|False|Sound playback position.|
+|Pitch|float|False|Pitch of the sound.|
+|IsPlaying|bool|True|Is the sound currently playing.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Play()</code></pre>
+> Plays the sound.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function PlayDelayed(seconds: float)</code></pre>
+> Plays the sound after n seconds.
+> 
+> **Parameters**:
+> - `seconds`: The delay in seconds before playing the sound.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Stop()</code></pre>
+> Stops the sound.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Pause()</code></pre>
+> Pauses the sound.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Unpause()</code></pre>
+> Unpauses the sound.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

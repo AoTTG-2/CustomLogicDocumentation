@@ -1,12 +1,43 @@
-# Object
+# EffectNameEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available effect names that can be spawned. Uses left-hand variable names from EffectPrefabs class.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|ThunderspearExplode|string|True|ThunderspearExplode effect.|
+|GasBurst|string|True|GasBurst effect.|
+|GroundShatter|string|True|GroundShatter effect.|
+|Blood1|string|True|Blood1 effect.|
+|Blood2|string|True|Blood2 effect.|
+|PunchHit|string|True|PunchHit effect.|
+|GunExplode|string|True|GunExplode effect.|
+|CriticalHit|string|True|CriticalHit effect.|
+|TitanSpawn|string|True|TitanSpawn effect.|
+|TitanDie1|string|True|TitanDie1 effect.|
+|TitanDie2|string|True|TitanDie2 effect.|
+|Boom1|string|True|Boom1 effect.|
+|Boom2|string|True|Boom2 effect.|
+|Boom3|string|True|Boom3 effect.|
+|Boom4|string|True|Boom4 effect.|
+|Boom5|string|True|Boom5 effect.|
+|Boom6|string|True|Boom6 effect.|
+|Boom7|string|True|Boom7 effect.|
+|Boom8|string|True|Boom8 effect.|
+|Splash|string|True|Splash effect.|
+|TitanBite|string|True|TitanBite effect.|
+|ShifterThunder|string|True|ShifterThunder effect.|
+|BladeThrowHit|string|True|BladeThrowHit effect.|
+|APGTrail|string|True|APGTrail effect.|
+|SingleSplash|string|True|SingleSplash effect.|
+|Splash1|string|True|Splash1 effect.|
+|Splash2|string|True|Splash2 effect.|
+|Splash3|string|True|Splash3 effect.|
+|WaterWake|string|True|WaterWake effect.|
+|ColossalSpawn|string|True|ColossalSpawn effect.|
+|ColossalRockSpawn|string|True|ColossalRockSpawn effect.|
+|ColossalKick|string|True|ColossalKick effect.|
 
 
 [^0]: [Color](../Collections/Color.md)

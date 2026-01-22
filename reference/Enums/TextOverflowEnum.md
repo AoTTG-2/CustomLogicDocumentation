@@ -1,12 +1,13 @@
-# Object
+# TextOverflowEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of text overflow values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Clip|int|True|Clip: text is clipped at the element's boundary.|
+|Ellipsis|int|True|Ellipsis: text is truncated with an ellipsis.|
 
 
 [^0]: [Color](../Collections/Color.md)

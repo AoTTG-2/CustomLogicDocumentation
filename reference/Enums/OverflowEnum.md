@@ -1,12 +1,13 @@
-# Object
+# OverflowEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of overflow values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Visible|int|True|Visible: content is visible even if it overflows the element's boundary.|
+|Hidden|int|True|Hidden: content is clipped at the element's boundary.|
 
 
 [^0]: [Color](../Collections/Color.md)

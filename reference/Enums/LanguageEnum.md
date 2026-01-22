@@ -1,12 +1,30 @@
-# Object
+# LanguageEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available language codes. Duplicates Locale language constants for consistency.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Arabic|string|True|Arabic language code.|
+|BrazilianPortuguese|string|True|Brazilian Portuguese language code.|
+|Chinese|string|True|Chinese language code.|
+|Czech|string|True|Czech language code.|
+|Dutch|string|True|Dutch language code.|
+|English|string|True|English language code.|
+|French|string|True|French language code.|
+|German|string|True|German language code.|
+|Greek|string|True|Greek language code.|
+|Indonesian|string|True|Indonesian language code.|
+|Italian|string|True|Italian language code.|
+|Japanese|string|True|Japanese language code.|
+|Korean|string|True|Korean language code.|
+|Polish|string|True|Polish language code.|
+|Russian|string|True|Russian language code.|
+|Spanish|string|True|Spanish language code.|
+|TraditionalChinese|string|True|Traditional Chinese language code.|
+|Turkish|string|True|Turkish language code.|
+|Ukrainian|string|True|Ukrainian language code.|
 
 
 [^0]: [Color](../Collections/Color.md)

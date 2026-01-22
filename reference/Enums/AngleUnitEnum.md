@@ -1,12 +1,15 @@
-# Object
+# AngleUnitEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of angle unit values for UI element transformations.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Degree|int|True|Degree: angle unit in degrees (360 degrees = full circle).|
+|Gradian|int|True|Gradian: angle unit in gradians (400 gradians = full circle).|
+|Radian|int|True|Radian: angle unit in radians (2π radians = full circle).|
+|Turn|int|True|Turn: angle unit in turns (1 turn = full circle).|
 
 
 [^0]: [Color](../Collections/Color.md)

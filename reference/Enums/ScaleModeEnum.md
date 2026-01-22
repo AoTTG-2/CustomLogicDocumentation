@@ -1,12 +1,14 @@
-# Object
+# ScaleModeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of scale modes for UI icons.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|StretchToFill|int|True|StretchToFill scale mode.|
+|ScaleAndCrop|int|True|ScaleAndCrop scale mode.|
+|ScaleToFit|int|True|ScaleToFit scale mode.|
 
 
 [^0]: [Color](../Collections/Color.md)

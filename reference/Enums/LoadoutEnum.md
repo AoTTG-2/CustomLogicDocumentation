@@ -1,12 +1,22 @@
-# Object
+# LoadoutEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of loadout types for all character types.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|HumanBlades|string|True|Blades loadout (human).|
+|HumanAHSS|string|True|AHSS loadout (human).|
+|HumanAPG|string|True|APG loadout (human).|
+|HumanThunderspears|string|True|Thunderspears loadout (human).|
+|TitanSmall|string|True|Small titan size.|
+|TitanMedium|string|True|Medium titan size.|
+|TitanLarge|string|True|Large titan size.|
+|ShifterAnnie|string|False||
+|ShifterEren|string|False||
+|ShifterArmored|string|False||
+|ShifterWallColossal|string|False||
 
 
 [^0]: [Color](../Collections/Color.md)

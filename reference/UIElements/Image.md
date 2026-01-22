@@ -1,13 +1,29 @@
-# Object
+# Image
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+UI element for setting background images on visual elements.
 
+### Example
+```csharp
+# Example: Create a background image
+container = UI.CreateContainer();
+image = UI.CreateImage();
+image.SetImage("Icons/Game/BladeIcon");
+container.SetBackgroundImage(image);
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|ImagePath|string|False|The current image path. Setting this will load the image from the resource path.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetImage(imagePath: string) -> <a data-footnote-ref href="#user-content-fn-102">Image</a></code></pre>
+> Set the image from a resource path.
+> 
+> **Parameters**:
+> - `imagePath`: Path to the image resource (e.g., "Icons/Game/BladeIcon").
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

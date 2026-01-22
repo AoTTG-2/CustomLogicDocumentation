@@ -1,12 +1,14 @@
-# Object
+# SteamStateEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of steam states for WallColossal shifter.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Off|int|True|Steam is off.|
+|Warning|int|True|Steam warning state.|
+|Damage|int|True|Steam damage state.|
 
 
 [^0]: [Color](../Collections/Color.md)

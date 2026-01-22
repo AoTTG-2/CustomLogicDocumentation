@@ -1,12 +1,16 @@
-# Object
+# AlignEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of align values for UI elements (used for align-items and align-self properties).
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Auto|int|True|Auto: uses the parent's align-items value.|
+|FlexStart|int|True|FlexStart: aligns items to the start of the cross axis.|
+|Center|int|True|Center: aligns items to the center of the cross axis.|
+|FlexEnd|int|True|FlexEnd: aligns items to the end of the cross axis.|
+|Stretch|int|True|Stretch: stretches items to fill the cross axis.|
 
 
 [^0]: [Color](../Collections/Color.md)

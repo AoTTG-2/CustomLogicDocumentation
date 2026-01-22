@@ -1,13 +1,22 @@
-# Object
+# Button
+Inherits from [VisualElement](../UIElements/VisualElement.md)
 
-The base type of all objects in the game.
+A UI element that represents a clickable button.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Text|string|False|The text displayed by the Button.|
+|EnableRichText|bool|False|When false, rich text tags will not be parsed.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function OnClick(clickEvent: function) -> <a data-footnote-ref href="#user-content-fn-99">Button</a></code></pre>
+> Sets the method to be called when the Button is clicked.
+> 
+> **Parameters**:
+> - `clickEvent`: The method to call when the button is clicked.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

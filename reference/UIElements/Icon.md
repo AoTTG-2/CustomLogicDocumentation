@@ -1,13 +1,40 @@
-# Object
+# Icon
+Inherits from [VisualElement](../UIElements/VisualElement.md)
 
-The base type of all objects in the game.
+UI element for displaying icons/images.
 
+### Example
+```csharp
+# Example: Create an icon element
+icon = UI.CreateIcon("Icons/Game/BladeIcon")
+    .Width(64)
+    .Height(64);
+container.Add(icon);
+
+# Example: Load an icon from a resource path
+weaponIcon = UI.CreateIcon("Icons/Game/AHSSIcon");
+weaponIcon.SetIcon("Icons/Game/ThunderSpearIcon"); # Change the icon dynamically
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|IconPath|string|False|The current icon path. Setting this will load the icon from the resource path.|
+|ScaleMode|int|False|The scale mode for the icon. Refer to [ScaleModeEnum](../Enums/ScaleModeEnum.md)|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetIcon(iconPath: string) -> <a data-footnote-ref href="#user-content-fn-101">Icon</a></code></pre>
+> Set the icon to display from a resource path.
+> 
+> **Parameters**:
+> - `iconPath`: Path to the icon resource (e.g., "Icons/Game/BladeIcon").
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetTintColor(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-101">Icon</a></code></pre>
+> Set the tint color of the icon.
+> 
+> **Parameters**:
+> - `color`: The color to tint the icon with.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

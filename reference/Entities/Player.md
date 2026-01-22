@@ -1,13 +1,47 @@
-# Object
+# Player
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a network player. Only master client or player may modify fields.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Character|[Character](../Entities/Character.md)|True|Player's current character, if alive.|
+|Connected|bool|True|Player is still connected to the room.|
+|ID|int|True|Player unique ID.|
+|Name|string|True|Player name.|
+|Guild|string|True|Player guild.|
+|Team|string|True|Player's chosen team. Note that this may be different from the character's final team (Character.Team field) if the character's team field is modified. Refer to [TeamEnum](../Enums/TeamEnum.md)|
+|Status|string|True|Player's spawn status. Refer to [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)|
+|CharacterType|string|True|Player's chosen character. Refer to [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)|
+|Loadout|string|True|Player's chosen loadout. Refer to [LoadoutEnum](../Enums/LoadoutEnum.md)|
+|Kills|int|False|Player's kills.|
+|Deaths|int|False|Player's deaths.|
+|HighestDamage|int|False|Player's highest damage.|
+|TotalDamage|int|False|Player's total damage.|
+|Ping|int|True|The player's connection ping.|
+|SpectateID|int|True|The player's spectating ID. If not spectating anyone, returns -1.|
+|SpawnPoint|[Vector3](../Collections/Vector3.md)|False|Player's respawn point. Is initially null and can be set back to null, at which point map spawn points are used.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function GetCustomProperty(property: string) -> <a data-footnote-ref href="#user-content-fn-116">Object</a></code></pre>
+> Get a custom property at given key. Must be a primitive type. This is synced to all clients.
+> 
+> **Parameters**:
+> - `property`: The property key to get.
+> 
+> **Returns**: The property value.
+<pre class="language-typescript"><code class="lang-typescript">function SetCustomProperty(property: string, value: <a data-footnote-ref href="#user-content-fn-116">Object</a>)</code></pre>
+> Sets a custom property at given key. Must be a primitive type. This is synced to all clients.
+> 
+> **Parameters**:
+> - `property`: The property key to set.
+> - `value`: The value to set (must be a primitive type).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ClearKDR()</code></pre>
+> Clears kills, deaths, highestdamage, and totaldamage properties.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

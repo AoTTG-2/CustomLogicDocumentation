@@ -1,12 +1,14 @@
-# Object
+# DummyAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for dummy characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle|string|True|Dummy animation.|
+|Fall|string|True|Fall animation.|
+|Rise|string|True|Rise animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

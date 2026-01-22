@@ -1,13 +1,30 @@
-# Object
+# NavmeshObstacleBuiltin
 
-The base type of all objects in the game.
+Represents a NavMesh obstacle component that can carve or block navigation mesh paths.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Radius|float|False|The radius of the obstacle.|
+|Height|float|False|The height of the obstacle.|
+|Scale|[Vector3](../Collections/Vector3.md)|False|The scale of the obstacle.|
+|Center|[Vector3](../Collections/Vector3.md)|False|The center of the obstacle.|
+|Carving|bool|False|Whether the obstacle carves the NavMesh.|
+|CarveOnlyStationary|bool|False|Whether the obstacle only carves when stationary.|
+|Shape|int|False|The shape of the obstacle.|
 
+
+### Static Properties
+|Name|Type|Readonly|Description|
+|---|---|---|---|
+|ShapeBox|int|True|The NavMeshObstacleShape Box.|
+|ShapeCapsule|int|True|The NavMeshObstacleShape Capsule.|
+
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function AutoScale()</code></pre>
+> Auto scales the obstacle to fit the colliders.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

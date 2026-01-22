@@ -1,13 +1,36 @@
-# Object
+# Prefab
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a prefab object that can be instantiated in the map. Currently handles single elements, not children.
+
+### Initialization
+```csharp
+Prefab() // Creates a new empty Prefab instance.
+Prefab(prefabCSV: string, clearComponents: bool = False) // Creates a new Prefab instance from a serialized CSV string.
+```
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|AssetType|string|False|The type of the prefab asset.|
+|Asset|string|False|The asset path/name of the prefab.|
+|Active|bool|False|Whether the prefab is active.|
+|Static|bool|False|Whether the prefab is marked as static.|
+|Visible|bool|False|Whether the prefab is visible.|
+|Name|string|False|The name of the prefab.|
+|Position|[Vector3](../Collections/Vector3.md)|False|The position of the prefab in world space.|
+|Rotation|[Vector3](../Collections/Vector3.md)|False|The rotation of the prefab in euler angles.|
+|Scale|[Vector3](../Collections/Vector3.md)|False|The scale of the prefab.|
+|CollideMode|string|False|The collision mode of the prefab.|
+|CollideWith|string|False|The layers that this prefab can collide with.|
+|PhysicsMaterial|string|False|The name of the physics material applied to the prefab.|
+|PersistsOwnership|bool|False||
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function ClearComponents()</code></pre>
+> Clears all components from the prefab.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

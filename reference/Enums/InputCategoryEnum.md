@@ -1,12 +1,17 @@
-# Object
+# InputCategoryEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of input categories for keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|General|string|True|General input category.|
+|Human|string|True|Human input category.|
+|Titan|string|True|Titan input category.|
+|Interaction|string|True|Interaction input category.|
+|AnnieShifter|string|True|AnnieShifter input category.|
+|ErenShifter|string|True|ErenShifter input category.|
 
 
 [^0]: [Color](../Collections/Color.md)

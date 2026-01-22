@@ -1,12 +1,14 @@
-# Object
+# HumanParticleEffectEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available particle effect names for humans.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Buff1|string|True|Buff1 particle effect.|
+|Buff2|string|True|Buff2 particle effect.|
+|Fire1|string|True|Fire1 particle effect.|
 
 
 [^0]: [Color](../Collections/Color.md)

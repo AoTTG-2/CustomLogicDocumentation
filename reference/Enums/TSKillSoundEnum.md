@@ -1,12 +1,17 @@
-# Object
+# TSKillSoundEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of Thunderspear kill sound types for effect spawning.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Kill|string|True|Kill sound type.|
+|Air|string|True|Air sound type.|
+|Ground|string|True|Ground sound type.|
+|ArmorHit|string|True|ArmorHit sound type.|
+|CloseShot|string|True|CloseShot sound type.|
+|MaxRangeShot|string|True|MaxRangeShot sound type.|
 
 
 [^0]: [Color](../Collections/Color.md)

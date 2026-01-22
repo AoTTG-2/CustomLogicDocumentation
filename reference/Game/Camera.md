@@ -1,13 +1,85 @@
-# Object
+# Camera
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+References the main game camera.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|IsManual|bool|True|Is camera in manual mode.|
+|Position|[Vector3](../Collections/Vector3.md)|True|Position of the camera.|
+|Rotation|[Vector3](../Collections/Vector3.md)|True|Rotation of the camera.|
+|Velocity|[Vector3](../Collections/Vector3.md)|True|Velocity of the camera.|
+|FOV|float|True|Field of view of the camera.|
+|CameraMode|string|True|Current camera mode. TPS, Original, FPS.|
+|Forward|[Vector3](../Collections/Vector3.md)|False|Forward vector of the camera.|
+|Right|[Vector3](../Collections/Vector3.md)|False|Right vector of the camera.|
+|Up|[Vector3](../Collections/Vector3.md)|False|Up vector of the camera.|
+|FollowDistance|float|False|Distance from the camera to the character.|
 
+
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetManual(manual: bool)</code></pre>
+> Sets the camera manual mode. If true, camera will only be controlled by custom logic.
+If false, camera will follow the spawned or spectated player and read input.
+> 
+> **Parameters**:
+> - `manual`: True to enable manual mode, false to disable.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetPosition(position: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>)</code></pre>
+> Sets camera position.
+> 
+> **Parameters**:
+> - `position`: The world position to set the camera to.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetRotation(rotation: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>)</code></pre>
+> Sets camera rotation.
+> 
+> **Parameters**:
+> - `rotation`: The euler angles rotation to set the camera to.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetVelocity(velocity: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>)</code></pre>
+> Sets camera velocity.
+> 
+> **Parameters**:
+> - `velocity`: The velocity vector to set for the camera.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function LookAt(position: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>)</code></pre>
+> Sets the camera forward direction such that it is looking at a world position.
+> 
+> **Parameters**:
+> - `position`: The world position to look at.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetFOV(fov: float)</code></pre>
+> Sets the camera field of view.
+> 
+> **Parameters**:
+> - `fov`: The new field of view. Use 0 to use the default field of view.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetCameraMode(mode: string)</code></pre>
+> Forces the player to use a certain camera mode, taking priority over their camera setting.
+> 
+> **Parameters**:
+> - `mode`: The camera mode. Accepted values are TPS, Original, FPS. Refer to [CameraModeEnum](../Enums/CameraModeEnum.md)
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ResetDistance()</code></pre>
+> Resets the follow distance to player's settings.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ResetCameraMode()</code></pre>
+> Resets the camera mode to player's settings.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetCameraLocked(locked: bool)</code></pre>
+> Locks or unlocks the camera to prevent or allow camera movement.
+> 
+> **Parameters**:
+> - `locked`: If true, locks the camera to prevent movement.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetCursorVisible(visible: bool)</code></pre>
+> Sets the visibility of the cursor.
+> 
+> **Parameters**:
+> - `visible`: If true, makes the cursor visible.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

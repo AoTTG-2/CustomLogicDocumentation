@@ -1,12 +1,12 @@
-# Object
+# LodBuiltin
 
-The base type of all objects in the game.
+WIP feature to support LOD (Level of Detail) for map objects, currently only supports a single LOD level with a distance threshold.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|DistanceThreshold|float|False|Configures the distance threshold.|
+|DetailPriority|float|False|Configures the detail priority.|
 
 
 [^0]: [Color](../Collections/Color.md)

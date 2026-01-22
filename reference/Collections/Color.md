@@ -1,13 +1,52 @@
-# Object
+# Color
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a color with RGBA components in the range [0, 255]. Implements copy semantics, acting like a struct.
+
+### Remarks
+Overloads operators: 
+`==`, `__Hash__`, `__Copy__`, `__Str__`, `+`, `-`, `*`, `/`
+### Initialization
+```csharp
+Color() // Default constructor, creates a white color.
+Color(hexString: string) // Creates a color from a hex string.
+Color(r: int, g: int, b: int) // Creates a color from RGB.
+Color(r: int, g: int, b: int, a: int) // Creates a color from RGBA.
+```
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|R|int|False|Red component of the color.|
+|G|int|False|Green component of the color.|
+|B|int|False|Blue component of the color.|
+|A|int|False|Alpha component of the color.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function ToHexString() -> string</code></pre>
+> Converts the color to a hex string.
+> 
+
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function Lerp(a: <a data-footnote-ref href="#user-content-fn-0">Color</a>, b: <a data-footnote-ref href="#user-content-fn-0">Color</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-0">Color</a></code></pre>
+> Linearly interpolates between two colors.
+> 
+> **Parameters**:
+> - `a`: Color to interpolate from.
+> - `b`: Color to interpolate to.
+> - `t`: Interpolation factor. 0 = `a`, 1 = `b`.
+> 
+> **Returns**: A new color between `a` and `b`.
+<pre class="language-typescript"><code class="lang-typescript">function Gradient(a: <a data-footnote-ref href="#user-content-fn-0">Color</a>, b: <a data-footnote-ref href="#user-content-fn-0">Color</a>, t: float) -> <a data-footnote-ref href="#user-content-fn-0">Color</a></code></pre>
+> Creates a gradient color from two colors.
+> 
+> **Parameters**:
+> - `a`: The first color.
+> - `b`: The second color.
+> - `t`: The interpolation factor (0 = a, 1 = b).
+> 
+> **Returns**: A new color interpolated between the two colors.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

@@ -1,13 +1,66 @@
-# Object
+# LineRenderer
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a LineRenderer.
+
+### Initialization
+```csharp
+LineRenderer() // Default constructor, creates a black line with a width of 1.
+LineRenderer(color: Color, width: float = 1) // Creates a line with the given color and width.
+```
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|StartWidth|float|False|The width of the line at the start.|
+|EndWidth|float|False|The width of the line at the end.|
+|LineColor|[Color](../Collections/Color.md)|False|The color of the line.|
+|PositionCount|int|False|The number of points in the line.|
+|Enabled|bool|False|Is the line renderer enabled.|
+|Loop|bool|False|Is the line renderer a loop.|
+|NumCornerVertices|int|False|The number of corner vertices.|
+|NumCapVertices|int|False|The number of end cap vertices.|
+|Alignment|int|False|The alignment of the line renderer. Refer to [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)|
+|TextureMode|int|False|The texture mode of the line renderer. Refer to [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)|
+|UseWorldSpace|bool|False|Is the line renderer in world space.|
+|ShadowCastingMode|int|False|Does the line renderer cast shadows. Refer to [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)|
+|ReceiveShadows|bool|False|Does the line renderer receive shadows.|
+|ColorGradient|[List](../Collections/List.md)<[Color](../Collections/Color.md)>|False|The gradient of the line renderer.|
+|AlphaGradient|[List](../Collections/List.md)<float>|False|The alpha gradient of the line renderer.|
+|WidthCurve|[List](../Collections/List.md)<[Vector2](../Collections/Vector2.md)>|False|The width curve of the line renderer.|
+|WidthMultiplier|float|False|The width multiplier of the line renderer.|
+|ColorGradientMode|int|False|The color gradient mode of the line renderer. Refer to [GradientModeEnum](../Enums/GradientModeEnum.md)|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Destroy()</code></pre>
+> Remove the line renderer (can also be done by removing all references to this object).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetPosition(index: int) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> Get the position of a point in the line renderer.
+> 
+> **Parameters**:
+> - `index`: The index of the point (0 to PositionCount-1).
+> 
+> **Returns**: The position of the point.
+<pre class="language-typescript"><code class="lang-typescript">function SetPosition(index: int, position: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>)</code></pre>
+> Set the position of a point in the line renderer.
+> 
+> **Parameters**:
+> - `index`: The index of the point to set (0 to PositionCount-1).
+> - `position`: The position to set.
+> 
+
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function CreateLineRenderer() -> <a data-footnote-ref href="#user-content-fn-15">LineRenderer</a></code></pre>
+
+{% hint style="warning" %}
+**Obsolete**: Create a new instance with LineRenderer() instead.
+{% endhint %}
+
+> Create a new LineRenderer.
+> 
+> **Returns**: A new LineRenderer instance.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

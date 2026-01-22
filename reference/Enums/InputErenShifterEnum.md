@@ -1,12 +1,15 @@
-# Object
+# InputErenShifterEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of ErenShifter input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Kick|string|True|ErenShifter/Kick keybind.|
+|Jump|string|True|ErenShifter/Jump keybind.|
+|Walk|string|True|ErenShifter/Walk keybind.|
+|AttackCombo|string|True|ErenShifter/AttackCombo keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)

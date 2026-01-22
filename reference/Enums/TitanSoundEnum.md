@@ -1,12 +1,54 @@
-# Object
+# TitanSoundEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of titan sounds.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Footstep1|string|True|Footstep1 sound.|
+|Footstep2|string|True|Footstep2 sound.|
+|Footstep3|string|True|Footstep3 sound.|
+|Swing1|string|True|Swing1 sound.|
+|Swing2|string|True|Swing2 sound.|
+|Swing3|string|True|Swing3 sound.|
+|Hurt1|string|True|Hurt1 sound.|
+|Hurt2|string|True|Hurt2 sound.|
+|Hurt3|string|True|Hurt3 sound.|
+|Hurt4|string|True|Hurt4 sound.|
+|Hurt5|string|True|Hurt5 sound.|
+|Hurt6|string|True|Hurt6 sound.|
+|Hurt7|string|True|Hurt7 sound.|
+|Hurt8|string|True|Hurt8 sound.|
+|Grunt1|string|True|Grunt1 sound.|
+|Grunt2|string|True|Grunt2 sound.|
+|Grunt3|string|True|Grunt3 sound.|
+|Grunt4|string|True|Grunt4 sound.|
+|Grunt5|string|True|Grunt5 sound.|
+|Grunt6|string|True|Grunt6 sound.|
+|Grunt7|string|True|Grunt7 sound.|
+|Grunt8|string|True|Grunt8 sound.|
+|Grunt9|string|True|Grunt9 sound.|
+|Grunt10|string|True|Grunt10 sound.|
+|Hit|string|True|Hit sound.|
+|Roar1|string|True|Roar1 sound.|
+|Roar2|string|True|Roar2 sound.|
+|DeathFall|string|True|DeathFall sound.|
+|DeathNoFall|string|True|DeathNoFall sound.|
+|Bite1|string|True|Bite1 sound.|
+|Bite2|string|True|Bite2 sound.|
+|Laugh1|string|True|Laugh1 sound.|
+|Laugh2|string|True|Laugh2 sound.|
+|Huff1|string|True|Huff1 sound.|
+|Huff2|string|True|Huff2 sound.|
+|Huff3|string|True|Huff3 sound.|
+|Huff4|string|True|Huff4 sound.|
+|Huff5|string|True|Huff5 sound.|
+|Huff6|string|True|Huff6 sound.|
+|TitanJump|string|True|TitanJump sound.|
+|RockPickup|string|True|RockPickup sound.|
+|RockThrow1|string|True|RockThrow1 sound.|
+|RockThrow2|string|True|RockThrow2 sound.|
 
 
 [^0]: [Color](../Collections/Color.md)

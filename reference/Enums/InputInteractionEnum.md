@@ -1,12 +1,29 @@
-# Object
+# InputInteractionEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of Interaction input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Interact|string|True|Interaction/Interact keybind.|
+|Interact2|string|True|Interaction/Interact2 keybind.|
+|Interact3|string|True|Interaction/Interact3 keybind.|
+|ItemMenu|string|True|Interaction/ItemMenu keybind.|
+|EmoteMenu|string|True|Interaction/EmoteMenu keybind.|
+|MenuNext|string|True|Interaction/MenuNext keybind.|
+|QuickSelect1|string|True|Interaction/QuickSelect1 keybind.|
+|QuickSelect2|string|True|Interaction/QuickSelect2 keybind.|
+|QuickSelect3|string|True|Interaction/QuickSelect3 keybind.|
+|QuickSelect4|string|True|Interaction/QuickSelect4 keybind.|
+|QuickSelect5|string|True|Interaction/QuickSelect5 keybind.|
+|QuickSelect6|string|True|Interaction/QuickSelect6 keybind.|
+|QuickSelect7|string|True|Interaction/QuickSelect7 keybind.|
+|QuickSelect8|string|True|Interaction/QuickSelect8 keybind.|
+|Function1|string|True|Interaction/Function1 keybind.|
+|Function2|string|True|Interaction/Function2 keybind.|
+|Function3|string|True|Interaction/Function3 keybind.|
+|Function4|string|True|Interaction/Function4 keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)
