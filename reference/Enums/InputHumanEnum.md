@@ -1,12 +1,26 @@
-# Object
+# InputHumanEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of Human input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|AttackDefault|string|True|Human/AttackDefault keybind.|
+|AttackSpecial|string|True|Human/AttackSpecial keybind.|
+|HookLeft|string|True|Human/HookLeft keybind.|
+|HookRight|string|True|Human/HookRight keybind.|
+|HookBoth|string|True|Human/HookBoth keybind.|
+|Dash|string|True|Human/Dash keybind.|
+|ReelIn|string|True|Human/ReelIn keybind.|
+|ReelOut|string|True|Human/ReelOut keybind.|
+|Dodge|string|True|Human/Dodge keybind.|
+|Jump|string|True|Human/Jump keybind.|
+|Reload|string|True|Human/Reload keybind.|
+|HorseMount|string|True|Human/HorseMount keybind.|
+|HorseWalk|string|True|Human/HorseWalk keybind.|
+|HorseJump|string|True|Human/HorseJump keybind.|
+|NapeLock|string|True|Human/NapeLock keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)

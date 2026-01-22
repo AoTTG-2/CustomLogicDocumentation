@@ -1,12 +1,20 @@
-# Object
+# UILabelEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of UI label alignment values.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|TopCenter|string|True|TopCenter: label is aligned to the top center.|
+|TopLeft|string|True|TopLeft: label is aligned to the top left.|
+|TopRight|string|True|TopRight: label is aligned to the top right.|
+|MiddleCenter|string|True|MiddleCenter: label is aligned to the middle center.|
+|MiddleLeft|string|True|MiddleLeft: label is aligned to the middle left.|
+|MiddleRight|string|True|MiddleRight: label is aligned to the middle right.|
+|BottomCenter|string|True|BottomCenter: label is aligned to the bottom center.|
+|BottomLeft|string|True|BottomLeft: label is aligned to the bottom left.|
+|BottomRight|string|True|BottomRight: label is aligned to the bottom right.|
 
 
 [^0]: [Color](../Collections/Color.md)

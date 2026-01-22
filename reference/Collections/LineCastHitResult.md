@@ -1,13 +1,24 @@
-# Object
+# LineCastHitResult
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+The result of a Physics.LineCast.
 
+### Remarks
+Overloads operators: 
+`__Copy__`, `==`, `__Hash__`
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|IsCharacter|bool|True|true if the linecast hit a character.|
+|IsMapObject|bool|True|true if the linecast hit a map object.|
+|Distance|float|True|The distance to the hit point.|
+|Point|[Vector3](../Collections/Vector3.md)|True|The point in world space where the linecast hit.|
+|Normal|[Vector3](../Collections/Vector3.md)|True|The normal of the surface the linecast hit.|
+|Collider|BuiltinClassInstance|True|The collider that was hit.|
+|ColliderInfo|[Collider](../Component/Collider.md)|True|The collider that was hit.|
 
+
+### Methods
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

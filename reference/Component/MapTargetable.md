@@ -1,12 +1,16 @@
-# Object
+# MapTargetable
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+MapTargetable object returned from MapObject.AddTarget method.
+Creating a map targetable is similar to adding a collider to the MapObject, except this collider can be targeted by AI such as titans.
+Map targetables that are on a different team than the AI will be targeted by the titan, and will trigger the OnGetHit callback on the attached MapObject.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Team|string|False|The team of the targetable.|
+|Position|[Vector3](../Collections/Vector3.md)|True|The position of the targetable.|
+|Enabled|bool|False|Is the targetable enabled.|
 
 
 [^0]: [Color](../Collections/Color.md)

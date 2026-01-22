@@ -1,12 +1,13 @@
-# Object
+# HandStateEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of hand states for WallColossal shifter.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Healthy|int|True|Hand is healthy.|
+|Broken|int|True|Hand is broken.|
 
 
 [^0]: [Color](../Collections/Color.md)

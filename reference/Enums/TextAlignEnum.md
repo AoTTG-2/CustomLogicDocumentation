@@ -1,12 +1,20 @@
-# Object
+# TextAlignEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of text alignment values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|UpperLeft|int|True|UpperLeft: text is aligned to the upper left.|
+|UpperCenter|int|True|UpperCenter: text is aligned to the upper center.|
+|UpperRight|int|True|UpperRight: text is aligned to the upper right.|
+|MiddleLeft|int|True|MiddleLeft: text is aligned to the middle left.|
+|MiddleCenter|int|True|MiddleCenter: text is aligned to the middle center.|
+|MiddleRight|int|True|MiddleRight: text is aligned to the middle right.|
+|LowerLeft|int|True|LowerLeft: text is aligned to the lower left.|
+|LowerCenter|int|True|LowerCenter: text is aligned to the lower center.|
+|LowerRight|int|True|LowerRight: text is aligned to the lower right.|
 
 
 [^0]: [Color](../Collections/Color.md)

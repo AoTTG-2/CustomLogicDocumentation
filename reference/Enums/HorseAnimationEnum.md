@@ -1,12 +1,18 @@
-# Object
+# HorseAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for horse characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle0|string|True|Idle0 animation.|
+|Idle1|string|True|Idle1 animation.|
+|Idle2|string|True|Idle2 animation.|
+|Idle3|string|True|Idle3 animation.|
+|Crazy|string|True|Crazy animation.|
+|Run|string|True|Run animation.|
+|Walk|string|True|Walk animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

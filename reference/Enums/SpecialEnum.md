@@ -1,12 +1,32 @@
-# Object
+# SpecialEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of special abilities for humans.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Potato|string|True|Potato special ability.|
+|Escape|string|True|Escape special ability.|
+|Dance|string|True|Dance special ability.|
+|Distract|string|True|Distract special ability.|
+|Smell|string|True|Smell special ability.|
+|Supply|string|True|Supply special ability.|
+|SmokeBomb|string|True|SmokeBomb special ability.|
+|Carry|string|True|Carry special ability.|
+|Switchback|string|True|Switchback special ability.|
+|Confuse|string|True|Confuse special ability.|
+|DownStrike|string|True|DownStrike special ability (Blade only).|
+|Spin1|string|True|Spin1 special ability (Blade only).|
+|Spin2|string|True|Spin2 special ability (Blade only).|
+|Spin3|string|True|Spin3 special ability (Blade only).|
+|BladeThrow|string|True|BladeThrow special ability (Blade only).|
+|AHSSTwinShot|string|True|AHSSTwinShot special ability (AHSS only).|
+|Stock|string|True|Stock special ability (Thunderspear only).|
+|None|string|True|None special ability (no special).|
+|Eren|string|True|Eren shifter transformation special ability.|
+|Annie|string|True|Annie shifter transformation special ability.|
+|Armored|string|True|Armored shifter transformation special ability.|
 
 
 [^0]: [Color](../Collections/Color.md)

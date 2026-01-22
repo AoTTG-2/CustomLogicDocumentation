@@ -1,12 +1,17 @@
-# Object
+# OutlineModeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of outline rendering modes for characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|OutlineAll|string|True|OutlineAll: outlines all parts of the object.|
+|OutlineVisible|string|True|OutlineVisible: outlines only visible parts.|
+|OutlineHidden|string|True|OutlineHidden: outlines only hidden parts.|
+|OutlineAndSilhouette|string|True|OutlineAndSilhouette: combines outline and silhouette.|
+|SilhouetteOnly|string|True|SilhouetteOnly: shows only the silhouette.|
+|OutlineAndLightenColor|string|True|OutlineAndLightenColor: combines outline with lightened color.|
 
 
 [^0]: [Color](../Collections/Color.md)

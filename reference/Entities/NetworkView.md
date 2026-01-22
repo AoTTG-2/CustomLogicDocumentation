@@ -1,13 +1,84 @@
-# Object
+# NetworkView
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a network view on a map object that has the "networked" flag.
 
+Note1: messages sent from a mapobjects network view are not component scoped, all components will receive the same message.
+If you intend for a mapobject to have multiple message sending components, preface the message with the component name to determine scope.
+
+Note2: Rooms and Players have bandwidth limits, exceeding the limits via CL will result in either the player being kicked or the room being shut down.
+When possible, use basic message passing for state sync and then run logic locally instead of repeatedly sending state over the network.
+Also avoid cases where message sending increases heavily with the number of players in the room.
+
+### Example
+```csharp
+# The following is for a component scoped object, in general this is bad practice if the component is widely used.
+# OnPlayerJoin, every object with this component will send a message to the player that joined, if you use 100 objects with this, 100 messages will be sent.
+# Preferred practice for this sort of case is to have a either Main handle the single message pass or have a single ManagerComponent that handles the message pass
+# and defers the value to all registered components.
+KillCount = 0;
+
+function OnNetworkMessage(player, message, sentServerTime) {
+    if (player.ID == Network.MasterClient.ID) {
+        self.KillCount == Convert.ToInt(message);
+    }
+}
+
+function OnCharacterDie(victim, killer, killerName) {
+    self.KillCount += 1;
+}
+
+function OnPlayerJoined(player) {
+    if (Network.IsMasterClient) {
+        self.NetworkView.SendMessage(player, Convert.ToString(self.KillCount));
+    }
+}
+
+# Good Practice would be to have a single component that handles the message pass and defers the value to all registered components.
+TODO: Bother someone for good practice example - maybe move this into Networking Summary Page.
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|SyncTransforms|bool|False|Whether or not the object's Transform is synced. If PhotonSync is not initialized yet, it will defer until it is set.|
+|Owner|[Player](../Entities/Player.md)|True|The network view's owner.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Transfer(player: <a data-footnote-ref href="#user-content-fn-25">Player</a>)</code></pre>
+> Owner only. Transfer ownership of this NetworkView to another player.
+> 
+> **Parameters**:
+> - `player`: The player to transfer ownership to.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendMessage(target: <a data-footnote-ref href="#user-content-fn-25">Player</a>, msg: string)</code></pre>
+> Send a message to a target player. This will be received in any of the MapObject attached components through the OnNetworkMessage callback.
+> 
+> **Parameters**:
+> - `target`: The target player to send the message to.
+> - `msg`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(msg: string)</code></pre>
+> Send a message to all players including myself.
+> 
+> **Parameters**:
+> - `msg`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(msg: string)</code></pre>
+> Send a message to players excluding myself.
+> 
+> **Parameters**:
+> - `msg`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendStream(obj: <a data-footnote-ref href="#user-content-fn-116">Object</a>)</code></pre>
+> Send an object to the network sync stream. This represents sending data from the object owner to all non-owner observers, and should only be called in the SendNetworkStream callback in the attached component. It only works with some object types: primitives and Vector3.
+> 
+> **Parameters**:
+> - `obj`: The object to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ReceiveStream() -> <a data-footnote-ref href="#user-content-fn-116">Object</a></code></pre>
+> Receive an object through the network sync stream. This represents receiving data from the object owner as a non-owner observer, and should only be called in the OnNetworkStream callback.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

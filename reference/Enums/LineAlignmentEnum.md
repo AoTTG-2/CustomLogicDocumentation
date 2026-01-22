@@ -1,12 +1,14 @@
-# Object
+# LineAlignmentEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of line alignment values for LineRenderer.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|View|int|True|View: line is aligned to the camera view.|
+|Local|int|True|Local: line is aligned to the local transform.|
+|TransformZ|int|True|TransformZ: line is aligned to the transform's Z axis.|
 
 
 [^0]: [Color](../Collections/Color.md)

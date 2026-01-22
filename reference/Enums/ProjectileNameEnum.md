@@ -1,12 +1,18 @@
-# Object
+# ProjectileNameEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of projectile names that can be spawned.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Thunderspear|string|True|Thunderspear projectile.|
+|CannonBall|string|True|CannonBall projectile.|
+|Flare|string|True|Flare projectile.|
+|BladeThrow|string|True|BladeThrow projectile.|
+|SmokeBomb|string|True|SmokeBomb projectile.|
+|Rock1|string|True|Rock1 projectile.|
+|Rock2|string|True|Rock2 projectile.|
 
 
 [^0]: [Color](../Collections/Color.md)

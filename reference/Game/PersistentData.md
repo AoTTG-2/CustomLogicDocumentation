@@ -1,13 +1,58 @@
-# Object
+# PersistentData
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Store and retrieve persistent data. Persistent data can be saved and loaded from file.
+Supports float, int, string, and bool types. Note that any game mode may use the same file names,
+so it is recommended that you choose unique file names when saving and loading.
+Saved files are located in Documents/Aottg2/PersistentData.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
-
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: float|int|string|bool|null)</code></pre>
+> Sets the property with given name to the object value. Valid value types are float, string, bool, and int.
+> 
+> **Parameters**:
+> - `property`: The name of the property.
+> - `value`: The value to set (must be float, string, bool, int, or null).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetProperty(property: string, defaultValue: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> <a data-footnote-ref href="#user-content-fn-116">Object</a></code></pre>
+> Gets the property with given name.
+> 
+> **Parameters**:
+> - `property`: The name of the property.
+> - `defaultValue`: The default value to return if the property does not exist.
+> 
+> **Returns**: The property value, or defaultValue if the property does not exist.
+<pre class="language-typescript"><code class="lang-typescript">function LoadFromFile(fileName: string, encrypted: bool)</code></pre>
+> Loads persistent data from given file name.
+> 
+> **Parameters**:
+> - `fileName`: The name of the file to load from.
+> - `encrypted`: Whether the file is encrypted. If true, will treat the file as having been saved as encrypted.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SaveToFile(fileName: string, encrypted: bool)</code></pre>
+> Saves current persistent data to given file name.
+> 
+> **Parameters**:
+> - `fileName`: The name of the file to save to.
+> - `encrypted`: Whether to encrypt the file. If true, will also encrypt the file instead of using plaintext.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
+> Clears current persistent data.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function IsValidFileName(fileName: string) -> bool</code></pre>
+> Determines whether or not the given fileName will be allowed for use when saving/loading a file.
+> 
+> **Parameters**:
+> - `fileName`: The file name to validate.
+> 
+> **Returns**: True if the file name is valid, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function FileExists(fileName: string) -> bool</code></pre>
+> Determines whether the file given already exists.
+> 
+> **Parameters**:
+> - `fileName`: The file name to check.
+> 
+> **Returns**: True if the file exists, false otherwise. Throws an error if given an invalid file name.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

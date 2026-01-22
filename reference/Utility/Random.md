@@ -1,13 +1,130 @@
-# Object
+# Random
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Random can be initialized as a class with an int given as the seed value.
+Note that this is optional, and you can reference Random directly as a static class.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+### Example
+```csharp
+# Use random methods directly
+r = Random.RandomInt(0, 100);
 
+# Or create an instance of Random with a seed
+generator = Random(123);
+
+# Use it
+a = generator.RandomInt(0, 100);
+
+# Seed allows repeatable random values
+generator2 = Random(123);
+b = generator2.RandomInt(0, 100);
+compared = a == b;    # Always True
+```
+### Initialization
+```csharp
+Random() // Creates a new Random instance with default seed.
+Random(seed: int) // Creates a new Random instance with the specified seed.
+```
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function RandomInt(min: int, max: int) -> int</code></pre>
+> Generates a random integer between the specified range.
+> 
+> **Parameters**:
+> - `min`: The minimum value (inclusive).
+> - `max`: The maximum value (exclusive).
+> 
+> **Returns**: A random integer in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomFloat(min: float, max: float) -> float</code></pre>
+> Generates a random float between the specified range.
+> 
+> **Parameters**:
+> - `min`: The minimum value (inclusive).
+> - `max`: The maximum value (inclusive).
+> 
+> **Returns**: A random float in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomBool() -> bool</code></pre>
+> Returns random boolean.
+> 
+> **Returns**: A random boolean value.
+<pre class="language-typescript"><code class="lang-typescript">function RandomVector3(a: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> Generates a random Vector3 between the specified ranges.
+> 
+> **Parameters**:
+> - `a`: The minimum Vector3 values.
+> - `b`: The maximum Vector3 values.
+> 
+> **Returns**: A random Vector3 in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomDirection(flat: bool = False) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> Generates a random normalized direction vector. If flat is true, the y component will be zero.
+> 
+> **Parameters**:
+> - `flat`: If true, the y component will be zero.
+> 
+> **Returns**: A random normalized direction vector.
+<pre class="language-typescript"><code class="lang-typescript">function RandomSign() -> int</code></pre>
+> Generates a random sign, either 1 or -1.
+> 
+> **Returns**: Either 1 or -1.
+<pre class="language-typescript"><code class="lang-typescript">function PerlinNoise(x: float, y: float) -> float</code></pre>
+> Returns a point sampled from generated 2d perlin noise.
+(see Unity Mathf.PerlinNoise for more information)
+> 
+> **Parameters**:
+> - `x`: The X coordinate for the noise sample.
+> - `y`: The Y coordinate for the noise sample.
+> 
+> **Returns**: A perlin noise value between 0 and 1.
+
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function RandomInt(min: int, max: int) -> int</code></pre>
+> Generates a random integer between the specified range.
+> 
+> **Parameters**:
+> - `min`: The minimum value (inclusive).
+> - `max`: The maximum value (exclusive).
+> 
+> **Returns**: A random integer in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomFloat(min: float, max: float) -> float</code></pre>
+> Generates a random float between the specified range.
+> 
+> **Parameters**:
+> - `min`: The minimum value (inclusive).
+> - `max`: The maximum value (inclusive).
+> 
+> **Returns**: A random float in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomBool() -> bool</code></pre>
+> Returns random boolean.
+> 
+> **Returns**: A random boolean value.
+<pre class="language-typescript"><code class="lang-typescript">function RandomVector3(a: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>, b: <a data-footnote-ref href="#user-content-fn-9">Vector3</a>) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> Generates a random Vector3 between the specified ranges.
+> 
+> **Parameters**:
+> - `a`: The minimum Vector3 values.
+> - `b`: The maximum Vector3 values.
+> 
+> **Returns**: A random Vector3 in the specified range.
+<pre class="language-typescript"><code class="lang-typescript">function RandomDirection(flat: bool = False) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> Generates a random normalized direction vector. If flat is true, the y component will be zero.
+> 
+> **Parameters**:
+> - `flat`: If true, the y component will be zero.
+> 
+> **Returns**: A random normalized direction vector.
+<pre class="language-typescript"><code class="lang-typescript">function RandomSign() -> int</code></pre>
+> Generates a random sign, either 1 or -1.
+> 
+> **Returns**: Either 1 or -1.
+<pre class="language-typescript"><code class="lang-typescript">function PerlinNoise(x: float, y: float) -> float</code></pre>
+> Returns a point sampled from generated 2d perlin noise.
+(see Unity Mathf.PerlinNoise for more information)
+> 
+> **Parameters**:
+> - `x`: The X coordinate for the noise sample.
+> - `y`: The Y coordinate for the noise sample.
+> 
+> **Returns**: A perlin noise value between 0 and 1.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

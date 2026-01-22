@@ -1,12 +1,15 @@
-# Object
+# LineTextureModeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of line texture mode values for LineRenderer.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Stretch|int|True|Stretch: texture is stretched along the entire line.|
+|Tile|int|True|Tile: texture is tiled along the line.|
+|DistributePerSegment|int|True|DistributePerSegment: texture is distributed per segment.|
+|RepeatPerSegment|int|True|RepeatPerSegment: texture is repeated per segment.|
 
 
 [^0]: [Color](../Collections/Color.md)

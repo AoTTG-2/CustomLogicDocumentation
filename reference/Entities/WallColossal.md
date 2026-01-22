@@ -1,13 +1,48 @@
-# Object
+# WallColossal
+Inherits from [Shifter](../Entities/Shifter.md)
 
-The base type of all objects in the game.
+Represents a WallColossal character. Only character owner can modify fields and call functions unless otherwise specified.
 
+### Example
+```csharp
+function OnCharacterSpawn(character) {
+    if (character.IsMine && character.Type == "WallColossal") {
+        character.Size = 2;
+        if (Network.MyPlayer.Status == "Alive" && Network.MyPlayer.Character.Type == "Human") {
+            character.Target(Network.MyPlayer, 10);
+        }
+    }
+}
+```
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|HandHealth|int|False|Colossal's current hand health (applies to both hands for backward compatibility).|
+|MaxHandHealth|int|False|Colossal's maximum hand health (applies to both hands for backward compatibility).|
+|LeftHandHealth|int|False|Colossal's current left hand health.|
+|MaxLeftHandHealth|int|False|Colossal's maximum left hand health.|
+|RightHandHealth|int|False|Colossal's current right hand health.|
+|MaxRightHandHealth|int|False|Colossal's maximum right hand health.|
+|LeftHandState|int|True|Colossal's left hand state. Refer to [HandStateEnum](../Enums/HandStateEnum.md)|
+|RightHandState|int|True|Colossal's right hand state. Refer to [HandStateEnum](../Enums/HandStateEnum.md)|
+|HandRecoveryTime|float|False|Time in seconds for a hand to fully recover from broken state.|
+|LeftHandRecoveryTimeLeft|float|False|Time remaining in seconds for left hand to recover (0 if not recovering).|
+|RightHandRecoveryTimeLeft|float|False|Time remaining in seconds for right hand to recover (0 if not recovering).|
+|WallAttackCooldown|float|False|Colossal's (AI) wall attack cooldown per attack.|
+|WallAttackCooldownLeft|float|False|Colossal's (AI) wall attack cooldown remaining.|
+|SteamState|int|True|Colossal's current steam state. Refer to [SteamStateEnum](../Enums/SteamStateEnum.md)|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function AttackSteam()</code></pre>
+> Causes the colossal to perform steam attack.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function StopSteam()</code></pre>
+> Causes the colossal to stop steam attack.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function WallAttack()</code></pre>
+> Causes the (AI) colossal to perform a random wall attack.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

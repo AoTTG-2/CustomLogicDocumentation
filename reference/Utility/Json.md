@@ -1,13 +1,25 @@
-# Object
+# Json
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Serializes and deserializes primitive and struct values from and to json strings.
+Supports float, int, string, bool, Vector3, Quaternion, Color, Dict, and List.
+Dict and List must contain only the supported types, and can be nested.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
-
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function LoadFromString(json: string) -> <a data-footnote-ref href="#user-content-fn-116">Object</a></code></pre>
+> Loads a json string into a custom logic object.
+> 
+> **Parameters**:
+> - `json`: The json string to load.
+> 
+> **Returns**: The loaded object, or null if loading failed.
+<pre class="language-typescript"><code class="lang-typescript">function SaveToString(obj: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> string</code></pre>
+> Saves a custom logic object into a json string.
+> 
+> **Parameters**:
+> - `obj`: The object to save to json.
+> 
+> **Returns**: The json string representation of the object.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

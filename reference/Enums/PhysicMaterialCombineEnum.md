@@ -1,12 +1,15 @@
-# Object
+# PhysicMaterialCombineEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of physics material combine modes for friction and bounce.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Minimum|int|True|Minimum combine mode.|
+|Multiply|int|True|Multiply combine mode.|
+|Maximum|int|True|Maximum combine mode.|
+|Average|int|True|Average combine mode.|
 
 
 [^0]: [Color](../Collections/Color.md)

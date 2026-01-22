@@ -1,12 +1,16 @@
-# Object
+# Time
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Time functions.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|TickTime|float|True|Time between each tick (0.02 seconds).|
+|FrameTime|float|True|Time between each frame.|
+|GameTime|float|True|Time since start of the round.|
+|EngineTime|float|True|Unity's Time.time.|
+|TimeScale|float|False|Changes the timescale of the game.|
 
 
 [^0]: [Color](../Collections/Color.md)

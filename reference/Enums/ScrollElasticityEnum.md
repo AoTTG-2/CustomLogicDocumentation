@@ -1,12 +1,14 @@
-# Object
+# ScrollElasticityEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of scroll elasticity (touch scroll behavior) values for ScrollView.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Clamped|int|True|Clamped: scrolling is clamped at the content boundaries.|
+|Elastic|int|True|Elastic: scrolling has elastic behavior when reaching boundaries.|
+|Unrestricted|int|True|Unrestricted: scrolling is unrestricted and can go beyond boundaries.|
 
 
 [^0]: [Color](../Collections/Color.md)

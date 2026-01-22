@@ -1,12 +1,33 @@
-# Object
+# InputGeneralEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of General input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Forward|string|True|General/Forward keybind.|
+|Back|string|True|General/Back keybind.|
+|Left|string|True|General/Left keybind.|
+|Right|string|True|General/Right keybind.|
+|Up|string|True|General/Up keybind.|
+|Down|string|True|General/Down keybind.|
+|Modifier|string|True|General/Modifier keybind.|
+|Autorun|string|True|General/Autorun keybind.|
+|Pause|string|True|General/Pause keybind.|
+|ChangeCharacter|string|True|General/ChangeCharacter keybind.|
+|RestartGame|string|True|General/RestartGame keybind.|
+|ToggleScoreboard|string|True|General/ToggleScoreboard keybind.|
+|ToggleMap|string|True|General/ToggleMap keybind.|
+|Chat|string|True|General/Chat keybind.|
+|PushToTalk|string|True|General/PushToTalk keybind.|
+|ChangeCamera|string|True|General/ChangeCamera keybind.|
+|HideCursor|string|True|General/HideCursor keybind.|
+|SpectatePreviousPlayer|string|True|General/SpectatePreviousPlayer keybind.|
+|SpectateNextPlayer|string|True|General/SpectateNextPlayer keybind.|
+|SkipCutscene|string|True|General/SkipCutscene keybind.|
+|HideUI|string|True|General/HideUI keybind.|
+|DebugWindow|string|True|General/DebugWindow keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)

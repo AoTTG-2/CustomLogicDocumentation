@@ -1,12 +1,88 @@
-# Object
+# HumanSoundEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of human sounds.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|BladeBreak|string|True|BladeBreak sound.|
+|BladeHit|string|True|BladeHit sound.|
+|OldBladeHit|string|True|OldBladeHit sound.|
+|NapeHit|string|True|NapeHit sound.|
+|LimbHit|string|True|LimbHit sound.|
+|OldNapeHit|string|True|OldNapeHit sound.|
+|BladeReloadAir|string|True|BladeReloadAir sound.|
+|BladeReloadGround|string|True|BladeReloadGround sound.|
+|GunReload|string|True|GunReload sound.|
+|BladeSwing1|string|True|BladeSwing1 sound.|
+|BladeSwing2|string|True|BladeSwing2 sound.|
+|BladeSwing3|string|True|BladeSwing3 sound.|
+|BladeSwing4|string|True|BladeSwing4 sound.|
+|OldBladeSwing|string|True|OldBladeSwing sound.|
+|Dodge|string|True|Dodge sound.|
+|FlareLaunch|string|True|FlareLaunch sound.|
+|ThunderspearLaunch|string|True|ThunderspearLaunch sound.|
+|GasBurst|string|True|GasBurst sound.|
+|HookLaunch|string|True|HookLaunch sound.|
+|OldHookLaunch|string|True|OldHookLaunch sound.|
+|HookRetractLeft|string|True|HookRetractLeft sound.|
+|HookRetractRight|string|True|HookRetractRight sound.|
+|HookImpact|string|True|HookImpact sound.|
+|HookImpactLoud|string|True|HookImpactLoud sound.|
+|GasStart|string|True|GasStart sound.|
+|GasLoop|string|True|GasLoop sound.|
+|GasEnd|string|True|GasEnd sound.|
+|ReelIn|string|True|ReelIn sound.|
+|ReelOut|string|True|ReelOut sound.|
+|CrashLand|string|True|CrashLand sound.|
+|Jump|string|True|Jump sound.|
+|Land|string|True|Land sound.|
+|NoGas|string|True|NoGas sound.|
+|Refill|string|True|Refill sound.|
+|Slide|string|True|Slide sound.|
+|Footstep1|string|True|Footstep1 sound.|
+|Footstep2|string|True|Footstep2 sound.|
+|Death1|string|True|Death1 sound.|
+|Death2|string|True|Death2 sound.|
+|Death3|string|True|Death3 sound.|
+|Death4|string|True|Death4 sound.|
+|Death5|string|True|Death5 sound.|
+|Checkpoint|string|True|Checkpoint sound.|
+|GunExplode|string|True|GunExplode sound.|
+|GunExplodeLoud|string|True|GunExplodeLoud sound.|
+|WaterSplash|string|True|WaterSplash sound.|
+|Switchback|string|True|Switchback sound.|
+|APGShot1|string|True|APGShot1 sound.|
+|APGShot2|string|True|APGShot2 sound.|
+|APGShot3|string|True|APGShot3 sound.|
+|APGShot4|string|True|APGShot4 sound.|
+|BladeNape1Var1|string|True|BladeNape1Var1 sound.|
+|BladeNape1Var2|string|True|BladeNape1Var2 sound.|
+|BladeNape1Var3|string|True|BladeNape1Var3 sound.|
+|BladeNape2Var1|string|True|BladeNape2Var1 sound.|
+|BladeNape2Var2|string|True|BladeNape2Var2 sound.|
+|BladeNape2Var3|string|True|BladeNape2Var3 sound.|
+|BladeNape3Var1|string|True|BladeNape3Var1 sound.|
+|BladeNape3Var2|string|True|BladeNape3Var2 sound.|
+|BladeNape3Var3|string|True|BladeNape3Var3 sound.|
+|BladeNape4Var1|string|True|BladeNape4Var1 sound.|
+|BladeNape4Var2|string|True|BladeNape4Var2 sound.|
+|BladeNape4Var3|string|True|BladeNape4Var3 sound.|
+|AHSSGunShot1|string|True|AHSSGunShot1 sound.|
+|AHSSGunShot2|string|True|AHSSGunShot2 sound.|
+|AHSSGunShot3|string|True|AHSSGunShot3 sound.|
+|AHSSGunShot4|string|True|AHSSGunShot4 sound.|
+|AHSSGunShotDouble1|string|True|AHSSGunShotDouble1 sound.|
+|AHSSGunShotDouble2|string|True|AHSSGunShotDouble2 sound.|
+|AHSSNape1Var1|string|True|AHSSNape1Var1 sound.|
+|AHSSNape1Var2|string|True|AHSSNape1Var2 sound.|
+|AHSSNape2Var1|string|True|AHSSNape2Var1 sound.|
+|AHSSNape2Var2|string|True|AHSSNape2Var2 sound.|
+|AHSSNape3Var1|string|True|AHSSNape3Var1 sound.|
+|AHSSNape3Var2|string|True|AHSSNape3Var2 sound.|
+|TSLaunch1|string|True|TSLaunch1 sound.|
+|TSLaunch2|string|True|TSLaunch2 sound.|
 
 
 [^0]: [Color](../Collections/Color.md)

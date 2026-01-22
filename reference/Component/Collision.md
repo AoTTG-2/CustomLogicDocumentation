@@ -1,13 +1,42 @@
-# Object
+# Collision
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Represents a collision event.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Collider|[Collider](../Component/Collider.md)|True|The collider involved in the collision.|
+|Impulse|[Vector3](../Collections/Vector3.md)|True|The impulse response of the collision.|
+|RelativeVelocity|[Vector3](../Collections/Vector3.md)|True|The relative velocity of the collision. (sum of velocities)|
+|ContactCount|int|True|The number of contacts in the collision, iterate over this in conjunction with the GetContact Point, Norm, Impulse, and Separation.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function GetContactPoint(index: int) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> The contact point of the collision.
+> 
+> **Parameters**:
+> - `index`: The contact index (0 to ContactCount-1).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetContactNorms(index: int) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> The contact norm of the collision.
+> 
+> **Parameters**:
+> - `index`: The contact index (0 to ContactCount-1).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetContactImpulses(index: int) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> The contact impulse of the collision.
+> 
+> **Parameters**:
+> - `index`: The contact index (0 to ContactCount-1).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetContactSeparations(index: int) -> <a data-footnote-ref href="#user-content-fn-9">Vector3</a></code></pre>
+> The separation between colliders at the given contact point.
+> 
+> **Parameters**:
+> - `index`: The contact index (0 to ContactCount-1).
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

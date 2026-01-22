@@ -1,13 +1,29 @@
-# Object
+# RoomData
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Store and retrieve room variables. Room data is cleared upon joining or creating a new lobby
+and does not reset between game rounds. Supports float, string, bool, and int types.
+Note that RoomData is local only and does not sync. You must use network messages to sync room variables.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
-
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetProperty(property: string, value: float|int|string|bool|null)</code></pre>
+> Sets the property with given name to the object value. Valid value types are float, string, bool, and int.
+> 
+> **Parameters**:
+> - `property`: The name of the property.
+> - `value`: The value to set (must be float, string, bool, int, or null).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetProperty(property: string, defaultValue: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> <a data-footnote-ref href="#user-content-fn-116">Object</a></code></pre>
+> Gets the property with given name. If property does not exist, returns defaultValue.
+> 
+> **Parameters**:
+> - `property`: The name of the property.
+> - `defaultValue`: The default value to return if the property does not exist.
+> 
+> **Returns**: The property value, or defaultValue if the property does not exist.
+<pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
+> Clears all room data.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

@@ -1,12 +1,42 @@
-# Object
+# InputTitanEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of Titan input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Kick|string|True|Titan/Kick keybind.|
+|Jump|string|True|Titan/Jump keybind.|
+|Sit|string|True|Titan/Sit keybind.|
+|Walk|string|True|Titan/Walk keybind.|
+|Sprint|string|True|Titan/Sprint keybind.|
+|CoverNape1|string|True|Titan/CoverNape1 keybind.|
+|AttackPunch|string|True|Titan/AttackPunch keybind.|
+|AttackBellyFlop|string|True|Titan/AttackBellyFlop keybind.|
+|AttackSlapL|string|True|Titan/AttackSlapL keybind.|
+|AttackSlapR|string|True|Titan/AttackSlapR keybind.|
+|AttackRockThrow|string|True|Titan/AttackRockThrow keybind.|
+|AttackBiteL|string|True|Titan/AttackBiteL keybind.|
+|AttackBiteF|string|True|Titan/AttackBiteF keybind.|
+|AttackBiteR|string|True|Titan/AttackBiteR keybind.|
+|AttackHitFace|string|True|Titan/AttackHitFace keybind.|
+|AttackHitBack|string|True|Titan/AttackHitBack keybind.|
+|AttackSlam|string|True|Titan/AttackSlam keybind.|
+|AttackStomp|string|True|Titan/AttackStomp keybind.|
+|AttackSwing|string|True|Titan/AttackSwing keybind.|
+|AttackGrabAirFar|string|True|Titan/AttackGrabAirFar keybind.|
+|AttackGrabAir|string|True|Titan/AttackGrabAir keybind.|
+|AttackGrabBody|string|True|Titan/AttackGrabBody keybind.|
+|AttackGrabCore|string|True|Titan/AttackGrabCore keybind.|
+|AttackGrabGround|string|True|Titan/AttackGrabGround keybind.|
+|AttackGrabHead|string|True|Titan/AttackGrabHead keybind.|
+|AttackGrabHigh|string|True|Titan/AttackGrabHigh keybind.|
+|AttackSlapHighL|string|True|Titan/AttackSlapHighL keybind.|
+|AttackSlapHighR|string|True|Titan/AttackSlapHighR keybind.|
+|AttackSlapLowL|string|True|Titan/AttackSlapLowL keybind.|
+|AttackSlapLowR|string|True|Titan/AttackSlapLowR keybind.|
+|AttackBrushChest|string|True|Titan/AttackBrushChest keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)

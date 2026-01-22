@@ -1,13 +1,47 @@
-# Object
+# ScrollView
+Inherits from [VisualElement](../UIElements/VisualElement.md)
 
-The base type of all objects in the game.
+ScrollView UI element that provides scrollable content. Note: Most methods return self to allow method chaining.
+
+### Initialization
+```csharp
+```
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|ScrollOffset|[Vector2](../Collections/Vector2.md)|False|The current scroll offset.|
+|ScrollDecelerationRate|float|False|Controls the scrolling speed when using the scroll wheel.|
+|MouseWheelScrollSize|float|False|Controls the sensitivity/speed of mouse wheel scrolling.|
+|HorizontalScrollEnabled|bool|False|Enable or disable horizontal scrolling.|
+|VerticalScrollEnabled|bool|False|Enable or disable vertical scrolling.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Elasticity(value: int) -> <a data-footnote-ref href="#user-content-fn-105">ScrollView</a></code></pre>
+> The behavior to use when scrolling reaches limits of the content.
+> 
+> **Parameters**:
+> - `value`: Acceptable values are: `Clamped`, `Elastic`, and `Unrestricted`. Refer to [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetScrollDecelerationRate(rate: float) -> <a data-footnote-ref href="#user-content-fn-105">ScrollView</a></code></pre>
+> Controls the rate at which scrolling movement slows after a user scrolling action.
+> 
+> **Parameters**:
+> - `rate`: The deceleration rate (0-1, where 1 is fastest deceleration).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetScrollOffset(offset: <a data-footnote-ref href="#user-content-fn-8">Vector2</a>) -> <a data-footnote-ref href="#user-content-fn-105">ScrollView</a></code></pre>
+> Set the scroll offset.
+> 
+> **Parameters**:
+> - `offset`: The scroll offset vector (x, y).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ScrollToTop()</code></pre>
+> Scroll to the top of the content.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ScrollToBottom()</code></pre>
+> Scroll to the bottom of the content.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

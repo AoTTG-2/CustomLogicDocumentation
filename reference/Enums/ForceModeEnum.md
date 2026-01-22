@@ -1,12 +1,15 @@
-# Object
+# ForceModeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of force modes for applying forces to rigidbodies and characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Force|int|True|Force mode: applies force continuously over time.|
+|Acceleration|int|True|Acceleration mode: applies force as acceleration, ignoring mass.|
+|Impulse|int|True|Impulse mode: applies force instantly as an impulse.|
+|VelocityChange|int|True|VelocityChange mode: applies force as a direct velocity change, ignoring mass.|
 
 
 [^0]: [Color](../Collections/Color.md)

@@ -1,12 +1,27 @@
-# Object
+# ErenAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for Eren characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle|string|True|Idle animation.|
+|Run|string|True|Run animation.|
+|Walk|string|True|Walk animation.|
+|Jump|string|True|Jump animation.|
+|Fall|string|True|Fall animation.|
+|Land|string|True|Land animation.|
+|Die|string|True|Die animation.|
+|AttackCombo|string|True|Attack combo animation.|
+|AttackKick|string|True|Attack kick animation.|
+|Stun|string|True|Stun animation.|
+|EmoteNod|string|True|Emote nod animation.|
+|EmoteRoar|string|True|Emote roar animation.|
+|RockLift|string|True|Rock lift animation.|
+|RockLift001|string|True|Rock lift 001 animation.|
+|RockWalk|string|True|Rock walk animation.|
+|RockFixHole|string|True|Rock fix hole animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

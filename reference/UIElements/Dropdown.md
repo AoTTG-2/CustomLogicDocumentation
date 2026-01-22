@@ -1,13 +1,51 @@
-# Object
+# Dropdown
+Inherits from [VisualElement](../UIElements/VisualElement.md)
 
-The base type of all objects in the game.
+A UI element that represents a dropdown selection field.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Label|string|False|The label text displayed next to the Dropdown.|
+|Value|string|False|The currently selected value (option text).|
+|Index|int|False|The index of the currently selected option (0-based).|
+|Choices|[List](../Collections/List.md)<string>|False|Gets the list of available choices.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function OnValueChanged(valueChangedEvent: function) -> <a data-footnote-ref href="#user-content-fn-100">Dropdown</a></code></pre>
+> Sets the method to be called when the Dropdown value changes.
+> 
+> **Parameters**:
+> - `valueChangedEvent`: Method that will be called with the new selected value as parameter.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetValueWithoutNotify(value: string)</code></pre>
+> Sets the value of the Dropdown without triggering any change events.
+> 
+> **Parameters**:
+> - `value`: The value to set.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetIndexWithoutNotify(index: int)</code></pre>
+> Sets the index of the selected option without triggering any change events.
+> 
+> **Parameters**:
+> - `index`: The index of the option to select (0-based).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function AddChoice(choice: string) -> <a data-footnote-ref href="#user-content-fn-100">Dropdown</a></code></pre>
+> Adds a choice to the dropdown options.
+> 
+> **Parameters**:
+> - `choice`: The choice text to add.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function RemoveChoice(choice: string) -> <a data-footnote-ref href="#user-content-fn-100">Dropdown</a></code></pre>
+> Removes a choice from the dropdown options.
+> 
+> **Parameters**:
+> - `choice`: The choice text to remove.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ClearChoices() -> <a data-footnote-ref href="#user-content-fn-100">Dropdown</a></code></pre>
+> Clears all choices from the dropdown.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

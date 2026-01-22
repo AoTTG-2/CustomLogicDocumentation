@@ -1,12 +1,25 @@
-# Object
+# InputAnnieShifterEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of AnnieShifter input keybind settings.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Kick|string|True|AnnieShifter/Kick keybind.|
+|Jump|string|True|AnnieShifter/Jump keybind.|
+|Walk|string|True|AnnieShifter/Walk keybind.|
+|AttackCombo|string|True|AnnieShifter/AttackCombo keybind.|
+|AttackSwing|string|True|AnnieShifter/AttackSwing keybind.|
+|AttackStomp|string|True|AnnieShifter/AttackStomp keybind.|
+|AttackBite|string|True|AnnieShifter/AttackBite keybind.|
+|AttackHead|string|True|AnnieShifter/AttackHead keybind.|
+|AttackBrushBack|string|True|AnnieShifter/AttackBrushBack keybind.|
+|AttackBrushFront|string|True|AnnieShifter/AttackBrushFront keybind.|
+|AttackBrushHead|string|True|AnnieShifter/AttackBrushHead keybind.|
+|AttackGrabBottom|string|True|AnnieShifter/AttackGrabBottom keybind.|
+|AttackGrabMid|string|True|AnnieShifter/AttackGrabMid keybind.|
+|AttackGrabUp|string|True|AnnieShifter/AttackGrabUp keybind.|
 
 
 [^0]: [Color](../Collections/Color.md)

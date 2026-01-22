@@ -1,13 +1,32 @@
-# Object
+# TextField
+Inherits from [VisualElement](../UIElements/VisualElement.md)
 
-The base type of all objects in the game.
+A UI element that lets the user input and edit text.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|IsDelayed|bool|False|If true, the value property isn't updated until either the Enter key is pressed or the TextField loses focus.|
+|Multiline|bool|False|If true, the TextField supports multiple lines of text.|
+|Label|string|False|The label text displayed next to the TextField.|
+|Value|string|False|The value of the TextField.|
+|SelectionColor|[Color](../Collections/Color.md)|False|Color used to highlight selected text inside the field.|
+|CursorColor|[Color](../Collections/Color.md)|False|Color of the text cursor (caret).|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function RegisterValueChangedEventCallback(changeEvent: function) -> <a data-footnote-ref href="#user-content-fn-107">TextField</a></code></pre>
+> Registers a callback to be invoked when the value of the TextField changes.
+> 
+> **Parameters**:
+> - `changeEvent`: The method to call when the value changes. It will receive (newValue, previousValue) as parameters.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetValueWithoutNotify(value: string)</code></pre>
+> Sets the value of the TextField without triggering any change events.
+> 
+> **Parameters**:
+> - `value`: The value to set.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

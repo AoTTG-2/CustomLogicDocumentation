@@ -1,12 +1,20 @@
-# Object
+# CollideWithEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of collision layers for physics queries and colliders.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|All|string|True|Collide with all layers.|
+|MapObjects|string|True|Collide with map objects.|
+|Characters|string|True|Collide with characters.|
+|Titans|string|True|Collide with titans.|
+|Humans|string|True|Collide with humans.|
+|Projectiles|string|True|Collide with projectiles.|
+|Entities|string|True|Collide with entities.|
+|Hitboxes|string|True|Collide with hitboxes.|
+|MapEditor|string|True|Collide with map editor objects.|
 
 
 [^0]: [Color](../Collections/Color.md)

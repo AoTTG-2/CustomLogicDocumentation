@@ -1,13 +1,124 @@
-# Object
+# Convert
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Converting objects to different types.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
-
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function ToFloat(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> float</code></pre>
+> Converts a value to a float.
+> 
+> **Parameters**:
+> - `value`: The value to convert (can be string, float, int, or bool).
+> 
+> **Returns**: The converted float value.
+<pre class="language-typescript"><code class="lang-typescript">function ToInt(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> int</code></pre>
+> Converts a value to an int.
+> 
+> **Parameters**:
+> - `value`: The value to convert (can be string, float, int, or bool).
+> 
+> **Returns**: The converted int value.
+<pre class="language-typescript"><code class="lang-typescript">function ToBool(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Converts a value to a bool.
+> 
+> **Parameters**:
+> - `value`: The value to convert (can be string, float, int, or bool).
+> 
+> **Returns**: The converted bool value.
+<pre class="language-typescript"><code class="lang-typescript">function ToString(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> string</code></pre>
+> Converts a value to a string.
+> 
+> **Parameters**:
+> - `value`: The value to convert.
+> 
+> **Returns**: The converted string value.
+<pre class="language-typescript"><code class="lang-typescript">function IsFloat(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is a float.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is a float, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsInt(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is an int.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is an int, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsBool(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is a bool.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is a bool, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsString(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is a string.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is a string, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsObject(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is an object.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is an object, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsList(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is a list.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is a list, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function IsDict(value: <a data-footnote-ref href="#user-content-fn-116">Object</a>) -> bool</code></pre>
+> Checks if the value is a dictionary.
+> 
+> **Parameters**:
+> - `value`: The value to check.
+> 
+> **Returns**: True if the value is a dictionary, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function HasVariable(cInstance: class, variableName: string) -> bool</code></pre>
+> Checks if the class instance has a variable.
+> 
+> **Parameters**:
+> - `cInstance`: The class instance to check.
+> - `variableName`: The name of the variable to check for.
+> 
+> **Returns**: True if the class instance has the variable, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function DefineVariable(cInstance: class, variableName: string, value: <a data-footnote-ref href="#user-content-fn-116">Object</a>)</code></pre>
+> Defines a variable for the class instance.
+> 
+> **Parameters**:
+> - `cInstance`: The class instance to define the variable on.
+> - `variableName`: The name of the variable to define.
+> - `value`: The value to assign to the variable.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function RemoveVariable(cInstance: class, variableName: string)</code></pre>
+> Removes a variable from the class instance.
+> 
+> **Parameters**:
+> - `cInstance`: The class instance to remove the variable from.
+> - `variableName`: The name of the variable to remove.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function HasMethod(cInstance: class, methodName: string) -> bool</code></pre>
+> Checks if the class instance has a method.
+> 
+> **Parameters**:
+> - `cInstance`: The class instance to check.
+> - `methodName`: The name of the method to check for.
+> 
+> **Returns**: True if the class instance has the method, false otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function GetType(cInstance: class) -> string</code></pre>
+> Gets the type of the class instance.
+> 
+> **Parameters**:
+> - `cInstance`: The class instance to get the type of.
+> 
+> **Returns**: The class name of the instance.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

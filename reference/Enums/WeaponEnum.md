@@ -1,12 +1,15 @@
-# Object
+# WeaponEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available weapon types for humans.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Blade|string|True|Blade weapon type.|
+|AHSS|string|True|AHSS weapon type.|
+|APG|string|True|APG weapon type.|
+|Thunderspear|string|True|Thunderspear weapon type.|
 
 
 [^0]: [Color](../Collections/Color.md)

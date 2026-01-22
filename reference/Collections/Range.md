@@ -1,13 +1,30 @@
-# Object
+# Range
 
-The base type of all objects in the game.
+Range allows you to create lists of integers for convenient iteration, particularly in for loops.
 
-### Properties
-|Name|Type|Readonly|Description|
-|---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
-
+### Example
+```csharp
+for (a in Range(10))
+{
+    Game.Print(a);
+}
+    
+for (a in Range(1, 10))
+{
+    Game.Print(a);
+}
+    
+for (a in Range(1, 10, 2))
+{
+    Game.Print(a);
+}
+```
+### Initialization
+```csharp
+Range(end: int) // Creates a range from 0 to end-1.
+Range(start: int, end: int) // Creates a range from start to end-1.
+Range(start: int, end: int, step: int) // Creates a range from start to end-1 with the specified step.
+```
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

@@ -1,12 +1,19 @@
-# Object
+# WallColossalAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for WallColossal characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle|string|True|Idle animation.|
+|AttackWallSlap1L|string|True|Attack wall slap 1 left animation.|
+|AttackWallSlap1R|string|True|Attack wall slap 1 right animation.|
+|AttackWallSlap2L|string|True|Attack wall slap 2 left animation.|
+|AttackWallSlap2R|string|True|Attack wall slap 2 right animation.|
+|AttackSteam|string|True|Attack steam animation.|
+|AttackSweep|string|True|Attack sweep animation.|
+|AttackKick|string|True|Attack kick animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

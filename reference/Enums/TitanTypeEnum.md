@@ -1,12 +1,19 @@
-# Object
+# TitanTypeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of titan types that can be spawned.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Normal|string|True|Normal titan type.|
+|Abnormal|string|True|Abnormal titan type.|
+|Jumper|string|True|Jumper titan type.|
+|Crawler|string|True|Crawler titan type.|
+|Thrower|string|True|Thrower titan type.|
+|Punk|string|True|Punk titan type.|
+|Default|string|True|Default titan type (uses spawn rate settings).|
+|Random|string|True|Random titan type (randomly selects from available types).|
 
 
 [^0]: [Color](../Collections/Color.md)

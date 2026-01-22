@@ -1,13 +1,61 @@
-# Object
+# Network
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Networking functions.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|IsMasterClient|bool|True|Is the player the master client.|
+|Players|[List](../Collections/List.md)<[Player](../Entities/Player.md)>|True|The list of players in the room.|
+|MasterClient|[Player](../Entities/Player.md)|True|The master client.|
+|MyPlayer|[Player](../Entities/Player.md)|True|The local player.|
+|NetworkTime|double|True|The network time.|
+|Ping|int|True|The local player's ping.|
 
+
+### Static Methods
+<pre class="language-typescript"><code class="lang-typescript">function SendMessage(player: <a data-footnote-ref href="#user-content-fn-25">Player</a>, message: string)</code></pre>
+> Send a message to a player.
+> 
+> **Parameters**:
+> - `player`: The player to send the message to.
+> - `message`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageAll(message: string)</code></pre>
+> Send a message to all players.
+> 
+> **Parameters**:
+> - `message`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SendMessageOthers(message: string)</code></pre>
+> Send a message to all players except the sender.
+> 
+> **Parameters**:
+> - `message`: The message to send.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function FindPlayer(id: int) -> <a data-footnote-ref href="#user-content-fn-25">Player</a></code></pre>
+> Finds a player in the room by id.
+> 
+> **Parameters**:
+> - `id`: The player ID to find.
+> 
+> **Returns**: The player if found, null otherwise.
+<pre class="language-typescript"><code class="lang-typescript">function GetTimestampDifference(timestamp1: double, timestamp2: double) -> double</code></pre>
+> Get the difference between two photon timestamps.
+> 
+> **Parameters**:
+> - `timestamp1`: The first timestamp.
+> - `timestamp2`: The second timestamp.
+> 
+> **Returns**: The difference between the two timestamps.
+<pre class="language-typescript"><code class="lang-typescript">function KickPlayer(target: Player|int, reason: string = ".")</code></pre>
+> Kick the given player by id or player reference.
+> 
+> **Parameters**:
+> - `target`: The player to kick (can be Player object or int ID).
+> - `reason`: The reason for kicking the player (default: '.').
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

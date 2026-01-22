@@ -1,12 +1,17 @@
-# Object
+# JustifyEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of justify content values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|FlexStart|int|True|FlexStart: aligns items to the start of the main axis.|
+|Center|int|True|Center: aligns items to the center of the main axis.|
+|FlexEnd|int|True|FlexEnd: aligns items to the end of the main axis.|
+|SpaceBetween|int|True|SpaceBetween: distributes items evenly with space between them.|
+|SpaceAround|int|True|SpaceAround: distributes items evenly with space around them.|
+|SpaceEvenly|int|True|SpaceEvenly: distributes items evenly with equal space around them.|
 
 
 [^0]: [Color](../Collections/Color.md)

@@ -1,12 +1,15 @@
-# Object
+# FontStyleEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of font style values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Normal|int|True|Normal font style.|
+|Bold|int|True|Bold font style.|
+|Italic|int|True|Italic font style.|
+|BoldAndItalic|int|True|Bold and italic font style.|
 
 
 [^0]: [Color](../Collections/Color.md)

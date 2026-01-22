@@ -1,12 +1,28 @@
-# Object
+# HumanStateEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of human state types.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle|string|True|Human is idle.|
+|Attack|string|True|Human is attacking.|
+|GroundDodge|string|True|Human is performing a ground dodge.|
+|AirDodge|string|True|Human is performing an air dodge.|
+|Reload|string|True|Human is reloading.|
+|Refill|string|True|Human is refilling gas.|
+|Die|string|True|Human is dying.|
+|Grab|string|True|Human is grabbed.|
+|EmoteAction|string|True|Human is performing an emote action.|
+|SpecialAttack|string|True|Human is performing a special attack.|
+|SpecialAction|string|True|Human is performing a special action.|
+|Slide|string|True|Human is sliding.|
+|Run|string|True|Human is running.|
+|Land|string|True|Human is landing.|
+|MountingHorse|string|True|Human is mounting a horse.|
+|Stun|string|True|Human is stunned.|
+|WallSlide|string|True|Human is wall sliding.|
 
 
 [^0]: [Color](../Collections/Color.md)

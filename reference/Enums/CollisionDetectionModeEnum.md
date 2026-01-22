@@ -1,12 +1,15 @@
-# Object
+# CollisionDetectionModeEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of collision detection modes for rigidbodies.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Discrete|int|True|Discrete collision detection mode.|
+|Continuous|int|True|Continuous collision detection mode.|
+|ContinuousDynamic|int|True|ContinuousDynamic collision detection mode.|
+|ContinuousSpeculative|int|True|ContinuousSpeculative collision detection mode.|
 
 
 [^0]: [Color](../Collections/Color.md)

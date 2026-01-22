@@ -1,12 +1,84 @@
-# Object
+# HumanAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for human characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|HorseMount|string|True|Horse mount animation.|
+|HorseDismount|string|True|Horse dismount animation.|
+|HorseIdle|string|True|Horse idle animation.|
+|HorseRun|string|True|Horse run animation.|
+|IdleF|string|True|Idle female animation.|
+|IdleM|string|True|Idle male animation.|
+|IdleAHSSM|string|True|Idle AHSS male animation.|
+|IdleAHSSF|string|True|Idle AHSS female animation.|
+|IdleTSF|string|True|Idle Thunderspear female animation.|
+|IdleTSM|string|True|Idle Thunderspear male animation.|
+|Jump|string|True|Jump animation.|
+|Run|string|True|Run animation.|
+|RunTS|string|True|Run Thunderspear animation.|
+|RunBuffed|string|True|Run buffed animation.|
+|Dodge|string|True|Dodge animation.|
+|Land|string|True|Land animation.|
+|Slide|string|True|Slide animation.|
+|Grabbed|string|True|Grabbed animation.|
+|Dash|string|True|Dash animation.|
+|Refill|string|True|Refill animation.|
+|ToRoof|string|True|To roof animation.|
+|WallRun|string|True|Wall run animation.|
+|OnWall|string|True|On wall animation.|
+|ChangeBlade|string|True|Change blade animation.|
+|ChangeBladeAir|string|True|Change blade air animation.|
+|AHSSHookForwardBoth|string|True|AHSS hook forward both animation.|
+|AHSSHookForwardL|string|True|AHSS hook forward left animation.|
+|AHSSHookForwardR|string|True|AHSS hook forward right animation.|
+|AHSSShootR|string|True|AHSS shoot right animation.|
+|AHSSShootL|string|True|AHSS shoot left animation.|
+|AHSSShootBoth|string|True|AHSS shoot both animation.|
+|AHSSShootRAir|string|True|AHSS shoot right air animation.|
+|AHSSShootLAir|string|True|AHSS shoot left air animation.|
+|AHSSShootBothAir|string|True|AHSS shoot both air animation.|
+|AHSSGunReloadBoth|string|True|AHSS gun reload both animation.|
+|AHSSGunReloadBothAir|string|True|AHSS gun reload both air animation.|
+|TSShootR|string|True|Thunderspear shoot right animation.|
+|TSShootL|string|True|Thunderspear shoot left animation.|
+|TSShootRAir|string|True|Thunderspear shoot right air animation.|
+|TSShootLAir|string|True|Thunderspear shoot left air animation.|
+|AirHookLJust|string|True|Air hook left just animation.|
+|AirHookRJust|string|True|Air hook right just animation.|
+|AirHookL|string|True|Air hook left animation.|
+|AirHookR|string|True|Air hook right animation.|
+|AirHook|string|True|Air hook animation.|
+|AirRelease|string|True|Air release animation.|
+|AirFall|string|True|Air fall animation.|
+|AirRise|string|True|Air rise animation.|
+|Air2|string|True|Air 2 animation.|
+|Air2Right|string|True|Air 2 right animation.|
+|Air2Left|string|True|Air 2 left animation.|
+|Air2Backward|string|True|Air 2 backward animation.|
+|Attack1HookL1|string|True|Attack 1 hook left 1 animation.|
+|Attack1HookL2|string|True|Attack 1 hook left 2 animation.|
+|Attack1HookR1|string|True|Attack 1 hook right 1 animation.|
+|Attack1HookR2|string|True|Attack 1 hook right 2 animation.|
+|Attack1|string|True|Attack 1 animation.|
+|Attack2|string|True|Attack 2 animation.|
+|Attack4|string|True|Attack 4 animation.|
+|SpecialArmin|string|True|Special Armin animation.|
+|SpecialMarco0|string|True|Special Marco 0 animation.|
+|SpecialMarco1|string|True|Special Marco 1 animation.|
+|SpecialSasha|string|True|Special Sasha animation.|
+|SpecialMikasa1|string|True|Special Mikasa 1 animation.|
+|SpecialMikasa2|string|True|Special Mikasa 2 animation.|
+|SpecialLevi|string|True|Special Levi animation.|
+|SpecialPetra|string|True|Special Petra animation.|
+|SpecialJean|string|True|Special Jean animation.|
+|SpecialShifter|string|True|Special Shifter animation.|
+|EmoteSalute|string|True|Emote salute animation.|
+|EmoteNo|string|True|Emote no animation.|
+|EmoteYes|string|True|Emote yes animation.|
+|EmoteWave|string|True|Emote wave animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

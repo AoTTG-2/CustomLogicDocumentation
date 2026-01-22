@@ -1,12 +1,45 @@
-# Object
+# AnnieAnimationEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of available animations for Annie characters.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Idle|string|True|Idle animation.|
+|Run|string|True|Run animation.|
+|Walk|string|True|Walk animation.|
+|Jump|string|True|Jump animation.|
+|Fall|string|True|Fall animation.|
+|Land|string|True|Land animation.|
+|Die|string|True|Die animation.|
+|Stun|string|True|Stun animation.|
+|SitFall|string|True|Sit fall animation.|
+|SitIdle|string|True|Sit idle animation.|
+|SitUp|string|True|Sit up animation.|
+|AttackCombo|string|True|Attack combo animation.|
+|AttackComboBlind|string|True|Attack combo blind animation.|
+|AttackSwing|string|True|Attack swing animation.|
+|AttackBrushBack|string|True|Attack brush back animation.|
+|AttackBrushFrontL|string|True|Attack brush front left animation.|
+|AttackBrushFrontR|string|True|Attack brush front right animation.|
+|AttackBrushHeadL|string|True|Attack brush head left animation.|
+|AttackBrushHeadR|string|True|Attack brush head right animation.|
+|AttackGrabBottomLeft|string|True|Attack grab bottom left animation.|
+|AttackGrabBottomRight|string|True|Attack grab bottom right animation.|
+|AttackGrabMidLeft|string|True|Attack grab mid left animation.|
+|AttackGrabMidRight|string|True|Attack grab mid right animation.|
+|AttackGrabUp|string|True|Attack grab up animation.|
+|AttackGrabUpLeft|string|True|Attack grab up left animation.|
+|AttackGrabUpRight|string|True|Attack grab up right animation.|
+|AttackKick|string|True|Attack kick animation.|
+|AttackStomp|string|True|Attack stomp animation.|
+|AttackHead|string|True|Attack head animation.|
+|AttackBite|string|True|Attack bite animation.|
+|EmoteSalute|string|True|Emote salute animation.|
+|EmoteTaunt|string|True|Emote taunt animation.|
+|EmoteWave|string|True|Emote wave animation.|
+|EmoteRoar|string|True|Emote roar animation.|
 
 
 [^0]: [Color](../Collections/Color.md)

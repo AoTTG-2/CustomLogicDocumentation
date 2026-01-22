@@ -1,12 +1,15 @@
-# Object
+# FlexDirectionEnum
+Inherits from [Object](../objects/Object.md)
 
-The base type of all objects in the game.
+Enumeration of flex direction values for UI elements.
 
-### Properties
+### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|Row|int|True|Row: items are laid out horizontally.|
+|Column|int|True|Column: items are laid out vertically.|
+|RowReverse|int|True|RowReverse: items are laid out horizontally in reverse order.|
+|ColumnReverse|int|True|ColumnReverse: items are laid out vertically in reverse order.|
 
 
 [^0]: [Color](../Collections/Color.md)

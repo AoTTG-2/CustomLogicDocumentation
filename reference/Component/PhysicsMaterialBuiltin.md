@@ -1,13 +1,24 @@
-# Object
+# PhysicsMaterialBuiltin
 
-The base type of all objects in the game.
+Represents a physics material that defines friction and bounciness properties for colliders.
 
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|Type|string|False|The type of the object (such as "Human")|
-|IsCharacter|bool|False|Whether or not the object is a Character type or any of its inheritors|
+|StaticFriction|float|False|The static friction of the material.|
+|DynamicFriction|float|False|The dynamic friction of the material.|
+|Bounciness|float|False|The bounciness of the material.|
+|FrictionCombine|int|False|The friction combine mode of the material. Refer to [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)|
+|BounceCombine|int|False|The bounce combine mode of the material. Refer to [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Setup(allChildColliders: bool)</code></pre>
+> Setup the material.
+> 
+> **Parameters**:
+> - `allChildColliders`: If true, applies the material to all child colliders as well.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
