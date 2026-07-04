@@ -2,12 +2,49 @@
 
 Represents an Animator component for controlling animations using Animator Controller.
 
+### Properties
+|Name|Type|Readonly|Description|
+|---|---|---|---|
+|DeltaPosition|[Vector3](../Collections/Vector3.md)|True|Returns the delta position of the avatar.|
+|DeltaRotation|[Quaternion](../Collections/Quaternion.md)|True|Returns the delta rotation of the avatar.|
+|HasRootMotion|bool|True|Animator has root motion.|
+|ApplyRootMotion|bool|False|Whether root motion should be applied.|
+
+
 ### Methods
+<pre class="language-typescript"><code class="lang-typescript">function ApplyBuiltinRootMotion()</code></pre>
+> Apply the default Root Motion.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Update(deltaTime: float)</code></pre>
+> Evaluates the animator based on deltaTime.
+> 
+> **Parameters**:
+> - `deltaTime`: The time delta.
+> 
 <pre class="language-typescript"><code class="lang-typescript">function IsPlaying(anim: string, layer: int = 0) -> bool</code></pre>
 > Checks if the given animation is playing.
 > 
 > **Parameters**:
 > - `anim`: The name of the animation to check. Refer to [HumanAnimationEnum](../Enums/HumanAnimationEnum.md), [TitanAnimationEnum](../Enums/TitanAnimationEnum.md), [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md), [ErenAnimationEnum](../Enums/ErenAnimationEnum.md), [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md), [DummyAnimationEnum](../Enums/DummyAnimationEnum.md), [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
+> - `layer`: The animation layer to check (default: 0).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function IsTag(tag: string, layer: int = 0) -> bool</code></pre>
+> Returns true if the current animation has the given tag.
+> 
+> **Parameters**:
+> - `tag`: The name of the tag to check.
+> - `layer`: The animation layer to check (default: 0).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetTransitionDuration(layer: int = 0) -> float</code></pre>
+> Gets the duration of the transition.
+> 
+> **Parameters**:
+> - `layer`: The animation layer to check (default: 0).
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetTransitionNormalizedTime(layer: int = 0) -> float</code></pre>
+> Gets the normalized time of the transition.
+> 
+> **Parameters**:
 > - `layer`: The animation layer to check (default: 0).
 > 
 <pre class="language-typescript"><code class="lang-typescript">function PlayAnimation(anim: string, fade: float = 0.1, layer: int = 0)</code></pre>

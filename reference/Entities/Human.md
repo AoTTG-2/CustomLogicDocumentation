@@ -68,6 +68,7 @@ function OnCharacterSpawn(character)
 |Target|[Object](../objects/Object.md)|False|The target currently focused by this character. Returns null if no target is set.|
 |TargetPosition|[Vector3](../Collections/Vector3.md)|False|The target position of the (AI) human.|
 |TargetVelocity|[Vector3](../Collections/Vector3.md)|True|The target velocity of the (AI) human.|
+|IsWalking|bool|False|Whether the AI controller should walk instead of run. Defaults to false (run).|
 |AllowHorse|bool|False|Allow the (AI) human to have horse.|
 |AllowSkin|bool|False|Allow the (AI) human to use the skin. (preset skin only)|
 

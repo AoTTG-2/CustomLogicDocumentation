@@ -65,6 +65,14 @@ function OnCharacterSpawn(character)
 
 
 ### Methods
+<pre class="language-typescript"><code class="lang-typescript">function SetDisplayName(name: string, showTag: bool = True)</code></pre>
+> Sets the character display name and optionally enables name tag rendering for AI.
+Use this for AI spawned characters when you want their name popup to appear.
+> 
+> **Parameters**:
+> - `name`: Display name text.
+> - `showTag`: If true, enables AI name popup when the name is non-empty. Default is true.
+> 
 <pre class="language-typescript"><code class="lang-typescript">function GetKilled(killer: string)</code></pre>
 > Kills the character.
 > 
