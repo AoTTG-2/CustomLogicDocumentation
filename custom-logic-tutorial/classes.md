@@ -34,4 +34,4 @@ class NumberPrinter
 
 `numberPrinter.Print(5)` calls the Print function on our instance variable. The output of this program is "Init" followed by "5".
 
-Like Main, custom classes can contain their own instance variables and functions.\
+Like Main, custom classes can contain their own instance variables and functions.<br>
