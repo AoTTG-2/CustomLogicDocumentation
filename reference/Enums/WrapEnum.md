@@ -1,20 +1,14 @@
-# TextAlignEnum
+# WrapEnum
 Inherits from [Object](../objects/Object.md)
 
-Enumeration of text alignment values for UI elements.
+Enumeration of wrap values for UI elements.
 
 ### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|UpperLeft|int|True|UpperLeft: text is aligned to the upper left.|
-|UpperCenter|int|True|UpperCenter: text is aligned to the upper center.|
-|UpperRight|int|True|UpperRight: text is aligned to the upper right.|
-|MiddleLeft|int|True|MiddleLeft: text is aligned to the middle left.|
-|MiddleCenter|int|True|MiddleCenter: text is aligned to the middle center.|
-|MiddleRight|int|True|MiddleRight: text is aligned to the middle right.|
-|LowerLeft|int|True|LowerLeft: text is aligned to the lower left.|
-|LowerCenter|int|True|LowerCenter: text is aligned to the lower center.|
-|LowerRight|int|True|LowerRight: text is aligned to the lower right.|
+|NoWrap|int|True|NoWrap: All items will be on one line.|
+|Wrap|int|True|Wrap: Items will wrap onto multiple lines from top to bottom.|
+|WrapReverse|int|True|WrapReverse: Items will wrap onto multiple lines from bottom to top.|
 
 
 [^0]: [Color](../Collections/Color.md)

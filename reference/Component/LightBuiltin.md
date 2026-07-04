@@ -1,20 +1,30 @@
-# TextAlignEnum
-Inherits from [Object](../objects/Object.md)
+# LightBuiltin
 
-Enumeration of text alignment values for UI elements.
+Represents a Light component that can be directional, point, or spot light with configurable properties.
+
+### Properties
+|Name|Type|Readonly|Description|
+|---|---|---|---|
+|TypeOfLight|int|False|The type of the light.|
+|Range|float|False|The range of the light.|
+|SpotAngle|float|False|The spot angle of the light, works on spot lights only.|
+|Color|[Color](../Collections/Color.md)|False|The color of the light.|
+|Intensity|float|False|The intensity of the light.|
+|BounceIntensity|float|False|The bounce intensity of the light.|
+|ShadowType|int|False|The shadow type of the light (Soft, None, Hard).|
+|ShadowStrength|float|False|The shadow strength of the light.|
+|WeatherControlled|bool|False|The light is controlled by the weather system.|
+
 
 ### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|UpperLeft|int|True|UpperLeft: text is aligned to the upper left.|
-|UpperCenter|int|True|UpperCenter: text is aligned to the upper center.|
-|UpperRight|int|True|UpperRight: text is aligned to the upper right.|
-|MiddleLeft|int|True|MiddleLeft: text is aligned to the middle left.|
-|MiddleCenter|int|True|MiddleCenter: text is aligned to the middle center.|
-|MiddleRight|int|True|MiddleRight: text is aligned to the middle right.|
-|LowerLeft|int|True|LowerLeft: text is aligned to the lower left.|
-|LowerCenter|int|True|LowerCenter: text is aligned to the lower center.|
-|LowerRight|int|True|LowerRight: text is aligned to the lower right.|
+|LightTypeDirectional|int|True|LightType.Directional.|
+|LightTypePoint|int|True|LightType.Point.|
+|LightTypeSpot|int|True|LightType.Spot.|
+|ShadowTypeNone|int|True|LightShadows.None.|
+|ShadowTypeHard|int|True|LightShadows.Hard.|
+|ShadowTypeSoft|int|True|LightShadows.Soft.|
 
 
 [^0]: [Color](../Collections/Color.md)

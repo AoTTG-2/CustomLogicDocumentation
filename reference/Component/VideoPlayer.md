@@ -1,21 +1,38 @@
-# TextAlignEnum
-Inherits from [Object](../objects/Object.md)
+# VideoPlayer
 
-Enumeration of text alignment values for UI elements.
+Represents a VideoPlayer component for playing video clips.
 
-### Static Properties
+### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
-|UpperLeft|int|True|UpperLeft: text is aligned to the upper left.|
-|UpperCenter|int|True|UpperCenter: text is aligned to the upper center.|
-|UpperRight|int|True|UpperRight: text is aligned to the upper right.|
-|MiddleLeft|int|True|MiddleLeft: text is aligned to the middle left.|
-|MiddleCenter|int|True|MiddleCenter: text is aligned to the middle center.|
-|MiddleRight|int|True|MiddleRight: text is aligned to the middle right.|
-|LowerLeft|int|True|LowerLeft: text is aligned to the lower left.|
-|LowerCenter|int|True|LowerCenter: text is aligned to the lower center.|
-|LowerRight|int|True|LowerRight: text is aligned to the lower right.|
+|Frame|int|False|The frame index. 0 for the first frame, 1 for the second frame, and so on.|
+|FrameCount|UInt64|True|Number of frames in the current video content.|
+|FrameRate|float|True|The frame rate of the video content in frames/second.|
+|IsLooping|bool|False|Whether the VideoPlayer restarts when reaches the end.|
+|IsPaused|bool|True|Is the video currently paused.|
+|IsPlaying|bool|True|Is the video currently playing.|
+|IsPrepared|bool|True|Has the video been prepared to play.|
+|Length|double|True|The length of the video in seconds.|
+|PlaybackSpeed|float|False|Factor by which the basic playback rate will be multiplied.|
+|Time|float|False|Video playback position in seconds.|
 
+
+### Methods
+<pre class="language-typescript"><code class="lang-typescript">function Pause()</code></pre>
+> Pauses the video.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Play()</code></pre>
+> Plays or resumes the video.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Prepare()</code></pre>
+> Prepares the video so that it's ready for playback.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function StepForward()</code></pre>
+> Advance the current time by one frame.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Stop()</code></pre>
+> Stops the video and sets the current time to 0.
+> 
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
