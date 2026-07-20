@@ -1,35 +1,65 @@
-# Cutscene
+# Service
 Inherits from [Object](../objects/Object.md)
 
-Provides methods to control in-game cutscenes and dialogues from custom logic scripts.
+Allows the master client to make HTTP/HTTPS requests to services registered by the
+local player in the Advanced Configuration menu (Tools > Advanced Configuration).
+CustomLogic never sees or controls the actual URL - it only ever references a "service"
+by the key name the player registered. This prevents scripts (including untrusted/downloaded
+game modes and addons) from making arbitrary network requests or leaking the configured URL.
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function Start(name: string, full: bool)</code></pre>
-> Start a cutscene.
+<pre class="language-typescript"><code class="lang-typescript">function CheckPermissions(service: string) -> bool</code></pre>
+> Check whether the user running CL can access this service.
+Requirements: master client only, services manually enabled, and the service key
+registered to a URL in Advanced Configuration.
 > 
 > **Parameters**:
-> - `name`: The name of the cutscene class to start.
-> - `full`: If true, enables full cutscene mode.
+> - `service`: The service key registered in Advanced Configuration.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ShowDialogue(icon: string, title: string, content: string)</code></pre>
-> Show a dialogue box.
-> 
-> **Parameters**:
-> - `icon`: The icon name to display. Refer to [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-> - `title`: The title of the dialogue.
-> - `content`: The content text of the dialogue.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function ShowDialogueForTime(icon: string, title: string, content: string, time: float)</code></pre>
-> Show a dialogue box for a certain amount of time.
+<pre class="language-typescript"><code class="lang-typescript">function GetSecret(key: string) -> string</code></pre>
+> Retrieves a secret value (e.g. an API key/token) registered in Advanced Configuration.
+This lets a shared/networked CL script use per-player credentials without hardcoding
+them in the script itself (CL scripts are sent to all players in the room). Only the
+master client may retrieve secrets, only while services are enabled, and only using
+logic they locally loaded themselves.
 > 
 > **Parameters**:
-> - `icon`: The icon name to display. Refer to [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-> - `title`: The title of the dialogue.
-> - `content`: The content text of the dialogue.
-> - `time`: The duration in seconds to show the dialogue.
+> - `key`: The secret key registered in Advanced Configuration.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function HideDialogue()</code></pre>
-> Hide the dialogue box.
+<pre class="language-typescript"><code class="lang-typescript">function Get(service: string, route: string, callback: function)</code></pre>
+> Sends a GET request to the given service.
+> 
+> **Parameters**:
+> - `service`: The service key registered in Advanced Configuration.
+> - `route`: A relative route appended to the service's base URL.
+> - `callback`: Called with (response, status) when the request completes.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Post(service: string, route: string, data: string, callback: function = null, format: string = "application/json")</code></pre>
+> Sends a POST request to the given service.
+> 
+> **Parameters**:
+> - `service`: The service key registered in Advanced Configuration.
+> - `route`: A relative route appended to the service's base URL.
+> - `data`: The request body.
+> - `callback`: Called with (response, status) when the request completes.
+> - `format`: The content type of the request body.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Put(service: string, route: string, data: string, callback: function = null)</code></pre>
+> Sends a PUT request to the given service.
+> 
+> **Parameters**:
+> - `service`: The service key registered in Advanced Configuration.
+> - `route`: A relative route appended to the service's base URL.
+> - `data`: The request body.
+> - `callback`: Called with (response, status) when the request completes.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Delete(service: string, route: string, callback: function = null)</code></pre>
+> Sends a DELETE request to the given service.
+> 
+> **Parameters**:
+> - `service`: The service key registered in Advanced Configuration.
+> - `route`: A relative route appended to the service's base URL.
+> - `callback`: Called with (response, status) when the request completes.
 > 
 
 [^0]: [Color](../Collections/Color.md)

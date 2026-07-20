@@ -1,36 +1,46 @@
-# Cutscene
+# Commands
 Inherits from [Object](../objects/Object.md)
 
-Provides methods to control in-game cutscenes and dialogues from custom logic scripts.
+Functions for registering custom slash (/) chat commands for the current game mode.
 
+### Example
+```csharp
+Commands.RegisterCommand("heal", self.OnHeal, "/heal [ID]: Heals the player with ID.", "PlayerID");
+
+function OnHeal(command, arguments)
+{
+    if (arguments.Count < 1)
+    {
+        return;
+    }
+    playerId = arguments.Get(0);
+    # ... heal player with playerId
+}
+```
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function Start(name: string, full: bool)</code></pre>
-> Start a cutscene.
+<pre class="language-typescript"><code class="lang-typescript">function RegisterCommand(command: string, method: function, description: string = "", autofill: string = "None") -> bool</code></pre>
+> Registers a slash (/) chat command bound to custom logic. The callback is invoked with
+(command, arguments), where command is the invoked command name (without the leading slash)
+and arguments is a List of the argument strings that followed the command, split by whitespace
+with quoted ("..." or '...') text bundled into a single argument (see ParseCommands).
+Registered commands are automatically cleared when the game mode restarts or changes, and
+cannot override a built-in command.
 > 
 > **Parameters**:
-> - `name`: The name of the cutscene class to start.
-> - `full`: If true, enables full cutscene mode.
+> - `command`: The command name, without the leading slash.
+> - `method`: The callback method, called with (command, arguments) when the command is used.
+> - `description`: The command description shown in /help, e.g. "/mycommand [arg]: does something".
+> - `autofill`: Optional chat autofill mode for the argument: "None" (default), "PlayerID" (single player target), or "PlayerIDList" (multiple space separated player targets).
 > 
-<pre class="language-typescript"><code class="lang-typescript">function ShowDialogue(icon: string, title: string, content: string)</code></pre>
-> Show a dialogue box.
-> 
-> **Parameters**:
-> - `icon`: The icon name to display. Refer to [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-> - `title`: The title of the dialogue.
-> - `content`: The content text of the dialogue.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function ShowDialogueForTime(icon: string, title: string, content: string, time: float)</code></pre>
-> Show a dialogue box for a certain amount of time.
+> **Returns**: True if the command was registered, false if the name is invalid or already used by a built-in command.
+<pre class="language-typescript"><code class="lang-typescript">function ParseCommands(text: string) -> <a data-footnote-ref href="#user-content-fn-3">List</a><string></code></pre>
+> Parses a raw string into a list of arguments, split by whitespace. Text wrapped in matching
+double or single quotes is bundled together into a single argument (the quotes are stripped).
 > 
 > **Parameters**:
-> - `icon`: The icon name to display. Refer to [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-> - `title`: The title of the dialogue.
-> - `content`: The content text of the dialogue.
-> - `time`: The duration in seconds to show the dialogue.
+> - `text`: The text to parse into arguments.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function HideDialogue()</code></pre>
-> Hide the dialogue box.
-> 
+> **Returns**: A list of the parsed argument strings.
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)

@@ -41,7 +41,7 @@ Game.Print(result.Collider);
 > - `collideWith`: The collision layer to check against. Refer to [CollideWithEnum](../Enums/CollideWithEnum.md)
 > 
 > **Returns**: A list of LineCastHitResult objects.
-<pre class="language-typescript"><code class="lang-typescript">function SphereCast(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, radius: float, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SphereCast(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, radius: float, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Performs a sphere cast between two points.
 > 
 > **Parameters**:
@@ -51,7 +51,7 @@ Game.Print(result.Collider);
 > - `collideWith`: The collision layer to check against. Refer to [CollideWithEnum](../Enums/CollideWithEnum.md)
 > 
 > **Returns**: The object hit (Human, Titan, etc...), or null if nothing was hit.
-<pre class="language-typescript"><code class="lang-typescript">function SphereCastWithMask(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, radius: float, mask: int) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SphereCastWithMask(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, radius: float, mask: int) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Performs a sphere cast between two points, specify what to detect with a physics layer mask, returns the object hit (Human, Titan, etc...).
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SphereCastAll(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, radius: float, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-3">List</a><<a data-footnote-ref href="#user-content-fn-2">LineCastHitResult</a>></code></pre>
@@ -64,7 +64,7 @@ Game.Print(result.Collider);
 > - `collideWith`: The collision layer to check against. Refer to [CollideWithEnum](../Enums/CollideWithEnum.md)
 > 
 > **Returns**: A list of LineCastHitResult objects.
-<pre class="language-typescript"><code class="lang-typescript">function BoxCast(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, dimensions: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, orientation: <a data-footnote-ref href="#user-content-fn-4">Quaternion</a>, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BoxCast(start: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, end: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, dimensions: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, orientation: <a data-footnote-ref href="#user-content-fn-4">Quaternion</a>, collideWith: string) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Performs a box cast between two points.
 > 
 > **Parameters**:
@@ -216,32 +216,34 @@ Game.Print(result.Collider);
 [^92]: [WeaponEnum](../Enums/WeaponEnum.md)
 [^93]: [WrapEnum](../Enums/WrapEnum.md)
 [^94]: [Camera](../Game/Camera.md)
-[^95]: [Cutscene](../Game/Cutscene.md)
-[^96]: [Game](../Game/Game.md)
-[^97]: [Input](../Game/Input.md)
-[^98]: [Locale](../Game/Locale.md)
-[^99]: [Map](../Game/Map.md)
-[^100]: [Network](../Game/Network.md)
-[^101]: [PersistentData](../Game/PersistentData.md)
-[^102]: [Physics](../Game/Physics.md)
-[^103]: [RoomData](../Game/RoomData.md)
-[^104]: [Time](../Game/Time.md)
-[^105]: [Button](../UIElements/Button.md)
-[^106]: [Dropdown](../UIElements/Dropdown.md)
-[^107]: [Icon](../UIElements/Icon.md)
-[^108]: [Image](../UIElements/Image.md)
-[^109]: [Label](../UIElements/Label.md)
-[^110]: [ProgressBar](../UIElements/ProgressBar.md)
-[^111]: [ScrollView](../UIElements/ScrollView.md)
-[^112]: [Slider](../UIElements/Slider.md)
-[^113]: [TextField](../UIElements/TextField.md)
-[^114]: [Toggle](../UIElements/Toggle.md)
-[^115]: [UI](../UIElements/UI.md)
-[^116]: [VisualElement](../UIElements/VisualElement.md)
-[^117]: [Convert](../Utility/Convert.md)
-[^118]: [Json](../Utility/Json.md)
-[^119]: [Math](../Utility/Math.md)
-[^120]: [Random](../Utility/Random.md)
-[^121]: [String](../Utility/String.md)
-[^122]: [Object](../objects/Object.md)
-[^123]: [Component](../objects/Component.md)
+[^95]: [Commands](../Game/Commands.md)
+[^96]: [Cutscene](../Game/Cutscene.md)
+[^97]: [Game](../Game/Game.md)
+[^98]: [Input](../Game/Input.md)
+[^99]: [Locale](../Game/Locale.md)
+[^100]: [Map](../Game/Map.md)
+[^101]: [Network](../Game/Network.md)
+[^102]: [PersistentData](../Game/PersistentData.md)
+[^103]: [Physics](../Game/Physics.md)
+[^104]: [RoomData](../Game/RoomData.md)
+[^105]: [Service](../Game/Service.md)
+[^106]: [Time](../Game/Time.md)
+[^107]: [Button](../UIElements/Button.md)
+[^108]: [Dropdown](../UIElements/Dropdown.md)
+[^109]: [Icon](../UIElements/Icon.md)
+[^110]: [Image](../UIElements/Image.md)
+[^111]: [Label](../UIElements/Label.md)
+[^112]: [ProgressBar](../UIElements/ProgressBar.md)
+[^113]: [ScrollView](../UIElements/ScrollView.md)
+[^114]: [Slider](../UIElements/Slider.md)
+[^115]: [TextField](../UIElements/TextField.md)
+[^116]: [Toggle](../UIElements/Toggle.md)
+[^117]: [UI](../UIElements/UI.md)
+[^118]: [VisualElement](../UIElements/VisualElement.md)
+[^119]: [Convert](../Utility/Convert.md)
+[^120]: [Json](../Utility/Json.md)
+[^121]: [Math](../Utility/Math.md)
+[^122]: [Random](../Utility/Random.md)
+[^123]: [String](../Utility/String.md)
+[^124]: [Object](../objects/Object.md)
+[^125]: [Component](../objects/Component.md)
