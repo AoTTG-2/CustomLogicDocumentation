@@ -36,46 +36,46 @@ Game functions such as spawning titans and managing game state.
 > 
 
 ### Static Methods
-<pre class="language-typescript"><code class="lang-typescript">function Debug(message: <a data-footnote-ref href="#user-content-fn-122">Object</a>)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Debug(message: <a data-footnote-ref href="#user-content-fn-124">Object</a>)</code></pre>
 > Print a debug statement to the console.
 > 
 > **Parameters**:
 > - `message`: The message to print.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Print(message: <a data-footnote-ref href="#user-content-fn-122">Object</a>)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Print(message: <a data-footnote-ref href="#user-content-fn-124">Object</a>)</code></pre>
 > Print a message to the chat.
 > 
 > **Parameters**:
 > - `message`: The message to print.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PrintAll(message: <a data-footnote-ref href="#user-content-fn-122">Object</a>)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PrintAll(message: <a data-footnote-ref href="#user-content-fn-124">Object</a>)</code></pre>
 > Print a message to all players.
 > 
 > **Parameters**:
 > - `message`: The message to print.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function GetGeneralSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetGeneralSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Get a general setting.
 > 
 > **Parameters**:
 > - `settingName`: The name of the setting to get.
 > 
 > **Returns**: The setting value.
-<pre class="language-typescript"><code class="lang-typescript">function GetTitanSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetTitanSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Get a titan setting.
 > 
 > **Parameters**:
 > - `settingName`: The name of the setting to get.
 > 
 > **Returns**: The setting value.
-<pre class="language-typescript"><code class="lang-typescript">function GetMiscSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-122">Object</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetMiscSetting(settingName: string) -> <a data-footnote-ref href="#user-content-fn-124">Object</a></code></pre>
 > Get a misc setting.
 > 
 > **Parameters**:
 > - `settingName`: The name of the setting to get.
 > 
 > **Returns**: The setting value.
-<pre class="language-typescript"><code class="lang-typescript">function SetPreloadGeneralSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-122">Object</a>) -> bool</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPreloadGeneralSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-124">Object</a>) -> bool</code></pre>
 > Set a pre-load general setting (applied on next restart).
 Only the master client can call this.
 > 
@@ -84,7 +84,7 @@ Only the master client can call this.
 > - `value`: The new value.
 > 
 > **Returns**: True if updated, false otherwise.
-<pre class="language-typescript"><code class="lang-typescript">function SetPreloadTitanSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-122">Object</a>) -> bool</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPreloadTitanSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-124">Object</a>) -> bool</code></pre>
 > Set a pre-load titan setting (applied on next restart).
 Only the master client can call this.
 > 
@@ -93,7 +93,7 @@ Only the master client can call this.
 > - `value`: The new value.
 > 
 > **Returns**: True if updated, false otherwise.
-<pre class="language-typescript"><code class="lang-typescript">function SetPreloadMiscSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-122">Object</a>) -> bool</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPreloadMiscSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-124">Object</a>) -> bool</code></pre>
 > Set a pre-load misc setting (applied on next restart).
 Only the master client can call this.
 > 
@@ -102,7 +102,7 @@ Only the master client can call this.
 > - `value`: The new value.
 > 
 > **Returns**: True if updated, false otherwise.
-<pre class="language-typescript"><code class="lang-typescript">function SetPreloadModeSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-122">Object</a>) -> bool</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetPreloadModeSetting(settingName: string, value: <a data-footnote-ref href="#user-content-fn-124">Object</a>) -> bool</code></pre>
 > Set a pre-load mode setting (applied on next restart).
 Only the master client can call this.
 > 
@@ -220,7 +220,7 @@ Only the master client can call this.
 > - `rotationY`: The Y rotation in degrees (default: 0).
 > 
 > **Returns**: The spawned shifter, or null if not master client.
-<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectile(projectileName: string, position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotation: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, velocity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, gravity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, liveTime: float, team: string, extraParam: <a data-footnote-ref href="#user-content-fn-122">Object</a> = null, extraParam2: <a data-footnote-ref href="#user-content-fn-122">Object</a> = null)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectile(projectileName: string, position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotation: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, velocity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, gravity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, liveTime: float, team: string, extraParam: <a data-footnote-ref href="#user-content-fn-124">Object</a> = null, extraParam2: <a data-footnote-ref href="#user-content-fn-124">Object</a> = null)</code></pre>
 > Spawn a projectile. Note: `extraParam` and `extraParam2` are optional.
 They may or may not be used depending on the value of `projectileName`.
 > 
@@ -235,7 +235,7 @@ They may or may not be used depending on the value of `projectileName`.
 > - `extraParam`: Optional. Type depends on projectile: Thunderspear: float (explosion radius), Flare: Color (flare color), Rock1: float (rock size), Others: unused.
 > - `extraParam2`: Optional. Type depends on projectile: Thunderspear: Color (projectile color), Others: unused.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectileWithOwner(projectileName: string, position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotation: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, velocity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, gravity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, liveTime: float, owner: <a data-footnote-ref href="#user-content-fn-22">Character</a>, extraParam: <a data-footnote-ref href="#user-content-fn-122">Object</a> = null, extraParam2: <a data-footnote-ref href="#user-content-fn-122">Object</a> = null)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SpawnProjectileWithOwner(projectileName: string, position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotation: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, velocity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, gravity: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, liveTime: float, owner: <a data-footnote-ref href="#user-content-fn-22">Character</a>, extraParam: <a data-footnote-ref href="#user-content-fn-124">Object</a> = null, extraParam2: <a data-footnote-ref href="#user-content-fn-124">Object</a> = null)</code></pre>
 > Spawn a projectile with an owner. Note: `extraParam` and `extraParam2` are optional.
 They may or may not be used depending on the value of `projectileName`.
 > 
@@ -442,32 +442,34 @@ They may or may not be used depending on the value of `projectileName`.
 [^92]: [WeaponEnum](../Enums/WeaponEnum.md)
 [^93]: [WrapEnum](../Enums/WrapEnum.md)
 [^94]: [Camera](../Game/Camera.md)
-[^95]: [Cutscene](../Game/Cutscene.md)
-[^96]: [Game](../Game/Game.md)
-[^97]: [Input](../Game/Input.md)
-[^98]: [Locale](../Game/Locale.md)
-[^99]: [Map](../Game/Map.md)
-[^100]: [Network](../Game/Network.md)
-[^101]: [PersistentData](../Game/PersistentData.md)
-[^102]: [Physics](../Game/Physics.md)
-[^103]: [RoomData](../Game/RoomData.md)
-[^104]: [Time](../Game/Time.md)
-[^105]: [Button](../UIElements/Button.md)
-[^106]: [Dropdown](../UIElements/Dropdown.md)
-[^107]: [Icon](../UIElements/Icon.md)
-[^108]: [Image](../UIElements/Image.md)
-[^109]: [Label](../UIElements/Label.md)
-[^110]: [ProgressBar](../UIElements/ProgressBar.md)
-[^111]: [ScrollView](../UIElements/ScrollView.md)
-[^112]: [Slider](../UIElements/Slider.md)
-[^113]: [TextField](../UIElements/TextField.md)
-[^114]: [Toggle](../UIElements/Toggle.md)
-[^115]: [UI](../UIElements/UI.md)
-[^116]: [VisualElement](../UIElements/VisualElement.md)
-[^117]: [Convert](../Utility/Convert.md)
-[^118]: [Json](../Utility/Json.md)
-[^119]: [Math](../Utility/Math.md)
-[^120]: [Random](../Utility/Random.md)
-[^121]: [String](../Utility/String.md)
-[^122]: [Object](../objects/Object.md)
-[^123]: [Component](../objects/Component.md)
+[^95]: [Commands](../Game/Commands.md)
+[^96]: [Cutscene](../Game/Cutscene.md)
+[^97]: [Game](../Game/Game.md)
+[^98]: [Input](../Game/Input.md)
+[^99]: [Locale](../Game/Locale.md)
+[^100]: [Map](../Game/Map.md)
+[^101]: [Network](../Game/Network.md)
+[^102]: [PersistentData](../Game/PersistentData.md)
+[^103]: [Physics](../Game/Physics.md)
+[^104]: [RoomData](../Game/RoomData.md)
+[^105]: [Service](../Game/Service.md)
+[^106]: [Time](../Game/Time.md)
+[^107]: [Button](../UIElements/Button.md)
+[^108]: [Dropdown](../UIElements/Dropdown.md)
+[^109]: [Icon](../UIElements/Icon.md)
+[^110]: [Image](../UIElements/Image.md)
+[^111]: [Label](../UIElements/Label.md)
+[^112]: [ProgressBar](../UIElements/ProgressBar.md)
+[^113]: [ScrollView](../UIElements/ScrollView.md)
+[^114]: [Slider](../UIElements/Slider.md)
+[^115]: [TextField](../UIElements/TextField.md)
+[^116]: [Toggle](../UIElements/Toggle.md)
+[^117]: [UI](../UIElements/UI.md)
+[^118]: [VisualElement](../UIElements/VisualElement.md)
+[^119]: [Convert](../Utility/Convert.md)
+[^120]: [Json](../Utility/Json.md)
+[^121]: [Math](../Utility/Math.md)
+[^122]: [Random](../Utility/Random.md)
+[^123]: [String](../Utility/String.md)
+[^124]: [Object](../objects/Object.md)
+[^125]: [Component](../objects/Component.md)

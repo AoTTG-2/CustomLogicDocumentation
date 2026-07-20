@@ -180,15 +180,15 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > **Parameters**:
 > - `active`: Whether the bottom HUD should be active.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function GetRootVisualElement() -> <a data-footnote-ref href="#user-content-fn-116">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetRootVisualElement() -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
 > Returns the root `VisualElement` which you can add other elements to.
 > 
 > **Returns**: The root `VisualElement`.
-<pre class="language-typescript"><code class="lang-typescript">function VisualElement() -> <a data-footnote-ref href="#user-content-fn-116">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function VisualElement() -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
 > Creates a new `VisualElement`.
 > 
 > **Returns**: A new VisualElement.
-<pre class="language-typescript"><code class="lang-typescript">function Button(text: string = "", clickEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-105">Button</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Button(text: string = "", clickEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-107">Button</a></code></pre>
 > Creates a new `Button` with optional text and click event.
 > 
 > **Parameters**:
@@ -196,21 +196,21 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > - `clickEvent`: The function that will be called when button is clicked.
 > 
 > **Returns**: A new Button.
-<pre class="language-typescript"><code class="lang-typescript">function Label(text: string = "") -> <a data-footnote-ref href="#user-content-fn-109">Label</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Label(text: string = "") -> <a data-footnote-ref href="#user-content-fn-111">Label</a></code></pre>
 > Creates a new `Label` with optional text.
 > 
 > **Parameters**:
 > - `text`: The text to be displayed.
 > 
 > **Returns**: A new Label.
-<pre class="language-typescript"><code class="lang-typescript">function TextField(label: string = "") -> <a data-footnote-ref href="#user-content-fn-113">TextField</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextField(label: string = "") -> <a data-footnote-ref href="#user-content-fn-115">TextField</a></code></pre>
 > Creates a new `TextField` with optional label.
 > 
 > **Parameters**:
 > - `label`: The label text displayed next to the TextField (default: empty).
 > 
 > **Returns**: A new TextField.
-<pre class="language-typescript"><code class="lang-typescript">function Toggle(label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-114">Toggle</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Toggle(label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-116">Toggle</a></code></pre>
 > Creates a new `Toggle` with optional label and value changed event.
 > 
 > **Parameters**:
@@ -218,7 +218,7 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > - `valueChangedEvent`: The function that will be called when toggle value changes.
 > 
 > **Returns**: A new Toggle.
-<pre class="language-typescript"><code class="lang-typescript">function Slider(lowValue: float = 0, highValue: float = 100, tickInterval: float = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-112">Slider</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Slider(lowValue: float = 0, highValue: float = 100, tickInterval: float = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-114">Slider</a></code></pre>
 > Creates a new `Slider` for floating-point values with optional range, tick interval, and value changed event.
 The slider will snap to values at multiples of the tick interval.
 > 
@@ -230,7 +230,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when slider value changes.
 > 
 > **Returns**: A new Slider.
-<pre class="language-typescript"><code class="lang-typescript">function SliderInt(lowValue: int = 0, highValue: int = 100, tickInterval: int = 1, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-112">Slider</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SliderInt(lowValue: int = 0, highValue: int = 100, tickInterval: int = 1, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-114">Slider</a></code></pre>
 > Creates a new `Slider` for integer values with optional range, tick interval, and value changed event.
 The slider will snap to values at multiples of the tick interval.
 > 
@@ -242,7 +242,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when slider value changes.
 > 
 > **Returns**: A new SliderInt.
-<pre class="language-typescript"><code class="lang-typescript">function Dropdown(choices: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, defaultIndex: int = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-106">Dropdown</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Dropdown(choices: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, defaultIndex: int = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-108">Dropdown</a></code></pre>
 > Creates a new `Dropdown` with a list of choices and optional label and value changed event.
 > 
 > **Parameters**:
@@ -252,7 +252,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when dropdown value changes.
 > 
 > **Returns**: A new Dropdown.
-<pre class="language-typescript"><code class="lang-typescript">function ProgressBar(lowValue: float = 0, highValue: float = 100, title: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-110">ProgressBar</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ProgressBar(lowValue: float = 0, highValue: float = 100, title: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-112">ProgressBar</a></code></pre>
 > Creates a new `ProgressBar` with optional range, title, and value changed event.
 > 
 > **Parameters**:
@@ -262,18 +262,18 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when progress bar value changes.
 > 
 > **Returns**: A new ProgressBar.
-<pre class="language-typescript"><code class="lang-typescript">function ScrollView() -> <a data-footnote-ref href="#user-content-fn-111">ScrollView</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ScrollView() -> <a data-footnote-ref href="#user-content-fn-113">ScrollView</a></code></pre>
 > Creates a new `ScrollView` for scrollable content.
 > 
 > **Returns**: A new ScrollView.
-<pre class="language-typescript"><code class="lang-typescript">function Icon(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-107">Icon</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Icon(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-109">Icon</a></code></pre>
 > Creates a new `Icon` element for displaying images/icons.
 > 
 > **Parameters**:
 > - `iconPath`: Path to the icon resource (e.g., "Icons/Game/BladeIcon").
 > 
 > **Returns**: A new Icon.
-<pre class="language-typescript"><code class="lang-typescript">function Image(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-108">Image</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Image(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-110">Image</a></code></pre>
 > Creates a new `Image` element for displaying images/icons.
 > 
 > **Parameters**:
@@ -376,32 +376,34 @@ The slider will snap to values at multiples of the tick interval.
 [^92]: [WeaponEnum](../Enums/WeaponEnum.md)
 [^93]: [WrapEnum](../Enums/WrapEnum.md)
 [^94]: [Camera](../Game/Camera.md)
-[^95]: [Cutscene](../Game/Cutscene.md)
-[^96]: [Game](../Game/Game.md)
-[^97]: [Input](../Game/Input.md)
-[^98]: [Locale](../Game/Locale.md)
-[^99]: [Map](../Game/Map.md)
-[^100]: [Network](../Game/Network.md)
-[^101]: [PersistentData](../Game/PersistentData.md)
-[^102]: [Physics](../Game/Physics.md)
-[^103]: [RoomData](../Game/RoomData.md)
-[^104]: [Time](../Game/Time.md)
-[^105]: [Button](../UIElements/Button.md)
-[^106]: [Dropdown](../UIElements/Dropdown.md)
-[^107]: [Icon](../UIElements/Icon.md)
-[^108]: [Image](../UIElements/Image.md)
-[^109]: [Label](../UIElements/Label.md)
-[^110]: [ProgressBar](../UIElements/ProgressBar.md)
-[^111]: [ScrollView](../UIElements/ScrollView.md)
-[^112]: [Slider](../UIElements/Slider.md)
-[^113]: [TextField](../UIElements/TextField.md)
-[^114]: [Toggle](../UIElements/Toggle.md)
-[^115]: [UI](../UIElements/UI.md)
-[^116]: [VisualElement](../UIElements/VisualElement.md)
-[^117]: [Convert](../Utility/Convert.md)
-[^118]: [Json](../Utility/Json.md)
-[^119]: [Math](../Utility/Math.md)
-[^120]: [Random](../Utility/Random.md)
-[^121]: [String](../Utility/String.md)
-[^122]: [Object](../objects/Object.md)
-[^123]: [Component](../objects/Component.md)
+[^95]: [Commands](../Game/Commands.md)
+[^96]: [Cutscene](../Game/Cutscene.md)
+[^97]: [Game](../Game/Game.md)
+[^98]: [Input](../Game/Input.md)
+[^99]: [Locale](../Game/Locale.md)
+[^100]: [Map](../Game/Map.md)
+[^101]: [Network](../Game/Network.md)
+[^102]: [PersistentData](../Game/PersistentData.md)
+[^103]: [Physics](../Game/Physics.md)
+[^104]: [RoomData](../Game/RoomData.md)
+[^105]: [Service](../Game/Service.md)
+[^106]: [Time](../Game/Time.md)
+[^107]: [Button](../UIElements/Button.md)
+[^108]: [Dropdown](../UIElements/Dropdown.md)
+[^109]: [Icon](../UIElements/Icon.md)
+[^110]: [Image](../UIElements/Image.md)
+[^111]: [Label](../UIElements/Label.md)
+[^112]: [ProgressBar](../UIElements/ProgressBar.md)
+[^113]: [ScrollView](../UIElements/ScrollView.md)
+[^114]: [Slider](../UIElements/Slider.md)
+[^115]: [TextField](../UIElements/TextField.md)
+[^116]: [Toggle](../UIElements/Toggle.md)
+[^117]: [UI](../UIElements/UI.md)
+[^118]: [VisualElement](../UIElements/VisualElement.md)
+[^119]: [Convert](../Utility/Convert.md)
+[^120]: [Json](../Utility/Json.md)
+[^121]: [Math](../Utility/Math.md)
+[^122]: [Random](../Utility/Random.md)
+[^123]: [String](../Utility/String.md)
+[^124]: [Object](../objects/Object.md)
+[^125]: [Component](../objects/Component.md)
