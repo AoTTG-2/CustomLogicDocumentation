@@ -25,6 +25,7 @@ Game functions such as spawning titans and managing game state.
 |Loadouts|[List](../Collections/List.md)<string>|True|List of all loadouts.|
 |DefaultShowKillScore|bool|False|Is the kill score shown by default?|
 |DefaultShowKillFeed|bool|False|Is the kill feed shown by default?|
+|DefaultHideKillScore|bool|False|**Obsolete**: Use DefaultShowKillFeed instead. Is the kill feed shown by default? Use DefaultShowKillFeed instead.|
 |DefaultAddKillScore|bool|False|Is the kill score added by default?|
 |ShowScoreboardLoadout|bool|False|Is the loadout shown in the scoreboard?|
 |ShowScoreboardStatus|bool|False|Is the status shown in the scoreboard?|

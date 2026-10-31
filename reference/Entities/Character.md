@@ -215,13 +215,14 @@ Note that shifters also have all titan sounds.
 > - `sound`: Name of the sound. Refer to [HumanSoundEnum](../Enums/HumanSoundEnum.md), [TitanSoundEnum](../Enums/TitanSoundEnum.md), [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
 > 
 > **Returns**: True if the sound is playing, false otherwise.
-<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string, local: bool = False)</code></pre>
 > Plays a sound for the character.
 Available sound names can be found here: Human, Shifters, Titans.
 Note that shifters also have all titan sounds.
 > 
 > **Parameters**:
 > - `sound`: Name of the sound to play. Refer to [HumanSoundEnum](../Enums/HumanSoundEnum.md), [TitanSoundEnum](../Enums/TitanSoundEnum.md), [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+> - `local`: If true, the sound only plays for the local client and is not networked.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string)</code></pre>
 > Stops a sound for the character.
