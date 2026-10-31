@@ -19,6 +19,7 @@ function OnCharacterSpawn(character)
 |Name|Type|Readonly|Description|
 |---|---|---|---|
 |Size|float|False|Titan's size.|
+|HeadSize|float|False|Titan's head size scaling relative to its Size. This is set locally by the client. This value is reset when the titan's Size is changed.|
 |RunSpeedBase|float|False|Titan's base run speed. Final run speed is RunSpeedBase + Size * RunSpeedPerLevel.|
 |WalkSpeedBase|float|False|Titan's base walk speed. Final walk speed is WalkSpeedBase + Size * WalkSpeedPerLevel.|
 |WalkSpeedPerLevel|float|False|Titan's walk speed added per size.|
@@ -84,6 +85,113 @@ function OnCharacterSpawn(character)
 > **Parameters**:
 > - `time`: The cripple duration in seconds (0 uses default time).
 > 
+
+### Hierarchy
+**BasicTitan0**
+```
+BasicTitan0
+├── Amarture_VER2
+│   └── Core
+│       ├── CrawlerHitbox
+│       │   └── Cube
+│       ├── Configure
+│       │   └── Configure_end
+│       ├── Controller.Body
+│       │   ├── hip
+│       │   │   ├── spine
+│       │   │   │   └── chest
+│       │   │   │       ├── neck
+│       │   │   │       │   ├── head
+│       │   │   │       │   │   ├── Bone
+│       │   │   │       │   │   │   └── MouthHitbox
+│       │   │   │       │   │   ├── HairSocket
+│       │   │   │       │   │   ├── EyesHurtbox
+│       │   │   │       │   │   └── Eyes
+│       │   │   │       │   └── NapeHurtbox
+│       │   │   │       ├── shoulder.L
+│       │   │   │       │   └── upper_arm.L
+│       │   │   │       │       ├── forearm.L
+│       │   │   │       │       │   ├── hand.L
+│       │   │   │       │       │   │   ├── hand.L.001
+│       │   │   │       │       │   │   │   ├── hand.L.002
+│       │   │   │       │       │   │   │   │   └── hand.L.003
+│       │   │   │       │       │   │   │   │       └── hand.L.003_end
+│       │   │   │       │       │   │   │   └── HandLHitbox
+│       │   │   │       │       │   │   ├── hand.L.004
+│       │   │   │       │       │   │   │   └── hand.L.005
+│       │   │   │       │       │   │   │       └── hand.L.006
+│       │   │   │       │       │   │   │           └── hand.L.006_end
+│       │   │   │       │       │   │   └── GrabLSocket
+│       │   │   │       │       │   ├── Forearm_Col_L
+│       │   │   │       │       │   └── ForearmLHurtbox
+│       │   │   │       │       └── Arm_Col_L
+│       │   │   │       └── shoulder.R
+│       │   │   │           └── upper_arm.R
+│       │   │   │               ├── forearm.R
+│       │   │   │               │   ├── hand.R
+│       │   │   │               │   │   ├── hand.R.001
+│       │   │   │               │   │   │   ├── hand.R.002
+│       │   │   │               │   │   │   │   └── hand.R.003
+│       │   │   │               │   │   │   │       └── hand.R.003_end
+│       │   │   │               │   │   │   └── HandRHitbox
+│       │   │   │               │   │   ├── hand.R.004
+│       │   │   │               │   │   │   └── hand.R.005
+│       │   │   │               │   │   │       └── hand.R.006
+│       │   │   │               │   │   │           └── hand.R.006_end
+│       │   │   │               │   │   └── GrabRSocket
+│       │   │   │               │   ├── Forearm_Col_R
+│       │   │   │               │   └── ForearmRHurtbox
+│       │   │   │               └── Arm_Col_R
+│       │   │   ├── thigh.L
+│       │   │   │   ├── shin.L
+│       │   │   │   │   ├── foot.L
+│       │   │   │   │   │   ├── toe.L
+│       │   │   │   │   │   │   └── toe.L_end
+│       │   │   │   │   │   └── FootLHitbox
+│       │   │   │   │   ├── LegLHurtbox
+│       │   │   │   │   └── Shin_Col_L
+│       │   │   │   └── Thigh_Col_L
+│       │   │   └── thigh.R
+│       │   │       ├── shin.R
+│       │   │       │   ├── foot.R
+│       │   │       │   │   ├── toe.R
+│       │   │       │   │   │   └── toe.R_end
+│       │   │       │   │   └── FootRHitbox
+│       │   │       │   ├── Shin_Col_R
+│       │   │       │   └── LegRHurtbox
+│       │   │       └── Thigh_Col_R
+│       │   ├── BodyHitbox
+│       │   │   └── Cube
+│       │   └── SitPushbox
+│       ├── Controller.Leg.L
+│       │   ├── Controller.asset.foot.IK.L.002
+│       │   │   └── Controller.asset.foot.IK.L.001
+│       │   │       └── Controller.foot.IK.L
+│       │   │           └── kneel.L
+│       │   │               └── kneel.L_end
+│       │   └── Controller.Foot.L
+│       │       └── Controller.Foot.L_end
+│       ├── Controller.Leg.R
+│       │   ├── Controller.asset.foot.IK.R.002
+│       │   │   └── Controller.asset.foot.IK.R.001
+│       │   │       └── Controller.foot.IK.R
+│       │   │           └── kneel.R
+│       │   │               └── kneel.R_end
+│       │   └── Controller.Foot.R
+│       │       └── Controller.Foot.R_end
+│       ├── IK_ElbowController.L
+│       │   └── IK_ElbowController.L_end
+│       ├── IK_ElbowController.R
+│       │   └── IK_ElbowController.R_end
+│       ├── IK_HandController.L
+│       │   └── BridgeHand.L
+│       │       └── BridgeHand.L_end
+│       └── IK_HandController.R
+│           └── BridgeHand.R
+│               └── BridgeHand.R_end
+├── Body
+└── Head
+```
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
@@ -167,13 +275,13 @@ function OnCharacterSpawn(character)
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)

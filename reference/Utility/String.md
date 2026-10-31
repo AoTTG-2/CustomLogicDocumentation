@@ -36,8 +36,8 @@ the last optional param can remove all empty entries.
 > - `removeEmptyEntries`: Whether to remove empty entries from the result.
 > 
 > **Returns**: A list of strings.
-<pre class="language-typescript"><code class="lang-typescript">function Join(list: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, separator: string) -> string</code></pre>
-> Joins a list of strings into a single string with the specified separator.
+<pre class="language-typescript"><code class="lang-typescript">function Join(list: <a data-footnote-ref href="#user-content-fn-3">List</a><object>, separator: string) -> string</code></pre>
+> Joins a list of values into a single string with the specified separator.
 > 
 > **Parameters**:
 > - `list`: The list of strings to join.
@@ -229,13 +229,13 @@ the last optional param can remove all empty entries.
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)

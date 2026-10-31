@@ -270,6 +270,66 @@ function OnCharacterSpawn(character)
 > - `enabled`: True to enable, false to disable.
 > 
 
+### Hierarchy
+**HumanPlayer**
+```
+HumanPlayer
+├── Armature
+│   └── Core
+│       ├── PlayerWindTrailEffect
+│       ├── Controller_Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   └── chest
+│       │       │       ├── neck
+│       │       │       │   └── head
+│       │       │       │       └── char_head
+│       │       │       ├── shoulder_L
+│       │       │       │   └── upper_arm_L
+│       │       │       │       └── forearm_L
+│       │       │       │           └── hand_L
+│       │       │       │               ├── hookRef
+│       │       │       │               └── checkBox
+│       │       │       ├── shoulder_R
+│       │       │       │   └── upper_arm_R
+│       │       │       │       └── forearm_R
+│       │       │       │           └── hand_R
+│       │       │       │               ├── hookRef
+│       │       │       │               └── checkBox
+│       │       │       ├── hookRefR1
+│       │       │       └── hookRefL1
+│       │       ├── thigh_L
+│       │       │   └── shin_L
+│       │       │       └── foot_L
+│       │       └── thigh_R
+│       │           └── shin_R
+│       │               └── foot_R
+│       ├── IK_L
+│       │   └── knee.L
+│       └── IK_R
+│           └── knee.R
+├── 3dmg_smoke
+├── speedFX
+│   └── speedEffect
+├── slideSparks
+├── character_chest
+├── character_leg
+├── character_arm_l
+├── character_arm_r
+├── character_body
+├── character_hand_l
+├── character_hand_r
+├── GroundRight
+├── GroundLeft
+├── buff1
+│   ├── LeviSpinTest1
+│   └── Particle System
+├── buff2
+└── fire1
+    ├── Sparks
+    └── SteamEffect
+```
+
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
 [^2]: [LineCastHitResult](../Collections/LineCastHitResult.md)
@@ -352,13 +412,13 @@ function OnCharacterSpawn(character)
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)

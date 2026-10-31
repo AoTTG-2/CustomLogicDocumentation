@@ -100,6 +100,331 @@ function OnCharacterSpawn(character)
 > - `attack`: The name of the attack to perform.
 > 
 
+### Hierarchy
+**Annie**
+```
+Annie
+├── Armature_FemT
+│   └── Core
+│       ├── Config
+│       │   └── Config_end
+│       ├── Controller_Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   └── chest
+│       │       │       ├── neck
+│       │       │       │   ├── head
+│       │       │       │   │   ├── Bone
+│       │       │       │   │   │   ├── Bone_end
+│       │       │       │   │   │   └── MouthHitbox
+│       │       │       │   │   ├── hair_back
+│       │       │       │   │   │   └── hair_back_end
+│       │       │       │   │   ├── hair_front
+│       │       │       │   │   │   └── hair_front_end
+│       │       │       │   │   ├── hair_left
+│       │       │       │   │   │   └── hair_left_end
+│       │       │       │   │   ├── hair_right
+│       │       │       │   │   │   └── hair_right_end
+│       │       │       │   │   └── EyesHurtbox
+│       │       │       │   └── NapeHurtbox
+│       │       │       ├── shoulder_L
+│       │       │       │   └── upper_arm_L
+│       │       │       │       └── forearm_L
+│       │       │       │           └── hand_L
+│       │       │       │               ├── hand_L_001
+│       │       │       │               │   └── hand_L_002
+│       │       │       │               │       ├── hand_L_003
+│       │       │       │               │       │   └── hand_L_003_end
+│       │       │       │               │       └── HandLHitbox
+│       │       │       │               └── hand_L_004
+│       │       │       │                   └── hand_L_005
+│       │       │       │                       └── hand_L_006
+│       │       │       │                           └── hand_L_006_end
+│       │       │       └── shoulder_R
+│       │       │           └── upper_arm_R
+│       │       │               └── forearm_R
+│       │       │                   └── hand_R
+│       │       │                       ├── hand_R_001
+│       │       │                       │   ├── hand_R_002
+│       │       │                       │   │   └── hand_R_003
+│       │       │                       │   │       └── hand_R_003_end
+│       │       │                       │   └── HandRHitbox
+│       │       │                       └── hand_R_004
+│       │       │                           └── hand_R_005
+│       │       │                               └── hand_R_006
+│       │       │                                   └── hand_R_006_end
+│       │       ├── thigh_L
+│       │       │   └── shin_L
+│       │       │       ├── foot_L
+│       │       │       │   └── toe_L
+│       │       │       │       └── toe_L_end
+│       │       │       ├── LegLHurtbox
+│       │       │       └── FootLHitbox
+│       │       └── thigh_R
+│       │           └── shin_R
+│       │               ├── foot_R
+│       │               │   └── toe_R
+│       │               │       └── toe_R_end
+│       │               ├── LegRHurtbox
+│       │               └── FootRHitbox
+│       ├── HeadIK
+│       │   └── HeadIK_end
+│       ├── IK_L
+│       │   └── knee_L
+│       │       └── knee_L_end
+│       └── IK_R
+│           └── knee_R
+│               └── knee_R_end
+├── FemT
+└── FemTHair
+```
+
+**Armored**
+```
+Armored
+├── Amarture_VER2
+│   └── Core
+│       ├── Configure
+│       ├── Controller.Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   └── chest
+│       │       │       ├── neck
+│       │       │       │   └── head
+│       │       │       │       └── Bone
+│       │       │       ├── NapeHurtbox
+│       │       │       ├── shoulder.L
+│       │       │       │   └── upper_arm.L
+│       │       │       │       └── forearm.L
+│       │       │       │           └── hand.L
+│       │       │       │               ├── hand.L.001
+│       │       │       │               │   ├── hand.L.002
+│       │       │       │               │   │   └── hand.L.003
+│       │       │       │               │   └── HandLHitbox
+│       │       │       │               └── hand.L.004
+│       │       │       │                   └── hand.L.005
+│       │       │       │                       └── hand.L.006
+│       │       │       └── shoulder.R
+│       │       │           └── upper_arm.R
+│       │       │               └── forearm.R
+│       │       │                   └── hand.R
+│       │       │                       ├── hand.R.001
+│       │       │                       │   ├── hand.R.002
+│       │       │                       │   │   └── hand.R.003
+│       │       │                       │   └── HandRHitbox
+│       │       │                       └── hand.R.004
+│       │       │                           └── hand.R.005
+│       │       │                               └── hand.R.006
+│       │       ├── thigh.L
+│       │       │   └── shin.L
+│       │       │       └── foot.L
+│       │       │           └── toe.L
+│       │       └── thigh.R
+│       │           └── shin.R
+│       │               └── foot.R
+│       │                   └── toe.R
+│       ├── Controller.Leg.L
+│       │   ├── Controller.asset.foot.IK.L.002
+│       │   │   └── Controller.asset.foot.IK.L.001
+│       │   │       └── Controller.foot.IK.L
+│       │   │           └── kneel.L
+│       │   └── Controller.Foot.L
+│       ├── Controller.Leg.R
+│       │   ├── Controller.asset.foot.IK.R.002
+│       │   │   └── Controller.asset.foot.IK.R.001
+│       │   │       └── Controller.foot.IK.R
+│       │   │           └── kneel.R
+│       │   └── Controller.Foot.R
+│       ├── IK_ElbowController.L
+│       ├── IK_ElbowController.R
+│       ├── IK_HandController.L
+│       │   └── BridgeHand.L
+│       └── IK_HandController.R
+│           └── BridgeHand.R
+├── def_titan
+├── def_titan_hair
+└── Anchor
+```
+
+**Eren**
+```
+Eren
+├── ErenRig_VER2
+│   └── Core
+│       ├── ARM_IK_R
+│       ├── Controller_Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   └── chest
+│       │       │       ├── neck
+│       │       │       │   └── head
+│       │       │       │       ├── Bone
+│       │       │       │       ├── Bone_001
+│       │       │       │       ├── Bone_002
+│       │       │       │       └── Bone_003
+│       │       │       ├── NapeHurtbox
+│       │       │       ├── shoulder_L
+│       │       │       │   └── upper_arm_L
+│       │       │       │       └── forearm_L
+│       │       │       │           └── hand_L
+│       │       │       │               ├── hand_L_001
+│       │       │       │               │   └── hand_L_002
+│       │       │       │               │       └── hand_L_003
+│       │       │       │               ├── HandLHitbox
+│       │       │       │               └── hand_L_004
+│       │       │       │                   └── hand_L_005
+│       │       │       │                       └── hand_L_006
+│       │       │       └── shoulder_R
+│       │       │           └── upper_arm_R
+│       │       │               └── forearm_R
+│       │       │                   └── hand_R
+│       │       │                       ├── hand_R_001
+│       │       │                       │   └── hand_R_002
+│       │       │                       │       └── hand_R_003
+│       │       │                       ├── HandRHitbox
+│       │       │                       └── hand_R_004
+│       │       │                           └── hand_R_005
+│       │       │                               └── hand_R_006
+│       │       ├── thigh_L
+│       │       │   └── shin_L
+│       │       │       └── foot_L
+│       │       │           ├── toe_L
+│       │       │           └── FootLHitbox
+│       │       └── thigh_R
+│       │           └── shin_R
+│       │               └── foot_R
+│       │                   ├── toe_R
+│       │                   └── FootRHitbox
+│       ├── IK.L
+│       │   └── kneel.L
+│       ├── IK.R
+│       │   └── kneel.R
+│       ├── IK_ELBOW_R
+│       ├── IK_TARGET
+│       └── Rock
+├── ErenTitan
+└── ErenTitanHair
+```
+
+**WallColossal**
+```
+WallColossal
+├── Armature_VER2
+│   └── Core
+│       ├── Controller_Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   ├── abs
+│       │       │   │   └── abs_end
+│       │       │   └── chest
+│       │       │       ├── breast.L
+│       │       │       │   └── breast.L_end
+│       │       │       ├── breast.R
+│       │       │       │   └── breast.R_end
+│       │       │       └── upperchest
+│       │       │           ├── neck
+│       │       │           │   ├── head
+│       │       │           │   │   └── Bone
+│       │       │           │   │       └── Bone_end
+│       │       │           │   ├── NapeHurtbox
+│       │       │           │   ├── ColossalSteam1
+│       │       │           │   │   └── extra
+│       │       │           │   ├── ColossalSteam2
+│       │       │           │   │   ├── extra
+│       │       │           │   │   └── embers
+│       │       │           │   └── SteamHitbox
+│       │       │           ├── shoulder_L
+│       │       │           │   └── upper_arm_L
+│       │       │           │       └── forearm_L
+│       │       │           │           ├── hand_L
+│       │       │           │           │   ├── hand_L_001.L
+│       │       │           │           │   │   └── hand_L_001.001.L
+│       │       │           │           │   │       └── hand_L_001.002.L
+│       │       │           │           │   │           └── hand_L_001.002.L_end
+│       │       │           │           │   ├── hand_L_004.L
+│       │       │           │           │   │   └── hand_L_004.001.L
+│       │       │           │           │   │       └── hand_L_004.002.L
+│       │       │           │           │   │           └── hand_L_004.002.L_end
+│       │       │           │           │   ├── hand_L_007.L
+│       │       │           │           │   │   └── hand_L_007.001.L
+│       │       │           │           │   │       └── hand_L_007.002.L
+│       │       │           │           │   │           └── hand_L_007.002.L_end
+│       │       │           │           │   ├── hand_L_011.L
+│       │       │           │           │   │   └── hand_L_011.001.L
+│       │       │           │           │   │       └── hand_L_011.002.L
+│       │       │           │           │   │           └── hand_L_011.002.L_end
+│       │       │           │           │   ├── hand_L_013.L
+│       │       │           │           │   │   └── hand_L_013.001.L
+│       │       │           │           │   │       └── hand_L_013.002.L
+│       │       │           │           │   │           └── hand_L_013.002.L_end
+│       │       │           │           │   ├── HandLHitbox
+│       │       │           │           │   └── HandLHurtbox
+│       │       │           │           ├── ForearmLHitbox
+│       │       │           │           └── ArmSmokeParticle
+│       │       │           │               └── Particle System
+│       │       │           ├── shoulder_R
+│       │       │           │   └── upper_arm_R
+│       │       │           │       └── forearm_R
+│       │       │           │           ├── hand_R
+│       │       │           │           │   ├── hand_L_001.R
+│       │       │           │           │   │   └── hand_L_001.001.R
+│       │       │           │           │   │       └── hand_L_001.002.R
+│       │       │           │           │   │           └── hand_L_001.002.R_end
+│       │       │           │           │   ├── hand_L_004.R
+│       │       │           │           │   │   └── hand_L_004.001.R
+│       │       │           │           │   │       └── hand_L_004.002.R
+│       │       │           │           │   │           └── hand_L_004.002.R_end
+│       │       │           │           │   ├── hand_L_007.R
+│       │       │           │           │   │   └── hand_L_007.001.R
+│       │       │           │           │   │       └── hand_L_007.002.R
+│       │       │           │           │   │           └── hand_L_007.002.R_end
+│       │       │           │           │   ├── hand_L_011.R
+│       │       │           │           │   │   └── hand_L_011.001.R
+│       │       │           │           │   │       └── hand_L_011.002.R
+│       │       │           │           │   │           └── hand_L_011.002.R_end
+│       │       │           │           │   ├── hand_L_013.R
+│       │       │           │           │   │   └── hand_L_013.001.R
+│       │       │           │           │   │       └── hand_L_013.002.R
+│       │       │           │           │   │           └── hand_L_013.002.R_end
+│       │       │           │           │   ├── HandRHitbox
+│       │       │           │           │   └── HandRHurtbox
+│       │       │           │           ├── ForearmRHitbox
+│       │       │           │           └── ArmSmokeParticle
+│       │       │           │               └── Particle System
+│       │       │           ├── breastpushbox
+│       │       │           ├── breastanglepushbox
+│       │       │           └── upperchestpushbox
+│       │       ├── thigh_L
+│       │       │   └── shin_L
+│       │       │       └── foot_L
+│       │       │           ├── toe.L
+│       │       │           │   └── toe.L_end
+│       │       │           └── FootLHitbox
+│       │       └── thigh_R
+│       │           └── shin_R
+│       │               └── foot_R
+│       │                   ├── toe.R
+│       │                   │   └── toe.R_end
+│       │                   └── FootRHitbox
+│       ├── IK.L
+│       │   └── knee.L
+│       │       └── knee.L_end
+│       ├── IK.R
+│       │   └── knee.R
+│       │       └── knee.R_end
+│       ├── IK_hand_L
+│       │   ├── IK_Elbow_L
+│       │   │   └── IK_Elbow_L_end
+│       │   └── IK_stable_L
+│       │       └── IK_stable_L_end
+│       └── IK_hand_R
+│           ├── IK_Elbow_R
+│           │   └── IK_Elbow_R_end
+│           └── IK_stable_R
+│               └── IK_stable_R_end
+└── Colossal_VER2
+```
+
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
 [^2]: [LineCastHitResult](../Collections/LineCastHitResult.md)
@@ -182,13 +507,13 @@ function OnCharacterSpawn(character)
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)

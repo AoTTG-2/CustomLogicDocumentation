@@ -10,6 +10,8 @@ Enumeration of available weapon types for humans.
 |AHSS|string|True|AHSS weapon type.|
 |APG|string|True|APG weapon type.|
 |Thunderspear|string|True|Thunderspear weapon type.|
+|Unarmed|string|True|Unarmed weapon type.|
+|Civilian|string|True|Civilian weapon type. No weapon or ODM gear.|
 
 
 [^0]: [Color](../Collections/Color.md)
@@ -94,13 +96,13 @@ Enumeration of available weapon types for humans.
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)

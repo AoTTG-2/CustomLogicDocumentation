@@ -8,6 +8,7 @@ Game functions such as spawning titans and managing game state.
 |---|---|---|---|
 |IsEnding|bool|True|Is the game ending?|
 |EndTimeLeft|float|True|Time left until the game ends.|
+|MainCharacter|[Character](../Entities/Character.md)|True|The local player's current character, if exists.|
 |Titans|[List](../Collections/List.md)<[Titan](../Entities/Titan.md)>|True|List of all titans.|
 |AITitans|[List](../Collections/List.md)<[Titan](../Entities/Titan.md)>|True|List of all AI titans.|
 |PlayerTitans|[List](../Collections/List.md)<[Titan](../Entities/Titan.md)>|True|List of all player titans.|
@@ -305,7 +306,7 @@ They may or may not be used depending on the value of `projectileName`.
 > Set the music playlist.
 > 
 > **Parameters**:
-> - `playlist`: The name of the playlist to set.
+> - `playlist`: The name of the playlist to set: Default, None, Custom, Menu, Ambient, Peaceful, Battle, Boss or Racing. None stops all music.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SetSong(song: string)</code></pre>
 > Set the music song.
@@ -429,13 +430,13 @@ They may or may not be used depending on the value of `projectileName`.
 [^79]: [SpecialEnum](../Enums/SpecialEnum.md)
 [^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
 [^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^82]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^83]: [TeamEnum](../Enums/TeamEnum.md)
+[^84]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^85]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^86]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^87]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^88]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
 [^89]: [UILabelEnum](../Enums/UILabelEnum.md)
 [^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
 [^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
