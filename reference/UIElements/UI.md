@@ -1,11 +1,14 @@
 # UI
 Inherits from [Object](../objects/Object.md)
 
-UI label functions.
+UI label functions. Most text fields support rich text, eg: <b>Bold Text</b> or <size=10>Sized Text</size>.
+HUD labels use legacy Unity Text by default. Set UI.LegacyLabels to false in Main.Init to use the new TextMeshPro system. TextMeshPro
+supports extra functions such as label backgrounds but has different font and rich text rendering.
 
 ### Static Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
+|LegacyLabels|bool|False|Uses the original Unity Text renderer for the nine HUD labels when true (default). Set to false to use TextMeshPro rich text and label backgrounds. Applies locally to SetLabel and its timed and networked variants; set this on every client in Main.Init. Does not affect popup labels or UI.Label elements.|
 |ForceHideNames|bool|False|Gets or sets whether character info popups should be force hidden. When enabled, character names will be hidden regardless of popup state. This is useful for custom UI panels that should hide character names when active. If this is enabled and then disabled, normal popup behavior resumes.|
 |GetPopups|[List](../Collections/List.md)<string>|True|Returns a list of all popups.|
 
@@ -150,6 +153,21 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > - `label`: The label name.
 > - `active`: Whether the label should be active.
 > 
+<pre class="language-typescript"><code class="lang-typescript">function SetLabelBackgroundColor(label: string, color: <a data-footnote-ref href="#user-content-fn-0">Color</a>)</code></pre>
+> Sets the background color of a label. Use an alpha of 0 to make the background invisible.
+Only works when UI.LegacyLabels is false. Calls in legacy mode are ignored.
+> 
+> **Parameters**:
+> - `label`: The label location. Refer to [UILabelEnum](../Enums/UILabelEnum.md)
+> - `color`: The background color.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function SetLabelBackgroundColorAll(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>)</code></pre>
+> Sets the background color of every label. Use an alpha of 0 to make the backgrounds invisible.
+Only works when UI.LegacyLabels is false. Calls in legacy mode are ignored. This affects all local labels, not all players.
+> 
+> **Parameters**:
+> - `color`: The background color.
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetKDRPanelActive(active: bool)</code></pre>
 > Sets whether the KDR panel (top-left) is active or not.
 > 
@@ -180,15 +198,15 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > **Parameters**:
 > - `active`: Whether the bottom HUD should be active.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function GetRootVisualElement() -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetRootVisualElement() -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Returns the root `VisualElement` which you can add other elements to.
 > 
 > **Returns**: The root `VisualElement`.
-<pre class="language-typescript"><code class="lang-typescript">function VisualElement() -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function VisualElement() -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Creates a new `VisualElement`.
 > 
 > **Returns**: A new VisualElement.
-<pre class="language-typescript"><code class="lang-typescript">function Button(text: string = "", clickEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-107">Button</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Button(text: string = "", clickEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-110">Button</a></code></pre>
 > Creates a new `Button` with optional text and click event.
 > 
 > **Parameters**:
@@ -196,21 +214,21 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > - `clickEvent`: The function that will be called when button is clicked.
 > 
 > **Returns**: A new Button.
-<pre class="language-typescript"><code class="lang-typescript">function Label(text: string = "") -> <a data-footnote-ref href="#user-content-fn-111">Label</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Label(text: string = "") -> <a data-footnote-ref href="#user-content-fn-114">Label</a></code></pre>
 > Creates a new `Label` with optional text.
 > 
 > **Parameters**:
 > - `text`: The text to be displayed.
 > 
 > **Returns**: A new Label.
-<pre class="language-typescript"><code class="lang-typescript">function TextField(label: string = "") -> <a data-footnote-ref href="#user-content-fn-115">TextField</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextField(label: string = "") -> <a data-footnote-ref href="#user-content-fn-118">TextField</a></code></pre>
 > Creates a new `TextField` with optional label.
 > 
 > **Parameters**:
 > - `label`: The label text displayed next to the TextField (default: empty).
 > 
 > **Returns**: A new TextField.
-<pre class="language-typescript"><code class="lang-typescript">function Toggle(label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-116">Toggle</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Toggle(label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-119">Toggle</a></code></pre>
 > Creates a new `Toggle` with optional label and value changed event.
 > 
 > **Parameters**:
@@ -218,7 +236,7 @@ If set to empty string, will use the default "Kills / Deaths..." display.
 > - `valueChangedEvent`: The function that will be called when toggle value changes.
 > 
 > **Returns**: A new Toggle.
-<pre class="language-typescript"><code class="lang-typescript">function Slider(lowValue: float = 0, highValue: float = 100, tickInterval: float = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-114">Slider</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Slider(lowValue: float = 0, highValue: float = 100, tickInterval: float = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-117">Slider</a></code></pre>
 > Creates a new `Slider` for floating-point values with optional range, tick interval, and value changed event.
 The slider will snap to values at multiples of the tick interval.
 > 
@@ -230,7 +248,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when slider value changes.
 > 
 > **Returns**: A new Slider.
-<pre class="language-typescript"><code class="lang-typescript">function SliderInt(lowValue: int = 0, highValue: int = 100, tickInterval: int = 1, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-114">Slider</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SliderInt(lowValue: int = 0, highValue: int = 100, tickInterval: int = 1, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-117">Slider</a></code></pre>
 > Creates a new `Slider` for integer values with optional range, tick interval, and value changed event.
 The slider will snap to values at multiples of the tick interval.
 > 
@@ -242,7 +260,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when slider value changes.
 > 
 > **Returns**: A new SliderInt.
-<pre class="language-typescript"><code class="lang-typescript">function Dropdown(choices: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, defaultIndex: int = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-108">Dropdown</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Dropdown(choices: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, defaultIndex: int = 0, label: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-111">Dropdown</a></code></pre>
 > Creates a new `Dropdown` with a list of choices and optional label and value changed event.
 > 
 > **Parameters**:
@@ -252,7 +270,7 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when dropdown value changes.
 > 
 > **Returns**: A new Dropdown.
-<pre class="language-typescript"><code class="lang-typescript">function ProgressBar(lowValue: float = 0, highValue: float = 100, title: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-112">ProgressBar</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ProgressBar(lowValue: float = 0, highValue: float = 100, title: string = "", valueChangedEvent: function = null) -> <a data-footnote-ref href="#user-content-fn-115">ProgressBar</a></code></pre>
 > Creates a new `ProgressBar` with optional range, title, and value changed event.
 > 
 > **Parameters**:
@@ -262,18 +280,18 @@ The slider will snap to values at multiples of the tick interval.
 > - `valueChangedEvent`: The function that will be called when progress bar value changes.
 > 
 > **Returns**: A new ProgressBar.
-<pre class="language-typescript"><code class="lang-typescript">function ScrollView() -> <a data-footnote-ref href="#user-content-fn-113">ScrollView</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function ScrollView() -> <a data-footnote-ref href="#user-content-fn-116">ScrollView</a></code></pre>
 > Creates a new `ScrollView` for scrollable content.
 > 
 > **Returns**: A new ScrollView.
-<pre class="language-typescript"><code class="lang-typescript">function Icon(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-109">Icon</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Icon(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-112">Icon</a></code></pre>
 > Creates a new `Icon` element for displaying images/icons.
 > 
 > **Parameters**:
 > - `iconPath`: Path to the icon resource (e.g., "Icons/Game/BladeIcon").
 > 
 > **Returns**: A new Icon.
-<pre class="language-typescript"><code class="lang-typescript">function Image(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-110">Image</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Image(iconPath: string = "") -> <a data-footnote-ref href="#user-content-fn-113">Image</a></code></pre>
 > Creates a new `Image` element for displaying images/icons.
 > 
 > **Parameters**:
@@ -304,106 +322,109 @@ The slider will snap to values at multiples of the tick interval.
 [^20]: [RigidbodyBuiltin](../Component/RigidbodyBuiltin.md)
 [^21]: [VideoPlayer](../Component/VideoPlayer.md)
 [^22]: [Character](../Entities/Character.md)
-[^23]: [Human](../Entities/Human.md)
-[^24]: [MapObject](../Entities/MapObject.md)
-[^25]: [NetworkView](../Entities/NetworkView.md)
-[^26]: [Player](../Entities/Player.md)
-[^27]: [Prefab](../Entities/Prefab.md)
-[^28]: [Shifter](../Entities/Shifter.md)
-[^29]: [Titan](../Entities/Titan.md)
-[^30]: [Transform](../Entities/Transform.md)
-[^31]: [WallColossal](../Entities/WallColossal.md)
-[^32]: [AlignEnum](../Enums/AlignEnum.md)
-[^33]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
-[^34]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
-[^35]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
-[^36]: [CameraModeEnum](../Enums/CameraModeEnum.md)
-[^37]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
-[^38]: [CollideModeEnum](../Enums/CollideModeEnum.md)
-[^39]: [CollideWithEnum](../Enums/CollideWithEnum.md)
-[^40]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
-[^41]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
-[^42]: [EffectNameEnum](../Enums/EffectNameEnum.md)
-[^43]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
-[^44]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
-[^45]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
-[^46]: [FontStyleEnum](../Enums/FontStyleEnum.md)
-[^47]: [ForceModeEnum](../Enums/ForceModeEnum.md)
-[^48]: [GradientModeEnum](../Enums/GradientModeEnum.md)
-[^49]: [HandStateEnum](../Enums/HandStateEnum.md)
-[^50]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
-[^51]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
-[^52]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
-[^53]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
-[^54]: [HumanStateEnum](../Enums/HumanStateEnum.md)
-[^55]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
-[^56]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
-[^57]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
-[^58]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
-[^59]: [InputHumanEnum](../Enums/InputHumanEnum.md)
-[^60]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
-[^61]: [InputTitanEnum](../Enums/InputTitanEnum.md)
-[^62]: [JustifyEnum](../Enums/JustifyEnum.md)
-[^63]: [LanguageEnum](../Enums/LanguageEnum.md)
-[^64]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
-[^65]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
-[^66]: [LoadoutEnum](../Enums/LoadoutEnum.md)
-[^67]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
-[^68]: [OverflowEnum](../Enums/OverflowEnum.md)
-[^69]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
-[^70]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
-[^71]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-[^72]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
-[^73]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
-[^74]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
-[^75]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
-[^76]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
-[^77]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
-[^78]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
-[^79]: [SpecialEnum](../Enums/SpecialEnum.md)
-[^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
-[^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
-[^89]: [UILabelEnum](../Enums/UILabelEnum.md)
-[^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
-[^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
-[^92]: [WeaponEnum](../Enums/WeaponEnum.md)
-[^93]: [WrapEnum](../Enums/WrapEnum.md)
-[^94]: [Camera](../Game/Camera.md)
-[^95]: [Commands](../Game/Commands.md)
-[^96]: [Cutscene](../Game/Cutscene.md)
-[^97]: [Game](../Game/Game.md)
-[^98]: [Input](../Game/Input.md)
-[^99]: [Locale](../Game/Locale.md)
-[^100]: [Map](../Game/Map.md)
-[^101]: [Network](../Game/Network.md)
-[^102]: [PersistentData](../Game/PersistentData.md)
-[^103]: [Physics](../Game/Physics.md)
-[^104]: [RoomData](../Game/RoomData.md)
-[^105]: [Service](../Game/Service.md)
-[^106]: [Time](../Game/Time.md)
-[^107]: [Button](../UIElements/Button.md)
-[^108]: [Dropdown](../UIElements/Dropdown.md)
-[^109]: [Icon](../UIElements/Icon.md)
-[^110]: [Image](../UIElements/Image.md)
-[^111]: [Label](../UIElements/Label.md)
-[^112]: [ProgressBar](../UIElements/ProgressBar.md)
-[^113]: [ScrollView](../UIElements/ScrollView.md)
-[^114]: [Slider](../UIElements/Slider.md)
-[^115]: [TextField](../UIElements/TextField.md)
-[^116]: [Toggle](../UIElements/Toggle.md)
-[^117]: [UI](../UIElements/UI.md)
-[^118]: [VisualElement](../UIElements/VisualElement.md)
-[^119]: [Convert](../Utility/Convert.md)
-[^120]: [Json](../Utility/Json.md)
-[^121]: [Math](../Utility/Math.md)
-[^122]: [Random](../Utility/Random.md)
-[^123]: [String](../Utility/String.md)
-[^124]: [Object](../objects/Object.md)
-[^125]: [Component](../objects/Component.md)
+[^23]: [Horse](../Entities/Horse.md)
+[^24]: [Human](../Entities/Human.md)
+[^25]: [MapObject](../Entities/MapObject.md)
+[^26]: [NetworkView](../Entities/NetworkView.md)
+[^27]: [Player](../Entities/Player.md)
+[^28]: [Prefab](../Entities/Prefab.md)
+[^29]: [Shifter](../Entities/Shifter.md)
+[^30]: [Titan](../Entities/Titan.md)
+[^31]: [Transform](../Entities/Transform.md)
+[^32]: [WallColossal](../Entities/WallColossal.md)
+[^33]: [AlignEnum](../Enums/AlignEnum.md)
+[^34]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
+[^35]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
+[^36]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
+[^37]: [CameraModeEnum](../Enums/CameraModeEnum.md)
+[^38]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
+[^39]: [CollideModeEnum](../Enums/CollideModeEnum.md)
+[^40]: [CollideWithEnum](../Enums/CollideWithEnum.md)
+[^41]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
+[^42]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
+[^43]: [EffectNameEnum](../Enums/EffectNameEnum.md)
+[^44]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
+[^45]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
+[^46]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
+[^47]: [FontStyleEnum](../Enums/FontStyleEnum.md)
+[^48]: [ForceModeEnum](../Enums/ForceModeEnum.md)
+[^49]: [GradientModeEnum](../Enums/GradientModeEnum.md)
+[^50]: [HandStateEnum](../Enums/HandStateEnum.md)
+[^51]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
+[^52]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
+[^53]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
+[^54]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
+[^55]: [HumanStateEnum](../Enums/HumanStateEnum.md)
+[^56]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
+[^57]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
+[^58]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
+[^59]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
+[^60]: [InputHumanEnum](../Enums/InputHumanEnum.md)
+[^61]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
+[^62]: [InputTitanEnum](../Enums/InputTitanEnum.md)
+[^63]: [JustifyEnum](../Enums/JustifyEnum.md)
+[^64]: [LanguageEnum](../Enums/LanguageEnum.md)
+[^65]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
+[^66]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
+[^67]: [LoadoutEnum](../Enums/LoadoutEnum.md)
+[^68]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
+[^69]: [OverflowEnum](../Enums/OverflowEnum.md)
+[^70]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
+[^71]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
+[^72]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
+[^73]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
+[^74]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
+[^75]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
+[^76]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
+[^77]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+[^78]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
+[^79]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
+[^80]: [SpecialEnum](../Enums/SpecialEnum.md)
+[^81]: [SteamStateEnum](../Enums/SteamStateEnum.md)
+[^82]: [StunStateEnum](../Enums/StunStateEnum.md)
+[^83]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^84]: [TeamEnum](../Enums/TeamEnum.md)
+[^85]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^86]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^87]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^88]: [TitanDeathTypeEnum](../Enums/TitanDeathTypeEnum.md)
+[^89]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^90]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
+[^91]: [UILabelEnum](../Enums/UILabelEnum.md)
+[^92]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
+[^93]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
+[^94]: [WeaponEnum](../Enums/WeaponEnum.md)
+[^95]: [WrapEnum](../Enums/WrapEnum.md)
+[^96]: [Camera](../Game/Camera.md)
+[^97]: [Commands](../Game/Commands.md)
+[^98]: [Cutscene](../Game/Cutscene.md)
+[^99]: [ExperienceScore](../Game/ExperienceScore.md)
+[^100]: [Game](../Game/Game.md)
+[^101]: [Input](../Game/Input.md)
+[^102]: [Locale](../Game/Locale.md)
+[^103]: [Map](../Game/Map.md)
+[^104]: [Network](../Game/Network.md)
+[^105]: [PersistentData](../Game/PersistentData.md)
+[^106]: [Physics](../Game/Physics.md)
+[^107]: [RoomData](../Game/RoomData.md)
+[^108]: [Service](../Game/Service.md)
+[^109]: [Time](../Game/Time.md)
+[^110]: [Button](../UIElements/Button.md)
+[^111]: [Dropdown](../UIElements/Dropdown.md)
+[^112]: [Icon](../UIElements/Icon.md)
+[^113]: [Image](../UIElements/Image.md)
+[^114]: [Label](../UIElements/Label.md)
+[^115]: [ProgressBar](../UIElements/ProgressBar.md)
+[^116]: [ScrollView](../UIElements/ScrollView.md)
+[^117]: [Slider](../UIElements/Slider.md)
+[^118]: [TextField](../UIElements/TextField.md)
+[^119]: [Toggle](../UIElements/Toggle.md)
+[^120]: [UI](../UIElements/UI.md)
+[^121]: [VisualElement](../UIElements/VisualElement.md)
+[^122]: [Convert](../Utility/Convert.md)
+[^123]: [Json](../Utility/Json.md)
+[^124]: [Math](../Utility/Math.md)
+[^125]: [Random](../Utility/Random.md)
+[^126]: [String](../Utility/String.md)
+[^127]: [Object](../objects/Object.md)
+[^128]: [Component](../objects/Component.md)

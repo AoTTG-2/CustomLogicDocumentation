@@ -1,7 +1,7 @@
 # Character
 Inherits from [Object](../objects/Object.md)
 
-Character is the base class that `Human`, `Titan`, and `Shifter` inherit from.
+Character is the base class that `Human`, `Horse`, `Titan`, and `Shifter` inherit from.
 Only character owner can modify properties and call functions unless otherwise specified.
 
 ### Remarks
@@ -36,6 +36,12 @@ function OnCharacterSpawn(character)
 ### Properties
 |Name|Type|Readonly|Description|
 |---|---|---|---|
+|CurrentTarget|[Object](../objects/Object.md)|True|(AI) current target, or null.|
+|DetectRange|float|False|(AI) character's detection range in world units.|
+|State|string|True|Character state name.|
+|IsWalking|bool|False|(AI) whether to walk instead of run.|
+|AIEnabled|bool|False|(AI) enables automatic behavior.|
+|UsePathfinding|bool|False|Whether AI movement uses navmesh paths.|
 |Name|string|False|Character's name.|
 |Guild|string|False|Character's guild.|
 |Player|[Player](../Entities/Player.md)|True|Player who owns this character.|
@@ -65,6 +71,52 @@ function OnCharacterSpawn(character)
 
 
 ### Methods
+<pre class="language-typescript"><code class="lang-typescript">function GetTarget() -> <a data-footnote-ref href="#user-content-fn-127">Object</a></code></pre>
+> Gets the (AI) character's current target.
+> 
+> **Returns**: A Character or MapTargetable, or null.
+<pre class="language-typescript"><code class="lang-typescript">function SetTarget(target: <a data-footnote-ref href="#user-content-fn-127">Object</a>, focusDuration: float = 0)</code></pre>
+> Sets the (AI) character's target.
+> 
+> **Parameters**:
+> - `target`: A Character or MapTargetable, or null to clear.
+> - `focusDuration`: Focus time in seconds. 0 uses the default.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function ClearTarget()</code></pre>
+> Clears the combat target of an (AI) character.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function GetNearestEnemy() -> <a data-footnote-ref href="#user-content-fn-127">Object</a></code></pre>
+> Finds the nearest enemy or map targetable within DetectRange.
+> 
+> **Returns**: A Character or MapTargetable, or null.
+<pre class="language-typescript"><code class="lang-typescript">function TargetNearestEnemy(focusDuration: float = 0)</code></pre>
+> (AI) targets the nearest enemy.
+> 
+> **Parameters**:
+> - `focusDuration`: Focus time in seconds. 0 uses the default.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function MoveTo(position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, range: float, ignoreEnemies: bool = False)</code></pre>
+> Moves the (AI) character to a position.
+> 
+> **Parameters**:
+> - `position`: Target position.
+> - `range`: Stopping distance.
+> - `ignoreEnemies`: Ignore enemies during movement. Default: false.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function MoveToTarget(target: <a data-footnote-ref href="#user-content-fn-127">Object</a>, range: float, ignoreEnemies: bool = False)</code></pre>
+> Moves the (AI) character within range of a target.
+> 
+> **Parameters**:
+> - `target`: A Character or MapTargetable.
+> - `range`: Stopping distance.
+> - `ignoreEnemies`: Ignore enemies during movement. Default: false.
+> 
+<pre class="language-typescript"><code class="lang-typescript">function Idle(time: float = -1)</code></pre>
+> Stops the (AI) character's movement and targeting.
+> 
+> **Parameters**:
+> - `time`: Idle time in seconds. Default: 0 for humans, indefinite for titans and shifters.
+> 
 <pre class="language-typescript"><code class="lang-typescript">function SetDisplayName(name: string, showTag: bool = True)</code></pre>
 > Sets the character display name and optionally enables name tag rendering for AI.
 Use this for AI spawned characters when you want their name popup to appear.
@@ -163,13 +215,14 @@ Note that shifters also have all titan sounds.
 > - `sound`: Name of the sound. Refer to [HumanSoundEnum](../Enums/HumanSoundEnum.md), [TitanSoundEnum](../Enums/TitanSoundEnum.md), [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
 > 
 > **Returns**: True if the sound is playing, false otherwise.
-<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PlaySound(sound: string, local: bool = False)</code></pre>
 > Plays a sound for the character.
 Available sound names can be found here: Human, Shifters, Titans.
 Note that shifters also have all titan sounds.
 > 
 > **Parameters**:
 > - `sound`: Name of the sound to play. Refer to [HumanSoundEnum](../Enums/HumanSoundEnum.md), [TitanSoundEnum](../Enums/TitanSoundEnum.md), [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+> - `local`: If true, the sound only plays for the local client and is not networked.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function StopSound(sound: string)</code></pre>
 > Stops a sound for the character.
@@ -239,106 +292,109 @@ Does not play or stop the sound.
 [^20]: [RigidbodyBuiltin](../Component/RigidbodyBuiltin.md)
 [^21]: [VideoPlayer](../Component/VideoPlayer.md)
 [^22]: [Character](../Entities/Character.md)
-[^23]: [Human](../Entities/Human.md)
-[^24]: [MapObject](../Entities/MapObject.md)
-[^25]: [NetworkView](../Entities/NetworkView.md)
-[^26]: [Player](../Entities/Player.md)
-[^27]: [Prefab](../Entities/Prefab.md)
-[^28]: [Shifter](../Entities/Shifter.md)
-[^29]: [Titan](../Entities/Titan.md)
-[^30]: [Transform](../Entities/Transform.md)
-[^31]: [WallColossal](../Entities/WallColossal.md)
-[^32]: [AlignEnum](../Enums/AlignEnum.md)
-[^33]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
-[^34]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
-[^35]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
-[^36]: [CameraModeEnum](../Enums/CameraModeEnum.md)
-[^37]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
-[^38]: [CollideModeEnum](../Enums/CollideModeEnum.md)
-[^39]: [CollideWithEnum](../Enums/CollideWithEnum.md)
-[^40]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
-[^41]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
-[^42]: [EffectNameEnum](../Enums/EffectNameEnum.md)
-[^43]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
-[^44]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
-[^45]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
-[^46]: [FontStyleEnum](../Enums/FontStyleEnum.md)
-[^47]: [ForceModeEnum](../Enums/ForceModeEnum.md)
-[^48]: [GradientModeEnum](../Enums/GradientModeEnum.md)
-[^49]: [HandStateEnum](../Enums/HandStateEnum.md)
-[^50]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
-[^51]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
-[^52]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
-[^53]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
-[^54]: [HumanStateEnum](../Enums/HumanStateEnum.md)
-[^55]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
-[^56]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
-[^57]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
-[^58]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
-[^59]: [InputHumanEnum](../Enums/InputHumanEnum.md)
-[^60]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
-[^61]: [InputTitanEnum](../Enums/InputTitanEnum.md)
-[^62]: [JustifyEnum](../Enums/JustifyEnum.md)
-[^63]: [LanguageEnum](../Enums/LanguageEnum.md)
-[^64]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
-[^65]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
-[^66]: [LoadoutEnum](../Enums/LoadoutEnum.md)
-[^67]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
-[^68]: [OverflowEnum](../Enums/OverflowEnum.md)
-[^69]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
-[^70]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
-[^71]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-[^72]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
-[^73]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
-[^74]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
-[^75]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
-[^76]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
-[^77]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
-[^78]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
-[^79]: [SpecialEnum](../Enums/SpecialEnum.md)
-[^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
-[^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
-[^89]: [UILabelEnum](../Enums/UILabelEnum.md)
-[^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
-[^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
-[^92]: [WeaponEnum](../Enums/WeaponEnum.md)
-[^93]: [WrapEnum](../Enums/WrapEnum.md)
-[^94]: [Camera](../Game/Camera.md)
-[^95]: [Commands](../Game/Commands.md)
-[^96]: [Cutscene](../Game/Cutscene.md)
-[^97]: [Game](../Game/Game.md)
-[^98]: [Input](../Game/Input.md)
-[^99]: [Locale](../Game/Locale.md)
-[^100]: [Map](../Game/Map.md)
-[^101]: [Network](../Game/Network.md)
-[^102]: [PersistentData](../Game/PersistentData.md)
-[^103]: [Physics](../Game/Physics.md)
-[^104]: [RoomData](../Game/RoomData.md)
-[^105]: [Service](../Game/Service.md)
-[^106]: [Time](../Game/Time.md)
-[^107]: [Button](../UIElements/Button.md)
-[^108]: [Dropdown](../UIElements/Dropdown.md)
-[^109]: [Icon](../UIElements/Icon.md)
-[^110]: [Image](../UIElements/Image.md)
-[^111]: [Label](../UIElements/Label.md)
-[^112]: [ProgressBar](../UIElements/ProgressBar.md)
-[^113]: [ScrollView](../UIElements/ScrollView.md)
-[^114]: [Slider](../UIElements/Slider.md)
-[^115]: [TextField](../UIElements/TextField.md)
-[^116]: [Toggle](../UIElements/Toggle.md)
-[^117]: [UI](../UIElements/UI.md)
-[^118]: [VisualElement](../UIElements/VisualElement.md)
-[^119]: [Convert](../Utility/Convert.md)
-[^120]: [Json](../Utility/Json.md)
-[^121]: [Math](../Utility/Math.md)
-[^122]: [Random](../Utility/Random.md)
-[^123]: [String](../Utility/String.md)
-[^124]: [Object](../objects/Object.md)
-[^125]: [Component](../objects/Component.md)
+[^23]: [Horse](../Entities/Horse.md)
+[^24]: [Human](../Entities/Human.md)
+[^25]: [MapObject](../Entities/MapObject.md)
+[^26]: [NetworkView](../Entities/NetworkView.md)
+[^27]: [Player](../Entities/Player.md)
+[^28]: [Prefab](../Entities/Prefab.md)
+[^29]: [Shifter](../Entities/Shifter.md)
+[^30]: [Titan](../Entities/Titan.md)
+[^31]: [Transform](../Entities/Transform.md)
+[^32]: [WallColossal](../Entities/WallColossal.md)
+[^33]: [AlignEnum](../Enums/AlignEnum.md)
+[^34]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
+[^35]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
+[^36]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
+[^37]: [CameraModeEnum](../Enums/CameraModeEnum.md)
+[^38]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
+[^39]: [CollideModeEnum](../Enums/CollideModeEnum.md)
+[^40]: [CollideWithEnum](../Enums/CollideWithEnum.md)
+[^41]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
+[^42]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
+[^43]: [EffectNameEnum](../Enums/EffectNameEnum.md)
+[^44]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
+[^45]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
+[^46]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
+[^47]: [FontStyleEnum](../Enums/FontStyleEnum.md)
+[^48]: [ForceModeEnum](../Enums/ForceModeEnum.md)
+[^49]: [GradientModeEnum](../Enums/GradientModeEnum.md)
+[^50]: [HandStateEnum](../Enums/HandStateEnum.md)
+[^51]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
+[^52]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
+[^53]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
+[^54]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
+[^55]: [HumanStateEnum](../Enums/HumanStateEnum.md)
+[^56]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
+[^57]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
+[^58]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
+[^59]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
+[^60]: [InputHumanEnum](../Enums/InputHumanEnum.md)
+[^61]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
+[^62]: [InputTitanEnum](../Enums/InputTitanEnum.md)
+[^63]: [JustifyEnum](../Enums/JustifyEnum.md)
+[^64]: [LanguageEnum](../Enums/LanguageEnum.md)
+[^65]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
+[^66]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
+[^67]: [LoadoutEnum](../Enums/LoadoutEnum.md)
+[^68]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
+[^69]: [OverflowEnum](../Enums/OverflowEnum.md)
+[^70]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
+[^71]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
+[^72]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
+[^73]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
+[^74]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
+[^75]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
+[^76]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
+[^77]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+[^78]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
+[^79]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
+[^80]: [SpecialEnum](../Enums/SpecialEnum.md)
+[^81]: [SteamStateEnum](../Enums/SteamStateEnum.md)
+[^82]: [StunStateEnum](../Enums/StunStateEnum.md)
+[^83]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^84]: [TeamEnum](../Enums/TeamEnum.md)
+[^85]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^86]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^87]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^88]: [TitanDeathTypeEnum](../Enums/TitanDeathTypeEnum.md)
+[^89]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^90]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
+[^91]: [UILabelEnum](../Enums/UILabelEnum.md)
+[^92]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
+[^93]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
+[^94]: [WeaponEnum](../Enums/WeaponEnum.md)
+[^95]: [WrapEnum](../Enums/WrapEnum.md)
+[^96]: [Camera](../Game/Camera.md)
+[^97]: [Commands](../Game/Commands.md)
+[^98]: [Cutscene](../Game/Cutscene.md)
+[^99]: [ExperienceScore](../Game/ExperienceScore.md)
+[^100]: [Game](../Game/Game.md)
+[^101]: [Input](../Game/Input.md)
+[^102]: [Locale](../Game/Locale.md)
+[^103]: [Map](../Game/Map.md)
+[^104]: [Network](../Game/Network.md)
+[^105]: [PersistentData](../Game/PersistentData.md)
+[^106]: [Physics](../Game/Physics.md)
+[^107]: [RoomData](../Game/RoomData.md)
+[^108]: [Service](../Game/Service.md)
+[^109]: [Time](../Game/Time.md)
+[^110]: [Button](../UIElements/Button.md)
+[^111]: [Dropdown](../UIElements/Dropdown.md)
+[^112]: [Icon](../UIElements/Icon.md)
+[^113]: [Image](../UIElements/Image.md)
+[^114]: [Label](../UIElements/Label.md)
+[^115]: [ProgressBar](../UIElements/ProgressBar.md)
+[^116]: [ScrollView](../UIElements/ScrollView.md)
+[^117]: [Slider](../UIElements/Slider.md)
+[^118]: [TextField](../UIElements/TextField.md)
+[^119]: [Toggle](../UIElements/Toggle.md)
+[^120]: [UI](../UIElements/UI.md)
+[^121]: [VisualElement](../UIElements/VisualElement.md)
+[^122]: [Convert](../Utility/Convert.md)
+[^123]: [Json](../Utility/Json.md)
+[^124]: [Math](../Utility/Math.md)
+[^125]: [Random](../Utility/Random.md)
+[^126]: [String](../Utility/String.md)
+[^127]: [Object](../objects/Object.md)
+[^128]: [Component](../objects/Component.md)

@@ -29,7 +29,8 @@ function OnCharacterSpawn(character)
 |MaxGas|float|False|The max gas of the human.|
 |Acceleration|int|False|The acceleration of the human.|
 |Speed|int|False|The speed of the human.|
-|HorseFollowEnabled|bool|False|Whether horse follow is enabled.|
+|Horse|[Horse](../Entities/Horse.md)|True|The owner's horse, or null if unavailable.|
+|HorseFollowEnabled|bool|False|Whether the horse follows this human.|
 |HorseTransform|[Transform](../Entities/Transform.md)|True|The transform of the horse belonging to this human. Returns null if horses are disabled.|
 |HorseSpeed|float|False|The speed of the horse.|
 |CurrentBladeDurability|float|False|The current blade durability.|
@@ -47,12 +48,10 @@ function OnCharacterSpawn(character)
 |MountedMapObject|[MapObject](../Entities/MapObject.md)|True|The map object the human is mounted on.|
 |MountedTransform|[Transform](../Entities/Transform.md)|True|The transform the human is mounted on.|
 |AutoRefillGas|bool|False|Whether the human auto refills gas.|
-|State|string|True|The state of the human. Refer to [HumanStateEnum](../Enums/HumanStateEnum.md)|
 |CanDodge|bool|False|Whether the human can dodge.|
 |IsInvincible|bool|False|Whether the human is invincible.|
 |InvincibleTimeLeft|float|False|The time left for invincibility.|
 |IsCarried|bool|True|If the human is carried.|
-|Grounded|bool|True|If the human is on the ground.|
 |Pivot|bool|True|If the human can hold reel in/out.|
 |PivotPosition|[Vector3](../Collections/Vector3.md)|True|The position of the pivot when the human holds reel in/out.|
 |IsHookedLeft|bool|True|If the left hook is hooked.|
@@ -65,10 +64,11 @@ function OnCharacterSpawn(character)
 |RightHookReady|bool|True|If the right hook is ready.|
 |LeftHookPosition|[Vector3](../Collections/Vector3.md)|True|Position of the left hook. Returns null if there is no hook.|
 |RightHookPosition|[Vector3](../Collections/Vector3.md)|True|Position of the right hook. Returns null if there is no hook.|
-|Target|[Object](../objects/Object.md)|False|The target currently focused by this character. Returns null if no target is set.|
-|TargetPosition|[Vector3](../Collections/Vector3.md)|False|The target position of the (AI) human.|
+|FocusRange|float|False|(AI) human's focus range.|
+|FocusTime|float|False|(AI) default target focus time in seconds.|
+|Target|[Object](../objects/Object.md)|False|**Obsolete**: Use GetTarget() and SetTarget() instead. (AI) target. Use GetTarget() and SetTarget() instead.|
+|TargetPosition|[Vector3](../Collections/Vector3.md)|False|The movement or aiming target position of the (AI) human.|
 |TargetVelocity|[Vector3](../Collections/Vector3.md)|True|The target velocity of the (AI) human.|
-|IsWalking|bool|False|Whether the AI controller should walk instead of run. Defaults to false (run).|
 |AllowHorse|bool|False|Allow the (AI) human to have horse.|
 |AllowSkin|bool|False|Allow the (AI) human to use the skin. (preset skin only)|
 
@@ -90,7 +90,7 @@ function OnCharacterSpawn(character)
 <pre class="language-typescript"><code class="lang-typescript">function ClearRightHook()</code></pre>
 > Clears the right hook.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MountMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-24">MapObject</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, canMountedAttack: bool = False)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MountMapObject(mapObject: <a data-footnote-ref href="#user-content-fn-25">MapObject</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, canMountedAttack: bool = False)</code></pre>
 > Mounts the human on a map object.
 > 
 > **Parameters**:
@@ -99,7 +99,7 @@ function OnCharacterSpawn(character)
 > - `rotationOffset`: The rotation offset from the mount point.
 > - `canMountedAttack`: If true, allows the human to attack while mounted (default: false).
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MountTransform(transform: <a data-footnote-ref href="#user-content-fn-30">Transform</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, canMountedAttack: bool = False)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MountTransform(transform: <a data-footnote-ref href="#user-content-fn-31">Transform</a>, positionOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, rotationOffset: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, canMountedAttack: bool = False)</code></pre>
 > Mounts the human on a transform.
 > 
 > **Parameters**:
@@ -132,23 +132,6 @@ function OnCharacterSpawn(character)
 <pre class="language-typescript"><code class="lang-typescript">function DisablePerks()</code></pre>
 > Disables all perks of the human.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MoveTo(position: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>, range: float)</code></pre>
-> Causes the (AI) human to move towards a position and stopping when within specified range.
-> 
-> **Parameters**:
-> - `position`: The target position to move towards.
-> - `range`: The stopping range from the target position.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function MoveToTarget(target: <a data-footnote-ref href="#user-content-fn-124">Object</a>, range: float)</code></pre>
-> Causes the (AI) human to move towards a target and stopping when within specified range.
-> 
-> **Parameters**:
-> - `target`: The target to move towards.
-> - `range`: The stopping range from the target.
-> 
-<pre class="language-typescript"><code class="lang-typescript">function Idle()</code></pre>
-> Causes the (AI) human to idle.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function HasAIState(name: string) -> bool</code></pre>
 > Determine whether an AIState exists for the (AI) human.
 > 
@@ -156,27 +139,27 @@ function OnCharacterSpawn(character)
 > - `name`: The name of the AI state.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SetAIState(name: string, classInstance: UserClassInstance = null)</code></pre>
-> Set the custom AI states for the (AI) human.
+> (AI) registers or removes a custom AI state.
 > 
 > **Parameters**:
-> - `name`: The name of the AI state.
-> - `classInstance`: The class instance for the AI state.
+> - `name`: State name.
+> - `classInstance`: State instance, or null to remove.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function GetAIState() -> string</code></pre>
-> Get the name of the AI state of the (AI) human.
+> (AI) current AI state name, or null.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SwitchAIState(name: string)</code></pre>
-> Switch the AI state of the (AI) human.
+> (AI) switches to a registered state.
 > 
 > **Parameters**:
-> - `name`: The name of the AI state to switch to.
+> - `name`: State name.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function ResetCallback(callback: string, method: function = null)</code></pre>
-> Reset the callbacks for the (AI) human. Optional: OnIdle, PreAction, PostAction, MoveToCallback.
+> (AI) sets or clears a callback.
 > 
 > **Parameters**:
-> - `callback`: The callback name to reset.
-> - `method`: The method to set as the callback.
+> - `callback`: OnIdle, PreAction, PostAction, or MoveToCallback.
+> - `method`: Method with no arguments, or null to clear.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Move(direction: <a data-footnote-ref href="#user-content-fn-8">Vector3</a>)</code></pre>
 > Causes the (AI) human to move.
@@ -251,16 +234,14 @@ function OnCharacterSpawn(character)
 > Causes the (AI) human to release all hooks.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function Attack(attackOn: bool)</code></pre>
-> Causes the (AI) human to attack.
+> Sends attack input to the (AI) human's weapon when its character state allows attacking.
 > 
 > **Parameters**:
 > - `attackOn`: True to start attacking, false to stop.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FindNearestEnemy()</code></pre>
-> Causes the (AI) human to find the nearest enemy.
-> 
 <pre class="language-typescript"><code class="lang-typescript">function Navigation()</code></pre>
-> Correct the direction of the (AI) human for moving to the target.
+> Updates the (AI) human's movement direction and magnitude towards TargetPosition, using pathfinding when enabled.
+This performs one movement update; it does not create a movement order or check a stopping range.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SetParticleEffect(effectName: string, enabled: bool)</code></pre>
 > Enables or disables a particle effect.
@@ -269,6 +250,75 @@ function OnCharacterSpawn(character)
 > - `effectName`: Name of the effect. Refer to [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
 > - `enabled`: True to enable, false to disable.
 > 
+<pre class="language-typescript"><code class="lang-typescript">function FindNearestEnemy()</code></pre>
+
+{% hint style="warning" %}
+**Obsolete**: Use TargetNearestEnemy() to assign or GetNearestEnemy() to query.
+{% endhint %}
+
+> Legacy enemy assignment for an (AI) human.
+Use GetNearestEnemy() or TargetNearestEnemy() instead.
+> 
+
+### Hierarchy
+**HumanPlayer**
+```
+HumanPlayer
+├── Armature
+│   └── Core
+│       ├── PlayerWindTrailEffect
+│       ├── Controller_Body
+│       │   └── hip
+│       │       ├── spine
+│       │       │   └── chest
+│       │       │       ├── neck
+│       │       │       │   └── head
+│       │       │       │       └── char_head
+│       │       │       ├── shoulder_L
+│       │       │       │   └── upper_arm_L
+│       │       │       │       └── forearm_L
+│       │       │       │           └── hand_L
+│       │       │       │               ├── hookRef
+│       │       │       │               └── checkBox
+│       │       │       ├── shoulder_R
+│       │       │       │   └── upper_arm_R
+│       │       │       │       └── forearm_R
+│       │       │       │           └── hand_R
+│       │       │       │               ├── hookRef
+│       │       │       │               └── checkBox
+│       │       │       ├── hookRefR1
+│       │       │       └── hookRefL1
+│       │       ├── thigh_L
+│       │       │   └── shin_L
+│       │       │       └── foot_L
+│       │       └── thigh_R
+│       │           └── shin_R
+│       │               └── foot_R
+│       ├── IK_L
+│       │   └── knee.L
+│       └── IK_R
+│           └── knee.R
+├── 3dmg_smoke
+├── speedFX
+│   └── speedEffect
+├── slideSparks
+├── character_chest
+├── character_leg
+├── character_arm_l
+├── character_arm_r
+├── character_body
+├── character_hand_l
+├── character_hand_r
+├── GroundRight
+├── GroundLeft
+├── buff1
+│   ├── LeviSpinTest1
+│   └── Particle System
+├── buff2
+└── fire1
+    ├── Sparks
+    └── SteamEffect
+```
 
 [^0]: [Color](../Collections/Color.md)
 [^1]: [Dict](../Collections/Dict.md)
@@ -293,106 +343,109 @@ function OnCharacterSpawn(character)
 [^20]: [RigidbodyBuiltin](../Component/RigidbodyBuiltin.md)
 [^21]: [VideoPlayer](../Component/VideoPlayer.md)
 [^22]: [Character](../Entities/Character.md)
-[^23]: [Human](../Entities/Human.md)
-[^24]: [MapObject](../Entities/MapObject.md)
-[^25]: [NetworkView](../Entities/NetworkView.md)
-[^26]: [Player](../Entities/Player.md)
-[^27]: [Prefab](../Entities/Prefab.md)
-[^28]: [Shifter](../Entities/Shifter.md)
-[^29]: [Titan](../Entities/Titan.md)
-[^30]: [Transform](../Entities/Transform.md)
-[^31]: [WallColossal](../Entities/WallColossal.md)
-[^32]: [AlignEnum](../Enums/AlignEnum.md)
-[^33]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
-[^34]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
-[^35]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
-[^36]: [CameraModeEnum](../Enums/CameraModeEnum.md)
-[^37]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
-[^38]: [CollideModeEnum](../Enums/CollideModeEnum.md)
-[^39]: [CollideWithEnum](../Enums/CollideWithEnum.md)
-[^40]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
-[^41]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
-[^42]: [EffectNameEnum](../Enums/EffectNameEnum.md)
-[^43]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
-[^44]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
-[^45]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
-[^46]: [FontStyleEnum](../Enums/FontStyleEnum.md)
-[^47]: [ForceModeEnum](../Enums/ForceModeEnum.md)
-[^48]: [GradientModeEnum](../Enums/GradientModeEnum.md)
-[^49]: [HandStateEnum](../Enums/HandStateEnum.md)
-[^50]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
-[^51]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
-[^52]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
-[^53]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
-[^54]: [HumanStateEnum](../Enums/HumanStateEnum.md)
-[^55]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
-[^56]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
-[^57]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
-[^58]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
-[^59]: [InputHumanEnum](../Enums/InputHumanEnum.md)
-[^60]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
-[^61]: [InputTitanEnum](../Enums/InputTitanEnum.md)
-[^62]: [JustifyEnum](../Enums/JustifyEnum.md)
-[^63]: [LanguageEnum](../Enums/LanguageEnum.md)
-[^64]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
-[^65]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
-[^66]: [LoadoutEnum](../Enums/LoadoutEnum.md)
-[^67]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
-[^68]: [OverflowEnum](../Enums/OverflowEnum.md)
-[^69]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
-[^70]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
-[^71]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-[^72]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
-[^73]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
-[^74]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
-[^75]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
-[^76]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
-[^77]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
-[^78]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
-[^79]: [SpecialEnum](../Enums/SpecialEnum.md)
-[^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
-[^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
-[^89]: [UILabelEnum](../Enums/UILabelEnum.md)
-[^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
-[^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
-[^92]: [WeaponEnum](../Enums/WeaponEnum.md)
-[^93]: [WrapEnum](../Enums/WrapEnum.md)
-[^94]: [Camera](../Game/Camera.md)
-[^95]: [Commands](../Game/Commands.md)
-[^96]: [Cutscene](../Game/Cutscene.md)
-[^97]: [Game](../Game/Game.md)
-[^98]: [Input](../Game/Input.md)
-[^99]: [Locale](../Game/Locale.md)
-[^100]: [Map](../Game/Map.md)
-[^101]: [Network](../Game/Network.md)
-[^102]: [PersistentData](../Game/PersistentData.md)
-[^103]: [Physics](../Game/Physics.md)
-[^104]: [RoomData](../Game/RoomData.md)
-[^105]: [Service](../Game/Service.md)
-[^106]: [Time](../Game/Time.md)
-[^107]: [Button](../UIElements/Button.md)
-[^108]: [Dropdown](../UIElements/Dropdown.md)
-[^109]: [Icon](../UIElements/Icon.md)
-[^110]: [Image](../UIElements/Image.md)
-[^111]: [Label](../UIElements/Label.md)
-[^112]: [ProgressBar](../UIElements/ProgressBar.md)
-[^113]: [ScrollView](../UIElements/ScrollView.md)
-[^114]: [Slider](../UIElements/Slider.md)
-[^115]: [TextField](../UIElements/TextField.md)
-[^116]: [Toggle](../UIElements/Toggle.md)
-[^117]: [UI](../UIElements/UI.md)
-[^118]: [VisualElement](../UIElements/VisualElement.md)
-[^119]: [Convert](../Utility/Convert.md)
-[^120]: [Json](../Utility/Json.md)
-[^121]: [Math](../Utility/Math.md)
-[^122]: [Random](../Utility/Random.md)
-[^123]: [String](../Utility/String.md)
-[^124]: [Object](../objects/Object.md)
-[^125]: [Component](../objects/Component.md)
+[^23]: [Horse](../Entities/Horse.md)
+[^24]: [Human](../Entities/Human.md)
+[^25]: [MapObject](../Entities/MapObject.md)
+[^26]: [NetworkView](../Entities/NetworkView.md)
+[^27]: [Player](../Entities/Player.md)
+[^28]: [Prefab](../Entities/Prefab.md)
+[^29]: [Shifter](../Entities/Shifter.md)
+[^30]: [Titan](../Entities/Titan.md)
+[^31]: [Transform](../Entities/Transform.md)
+[^32]: [WallColossal](../Entities/WallColossal.md)
+[^33]: [AlignEnum](../Enums/AlignEnum.md)
+[^34]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
+[^35]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
+[^36]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
+[^37]: [CameraModeEnum](../Enums/CameraModeEnum.md)
+[^38]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
+[^39]: [CollideModeEnum](../Enums/CollideModeEnum.md)
+[^40]: [CollideWithEnum](../Enums/CollideWithEnum.md)
+[^41]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
+[^42]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
+[^43]: [EffectNameEnum](../Enums/EffectNameEnum.md)
+[^44]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
+[^45]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
+[^46]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
+[^47]: [FontStyleEnum](../Enums/FontStyleEnum.md)
+[^48]: [ForceModeEnum](../Enums/ForceModeEnum.md)
+[^49]: [GradientModeEnum](../Enums/GradientModeEnum.md)
+[^50]: [HandStateEnum](../Enums/HandStateEnum.md)
+[^51]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
+[^52]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
+[^53]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
+[^54]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
+[^55]: [HumanStateEnum](../Enums/HumanStateEnum.md)
+[^56]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
+[^57]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
+[^58]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
+[^59]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
+[^60]: [InputHumanEnum](../Enums/InputHumanEnum.md)
+[^61]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
+[^62]: [InputTitanEnum](../Enums/InputTitanEnum.md)
+[^63]: [JustifyEnum](../Enums/JustifyEnum.md)
+[^64]: [LanguageEnum](../Enums/LanguageEnum.md)
+[^65]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
+[^66]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
+[^67]: [LoadoutEnum](../Enums/LoadoutEnum.md)
+[^68]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
+[^69]: [OverflowEnum](../Enums/OverflowEnum.md)
+[^70]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
+[^71]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
+[^72]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
+[^73]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
+[^74]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
+[^75]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
+[^76]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
+[^77]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+[^78]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
+[^79]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
+[^80]: [SpecialEnum](../Enums/SpecialEnum.md)
+[^81]: [SteamStateEnum](../Enums/SteamStateEnum.md)
+[^82]: [StunStateEnum](../Enums/StunStateEnum.md)
+[^83]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^84]: [TeamEnum](../Enums/TeamEnum.md)
+[^85]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^86]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^87]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^88]: [TitanDeathTypeEnum](../Enums/TitanDeathTypeEnum.md)
+[^89]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^90]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
+[^91]: [UILabelEnum](../Enums/UILabelEnum.md)
+[^92]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
+[^93]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
+[^94]: [WeaponEnum](../Enums/WeaponEnum.md)
+[^95]: [WrapEnum](../Enums/WrapEnum.md)
+[^96]: [Camera](../Game/Camera.md)
+[^97]: [Commands](../Game/Commands.md)
+[^98]: [Cutscene](../Game/Cutscene.md)
+[^99]: [ExperienceScore](../Game/ExperienceScore.md)
+[^100]: [Game](../Game/Game.md)
+[^101]: [Input](../Game/Input.md)
+[^102]: [Locale](../Game/Locale.md)
+[^103]: [Map](../Game/Map.md)
+[^104]: [Network](../Game/Network.md)
+[^105]: [PersistentData](../Game/PersistentData.md)
+[^106]: [Physics](../Game/Physics.md)
+[^107]: [RoomData](../Game/RoomData.md)
+[^108]: [Service](../Game/Service.md)
+[^109]: [Time](../Game/Time.md)
+[^110]: [Button](../UIElements/Button.md)
+[^111]: [Dropdown](../UIElements/Dropdown.md)
+[^112]: [Icon](../UIElements/Icon.md)
+[^113]: [Image](../UIElements/Image.md)
+[^114]: [Label](../UIElements/Label.md)
+[^115]: [ProgressBar](../UIElements/ProgressBar.md)
+[^116]: [ScrollView](../UIElements/ScrollView.md)
+[^117]: [Slider](../UIElements/Slider.md)
+[^118]: [TextField](../UIElements/TextField.md)
+[^119]: [Toggle](../UIElements/Toggle.md)
+[^120]: [UI](../UIElements/UI.md)
+[^121]: [VisualElement](../UIElements/VisualElement.md)
+[^122]: [Convert](../Utility/Convert.md)
+[^123]: [Json](../Utility/Json.md)
+[^124]: [Math](../Utility/Math.md)
+[^125]: [Random](../Utility/Random.md)
+[^126]: [String](../Utility/String.md)
+[^127]: [Object](../objects/Object.md)
+[^128]: [Component](../objects/Component.md)

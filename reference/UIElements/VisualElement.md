@@ -10,13 +10,13 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 
 
 ### Methods
-<pre class="language-typescript"><code class="lang-typescript">function Add(visualElement: <a data-footnote-ref href="#user-content-fn-118">VisualElement</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Add(visualElement: <a data-footnote-ref href="#user-content-fn-121">VisualElement</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Add a child element.
 > 
 > **Parameters**:
 > - `visualElement`: The visual element to add as a child.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Remove(visualElement: <a data-footnote-ref href="#user-content-fn-118">VisualElement</a>)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Remove(visualElement: <a data-footnote-ref href="#user-content-fn-121">VisualElement</a>)</code></pre>
 > Remove a child element.
 > 
 > **Parameters**:
@@ -28,264 +28,264 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 <pre class="language-typescript"><code class="lang-typescript">function Clear()</code></pre>
 > Remove all child elements.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function GetElementAt(index: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function GetElementAt(index: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Get child element at index.
 > 
 > **Parameters**:
 > - `index`: The index of the child element to get.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function QueryByName(name: string) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function QueryByName(name: string) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Query child element by name.
 > 
 > **Parameters**:
 > - `name`: The name of the element to find.
 > 
 > **Returns**: The first child element with the matching name.
-<pre class="language-typescript"><code class="lang-typescript">function QueryByClassName(className: string) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function QueryByClassName(className: string) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Query child element by class name.
 > 
 > **Parameters**:
 > - `className`: The class name of the element to find.
 > 
 > **Returns**: The first child element with the matching class name.
-<pre class="language-typescript"><code class="lang-typescript">function RegisterMouseEnterEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterMouseEnterEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Register a callback for mouse enter event. Mouse enter event is fired when the mouse pointer enters an element or one of its children.
 > 
 > **Parameters**:
 > - `method`: The method to call when the mouse enters the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterMouseLeaveEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterMouseLeaveEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Register a callback for mouse leave event. Mouse leave event is fired when the mouse pointer exits an element and all its children.
 > 
 > **Parameters**:
 > - `method`: The method to call when the mouse leaves the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterClickEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterClickEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Register a callback for click event.
 > 
 > **Parameters**:
 > - `method`: The method to call when the element is clicked.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterFocusInEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterFocusInEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Register a callback for focus in event. Focus in event is fired immediately before an element gains focus.
 > 
 > **Parameters**:
 > - `method`: The method to call when the element gains focus.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function RegisterFocusOutEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function RegisterFocusOutEventCallback(method: function) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Register a callback for focus out event. Focus out event is fired immediately before an element loses focus.
 > 
 > **Parameters**:
 > - `method`: The method to call when the element loses focus.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Opacity(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Opacity(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the opacity of the element.
 > 
 > **Parameters**:
 > - `value`: A value between 0 and 100.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Active(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Active(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the element to be active or inactive.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Visible(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Visible(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the element to be visible or hidden.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransitionDuration(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransitionDuration(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the transition duration of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Absolute(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Absolute(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the element to be absolute or relative positioned.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Left(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Left(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the left position of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Top(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Top(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top position of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Right(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Right(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the right position of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Bottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Bottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom position of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FlexShrink(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FlexShrink(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the flex shrink value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FlexGrow(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FlexGrow(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the flex grow value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FlexDirection(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FlexDirection(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the flex direction.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Row`, `Column`, `RowReverse`, and `ColumnReverse`. Refer to [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FlexWrap(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FlexWrap(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the wrap property.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `NoWrap`, `Wrap`, `WrapReverse`. Refer to [WrapEnum](../Enums/WrapEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AlignItems(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AlignItems(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the align items property.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Auto`, `FlexStart`, `Center`, `FlexEnd`, and `Stretch`. Refer to [AlignEnum](../Enums/AlignEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function JustifyContent(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function JustifyContent(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the justify content property.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `FlexStart`, `Center`, `FlexEnd`, `SpaceBetween`, `SpaceAround`, and `SpaceEvenly`. Refer to [JustifyEnum](../Enums/JustifyEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AlignSelf(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AlignSelf(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the align self property.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Auto`, `FlexStart`, `Center`, `FlexEnd`, and `Stretch`. Refer to [AlignEnum](../Enums/AlignEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Width(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Width(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the width of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Height(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Height(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the height of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MinWidth(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MinWidth(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the minimum width of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MinHeight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MinHeight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the minimum height of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MaxWidth(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MaxWidth(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the maximum width of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MaxHeight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MaxHeight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the maximum height of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AspectRatio(value: float, mode: int = 0) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AspectRatio(value: float, mode: int = 0) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the height of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `mode`: Determines the direction of the aspect ratio. Acceptable values are: `Width` and `Height` Refer to [AspectRatioEnum](../Enums/AspectRatioEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Margin(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Margin(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the margin of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MarginLeft(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MarginLeft(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the left margin of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MarginTop(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MarginTop(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top margin of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MarginRight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MarginRight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the right margin of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function MarginBottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function MarginBottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom margin of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Padding(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Padding(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the padding of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PaddingLeft(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PaddingLeft(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the left padding of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PaddingTop(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PaddingTop(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top padding of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PaddingRight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PaddingRight(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the right padding of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function PaddingBottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function PaddingBottom(value: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom padding of the element.
 > 
 > **Parameters**:
 > - `value`: The value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FontStyle(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FontStyle(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the font style of the element.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Normal`, `Bold`, `Italic`, and `BoldAndItalic`. Refer to [FontStyleEnum](../Enums/FontStyleEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function FontSize(value: float, percentage: bool = False, scaleMode: int = 0) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function FontSize(value: float, percentage: bool = False, scaleMode: int = 0) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the font size of the element.
 > 
 > **Parameters**:
@@ -293,122 +293,122 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > - `scaleMode`: Determines the container dimension used for percentage calculations. Acceptable values are: `Width`, `Height`. Refer to [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function Color(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function Color(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextAlign(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextAlign(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text alignment of the element.
 > 
 > **Parameters**:
 > - `value`: Valid values are: `UpperLeft`, `UpperCenter`, `UpperRight`, `MiddleLeft`, `MiddleCenter`, `MiddleRight`, `LowerLeft`, `LowerCenter`, `LowerRight`. Refer to [TextAlignEnum](../Enums/TextAlignEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextWrap(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextWrap(value: bool = True) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set whether the text should wrap or not.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextOverflow(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextOverflow(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text overflow behavior.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Clip`, `Ellipsis`. Refer to [TextOverflowEnum](../Enums/TextOverflowEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextOutlineWidth(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextOutlineWidth(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text outline width.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextOutlineColor(value: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextOutlineColor(value: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text outline color.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextShadowColor(value: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextShadowColor(value: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text shadow color.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextShadowOffset(horizontal: float, vertical: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextShadowOffset(horizontal: float, vertical: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text shadow offset.
 > 
 > **Parameters**:
 > - `horizontal`: Horizontal offset.
 > - `vertical`: Vertical offset.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextShadowHorizontalOffset(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextShadowHorizontalOffset(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text shadow horizontal offset.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextShadowVerticalOffset(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextShadowVerticalOffset(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text shadow vertical offset.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextShadowBlurRadius(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextShadowBlurRadius(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text shadow blur radius.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextLetterSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextLetterSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text letter spacing.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextWordSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextWordSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text word spacing.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TextParagraphSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TextParagraphSpacing(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the text paragraph spacing.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BackgroundColor(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BackgroundColor(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the background color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetBackgroundImage(image: <a data-footnote-ref href="#user-content-fn-110">Image</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetBackgroundImage(image: <a data-footnote-ref href="#user-content-fn-113">Image</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the background image of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderColor(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderColor(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the border color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderColorLeft(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderColorLeft(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the left border color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderColorTop(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderColorTop(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top border color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderColorRight(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderColorRight(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the right border color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderColorBottom(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderColorBottom(color: <a data-footnote-ref href="#user-content-fn-0">Color</a>) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom border color of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderWidth(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderWidth(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the border width of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderWidthLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderWidthLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the left border width of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderWidthTop(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderWidthTop(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top border width of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderWidthRight(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderWidthRight(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the right border width of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderWidthBottom(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderWidthBottom(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom border width of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderRadius(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderRadius(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the border radius of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusTopLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusTopLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top-left border radius of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusTopRight(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusTopRight(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the top-right border radius of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusBottomLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusBottomLeft(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom-left border radius of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusBottomRight(value: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function BorderRadiusBottomRight(value: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the bottom-right border radius of the element.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function OverflowX(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function OverflowX(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the overflow behavior on the X axis.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Visible` and `Hidden`. Refer to [OverflowEnum](../Enums/OverflowEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function OverflowY(value: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function OverflowY(value: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the overflow behavior on the Y axis.
 > 
 > **Parameters**:
 > - `value`: Acceptable values are: `Visible` and `Hidden`. Refer to [OverflowEnum](../Enums/OverflowEnum.md)
 > 
-<pre class="language-typescript"><code class="lang-typescript">function SetTransformOrigin(x: float, y: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function SetTransformOrigin(x: float, y: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Set the origin of the element.
 > 
 > **Parameters**:
@@ -416,7 +416,7 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 > - `y`: Y value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransformTranslate(x: float, y: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransformTranslate(x: float, y: float, percentage: bool = False) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Translate the element.
 > 
 > **Parameters**:
@@ -424,14 +424,14 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 > - `y`: Y value.
 > - `percentage`: If true, the `value` will be treated as percentage value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransformScale(x: float, y: float) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransformScale(x: float, y: float) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Scale the element.
 > 
 > **Parameters**:
 > - `x`: X value.
 > - `y`: Y value.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function TransformRotate(angle: float, angleUnit: int) -> <a data-footnote-ref href="#user-content-fn-118">VisualElement</a></code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function TransformRotate(angle: float, angleUnit: int) -> <a data-footnote-ref href="#user-content-fn-121">VisualElement</a></code></pre>
 > Rotate the element.
 > 
 > **Parameters**:
@@ -462,106 +462,109 @@ Base class for all UI elements. Note: Most methods return self to allow method c
 [^20]: [RigidbodyBuiltin](../Component/RigidbodyBuiltin.md)
 [^21]: [VideoPlayer](../Component/VideoPlayer.md)
 [^22]: [Character](../Entities/Character.md)
-[^23]: [Human](../Entities/Human.md)
-[^24]: [MapObject](../Entities/MapObject.md)
-[^25]: [NetworkView](../Entities/NetworkView.md)
-[^26]: [Player](../Entities/Player.md)
-[^27]: [Prefab](../Entities/Prefab.md)
-[^28]: [Shifter](../Entities/Shifter.md)
-[^29]: [Titan](../Entities/Titan.md)
-[^30]: [Transform](../Entities/Transform.md)
-[^31]: [WallColossal](../Entities/WallColossal.md)
-[^32]: [AlignEnum](../Enums/AlignEnum.md)
-[^33]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
-[^34]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
-[^35]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
-[^36]: [CameraModeEnum](../Enums/CameraModeEnum.md)
-[^37]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
-[^38]: [CollideModeEnum](../Enums/CollideModeEnum.md)
-[^39]: [CollideWithEnum](../Enums/CollideWithEnum.md)
-[^40]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
-[^41]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
-[^42]: [EffectNameEnum](../Enums/EffectNameEnum.md)
-[^43]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
-[^44]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
-[^45]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
-[^46]: [FontStyleEnum](../Enums/FontStyleEnum.md)
-[^47]: [ForceModeEnum](../Enums/ForceModeEnum.md)
-[^48]: [GradientModeEnum](../Enums/GradientModeEnum.md)
-[^49]: [HandStateEnum](../Enums/HandStateEnum.md)
-[^50]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
-[^51]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
-[^52]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
-[^53]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
-[^54]: [HumanStateEnum](../Enums/HumanStateEnum.md)
-[^55]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
-[^56]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
-[^57]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
-[^58]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
-[^59]: [InputHumanEnum](../Enums/InputHumanEnum.md)
-[^60]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
-[^61]: [InputTitanEnum](../Enums/InputTitanEnum.md)
-[^62]: [JustifyEnum](../Enums/JustifyEnum.md)
-[^63]: [LanguageEnum](../Enums/LanguageEnum.md)
-[^64]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
-[^65]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
-[^66]: [LoadoutEnum](../Enums/LoadoutEnum.md)
-[^67]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
-[^68]: [OverflowEnum](../Enums/OverflowEnum.md)
-[^69]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
-[^70]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
-[^71]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
-[^72]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
-[^73]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
-[^74]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
-[^75]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
-[^76]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
-[^77]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
-[^78]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
-[^79]: [SpecialEnum](../Enums/SpecialEnum.md)
-[^80]: [SteamStateEnum](../Enums/SteamStateEnum.md)
-[^81]: [StunStateEnum](../Enums/StunStateEnum.md)
-[^82]: [TeamEnum](../Enums/TeamEnum.md)
-[^83]: [TextAlignEnum](../Enums/TextAlignEnum.md)
-[^84]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
-[^85]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
-[^86]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
-[^87]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
-[^88]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
-[^89]: [UILabelEnum](../Enums/UILabelEnum.md)
-[^90]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
-[^91]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
-[^92]: [WeaponEnum](../Enums/WeaponEnum.md)
-[^93]: [WrapEnum](../Enums/WrapEnum.md)
-[^94]: [Camera](../Game/Camera.md)
-[^95]: [Commands](../Game/Commands.md)
-[^96]: [Cutscene](../Game/Cutscene.md)
-[^97]: [Game](../Game/Game.md)
-[^98]: [Input](../Game/Input.md)
-[^99]: [Locale](../Game/Locale.md)
-[^100]: [Map](../Game/Map.md)
-[^101]: [Network](../Game/Network.md)
-[^102]: [PersistentData](../Game/PersistentData.md)
-[^103]: [Physics](../Game/Physics.md)
-[^104]: [RoomData](../Game/RoomData.md)
-[^105]: [Service](../Game/Service.md)
-[^106]: [Time](../Game/Time.md)
-[^107]: [Button](../UIElements/Button.md)
-[^108]: [Dropdown](../UIElements/Dropdown.md)
-[^109]: [Icon](../UIElements/Icon.md)
-[^110]: [Image](../UIElements/Image.md)
-[^111]: [Label](../UIElements/Label.md)
-[^112]: [ProgressBar](../UIElements/ProgressBar.md)
-[^113]: [ScrollView](../UIElements/ScrollView.md)
-[^114]: [Slider](../UIElements/Slider.md)
-[^115]: [TextField](../UIElements/TextField.md)
-[^116]: [Toggle](../UIElements/Toggle.md)
-[^117]: [UI](../UIElements/UI.md)
-[^118]: [VisualElement](../UIElements/VisualElement.md)
-[^119]: [Convert](../Utility/Convert.md)
-[^120]: [Json](../Utility/Json.md)
-[^121]: [Math](../Utility/Math.md)
-[^122]: [Random](../Utility/Random.md)
-[^123]: [String](../Utility/String.md)
-[^124]: [Object](../objects/Object.md)
-[^125]: [Component](../objects/Component.md)
+[^23]: [Horse](../Entities/Horse.md)
+[^24]: [Human](../Entities/Human.md)
+[^25]: [MapObject](../Entities/MapObject.md)
+[^26]: [NetworkView](../Entities/NetworkView.md)
+[^27]: [Player](../Entities/Player.md)
+[^28]: [Prefab](../Entities/Prefab.md)
+[^29]: [Shifter](../Entities/Shifter.md)
+[^30]: [Titan](../Entities/Titan.md)
+[^31]: [Transform](../Entities/Transform.md)
+[^32]: [WallColossal](../Entities/WallColossal.md)
+[^33]: [AlignEnum](../Enums/AlignEnum.md)
+[^34]: [AngleUnitEnum](../Enums/AngleUnitEnum.md)
+[^35]: [AnnieAnimationEnum](../Enums/AnnieAnimationEnum.md)
+[^36]: [AspectRatioEnum](../Enums/AspectRatioEnum.md)
+[^37]: [CameraModeEnum](../Enums/CameraModeEnum.md)
+[^38]: [CharacterTypeEnum](../Enums/CharacterTypeEnum.md)
+[^39]: [CollideModeEnum](../Enums/CollideModeEnum.md)
+[^40]: [CollideWithEnum](../Enums/CollideWithEnum.md)
+[^41]: [CollisionDetectionModeEnum](../Enums/CollisionDetectionModeEnum.md)
+[^42]: [DummyAnimationEnum](../Enums/DummyAnimationEnum.md)
+[^43]: [EffectNameEnum](../Enums/EffectNameEnum.md)
+[^44]: [ErenAnimationEnum](../Enums/ErenAnimationEnum.md)
+[^45]: [FlexDirectionEnum](../Enums/FlexDirectionEnum.md)
+[^46]: [FontScaleModeEnum](../Enums/FontScaleModeEnum.md)
+[^47]: [FontStyleEnum](../Enums/FontStyleEnum.md)
+[^48]: [ForceModeEnum](../Enums/ForceModeEnum.md)
+[^49]: [GradientModeEnum](../Enums/GradientModeEnum.md)
+[^50]: [HandStateEnum](../Enums/HandStateEnum.md)
+[^51]: [HorseAnimationEnum](../Enums/HorseAnimationEnum.md)
+[^52]: [HumanAnimationEnum](../Enums/HumanAnimationEnum.md)
+[^53]: [HumanParticleEffectEnum](../Enums/HumanParticleEffectEnum.md)
+[^54]: [HumanSoundEnum](../Enums/HumanSoundEnum.md)
+[^55]: [HumanStateEnum](../Enums/HumanStateEnum.md)
+[^56]: [InputAnnieShifterEnum](../Enums/InputAnnieShifterEnum.md)
+[^57]: [InputCategoryEnum](../Enums/InputCategoryEnum.md)
+[^58]: [InputErenShifterEnum](../Enums/InputErenShifterEnum.md)
+[^59]: [InputGeneralEnum](../Enums/InputGeneralEnum.md)
+[^60]: [InputHumanEnum](../Enums/InputHumanEnum.md)
+[^61]: [InputInteractionEnum](../Enums/InputInteractionEnum.md)
+[^62]: [InputTitanEnum](../Enums/InputTitanEnum.md)
+[^63]: [JustifyEnum](../Enums/JustifyEnum.md)
+[^64]: [LanguageEnum](../Enums/LanguageEnum.md)
+[^65]: [LineAlignmentEnum](../Enums/LineAlignmentEnum.md)
+[^66]: [LineTextureModeEnum](../Enums/LineTextureModeEnum.md)
+[^67]: [LoadoutEnum](../Enums/LoadoutEnum.md)
+[^68]: [OutlineModeEnum](../Enums/OutlineModeEnum.md)
+[^69]: [OverflowEnum](../Enums/OverflowEnum.md)
+[^70]: [PhysicMaterialCombineEnum](../Enums/PhysicMaterialCombineEnum.md)
+[^71]: [PlayerStatusEnum](../Enums/PlayerStatusEnum.md)
+[^72]: [ProfileIconEnum](../Enums/ProfileIconEnum.md)
+[^73]: [ProjectileNameEnum](../Enums/ProjectileNameEnum.md)
+[^74]: [ScaleModeEnum](../Enums/ScaleModeEnum.md)
+[^75]: [ScrollElasticityEnum](../Enums/ScrollElasticityEnum.md)
+[^76]: [ShadowCastingModeEnum](../Enums/ShadowCastingModeEnum.md)
+[^77]: [ShifterSoundEnum](../Enums/ShifterSoundEnum.md)
+[^78]: [ShifterTypeEnum](../Enums/ShifterTypeEnum.md)
+[^79]: [SliderDirectionEnum](../Enums/SliderDirectionEnum.md)
+[^80]: [SpecialEnum](../Enums/SpecialEnum.md)
+[^81]: [SteamStateEnum](../Enums/SteamStateEnum.md)
+[^82]: [StunStateEnum](../Enums/StunStateEnum.md)
+[^83]: [TSKillSoundEnum](../Enums/TSKillSoundEnum.md)
+[^84]: [TeamEnum](../Enums/TeamEnum.md)
+[^85]: [TextAlignEnum](../Enums/TextAlignEnum.md)
+[^86]: [TextOverflowEnum](../Enums/TextOverflowEnum.md)
+[^87]: [TitanAnimationEnum](../Enums/TitanAnimationEnum.md)
+[^88]: [TitanDeathTypeEnum](../Enums/TitanDeathTypeEnum.md)
+[^89]: [TitanSoundEnum](../Enums/TitanSoundEnum.md)
+[^90]: [TitanTypeEnum](../Enums/TitanTypeEnum.md)
+[^91]: [UILabelEnum](../Enums/UILabelEnum.md)
+[^92]: [UnityComponentEnum](../Enums/UnityComponentEnum.md)
+[^93]: [WallColossalAnimationEnum](../Enums/WallColossalAnimationEnum.md)
+[^94]: [WeaponEnum](../Enums/WeaponEnum.md)
+[^95]: [WrapEnum](../Enums/WrapEnum.md)
+[^96]: [Camera](../Game/Camera.md)
+[^97]: [Commands](../Game/Commands.md)
+[^98]: [Cutscene](../Game/Cutscene.md)
+[^99]: [ExperienceScore](../Game/ExperienceScore.md)
+[^100]: [Game](../Game/Game.md)
+[^101]: [Input](../Game/Input.md)
+[^102]: [Locale](../Game/Locale.md)
+[^103]: [Map](../Game/Map.md)
+[^104]: [Network](../Game/Network.md)
+[^105]: [PersistentData](../Game/PersistentData.md)
+[^106]: [Physics](../Game/Physics.md)
+[^107]: [RoomData](../Game/RoomData.md)
+[^108]: [Service](../Game/Service.md)
+[^109]: [Time](../Game/Time.md)
+[^110]: [Button](../UIElements/Button.md)
+[^111]: [Dropdown](../UIElements/Dropdown.md)
+[^112]: [Icon](../UIElements/Icon.md)
+[^113]: [Image](../UIElements/Image.md)
+[^114]: [Label](../UIElements/Label.md)
+[^115]: [ProgressBar](../UIElements/ProgressBar.md)
+[^116]: [ScrollView](../UIElements/ScrollView.md)
+[^117]: [Slider](../UIElements/Slider.md)
+[^118]: [TextField](../UIElements/TextField.md)
+[^119]: [Toggle](../UIElements/Toggle.md)
+[^120]: [UI](../UIElements/UI.md)
+[^121]: [VisualElement](../UIElements/VisualElement.md)
+[^122]: [Convert](../Utility/Convert.md)
+[^123]: [Json](../Utility/Json.md)
+[^124]: [Math](../Utility/Math.md)
+[^125]: [Random](../Utility/Random.md)
+[^126]: [String](../Utility/String.md)
+[^127]: [Object](../objects/Object.md)
+[^128]: [Component](../objects/Component.md)
