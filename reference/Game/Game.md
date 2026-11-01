@@ -35,10 +35,10 @@ Game functions such as spawning titans and managing game state.
 
 ### Methods
 <pre class="language-typescript"><code class="lang-typescript">function GetExperienceScore() -> <a data-footnote-ref href="#user-content-fn-99">ExperienceScore</a></code></pre>
-> Returns the current local profile's saved experience score, or null if none has been saved.
+> Returns the client-local saved experience score, or null if none has been saved.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function SaveExperienceScore(score: float, unit: string, lowerIsBetter: bool = False)</code></pre>
-> Writes a score for the current local profile and exact experience configuration.
+> Writes a client-local score for the exact experience configuration.
 CL decides when to replace a record; this method does not compare scores automatically.
 > 
 > **Parameters**:

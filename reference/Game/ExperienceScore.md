@@ -1,7 +1,7 @@
 # ExperienceScore
 Inherits from [Object](../objects/Object.md)
 
-The last score explicitly saved for a local profile and experience configuration.
+The last client-local score explicitly saved for an experience configuration.
 
 ### Properties
 |Name|Type|Readonly|Description|
