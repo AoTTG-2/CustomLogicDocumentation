@@ -36,7 +36,7 @@ function OnCharacterSpawn(character)
 |MaxStamina|float|False|PT max stamina.|
 |NapePosition|[Vector3](../Collections/Vector3.md)|True|The titan's nape position.|
 |IsCrawler|bool|True|Is titan a crawler.|
-|IsBald|bool|True|Whether the titan's hair has been cut off.|
+|IsBald|bool|True||
 |IsWarded|bool|False|Whether the titan has the warded modifier. Setting this changes the warded state for all clients.|
 |IsHardened|bool|True|Whether the titan's nape is currently hardened. Breaking the warded weak spot temporarily removes hardening.|
 |FocusRange|float|False|(AI) titan's focus range.|

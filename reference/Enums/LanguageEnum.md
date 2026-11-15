@@ -8,23 +8,29 @@ Enumeration of available language codes. Duplicates Locale language constants fo
 |---|---|---|---|
 |Arabic|string|True|Arabic language code.|
 |BrazilianPortuguese|string|True|Brazilian Portuguese language code.|
+|Catalan|string|True|Catalan language code.|
 |Chinese|string|True|Chinese language code.|
 |Czech|string|True|Czech language code.|
 |Dutch|string|True|Dutch language code.|
 |English|string|True|English language code.|
+|Finnish|string|True|Finnish language code.|
 |French|string|True|French language code.|
 |German|string|True|German language code.|
 |Greek|string|True|Greek language code.|
+|Hungarian|string|True|Hungarian language code.|
 |Indonesian|string|True|Indonesian language code.|
 |Italian|string|True|Italian language code.|
 |Japanese|string|True|Japanese language code.|
 |Korean|string|True|Korean language code.|
 |Polish|string|True|Polish language code.|
+|Romanian|string|True|Romanian language code.|
 |Russian|string|True|Russian language code.|
 |Spanish|string|True|Spanish language code.|
+|Thai|string|True|Thai language code.|
 |TraditionalChinese|string|True|Traditional Chinese language code.|
 |Turkish|string|True|Turkish language code.|
 |Ukrainian|string|True|Ukrainian language code.|
+|Vietnamese|string|True|Vietnamese language code.|
 
 
 [^0]: [Color](../Collections/Color.md)

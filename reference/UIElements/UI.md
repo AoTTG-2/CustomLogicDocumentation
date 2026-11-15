@@ -80,30 +80,30 @@ supports extra functions such as label backgrounds but has different font and ri
 > - `popupName`: The name of the popup.
 > - `label`: The label text to add.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupButton(popupName: string, label: string, callback: string)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupButton(popupName: string, callback: string, label: string)</code></pre>
 > Adds a button row to the popup with given button name and display text.
 When button is pressed, OnButtonClick is called in Main with buttonName parameter.
 > 
 > **Parameters**:
 > - `popupName`: The name of the popup.
-> - `label`: The button display text.
 > - `callback`: The callback name that will be passed to OnButtonClick in Main.
+> - `label`: The button display text.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupBottomButton(popupName: string, label: string, callback: string)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupBottomButton(popupName: string, callback: string, label: string)</code></pre>
 > Adds a button to the bottom bar of the popup.
 > 
 > **Parameters**:
 > - `popupName`: The name of the popup.
-> - `label`: The button display text.
 > - `callback`: The callback name that will be passed to OnButtonClick in Main.
+> - `label`: The button display text.
 > 
-<pre class="language-typescript"><code class="lang-typescript">function AddPopupButtons(popupName: string, labels: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, callbacks: <a data-footnote-ref href="#user-content-fn-3">List</a><void>)</code></pre>
+<pre class="language-typescript"><code class="lang-typescript">function AddPopupButtons(popupName: string, callbacks: <a data-footnote-ref href="#user-content-fn-3">List</a><string>, labels: <a data-footnote-ref href="#user-content-fn-3">List</a><string>)</code></pre>
 > Adds a list of buttons in a row to the popup.
 > 
 > **Parameters**:
 > - `popupName`: The name of the popup.
-> - `labels`: List of button display texts.
 > - `callbacks`: List of callback names that will be passed to OnButtonClick in Main.
+> - `labels`: List of button display texts.
 > 
 <pre class="language-typescript"><code class="lang-typescript">function WrapStyleTag(text: string, style: string, arg: string = null) -> string</code></pre>
 > Returns a wrapped string given style and args.
